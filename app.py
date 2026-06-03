@@ -177,9 +177,9 @@ hr {{
 }}
 
 /* ===== Sidebar toggle labels ===== */
-/* COLLAPSED state: "Filters →" pill that contains the expand arrow */
-[data-testid="stSidebarCollapsedControl"],
-[data-testid="collapsedControl"] {{
+/* COLLAPSED state — "Filters" pill containing the expand arrow.
+   Real testid (per inspector on Streamlit 1.58): stExpandSidebarButton */
+button[data-testid="stExpandSidebarButton"] {{
     display: inline-flex !important;
     flex-direction: row !important;
     align-items: center !important;
@@ -194,37 +194,26 @@ hr {{
     height: auto !important;
     overflow: visible !important;
     cursor: pointer !important;
+    color: {t.PRIMARY_NAVY} !important;
     box-shadow: 0 1px 2px rgba(7,26,61,0.06) !important;
 }}
 
-[data-testid="stSidebarCollapsedControl"]::before,
-[data-testid="collapsedControl"]::before {{
+button[data-testid="stExpandSidebarButton"]::before {{
     content: "Filters" !important;
     color: {t.PRIMARY_NAVY} !important;
     font-family: {t.FONT_UI} !important;
     font-weight: 600 !important;
     font-size: 13px !important;
     letter-spacing: 0.02em !important;
-    display: inline-block !important;
     white-space: nowrap !important;
     line-height: 1 !important;
 }}
 
-/* Ensure the embedded button doesn't override our container styling */
-[data-testid="stSidebarCollapsedControl"] button,
-[data-testid="collapsedControl"] button {{
-    background: transparent !important;
-    border: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    color: {t.PRIMARY_NAVY} !important;
-}}
-
-/* EXPANDED state: "Collapse" next to close arrow inside the sidebar */
-[data-testid="stSidebarCollapseButton"],
-section[data-testid="stSidebar"] [data-testid="baseButton-headerNoPadding"] {{
+/* EXPANDED state — "Collapse" label next to the close arrow inside the
+   sidebar. Streamlit's default keeps this button at opacity:0 unless the
+   sidebar is hovered; we force it visible always. */
+button[data-testid="stCollapseSidebarButton"],
+section[data-testid="stSidebar"] button[kind="headerNoPadding"] {{
     display: inline-flex !important;
     align-items: center !important;
     gap: 6px !important;
@@ -232,15 +221,28 @@ section[data-testid="stSidebar"] [data-testid="baseButton-headerNoPadding"] {{
     font-family: {t.FONT_UI} !important;
     font-size: 0.85em !important;
     font-weight: 500 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 }}
 
-[data-testid="stSidebarCollapseButton"]::before {{
-    content: "Collapse";
-    color: {t.SLATE_BLUE};
-    font-family: {t.FONT_UI};
-    font-weight: 500;
-    font-size: 0.85em;
-    padding-right: 4px;
+/* Override Streamlit's hover-only fade-in on the in-sidebar collapse btn */
+section[data-testid="stSidebar"] button[kind="headerNoPadding"],
+section[data-testid="stSidebar"] [data-testid="stCollapseSidebarButton"],
+section[data-testid="stSidebar"] [data-testid="stSidebarHeader"] button {{
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: none !important;
+}}
+
+button[data-testid="stCollapseSidebarButton"]::before,
+section[data-testid="stSidebar"] button[kind="headerNoPadding"]::before {{
+    content: "Collapse" !important;
+    color: {t.SLATE_BLUE} !important;
+    font-family: {t.FONT_UI} !important;
+    font-weight: 500 !important;
+    font-size: 0.85em !important;
+    padding-right: 4px !important;
+    white-space: nowrap !important;
 }}
 
 section[data-testid="stSidebar"] [data-testid="stSidebarUserContent"] {{

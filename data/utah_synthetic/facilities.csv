@@ -1,0 +1,18 @@
+facility_id,facility_name,county,facility_type,share_within_county
+FAC-001,Wasatch Regional Health,Salt Lake,hospital,0.3
+FAC-002,Cottonwood Medical Center,Salt Lake,hospital,0.18
+FAC-003,Sugar House Pathology Group,Salt Lake,reference,0.12
+FAC-004,Jordan Valley Clinical Lab,Salt Lake,outpatient,0.1
+FAC-005,Foothill Community Lab,Salt Lake,outpatient,0.08
+FAC-006,Bonneville Diagnostic Services,Salt Lake,reference,0.07
+FAC-007,Timpanogos Regional Hospital Lab,Utah,hospital,0.25
+FAC-008,Provo Bench Medical Lab,Utah,hospital,0.2
+FAC-009,Cascade Pathology Associates,Utah,reference,0.15
+FAC-010,Orem Family Health Lab,Utah,outpatient,0.12
+FAC-011,Alpine Clinical Diagnostics,Utah,outpatient,0.1
+FAC-012,Spanish Fork Community Lab,Utah,outpatient,0.08
+FAC-013,Red Rock Regional Medical Lab,Washington,hospital,0.3
+FAC-014,St. George Bench Diagnostics,Washington,hospital,0.22
+FAC-015,Pine Valley Clinical Lab,Washington,reference,0.15
+FAC-016,Hurricane Family Medicine Lab,Washington,outpatient,0.12
+FAC-017,Snow Canyon Diagnostic Group,Washington,outpatient,0.1

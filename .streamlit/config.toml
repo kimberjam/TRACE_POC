@@ -1,0 +1,19 @@
+[theme]
+# TRACE brand palette
+# - primaryColor = TRACE Teal (#4FB7B2) for active/selected/focused states
+# - backgroundColor = Mist White (#F7FAFC) for clean clinical workspace
+# - secondaryBackgroundColor = light cool-gray tint for cards/sidebar
+# - textColor = Ink (#101828) for readable, grounded body copy
+# Custom fonts (Avenir Next / Aptos / Inter) are loaded via CSS in app.py
+primaryColor = "#4FB7B2"
+backgroundColor = "#F7FAFC"
+secondaryBackgroundColor = "#EAF0F5"
+textColor = "#101828"
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false
+
+[server]
+headless = false
+runOnSave = true

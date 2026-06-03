@@ -1,0 +1,793 @@
+county,year_month,organism,n_tested,n_positive,pct_positive
+Salt Lake,2024-05,Group A Strep,259,34,13.1
+Salt Lake,2024-06,Group A Strep,178,22,12.4
+Salt Lake,2024-07,Group A Strep,164,22,13.4
+Salt Lake,2024-08,Group A Strep,208,26,12.5
+Salt Lake,2024-09,Group A Strep,293,43,14.7
+Salt Lake,2024-10,Group A Strep,382,87,22.8
+Salt Lake,2024-11,Group A Strep,391,109,27.9
+Salt Lake,2024-12,Group A Strep,350,105,30.0
+Salt Lake,2025-01,Group A Strep,351,129,36.8
+Salt Lake,2025-02,Group A Strep,424,133,31.4
+Salt Lake,2025-03,Group A Strep,336,78,23.2
+Salt Lake,2025-04,Group A Strep,356,59,16.6
+Salt Lake,2025-05,Group A Strep,220,35,15.9
+Salt Lake,2025-06,Group A Strep,175,18,10.3
+Salt Lake,2025-07,Group A Strep,189,15,7.9
+Salt Lake,2025-08,Group A Strep,179,24,13.4
+Salt Lake,2025-09,Group A Strep,281,47,16.7
+Salt Lake,2025-10,Group A Strep,404,78,19.3
+Salt Lake,2025-11,Group A Strep,345,108,31.3
+Salt Lake,2025-12,Group A Strep,352,104,29.5
+Salt Lake,2026-01,Group A Strep,409,119,29.1
+Salt Lake,2026-02,Group A Strep,333,105,31.5
+Salt Lake,2026-03,Group A Strep,386,99,25.6
+Salt Lake,2026-04,Group A Strep,319,69,21.6
+Utah,2024-05,Group A Strep,160,19,11.9
+Utah,2024-06,Group A Strep,100,12,12.0
+Utah,2024-07,Group A Strep,104,9,8.7
+Utah,2024-08,Group A Strep,125,19,15.2
+Utah,2024-09,Group A Strep,165,27,16.4
+Utah,2024-10,Group A Strep,260,56,21.5
+Utah,2024-11,Group A Strep,243,81,33.3
+Utah,2024-12,Group A Strep,225,74,32.9
+Utah,2025-01,Group A Strep,227,67,29.5
+Utah,2025-02,Group A Strep,219,61,27.9
+Utah,2025-03,Group A Strep,197,47,23.9
+Utah,2025-04,Group A Strep,230,58,25.2
+Utah,2025-05,Group A Strep,169,24,14.2
+Utah,2025-06,Group A Strep,103,12,11.7
+Utah,2025-07,Group A Strep,98,13,13.3
+Utah,2025-08,Group A Strep,136,15,11.0
+Utah,2025-09,Group A Strep,178,38,21.3
+Utah,2025-10,Group A Strep,188,27,14.4
+Utah,2025-11,Group A Strep,247,77,31.2
+Utah,2025-12,Group A Strep,238,84,35.3
+Utah,2026-01,Group A Strep,254,76,29.9
+Utah,2026-02,Group A Strep,225,67,29.8
+Utah,2026-03,Group A Strep,223,46,20.6
+Utah,2026-04,Group A Strep,206,46,22.3
+Washington,2024-05,Group A Strep,50,9,18.0
+Washington,2024-06,Group A Strep,21,1,4.8
+Washington,2024-07,Group A Strep,34,2,5.9
+Washington,2024-08,Group A Strep,42,5,11.9
+Washington,2024-09,Group A Strep,53,12,22.6
+Washington,2024-10,Group A Strep,71,15,21.1
+Washington,2024-11,Group A Strep,60,20,33.3
+Washington,2024-12,Group A Strep,46,14,30.4
+Washington,2025-01,Group A Strep,59,14,23.7
+Washington,2025-02,Group A Strep,50,12,24.0
+Washington,2025-03,Group A Strep,49,15,30.6
+Washington,2025-04,Group A Strep,72,11,15.3
+Washington,2025-05,Group A Strep,44,3,6.8
+Washington,2025-06,Group A Strep,44,5,11.4
+Washington,2025-07,Group A Strep,31,4,12.9
+Washington,2025-08,Group A Strep,22,6,27.3
+Washington,2025-09,Group A Strep,46,6,13.0
+Washington,2025-10,Group A Strep,67,14,20.9
+Washington,2025-11,Group A Strep,56,16,28.6
+Washington,2025-12,Group A Strep,66,19,28.8
+Washington,2026-01,Group A Strep,73,17,23.3
+Washington,2026-02,Group A Strep,64,20,31.2
+Washington,2026-03,Group A Strep,67,17,25.4
+Washington,2026-04,Group A Strep,48,7,14.6
+Salt Lake,2024-05,C. difficile,207,32,15.5
+Salt Lake,2024-06,C. difficile,171,24,14.0
+Salt Lake,2024-07,C. difficile,201,25,12.4
+Salt Lake,2024-08,C. difficile,200,43,21.5
+Salt Lake,2024-09,C. difficile,251,43,17.1
+Salt Lake,2024-10,C. difficile,213,27,12.7
+Salt Lake,2024-11,C. difficile,238,33,13.9
+Salt Lake,2024-12,C. difficile,228,35,15.4
+Salt Lake,2025-01,C. difficile,202,37,18.3
+Salt Lake,2025-02,C. difficile,243,34,14.0
+Salt Lake,2025-03,C. difficile,253,40,15.8
+Salt Lake,2025-04,C. difficile,234,49,20.9
+Salt Lake,2025-05,C. difficile,175,22,12.6
+Salt Lake,2025-06,C. difficile,168,28,16.7
+Salt Lake,2025-07,C. difficile,181,33,18.2
+Salt Lake,2025-08,C. difficile,169,31,18.3
+Salt Lake,2025-09,C. difficile,227,37,16.3
+Salt Lake,2025-10,C. difficile,253,33,13.0
+Salt Lake,2025-11,C. difficile,245,47,19.2
+Salt Lake,2025-12,C. difficile,247,44,17.8
+Salt Lake,2026-01,C. difficile,220,36,16.4
+Salt Lake,2026-02,C. difficile,219,30,13.7
+Salt Lake,2026-03,C. difficile,229,30,13.1
+Salt Lake,2026-04,C. difficile,221,39,17.6
+Utah,2024-05,C. difficile,105,13,12.4
+Utah,2024-06,C. difficile,124,17,13.7
+Utah,2024-07,C. difficile,91,13,14.3
+Utah,2024-08,C. difficile,144,28,19.4
+Utah,2024-09,C. difficile,143,21,14.7
+Utah,2024-10,C. difficile,147,31,21.1
+Utah,2024-11,C. difficile,159,31,19.5
+Utah,2024-12,C. difficile,165,14,8.5
+Utah,2025-01,C. difficile,128,22,17.2
+Utah,2025-02,C. difficile,126,23,18.3
+Utah,2025-03,C. difficile,99,14,14.1
+Utah,2025-04,C. difficile,134,16,11.9
+Utah,2025-05,C. difficile,110,19,17.3
+Utah,2025-06,C. difficile,110,19,17.3
+Utah,2025-07,C. difficile,136,22,16.2
+Utah,2025-08,C. difficile,139,16,11.5
+Utah,2025-09,C. difficile,125,20,16.0
+Utah,2025-10,C. difficile,131,24,18.3
+Utah,2025-11,C. difficile,143,16,11.2
+Utah,2025-12,C. difficile,140,17,12.1
+Utah,2026-01,C. difficile,154,30,19.5
+Utah,2026-02,C. difficile,121,21,17.4
+Utah,2026-03,C. difficile,142,17,12.0
+Utah,2026-04,C. difficile,120,20,16.7
+Washington,2024-05,C. difficile,26,5,19.2
+Washington,2024-06,C. difficile,36,8,22.2
+Washington,2024-07,C. difficile,34,3,8.8
+Washington,2024-08,C. difficile,36,8,22.2
+Washington,2024-09,C. difficile,36,7,19.4
+Washington,2024-10,C. difficile,31,2,6.5
+Washington,2024-11,C. difficile,26,9,34.6
+Washington,2024-12,C. difficile,51,7,13.7
+Washington,2025-01,C. difficile,37,5,13.5
+Washington,2025-02,C. difficile,34,5,14.7
+Washington,2025-03,C. difficile,27,4,14.8
+Washington,2025-04,C. difficile,30,5,16.7
+Washington,2025-05,C. difficile,27,3,11.1
+Washington,2025-06,C. difficile,32,6,18.8
+Washington,2025-07,C. difficile,33,4,12.1
+Washington,2025-08,C. difficile,38,6,15.8
+Washington,2025-09,C. difficile,48,7,14.6
+Washington,2025-10,C. difficile,25,6,24.0
+Washington,2025-11,C. difficile,37,4,10.8
+Washington,2025-12,C. difficile,35,7,20.0
+Washington,2026-01,C. difficile,41,10,24.4
+Washington,2026-02,C. difficile,35,8,22.9
+Washington,2026-03,C. difficile,31,4,12.9
+Washington,2026-04,C. difficile,23,1,4.3
+Salt Lake,2024-05,MRSA Screen,204,21,10.3
+Salt Lake,2024-06,MRSA Screen,208,25,12.0
+Salt Lake,2024-07,MRSA Screen,197,17,8.6
+Salt Lake,2024-08,MRSA Screen,185,28,15.1
+Salt Lake,2024-09,MRSA Screen,195,25,12.8
+Salt Lake,2024-10,MRSA Screen,194,26,13.4
+Salt Lake,2024-11,MRSA Screen,221,26,11.8
+Salt Lake,2024-12,MRSA Screen,221,31,14.0
+Salt Lake,2025-01,MRSA Screen,199,20,10.1
+Salt Lake,2025-02,MRSA Screen,256,28,10.9
+Salt Lake,2025-03,MRSA Screen,216,26,12.0
+Salt Lake,2025-04,MRSA Screen,211,25,11.8
+Salt Lake,2025-05,MRSA Screen,195,24,12.3
+Salt Lake,2025-06,MRSA Screen,182,23,12.6
+Salt Lake,2025-07,MRSA Screen,218,30,13.8
+Salt Lake,2025-08,MRSA Screen,182,18,9.9
+Salt Lake,2025-09,MRSA Screen,193,22,11.4
+Salt Lake,2025-10,MRSA Screen,215,20,9.3
+Salt Lake,2025-11,MRSA Screen,192,19,9.9
+Salt Lake,2025-12,MRSA Screen,196,26,13.3
+Salt Lake,2026-01,MRSA Screen,185,30,16.2
+Salt Lake,2026-02,MRSA Screen,193,28,14.5
+Salt Lake,2026-03,MRSA Screen,207,26,12.6
+Salt Lake,2026-04,MRSA Screen,195,17,8.7
+Utah,2024-05,MRSA Screen,138,15,10.9
+Utah,2024-06,MRSA Screen,104,13,12.5
+Utah,2024-07,MRSA Screen,134,17,12.7
+Utah,2024-08,MRSA Screen,129,15,11.6
+Utah,2024-09,MRSA Screen,116,14,12.1
+Utah,2024-10,MRSA Screen,115,10,8.7
+Utah,2024-11,MRSA Screen,124,22,17.7
+Utah,2024-12,MRSA Screen,135,21,15.6
+Utah,2025-01,MRSA Screen,110,14,12.7
+Utah,2025-02,MRSA Screen,114,17,14.9
+Utah,2025-03,MRSA Screen,105,13,12.4
+Utah,2025-04,MRSA Screen,106,16,15.1
+Utah,2025-05,MRSA Screen,124,19,15.3
+Utah,2025-06,MRSA Screen,101,14,13.9
+Utah,2025-07,MRSA Screen,127,16,12.6
+Utah,2025-08,MRSA Screen,120,10,8.3
+Utah,2025-09,MRSA Screen,132,10,7.6
+Utah,2025-10,MRSA Screen,122,12,9.8
+Utah,2025-11,MRSA Screen,114,10,8.8
+Utah,2025-12,MRSA Screen,138,11,8.0
+Utah,2026-01,MRSA Screen,116,18,15.5
+Utah,2026-02,MRSA Screen,135,11,8.1
+Utah,2026-03,MRSA Screen,103,15,14.6
+Utah,2026-04,MRSA Screen,127,17,13.4
+Washington,2024-05,MRSA Screen,45,3,6.7
+Washington,2024-06,MRSA Screen,30,4,13.3
+Washington,2024-07,MRSA Screen,36,5,13.9
+Washington,2024-08,MRSA Screen,32,5,15.6
+Washington,2024-09,MRSA Screen,39,4,10.3
+Washington,2024-10,MRSA Screen,32,3,9.4
+Washington,2024-11,MRSA Screen,29,1,3.4
+Washington,2024-12,MRSA Screen,38,5,13.2
+Washington,2025-01,MRSA Screen,39,8,20.5
+Washington,2025-02,MRSA Screen,41,7,17.1
+Washington,2025-03,MRSA Screen,31,4,12.9
+Washington,2025-04,MRSA Screen,29,1,3.4
+Washington,2025-05,MRSA Screen,28,5,17.9
+Washington,2025-06,MRSA Screen,43,5,11.6
+Washington,2025-07,MRSA Screen,36,3,8.3
+Washington,2025-08,MRSA Screen,32,3,9.4
+Washington,2025-09,MRSA Screen,33,2,6.1
+Washington,2025-10,MRSA Screen,34,4,11.8
+Washington,2025-11,MRSA Screen,30,3,10.0
+Washington,2025-12,MRSA Screen,35,4,11.4
+Washington,2026-01,MRSA Screen,24,4,16.7
+Washington,2026-02,MRSA Screen,45,4,8.9
+Washington,2026-03,MRSA Screen,38,6,15.8
+Washington,2026-04,MRSA Screen,38,5,13.2
+Salt Lake,2024-05,Escherichia coli,2020,626,31.0
+Salt Lake,2024-06,Escherichia coli,1976,611,30.9
+Salt Lake,2024-07,Escherichia coli,1938,619,31.9
+Salt Lake,2024-08,Escherichia coli,1949,578,29.7
+Salt Lake,2024-09,Escherichia coli,1966,572,29.1
+Salt Lake,2024-10,Escherichia coli,2046,578,28.3
+Salt Lake,2024-11,Escherichia coli,2045,577,28.2
+Salt Lake,2024-12,Escherichia coli,2106,650,30.9
+Salt Lake,2025-01,Escherichia coli,1925,570,29.6
+Salt Lake,2025-02,Escherichia coli,2024,638,31.5
+Salt Lake,2025-03,Escherichia coli,1968,615,31.2
+Salt Lake,2025-04,Escherichia coli,1909,581,30.4
+Salt Lake,2025-05,Escherichia coli,1760,540,30.7
+Salt Lake,2025-06,Escherichia coli,1817,547,30.1
+Salt Lake,2025-07,Escherichia coli,1765,561,31.8
+Salt Lake,2025-08,Escherichia coli,1735,546,31.5
+Salt Lake,2025-09,Escherichia coli,1860,560,30.1
+Salt Lake,2025-10,Escherichia coli,2054,619,30.1
+Salt Lake,2025-11,Escherichia coli,1954,608,31.1
+Salt Lake,2025-12,Escherichia coli,1957,609,31.1
+Salt Lake,2026-01,Escherichia coli,1860,581,31.2
+Salt Lake,2026-02,Escherichia coli,1872,572,30.6
+Salt Lake,2026-03,Escherichia coli,1991,587,29.5
+Salt Lake,2026-04,Escherichia coli,1834,556,30.3
+Utah,2024-05,Escherichia coli,1119,338,30.2
+Utah,2024-06,Escherichia coli,1169,357,30.5
+Utah,2024-07,Escherichia coli,1088,333,30.6
+Utah,2024-08,Escherichia coli,1121,359,32.0
+Utah,2024-09,Escherichia coli,1087,329,30.3
+Utah,2024-10,Escherichia coli,1202,363,30.2
+Utah,2024-11,Escherichia coli,1181,371,31.4
+Utah,2024-12,Escherichia coli,1254,375,29.9
+Utah,2025-01,Escherichia coli,1124,341,30.3
+Utah,2025-02,Escherichia coli,1183,350,29.6
+Utah,2025-03,Escherichia coli,1100,336,30.5
+Utah,2025-04,Escherichia coli,1170,321,27.4
+Utah,2025-05,Escherichia coli,1154,352,30.5
+Utah,2025-06,Escherichia coli,1149,362,31.5
+Utah,2025-07,Escherichia coli,1216,359,29.5
+Utah,2025-08,Escherichia coli,1147,373,32.5
+Utah,2025-09,Escherichia coli,1182,376,31.8
+Utah,2025-10,Escherichia coli,1110,354,31.9
+Utah,2025-11,Escherichia coli,1180,339,28.7
+Utah,2025-12,Escherichia coli,1234,358,29.0
+Utah,2026-01,Escherichia coli,1159,354,30.5
+Utah,2026-02,Escherichia coli,1136,337,29.7
+Utah,2026-03,Escherichia coli,1154,341,29.5
+Utah,2026-04,Escherichia coli,1184,353,29.8
+Washington,2024-05,Escherichia coli,346,105,30.3
+Washington,2024-06,Escherichia coli,308,95,30.8
+Washington,2024-07,Escherichia coli,324,106,32.7
+Washington,2024-08,Escherichia coli,331,85,25.7
+Washington,2024-09,Escherichia coli,339,105,31.0
+Washington,2024-10,Escherichia coli,271,91,33.6
+Washington,2024-11,Escherichia coli,298,93,31.2
+Washington,2024-12,Escherichia coli,311,95,30.5
+Washington,2025-01,Escherichia coli,326,105,32.2
+Washington,2025-02,Escherichia coli,306,105,34.3
+Washington,2025-03,Escherichia coli,305,89,29.2
+Washington,2025-04,Escherichia coli,303,99,32.7
+Washington,2025-05,Escherichia coli,353,105,29.7
+Washington,2025-06,Escherichia coli,318,109,34.3
+Washington,2025-07,Escherichia coli,319,88,27.6
+Washington,2025-08,Escherichia coli,352,113,32.1
+Washington,2025-09,Escherichia coli,358,102,28.5
+Washington,2025-10,Escherichia coli,294,82,27.9
+Washington,2025-11,Escherichia coli,335,114,34.0
+Washington,2025-12,Escherichia coli,329,115,35.0
+Washington,2026-01,Escherichia coli,333,100,30.0
+Washington,2026-02,Escherichia coli,344,97,28.2
+Washington,2026-03,Escherichia coli,312,108,34.6
+Washington,2026-04,Escherichia coli,313,88,28.1
+Salt Lake,2024-05,Staphylococcus aureus,3001,188,6.3
+Salt Lake,2024-06,Staphylococcus aureus,2825,165,5.8
+Salt Lake,2024-07,Staphylococcus aureus,2739,137,5.0
+Salt Lake,2024-08,Staphylococcus aureus,2837,184,6.5
+Salt Lake,2024-09,Staphylococcus aureus,2893,188,6.5
+Salt Lake,2024-10,Staphylococcus aureus,3116,179,5.7
+Salt Lake,2024-11,Staphylococcus aureus,3082,174,5.6
+Salt Lake,2024-12,Staphylococcus aureus,3241,206,6.4
+Salt Lake,2025-01,Staphylococcus aureus,2874,169,5.9
+Salt Lake,2025-02,Staphylococcus aureus,3038,188,6.2
+Salt Lake,2025-03,Staphylococcus aureus,2959,181,6.1
+Salt Lake,2025-04,Staphylococcus aureus,2854,173,6.1
+Salt Lake,2025-05,Staphylococcus aureus,2579,142,5.5
+Salt Lake,2025-06,Staphylococcus aureus,2594,139,5.4
+Salt Lake,2025-07,Staphylococcus aureus,2529,153,6.0
+Salt Lake,2025-08,Staphylococcus aureus,2566,146,5.7
+Salt Lake,2025-09,Staphylococcus aureus,2739,177,6.5
+Salt Lake,2025-10,Staphylococcus aureus,3169,196,6.2
+Salt Lake,2025-11,Staphylococcus aureus,2990,180,6.0
+Salt Lake,2025-12,Staphylococcus aureus,2941,188,6.4
+Salt Lake,2026-01,Staphylococcus aureus,2842,163,5.7
+Salt Lake,2026-02,Staphylococcus aureus,2871,191,6.7
+Salt Lake,2026-03,Staphylococcus aureus,3050,172,5.6
+Salt Lake,2026-04,Staphylococcus aureus,2744,150,5.5
+Utah,2024-05,Staphylococcus aureus,1620,126,7.8
+Utah,2024-06,Staphylococcus aureus,1674,106,6.3
+Utah,2024-07,Staphylococcus aureus,1572,96,6.1
+Utah,2024-08,Staphylococcus aureus,1646,105,6.4
+Utah,2024-09,Staphylococcus aureus,1582,111,7.0
+Utah,2024-10,Staphylococcus aureus,1779,132,7.4
+Utah,2024-11,Staphylococcus aureus,1779,104,5.8
+Utah,2024-12,Staphylococcus aureus,1854,112,6.0
+Utah,2025-01,Staphylococcus aureus,1710,104,6.1
+Utah,2025-02,Staphylococcus aureus,1782,122,6.8
+Utah,2025-03,Staphylococcus aureus,1656,116,7.0
+Utah,2025-04,Staphylococcus aureus,1762,137,7.8
+Utah,2025-05,Staphylococcus aureus,1642,101,6.2
+Utah,2025-06,Staphylococcus aureus,1618,110,6.8
+Utah,2025-07,Staphylococcus aureus,1720,100,5.8
+Utah,2025-08,Staphylococcus aureus,1684,97,5.8
+Utah,2025-09,Staphylococcus aureus,1767,132,7.5
+Utah,2025-10,Staphylococcus aureus,1668,120,7.2
+Utah,2025-11,Staphylococcus aureus,1807,121,6.7
+Utah,2025-12,Staphylococcus aureus,1885,132,7.0
+Utah,2026-01,Staphylococcus aureus,1740,111,6.4
+Utah,2026-02,Staphylococcus aureus,1674,115,6.9
+Utah,2026-03,Staphylococcus aureus,1754,122,7.0
+Utah,2026-04,Staphylococcus aureus,1767,115,6.5
+Washington,2024-05,Staphylococcus aureus,492,40,8.1
+Washington,2024-06,Staphylococcus aureus,455,35,7.7
+Washington,2024-07,Staphylococcus aureus,471,23,4.9
+Washington,2024-08,Staphylococcus aureus,475,33,6.9
+Washington,2024-09,Staphylococcus aureus,497,34,6.8
+Washington,2024-10,Staphylococcus aureus,451,42,9.3
+Washington,2024-11,Staphylococcus aureus,472,35,7.4
+Washington,2024-12,Staphylococcus aureus,479,49,10.2
+Washington,2025-01,Staphylococcus aureus,476,22,4.6
+Washington,2025-02,Staphylococcus aureus,447,32,7.2
+Washington,2025-03,Staphylococcus aureus,474,29,6.1
+Washington,2025-04,Staphylococcus aureus,455,24,5.3
+Washington,2025-05,Staphylococcus aureus,507,36,7.1
+Washington,2025-06,Staphylococcus aureus,473,37,7.8
+Washington,2025-07,Staphylococcus aureus,457,31,6.8
+Washington,2025-08,Staphylococcus aureus,516,34,6.6
+Washington,2025-09,Staphylococcus aureus,515,36,7.0
+Washington,2025-10,Staphylococcus aureus,491,35,7.1
+Washington,2025-11,Staphylococcus aureus,508,38,7.5
+Washington,2025-12,Staphylococcus aureus,502,38,7.6
+Washington,2026-01,Staphylococcus aureus,512,33,6.4
+Washington,2026-02,Staphylococcus aureus,519,41,7.9
+Washington,2026-03,Staphylococcus aureus,485,33,6.8
+Washington,2026-04,Staphylococcus aureus,495,37,7.5
+Salt Lake,2024-05,MRSA,3001,140,4.7
+Salt Lake,2024-06,MRSA,2825,118,4.2
+Salt Lake,2024-07,MRSA,2739,114,4.2
+Salt Lake,2024-08,MRSA,2837,118,4.2
+Salt Lake,2024-09,MRSA,2893,123,4.3
+Salt Lake,2024-10,MRSA,3116,151,4.8
+Salt Lake,2024-11,MRSA,3082,137,4.4
+Salt Lake,2024-12,MRSA,3241,160,4.9
+Salt Lake,2025-01,MRSA,2874,107,3.7
+Salt Lake,2025-02,MRSA,3038,109,3.6
+Salt Lake,2025-03,MRSA,2959,126,4.3
+Salt Lake,2025-04,MRSA,2854,98,3.4
+Salt Lake,2025-05,MRSA,2579,111,4.3
+Salt Lake,2025-06,MRSA,2594,108,4.2
+Salt Lake,2025-07,MRSA,2529,111,4.4
+Salt Lake,2025-08,MRSA,2566,104,4.1
+Salt Lake,2025-09,MRSA,2739,111,4.1
+Salt Lake,2025-10,MRSA,3169,125,3.9
+Salt Lake,2025-11,MRSA,2990,113,3.8
+Salt Lake,2025-12,MRSA,2941,125,4.3
+Salt Lake,2026-01,MRSA,2842,112,3.9
+Salt Lake,2026-02,MRSA,2871,124,4.3
+Salt Lake,2026-03,MRSA,3050,134,4.4
+Salt Lake,2026-04,MRSA,2744,108,3.9
+Utah,2024-05,MRSA,1620,53,3.3
+Utah,2024-06,MRSA,1674,56,3.3
+Utah,2024-07,MRSA,1572,66,4.2
+Utah,2024-08,MRSA,1646,63,3.8
+Utah,2024-09,MRSA,1582,72,4.6
+Utah,2024-10,MRSA,1779,62,3.5
+Utah,2024-11,MRSA,1779,64,3.6
+Utah,2024-12,MRSA,1854,63,3.4
+Utah,2025-01,MRSA,1710,61,3.6
+Utah,2025-02,MRSA,1782,68,3.8
+Utah,2025-03,MRSA,1656,54,3.3
+Utah,2025-04,MRSA,1762,70,4.0
+Utah,2025-05,MRSA,1642,58,3.5
+Utah,2025-06,MRSA,1618,65,4.0
+Utah,2025-07,MRSA,1720,67,3.9
+Utah,2025-08,MRSA,1684,58,3.4
+Utah,2025-09,MRSA,1767,56,3.2
+Utah,2025-10,MRSA,1668,57,3.4
+Utah,2025-11,MRSA,1807,66,3.7
+Utah,2025-12,MRSA,1885,70,3.7
+Utah,2026-01,MRSA,1740,57,3.3
+Utah,2026-02,MRSA,1674,61,3.6
+Utah,2026-03,MRSA,1754,70,4.0
+Utah,2026-04,MRSA,1767,76,4.3
+Washington,2024-05,MRSA,492,16,3.3
+Washington,2024-06,MRSA,455,19,4.2
+Washington,2024-07,MRSA,471,12,2.5
+Washington,2024-08,MRSA,475,13,2.7
+Washington,2024-09,MRSA,497,20,4.0
+Washington,2024-10,MRSA,451,8,1.8
+Washington,2024-11,MRSA,472,12,2.5
+Washington,2024-12,MRSA,479,10,2.1
+Washington,2025-01,MRSA,476,19,4.0
+Washington,2025-02,MRSA,447,12,2.7
+Washington,2025-03,MRSA,474,15,3.2
+Washington,2025-04,MRSA,455,13,2.9
+Washington,2025-05,MRSA,507,14,2.8
+Washington,2025-06,MRSA,473,16,3.4
+Washington,2025-07,MRSA,457,9,2.0
+Washington,2025-08,MRSA,516,16,3.1
+Washington,2025-09,MRSA,515,12,2.3
+Washington,2025-10,MRSA,491,19,3.9
+Washington,2025-11,MRSA,508,17,3.3
+Washington,2025-12,MRSA,502,15,3.0
+Washington,2026-01,MRSA,512,7,1.4
+Washington,2026-02,MRSA,519,18,3.5
+Washington,2026-03,MRSA,485,13,2.7
+Washington,2026-04,MRSA,495,14,2.8
+Salt Lake,2024-05,Klebsiella pneumoniae,2364,182,7.7
+Salt Lake,2024-06,Klebsiella pneumoniae,2299,191,8.3
+Salt Lake,2024-07,Klebsiella pneumoniae,2224,152,6.8
+Salt Lake,2024-08,Klebsiella pneumoniae,2277,177,7.8
+Salt Lake,2024-09,Klebsiella pneumoniae,2353,192,8.2
+Salt Lake,2024-10,Klebsiella pneumoniae,2567,183,7.1
+Salt Lake,2024-11,Klebsiella pneumoniae,2556,201,7.9
+Salt Lake,2024-12,Klebsiella pneumoniae,2667,203,7.6
+Salt Lake,2025-01,Klebsiella pneumoniae,2395,186,7.8
+Salt Lake,2025-02,Klebsiella pneumoniae,2550,190,7.5
+Salt Lake,2025-03,Klebsiella pneumoniae,2433,198,8.1
+Salt Lake,2025-04,Klebsiella pneumoniae,2294,185,8.1
+Salt Lake,2025-05,Klebsiella pneumoniae,2081,159,7.6
+Salt Lake,2025-06,Klebsiella pneumoniae,2110,142,6.7
+Salt Lake,2025-07,Klebsiella pneumoniae,1996,160,8.0
+Salt Lake,2025-08,Klebsiella pneumoniae,2059,166,8.1
+Salt Lake,2025-09,Klebsiella pneumoniae,2202,168,7.6
+Salt Lake,2025-10,Klebsiella pneumoniae,2598,213,8.2
+Salt Lake,2025-11,Klebsiella pneumoniae,2427,182,7.5
+Salt Lake,2025-12,Klebsiella pneumoniae,2441,197,8.1
+Salt Lake,2026-01,Klebsiella pneumoniae,2378,174,7.3
+Salt Lake,2026-02,Klebsiella pneumoniae,2372,183,7.7
+Salt Lake,2026-03,Klebsiella pneumoniae,2484,200,8.1
+Salt Lake,2026-04,Klebsiella pneumoniae,2248,165,7.3
+Utah,2024-05,Klebsiella pneumoniae,1322,103,7.8
+Utah,2024-06,Klebsiella pneumoniae,1368,95,6.9
+Utah,2024-07,Klebsiella pneumoniae,1264,105,8.3
+Utah,2024-08,Klebsiella pneumoniae,1340,87,6.5
+Utah,2024-09,Klebsiella pneumoniae,1293,123,9.5
+Utah,2024-10,Klebsiella pneumoniae,1478,104,7.0
+Utah,2024-11,Klebsiella pneumoniae,1480,101,6.8
+Utah,2024-12,Klebsiella pneumoniae,1571,135,8.6
+Utah,2025-01,Klebsiella pneumoniae,1413,124,8.8
+Utah,2025-02,Klebsiella pneumoniae,1486,118,7.9
+Utah,2025-03,Klebsiella pneumoniae,1354,107,7.9
+Utah,2025-04,Klebsiella pneumoniae,1412,118,8.4
+Utah,2025-05,Klebsiella pneumoniae,1355,98,7.2
+Utah,2025-06,Klebsiella pneumoniae,1307,101,7.7
+Utah,2025-07,Klebsiella pneumoniae,1387,90,6.5
+Utah,2025-08,Klebsiella pneumoniae,1367,103,7.5
+Utah,2025-09,Klebsiella pneumoniae,1415,112,7.9
+Utah,2025-10,Klebsiella pneumoniae,1392,100,7.2
+Utah,2025-11,Klebsiella pneumoniae,1508,118,7.8
+Utah,2025-12,Klebsiella pneumoniae,1542,124,8.0
+Utah,2026-01,Klebsiella pneumoniae,1435,115,8.0
+Utah,2026-02,Klebsiella pneumoniae,1420,118,8.3
+Utah,2026-03,Klebsiella pneumoniae,1436,107,7.5
+Utah,2026-04,Klebsiella pneumoniae,1453,101,7.0
+Washington,2024-05,Klebsiella pneumoniae,403,33,8.2
+Washington,2024-06,Klebsiella pneumoniae,357,27,7.6
+Washington,2024-07,Klebsiella pneumoniae,367,30,8.2
+Washington,2024-08,Klebsiella pneumoniae,391,34,8.7
+Washington,2024-09,Klebsiella pneumoniae,410,31,7.6
+Washington,2024-10,Klebsiella pneumoniae,351,37,10.5
+Washington,2024-11,Klebsiella pneumoniae,376,25,6.6
+Washington,2024-12,Klebsiella pneumoniae,399,33,8.3
+Washington,2025-01,Klebsiella pneumoniae,400,32,8.0
+Washington,2025-02,Klebsiella pneumoniae,373,25,6.7
+Washington,2025-03,Klebsiella pneumoniae,383,28,7.3
+Washington,2025-04,Klebsiella pneumoniae,369,36,9.8
+Washington,2025-05,Klebsiella pneumoniae,418,29,6.9
+Washington,2025-06,Klebsiella pneumoniae,361,21,5.8
+Washington,2025-07,Klebsiella pneumoniae,362,25,6.9
+Washington,2025-08,Klebsiella pneumoniae,406,37,9.1
+Washington,2025-09,Klebsiella pneumoniae,439,40,9.1
+Washington,2025-10,Klebsiella pneumoniae,382,34,8.9
+Washington,2025-11,Klebsiella pneumoniae,417,34,8.2
+Washington,2025-12,Klebsiella pneumoniae,424,28,6.6
+Washington,2026-01,Klebsiella pneumoniae,426,36,8.5
+Washington,2026-02,Klebsiella pneumoniae,438,38,8.7
+Washington,2026-03,Klebsiella pneumoniae,389,27,6.9
+Washington,2026-04,Klebsiella pneumoniae,394,23,5.8
+Salt Lake,2024-05,Pseudomonas aeruginosa,2385,161,6.8
+Salt Lake,2024-06,Pseudomonas aeruginosa,2234,142,6.4
+Salt Lake,2024-07,Pseudomonas aeruginosa,2120,141,6.7
+Salt Lake,2024-08,Pseudomonas aeruginosa,2190,140,6.4
+Salt Lake,2024-09,Pseudomonas aeruginosa,2276,130,5.7
+Salt Lake,2024-10,Pseudomonas aeruginosa,2425,171,7.1
+Salt Lake,2024-11,Pseudomonas aeruginosa,2412,175,7.3
+Salt Lake,2024-12,Pseudomonas aeruginosa,2568,173,6.7
+Salt Lake,2025-01,Pseudomonas aeruginosa,2267,170,7.5
+Salt Lake,2025-02,Pseudomonas aeruginosa,2433,158,6.5
+Salt Lake,2025-03,Pseudomonas aeruginosa,2342,168,7.2
+Salt Lake,2025-04,Pseudomonas aeruginosa,2212,153,6.9
+Salt Lake,2025-05,Pseudomonas aeruginosa,2031,123,6.1
+Salt Lake,2025-06,Pseudomonas aeruginosa,2000,132,6.6
+Salt Lake,2025-07,Pseudomonas aeruginosa,1974,99,5.0
+Salt Lake,2025-08,Pseudomonas aeruginosa,2049,138,6.7
+Salt Lake,2025-09,Pseudomonas aeruginosa,2178,129,5.9
+Salt Lake,2025-10,Pseudomonas aeruginosa,2523,175,6.9
+Salt Lake,2025-11,Pseudomonas aeruginosa,2375,164,6.9
+Salt Lake,2025-12,Pseudomonas aeruginosa,2342,159,6.8
+Salt Lake,2026-01,Pseudomonas aeruginosa,2257,167,7.4
+Salt Lake,2026-02,Pseudomonas aeruginosa,2279,152,6.7
+Salt Lake,2026-03,Pseudomonas aeruginosa,2431,177,7.3
+Salt Lake,2026-04,Pseudomonas aeruginosa,2153,129,6.0
+Utah,2024-05,Pseudomonas aeruginosa,1275,81,6.4
+Utah,2024-06,Pseudomonas aeruginosa,1320,78,5.9
+Utah,2024-07,Pseudomonas aeruginosa,1234,70,5.7
+Utah,2024-08,Pseudomonas aeruginosa,1293,96,7.4
+Utah,2024-09,Pseudomonas aeruginosa,1234,84,6.8
+Utah,2024-10,Pseudomonas aeruginosa,1365,95,7.0
+Utah,2024-11,Pseudomonas aeruginosa,1403,99,7.1
+Utah,2024-12,Pseudomonas aeruginosa,1468,106,7.2
+Utah,2025-01,Pseudomonas aeruginosa,1373,83,6.0
+Utah,2025-02,Pseudomonas aeruginosa,1417,91,6.4
+Utah,2025-03,Pseudomonas aeruginosa,1339,80,6.0
+Utah,2025-04,Pseudomonas aeruginosa,1360,98,7.2
+Utah,2025-05,Pseudomonas aeruginosa,1295,75,5.8
+Utah,2025-06,Pseudomonas aeruginosa,1277,80,6.3
+Utah,2025-07,Pseudomonas aeruginosa,1311,91,6.9
+Utah,2025-08,Pseudomonas aeruginosa,1301,64,4.9
+Utah,2025-09,Pseudomonas aeruginosa,1414,93,6.6
+Utah,2025-10,Pseudomonas aeruginosa,1350,103,7.6
+Utah,2025-11,Pseudomonas aeruginosa,1414,100,7.1
+Utah,2025-12,Pseudomonas aeruginosa,1483,107,7.2
+Utah,2026-01,Pseudomonas aeruginosa,1374,89,6.5
+Utah,2026-02,Pseudomonas aeruginosa,1324,89,6.7
+Utah,2026-03,Pseudomonas aeruginosa,1402,78,5.6
+Utah,2026-04,Pseudomonas aeruginosa,1372,84,6.1
+Washington,2024-05,Pseudomonas aeruginosa,387,28,7.2
+Washington,2024-06,Pseudomonas aeruginosa,357,31,8.7
+Washington,2024-07,Pseudomonas aeruginosa,369,29,7.9
+Washington,2024-08,Pseudomonas aeruginosa,384,34,8.9
+Washington,2024-09,Pseudomonas aeruginosa,385,28,7.3
+Washington,2024-10,Pseudomonas aeruginosa,385,23,6.0
+Washington,2024-11,Pseudomonas aeruginosa,379,22,5.8
+Washington,2024-12,Pseudomonas aeruginosa,386,31,8.0
+Washington,2025-01,Pseudomonas aeruginosa,361,31,8.6
+Washington,2025-02,Pseudomonas aeruginosa,357,21,5.9
+Washington,2025-03,Pseudomonas aeruginosa,372,28,7.5
+Washington,2025-04,Pseudomonas aeruginosa,359,27,7.5
+Washington,2025-05,Pseudomonas aeruginosa,387,20,5.2
+Washington,2025-06,Pseudomonas aeruginosa,367,25,6.8
+Washington,2025-07,Pseudomonas aeruginosa,366,24,6.6
+Washington,2025-08,Pseudomonas aeruginosa,417,26,6.2
+Washington,2025-09,Pseudomonas aeruginosa,401,24,6.0
+Washington,2025-10,Pseudomonas aeruginosa,400,32,8.0
+Washington,2025-11,Pseudomonas aeruginosa,415,31,7.5
+Washington,2025-12,Pseudomonas aeruginosa,404,21,5.2
+Washington,2026-01,Pseudomonas aeruginosa,409,31,7.6
+Washington,2026-02,Pseudomonas aeruginosa,400,30,7.5
+Washington,2026-03,Pseudomonas aeruginosa,398,27,6.8
+Washington,2026-04,Pseudomonas aeruginosa,396,28,7.1
+Salt Lake,2024-05,Enterococcus species,2020,106,5.2
+Salt Lake,2024-06,Enterococcus species,1976,113,5.7
+Salt Lake,2024-07,Enterococcus species,1938,109,5.6
+Salt Lake,2024-08,Enterococcus species,1949,127,6.5
+Salt Lake,2024-09,Enterococcus species,1966,113,5.7
+Salt Lake,2024-10,Enterococcus species,2046,79,3.9
+Salt Lake,2024-11,Enterococcus species,2045,112,5.5
+Salt Lake,2024-12,Enterococcus species,2106,109,5.2
+Salt Lake,2025-01,Enterococcus species,1925,113,5.9
+Salt Lake,2025-02,Enterococcus species,2024,108,5.3
+Salt Lake,2025-03,Enterococcus species,1968,105,5.3
+Salt Lake,2025-04,Enterococcus species,1909,103,5.4
+Salt Lake,2025-05,Enterococcus species,1760,107,6.1
+Salt Lake,2025-06,Enterococcus species,1817,91,5.0
+Salt Lake,2025-07,Enterococcus species,1765,99,5.6
+Salt Lake,2025-08,Enterococcus species,1735,104,6.0
+Salt Lake,2025-09,Enterococcus species,1860,93,5.0
+Salt Lake,2025-10,Enterococcus species,2054,99,4.8
+Salt Lake,2025-11,Enterococcus species,1954,105,5.4
+Salt Lake,2025-12,Enterococcus species,1957,105,5.4
+Salt Lake,2026-01,Enterococcus species,1860,100,5.4
+Salt Lake,2026-02,Enterococcus species,1872,98,5.2
+Salt Lake,2026-03,Enterococcus species,1991,98,4.9
+Salt Lake,2026-04,Enterococcus species,1834,105,5.7
+Utah,2024-05,Enterococcus species,1119,59,5.3
+Utah,2024-06,Enterococcus species,1169,76,6.5
+Utah,2024-07,Enterococcus species,1088,60,5.5
+Utah,2024-08,Enterococcus species,1121,59,5.3
+Utah,2024-09,Enterococcus species,1087,65,6.0
+Utah,2024-10,Enterococcus species,1202,64,5.3
+Utah,2024-11,Enterococcus species,1181,49,4.1
+Utah,2024-12,Enterococcus species,1254,65,5.2
+Utah,2025-01,Enterococcus species,1124,81,7.2
+Utah,2025-02,Enterococcus species,1183,73,6.2
+Utah,2025-03,Enterococcus species,1100,72,6.5
+Utah,2025-04,Enterococcus species,1170,62,5.3
+Utah,2025-05,Enterococcus species,1154,59,5.1
+Utah,2025-06,Enterococcus species,1149,71,6.2
+Utah,2025-07,Enterococcus species,1216,57,4.7
+Utah,2025-08,Enterococcus species,1147,53,4.6
+Utah,2025-09,Enterococcus species,1182,64,5.4
+Utah,2025-10,Enterococcus species,1110,59,5.3
+Utah,2025-11,Enterococcus species,1180,77,6.5
+Utah,2025-12,Enterococcus species,1234,73,5.9
+Utah,2026-01,Enterococcus species,1159,48,4.1
+Utah,2026-02,Enterococcus species,1136,66,5.8
+Utah,2026-03,Enterococcus species,1154,75,6.5
+Utah,2026-04,Enterococcus species,1184,73,6.2
+Washington,2024-05,Enterococcus species,346,16,4.6
+Washington,2024-06,Enterococcus species,308,16,5.2
+Washington,2024-07,Enterococcus species,324,13,4.0
+Washington,2024-08,Enterococcus species,331,24,7.3
+Washington,2024-09,Enterococcus species,339,16,4.7
+Washington,2024-10,Enterococcus species,271,17,6.3
+Washington,2024-11,Enterococcus species,298,20,6.7
+Washington,2024-12,Enterococcus species,311,18,5.8
+Washington,2025-01,Enterococcus species,326,18,5.5
+Washington,2025-02,Enterococcus species,306,17,5.6
+Washington,2025-03,Enterococcus species,305,20,6.6
+Washington,2025-04,Enterococcus species,303,13,4.3
+Washington,2025-05,Enterococcus species,353,18,5.1
+Washington,2025-06,Enterococcus species,318,14,4.4
+Washington,2025-07,Enterococcus species,319,26,8.2
+Washington,2025-08,Enterococcus species,352,20,5.7
+Washington,2025-09,Enterococcus species,358,22,6.1
+Washington,2025-10,Enterococcus species,294,13,4.4
+Washington,2025-11,Enterococcus species,335,19,5.7
+Washington,2025-12,Enterococcus species,329,14,4.3
+Washington,2026-01,Enterococcus species,333,17,5.1
+Washington,2026-02,Enterococcus species,344,11,3.2
+Washington,2026-03,Enterococcus species,312,13,4.2
+Washington,2026-04,Enterococcus species,313,23,7.3
+Salt Lake,2024-05,Streptococcus pneumoniae,960,40,4.2
+Salt Lake,2024-06,Streptococcus pneumoniae,914,44,4.8
+Salt Lake,2024-07,Streptococcus pneumoniae,905,39,4.3
+Salt Lake,2024-08,Streptococcus pneumoniae,975,36,3.7
+Salt Lake,2024-09,Streptococcus pneumoniae,1004,46,4.6
+Salt Lake,2024-10,Streptococcus pneumoniae,1212,70,5.8
+Salt Lake,2024-11,Streptococcus pneumoniae,1181,57,4.8
+Salt Lake,2024-12,Streptococcus pneumoniae,1234,58,4.7
+Salt Lake,2025-01,Streptococcus pneumoniae,1077,63,5.8
+Salt Lake,2025-02,Streptococcus pneumoniae,1131,66,5.8
+Salt Lake,2025-03,Streptococcus pneumoniae,1082,52,4.8
+Salt Lake,2025-04,Streptococcus pneumoniae,1027,54,5.3
+Salt Lake,2025-05,Streptococcus pneumoniae,869,34,3.9
+Salt Lake,2025-06,Streptococcus pneumoniae,887,43,4.8
+Salt Lake,2025-07,Streptococcus pneumoniae,786,33,4.2
+Salt Lake,2025-08,Streptococcus pneumoniae,841,44,5.2
+Salt Lake,2025-09,Streptococcus pneumoniae,903,53,5.9
+Salt Lake,2025-10,Streptococcus pneumoniae,1190,70,5.9
+Salt Lake,2025-11,Streptococcus pneumoniae,1088,54,5.0
+Salt Lake,2025-12,Streptococcus pneumoniae,1083,52,4.8
+Salt Lake,2026-01,Streptococcus pneumoniae,1103,74,6.7
+Salt Lake,2026-02,Streptococcus pneumoniae,1092,44,4.0
+Salt Lake,2026-03,Streptococcus pneumoniae,1112,60,5.4
+Salt Lake,2026-04,Streptococcus pneumoniae,1005,57,5.7
+Utah,2024-05,Streptococcus pneumoniae,548,22,4.0
+Utah,2024-06,Streptococcus pneumoniae,553,26,4.7
+Utah,2024-07,Streptococcus pneumoniae,514,30,5.8
+Utah,2024-08,Streptococcus pneumoniae,572,31,5.4
+Utah,2024-09,Streptococcus pneumoniae,554,18,3.2
+Utah,2024-10,Streptococcus pneumoniae,690,32,4.6
+Utah,2024-11,Streptococcus pneumoniae,675,36,5.3
+Utah,2024-12,Streptococcus pneumoniae,703,38,5.4
+Utah,2025-01,Streptococcus pneumoniae,626,33,5.3
+Utah,2025-02,Streptococcus pneumoniae,668,35,5.2
+Utah,2025-03,Streptococcus pneumoniae,571,32,5.6
+Utah,2025-04,Streptococcus pneumoniae,644,21,3.3
+Utah,2025-05,Streptococcus pneumoniae,548,21,3.8
+Utah,2025-06,Streptococcus pneumoniae,499,19,3.8
+Utah,2025-07,Streptococcus pneumoniae,580,20,3.4
+Utah,2025-08,Streptococcus pneumoniae,603,20,3.3
+Utah,2025-09,Streptococcus pneumoniae,586,33,5.6
+Utah,2025-10,Streptococcus pneumoniae,600,27,4.5
+Utah,2025-11,Streptococcus pneumoniae,721,45,6.2
+Utah,2025-12,Streptococcus pneumoniae,710,44,6.2
+Utah,2026-01,Streptococcus pneumoniae,642,34,5.3
+Utah,2026-02,Streptococcus pneumoniae,634,29,4.6
+Utah,2026-03,Streptococcus pneumoniae,634,34,5.4
+Utah,2026-04,Streptococcus pneumoniae,664,34,5.1
+Washington,2024-05,Streptococcus pneumoniae,162,8,4.9
+Washington,2024-06,Streptococcus pneumoniae,147,8,5.4
+Washington,2024-07,Streptococcus pneumoniae,145,5,3.4
+Washington,2024-08,Streptococcus pneumoniae,151,8,5.3
+Washington,2024-09,Streptococcus pneumoniae,183,10,5.5
+Washington,2024-10,Streptococcus pneumoniae,146,10,6.8
+Washington,2024-11,Streptococcus pneumoniae,171,11,6.4
+Washington,2024-12,Streptococcus pneumoniae,181,13,7.2
+Washington,2025-01,Streptococcus pneumoniae,189,8,4.2
+Washington,2025-02,Streptococcus pneumoniae,157,11,7.0
+Washington,2025-03,Streptococcus pneumoniae,180,13,7.2
+Washington,2025-04,Streptococcus pneumoniae,162,6,3.7
+Washington,2025-05,Streptococcus pneumoniae,185,12,6.5
+Washington,2025-06,Streptococcus pneumoniae,149,4,2.7
+Washington,2025-07,Streptococcus pneumoniae,134,4,3.0
+Washington,2025-08,Streptococcus pneumoniae,153,6,3.9
+Washington,2025-09,Streptococcus pneumoniae,195,8,4.1
+Washington,2025-10,Streptococcus pneumoniae,179,13,7.3
+Washington,2025-11,Streptococcus pneumoniae,175,14,8.0
+Washington,2025-12,Streptococcus pneumoniae,193,7,3.6
+Washington,2026-01,Streptococcus pneumoniae,196,13,6.6
+Washington,2026-02,Streptococcus pneumoniae,213,11,5.2
+Washington,2026-03,Streptococcus pneumoniae,164,11,6.7
+Washington,2026-04,Streptococcus pneumoniae,180,11,6.1
+Salt Lake,2024-05,Haemophilus influenzae,960,23,2.4
+Salt Lake,2024-06,Haemophilus influenzae,914,30,3.3
+Salt Lake,2024-07,Haemophilus influenzae,905,20,2.2
+Salt Lake,2024-08,Haemophilus influenzae,975,31,3.2
+Salt Lake,2024-09,Haemophilus influenzae,1004,41,4.1
+Salt Lake,2024-10,Haemophilus influenzae,1212,41,3.4
+Salt Lake,2024-11,Haemophilus influenzae,1181,41,3.5
+Salt Lake,2024-12,Haemophilus influenzae,1234,47,3.8
+Salt Lake,2025-01,Haemophilus influenzae,1077,37,3.4
+Salt Lake,2025-02,Haemophilus influenzae,1131,52,4.6
+Salt Lake,2025-03,Haemophilus influenzae,1082,43,4.0
+Salt Lake,2025-04,Haemophilus influenzae,1027,28,2.7
+Salt Lake,2025-05,Haemophilus influenzae,869,32,3.7
+Salt Lake,2025-06,Haemophilus influenzae,887,29,3.3
+Salt Lake,2025-07,Haemophilus influenzae,786,19,2.4
+Salt Lake,2025-08,Haemophilus influenzae,841,35,4.2
+Salt Lake,2025-09,Haemophilus influenzae,903,34,3.8
+Salt Lake,2025-10,Haemophilus influenzae,1190,49,4.1
+Salt Lake,2025-11,Haemophilus influenzae,1088,54,5.0
+Salt Lake,2025-12,Haemophilus influenzae,1083,49,4.5
+Salt Lake,2026-01,Haemophilus influenzae,1103,47,4.3
+Salt Lake,2026-02,Haemophilus influenzae,1092,41,3.8
+Salt Lake,2026-03,Haemophilus influenzae,1112,39,3.5
+Salt Lake,2026-04,Haemophilus influenzae,1005,36,3.6
+Utah,2024-05,Haemophilus influenzae,548,21,3.8
+Utah,2024-06,Haemophilus influenzae,553,14,2.5
+Utah,2024-07,Haemophilus influenzae,514,12,2.3
+Utah,2024-08,Haemophilus influenzae,572,19,3.3
+Utah,2024-09,Haemophilus influenzae,554,24,4.3
+Utah,2024-10,Haemophilus influenzae,690,30,4.3
+Utah,2024-11,Haemophilus influenzae,675,29,4.3
+Utah,2024-12,Haemophilus influenzae,703,24,3.4
+Utah,2025-01,Haemophilus influenzae,626,28,4.5
+Utah,2025-02,Haemophilus influenzae,668,23,3.4
+Utah,2025-03,Haemophilus influenzae,571,25,4.4
+Utah,2025-04,Haemophilus influenzae,644,18,2.8
+Utah,2025-05,Haemophilus influenzae,548,20,3.6
+Utah,2025-06,Haemophilus influenzae,499,12,2.4
+Utah,2025-07,Haemophilus influenzae,580,19,3.3
+Utah,2025-08,Haemophilus influenzae,603,22,3.6
+Utah,2025-09,Haemophilus influenzae,586,23,3.9
+Utah,2025-10,Haemophilus influenzae,600,22,3.7
+Utah,2025-11,Haemophilus influenzae,721,38,5.3
+Utah,2025-12,Haemophilus influenzae,710,24,3.4
+Utah,2026-01,Haemophilus influenzae,642,33,5.1
+Utah,2026-02,Haemophilus influenzae,634,30,4.7
+Utah,2026-03,Haemophilus influenzae,634,31,4.9
+Utah,2026-04,Haemophilus influenzae,664,28,4.2
+Washington,2024-05,Haemophilus influenzae,162,2,1.2
+Washington,2024-06,Haemophilus influenzae,147,7,4.8
+Washington,2024-07,Haemophilus influenzae,145,4,2.8
+Washington,2024-08,Haemophilus influenzae,151,2,1.3
+Washington,2024-09,Haemophilus influenzae,183,6,3.3
+Washington,2024-10,Haemophilus influenzae,146,9,6.2
+Washington,2024-11,Haemophilus influenzae,171,6,3.5
+Washington,2024-12,Haemophilus influenzae,181,5,2.8
+Washington,2025-01,Haemophilus influenzae,189,7,3.7
+Washington,2025-02,Haemophilus influenzae,157,4,2.5
+Washington,2025-03,Haemophilus influenzae,180,11,6.1
+Washington,2025-04,Haemophilus influenzae,162,5,3.1
+Washington,2025-05,Haemophilus influenzae,185,4,2.2
+Washington,2025-06,Haemophilus influenzae,149,2,1.3
+Washington,2025-07,Haemophilus influenzae,134,8,6.0
+Washington,2025-08,Haemophilus influenzae,153,7,4.6
+Washington,2025-09,Haemophilus influenzae,195,7,3.6
+Washington,2025-10,Haemophilus influenzae,179,7,3.9
+Washington,2025-11,Haemophilus influenzae,175,6,3.4
+Washington,2025-12,Haemophilus influenzae,193,10,5.2
+Washington,2026-01,Haemophilus influenzae,196,12,6.1
+Washington,2026-02,Haemophilus influenzae,213,6,2.8
+Washington,2026-03,Haemophilus influenzae,164,11,6.7
+Washington,2026-04,Haemophilus influenzae,180,7,3.9

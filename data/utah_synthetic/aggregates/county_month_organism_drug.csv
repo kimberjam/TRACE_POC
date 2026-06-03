@@ -1,0 +1,3097 @@
+county,year_month,organism,drug,n_tested,n_susceptible,pct_susceptible
+Salt Lake,2024-05,Enterococcus species,Ampicillin,132,100,75.8
+Salt Lake,2024-05,Enterococcus species,Linezolid,132,122,92.4
+Salt Lake,2024-05,Enterococcus species,Nitrofurantoin,132,99,75.0
+Salt Lake,2024-05,Enterococcus species,Vancomycin,132,109,82.6
+Salt Lake,2024-05,Escherichia coli,Amoxicillin-Clavulanate,649,405,62.4
+Salt Lake,2024-05,Escherichia coli,Ampicillin,649,257,39.6
+Salt Lake,2024-05,Escherichia coli,Ceftriaxone,649,563,86.7
+Salt Lake,2024-05,Escherichia coli,Ciprofloxacin,649,461,71.0
+Salt Lake,2024-05,Escherichia coli,Fosfomycin,649,580,89.4
+Salt Lake,2024-05,Escherichia coli,Nitrofurantoin,649,580,89.4
+Salt Lake,2024-05,Escherichia coli,TMP-SMX,649,437,67.3
+Salt Lake,2024-05,Haemophilus influenzae,Amoxicillin,23,19,82.6
+Salt Lake,2024-05,Haemophilus influenzae,Amoxicillin-Clavulanate,23,21,91.3
+Salt Lake,2024-05,Haemophilus influenzae,Azithromycin,23,17,73.9
+Salt Lake,2024-05,Haemophilus influenzae,Ceftriaxone,23,20,87.0
+Salt Lake,2024-05,Haemophilus influenzae,Doxycycline,23,22,95.7
+Salt Lake,2024-05,Klebsiella pneumoniae,Amoxicillin-Clavulanate,182,134,73.6
+Salt Lake,2024-05,Klebsiella pneumoniae,Ceftriaxone,182,147,80.8
+Salt Lake,2024-05,Klebsiella pneumoniae,Ciprofloxacin,182,149,81.9
+Salt Lake,2024-05,Klebsiella pneumoniae,Ertapenem,182,160,87.9
+Salt Lake,2024-05,Klebsiella pneumoniae,Nitrofurantoin,182,62,34.1
+Salt Lake,2024-05,MRSA,Clindamycin,140,94,67.1
+Salt Lake,2024-05,MRSA,Doxycycline,140,122,87.1
+Salt Lake,2024-05,MRSA,Linezolid,140,135,96.4
+Salt Lake,2024-05,MRSA,TMP-SMX,140,124,88.6
+Salt Lake,2024-05,MRSA,Vancomycin,140,133,95.0
+Salt Lake,2024-05,Pseudomonas aeruginosa,Cefepime,166,126,75.9
+Salt Lake,2024-05,Pseudomonas aeruginosa,Ceftazidime,166,135,81.3
+Salt Lake,2024-05,Pseudomonas aeruginosa,Ciprofloxacin,166,123,74.1
+Salt Lake,2024-05,Pseudomonas aeruginosa,Meropenem,166,134,80.7
+Salt Lake,2024-05,Pseudomonas aeruginosa,Piperacillin-Tazobactam,166,131,78.9
+Salt Lake,2024-05,Staphylococcus aureus,Cephalexin,188,175,93.1
+Salt Lake,2024-05,Staphylococcus aureus,Clindamycin,188,140,74.5
+Salt Lake,2024-05,Staphylococcus aureus,Doxycycline,188,170,90.4
+Salt Lake,2024-05,Staphylococcus aureus,Oxacillin,188,182,96.8
+Salt Lake,2024-05,Staphylococcus aureus,TMP-SMX,188,181,96.3
+Salt Lake,2024-05,Staphylococcus aureus,Vancomycin,188,174,92.6
+Salt Lake,2024-05,Streptococcus pneumoniae,Amoxicillin,40,31,77.5
+Salt Lake,2024-05,Streptococcus pneumoniae,Azithromycin,40,21,52.5
+Salt Lake,2024-05,Streptococcus pneumoniae,Ceftriaxone,40,32,80.0
+Salt Lake,2024-05,Streptococcus pneumoniae,Doxycycline,40,33,82.5
+Salt Lake,2024-05,Streptococcus pneumoniae,Levofloxacin,40,37,92.5
+Salt Lake,2024-05,Streptococcus pneumoniae,Penicillin,40,35,87.5
+Salt Lake,2024-06,Enterococcus species,Ampicillin,140,92,65.7
+Salt Lake,2024-06,Enterococcus species,Linezolid,140,132,94.3
+Salt Lake,2024-06,Enterococcus species,Nitrofurantoin,140,103,73.6
+Salt Lake,2024-06,Enterococcus species,Vancomycin,140,106,75.7
+Salt Lake,2024-06,Escherichia coli,Amoxicillin-Clavulanate,633,400,63.2
+Salt Lake,2024-06,Escherichia coli,Ampicillin,633,265,41.9
+Salt Lake,2024-06,Escherichia coli,Ceftriaxone,633,539,85.2
+Salt Lake,2024-06,Escherichia coli,Ciprofloxacin,633,439,69.4
+Salt Lake,2024-06,Escherichia coli,Fosfomycin,633,585,92.4
+Salt Lake,2024-06,Escherichia coli,Nitrofurantoin,633,560,88.5
+Salt Lake,2024-06,Escherichia coli,TMP-SMX,633,430,67.9
+Salt Lake,2024-06,Haemophilus influenzae,Amoxicillin,30,19,63.3
+Salt Lake,2024-06,Haemophilus influenzae,Amoxicillin-Clavulanate,30,27,90.0
+Salt Lake,2024-06,Haemophilus influenzae,Azithromycin,30,25,83.3
+Salt Lake,2024-06,Haemophilus influenzae,Ceftriaxone,30,26,86.7
+Salt Lake,2024-06,Haemophilus influenzae,Doxycycline,30,27,90.0
+Salt Lake,2024-06,Klebsiella pneumoniae,Amoxicillin-Clavulanate,191,144,75.4
+Salt Lake,2024-06,Klebsiella pneumoniae,Ceftriaxone,191,149,78.0
+Salt Lake,2024-06,Klebsiella pneumoniae,Ciprofloxacin,191,140,73.3
+Salt Lake,2024-06,Klebsiella pneumoniae,Ertapenem,191,170,89.0
+Salt Lake,2024-06,Klebsiella pneumoniae,Nitrofurantoin,191,71,37.2
+Salt Lake,2024-06,MRSA,Clindamycin,118,74,62.7
+Salt Lake,2024-06,MRSA,Doxycycline,118,106,89.8
+Salt Lake,2024-06,MRSA,Linezolid,118,112,94.9
+Salt Lake,2024-06,MRSA,TMP-SMX,118,101,85.6
+Salt Lake,2024-06,MRSA,Vancomycin,118,106,89.8
+Salt Lake,2024-06,Pseudomonas aeruginosa,Cefepime,151,112,74.2
+Salt Lake,2024-06,Pseudomonas aeruginosa,Ceftazidime,151,125,82.8
+Salt Lake,2024-06,Pseudomonas aeruginosa,Ciprofloxacin,151,114,75.5
+Salt Lake,2024-06,Pseudomonas aeruginosa,Meropenem,151,123,81.5
+Salt Lake,2024-06,Pseudomonas aeruginosa,Piperacillin-Tazobactam,151,121,80.1
+Salt Lake,2024-06,Staphylococcus aureus,Cephalexin,165,155,93.9
+Salt Lake,2024-06,Staphylococcus aureus,Clindamycin,165,137,83.0
+Salt Lake,2024-06,Staphylococcus aureus,Doxycycline,165,150,90.9
+Salt Lake,2024-06,Staphylococcus aureus,Oxacillin,165,150,90.9
+Salt Lake,2024-06,Staphylococcus aureus,TMP-SMX,165,149,90.3
+Salt Lake,2024-06,Staphylococcus aureus,Vancomycin,165,159,96.4
+Salt Lake,2024-06,Streptococcus pneumoniae,Amoxicillin,44,36,81.8
+Salt Lake,2024-06,Streptococcus pneumoniae,Azithromycin,44,29,65.9
+Salt Lake,2024-06,Streptococcus pneumoniae,Ceftriaxone,44,40,90.9
+Salt Lake,2024-06,Streptococcus pneumoniae,Doxycycline,44,32,72.7
+Salt Lake,2024-06,Streptococcus pneumoniae,Levofloxacin,44,38,86.4
+Salt Lake,2024-06,Streptococcus pneumoniae,Penicillin,44,38,86.4
+Salt Lake,2024-07,Enterococcus species,Ampicillin,144,95,66.0
+Salt Lake,2024-07,Enterococcus species,Linezolid,144,138,95.8
+Salt Lake,2024-07,Enterococcus species,Nitrofurantoin,144,112,77.8
+Salt Lake,2024-07,Enterococcus species,Vancomycin,144,113,78.5
+Salt Lake,2024-07,Escherichia coli,Amoxicillin-Clavulanate,659,407,61.8
+Salt Lake,2024-07,Escherichia coli,Ampicillin,659,260,39.5
+Salt Lake,2024-07,Escherichia coli,Ceftriaxone,659,562,85.3
+Salt Lake,2024-07,Escherichia coli,Ciprofloxacin,659,472,71.6
+Salt Lake,2024-07,Escherichia coli,Fosfomycin,659,603,91.5
+Salt Lake,2024-07,Escherichia coli,Nitrofurantoin,659,598,90.7
+Salt Lake,2024-07,Escherichia coli,TMP-SMX,659,444,67.4
+Salt Lake,2024-07,Haemophilus influenzae,Amoxicillin,20,16,80.0
+Salt Lake,2024-07,Haemophilus influenzae,Amoxicillin-Clavulanate,20,17,85.0
+Salt Lake,2024-07,Haemophilus influenzae,Azithromycin,20,20,100.0
+Salt Lake,2024-07,Haemophilus influenzae,Ceftriaxone,20,17,85.0
+Salt Lake,2024-07,Haemophilus influenzae,Doxycycline,20,18,90.0
+Salt Lake,2024-07,Klebsiella pneumoniae,Amoxicillin-Clavulanate,152,107,70.4
+Salt Lake,2024-07,Klebsiella pneumoniae,Ceftriaxone,152,128,84.2
+Salt Lake,2024-07,Klebsiella pneumoniae,Ciprofloxacin,152,120,78.9
+Salt Lake,2024-07,Klebsiella pneumoniae,Ertapenem,152,138,90.8
+Salt Lake,2024-07,Klebsiella pneumoniae,Nitrofurantoin,152,64,42.1
+Salt Lake,2024-07,MRSA,Clindamycin,114,76,66.7
+Salt Lake,2024-07,MRSA,Doxycycline,114,101,88.6
+Salt Lake,2024-07,MRSA,Linezolid,114,107,93.9
+Salt Lake,2024-07,MRSA,TMP-SMX,114,100,87.7
+Salt Lake,2024-07,MRSA,Vancomycin,114,109,95.6
+Salt Lake,2024-07,Pseudomonas aeruginosa,Cefepime,152,113,74.3
+Salt Lake,2024-07,Pseudomonas aeruginosa,Ceftazidime,152,122,80.3
+Salt Lake,2024-07,Pseudomonas aeruginosa,Ciprofloxacin,152,105,69.1
+Salt Lake,2024-07,Pseudomonas aeruginosa,Meropenem,152,124,81.6
+Salt Lake,2024-07,Pseudomonas aeruginosa,Piperacillin-Tazobactam,152,123,80.9
+Salt Lake,2024-07,Staphylococcus aureus,Cephalexin,137,123,89.8
+Salt Lake,2024-07,Staphylococcus aureus,Clindamycin,137,99,72.3
+Salt Lake,2024-07,Staphylococcus aureus,Doxycycline,137,123,89.8
+Salt Lake,2024-07,Staphylococcus aureus,Oxacillin,137,130,94.9
+Salt Lake,2024-07,Staphylococcus aureus,TMP-SMX,137,118,86.1
+Salt Lake,2024-07,Staphylococcus aureus,Vancomycin,137,128,93.4
+Salt Lake,2024-07,Streptococcus pneumoniae,Amoxicillin,39,35,89.7
+Salt Lake,2024-07,Streptococcus pneumoniae,Azithromycin,39,24,61.5
+Salt Lake,2024-07,Streptococcus pneumoniae,Ceftriaxone,39,35,89.7
+Salt Lake,2024-07,Streptococcus pneumoniae,Doxycycline,39,37,94.9
+Salt Lake,2024-07,Streptococcus pneumoniae,Levofloxacin,39,35,89.7
+Salt Lake,2024-07,Streptococcus pneumoniae,Penicillin,39,26,66.7
+Salt Lake,2024-08,Enterococcus species,Ampicillin,168,114,67.9
+Salt Lake,2024-08,Enterococcus species,Linezolid,168,162,96.4
+Salt Lake,2024-08,Enterococcus species,Nitrofurantoin,168,122,72.6
+Salt Lake,2024-08,Enterococcus species,Vancomycin,168,131,78.0
+Salt Lake,2024-08,Escherichia coli,Amoxicillin-Clavulanate,606,387,63.9
+Salt Lake,2024-08,Escherichia coli,Ampicillin,606,234,38.6
+Salt Lake,2024-08,Escherichia coli,Ceftriaxone,606,524,86.5
+Salt Lake,2024-08,Escherichia coli,Ciprofloxacin,606,416,68.6
+Salt Lake,2024-08,Escherichia coli,Fosfomycin,606,553,91.3
+Salt Lake,2024-08,Escherichia coli,Nitrofurantoin,606,531,87.6
+Salt Lake,2024-08,Escherichia coli,TMP-SMX,606,438,72.3
+Salt Lake,2024-08,Haemophilus influenzae,Amoxicillin,31,22,71.0
+Salt Lake,2024-08,Haemophilus influenzae,Amoxicillin-Clavulanate,31,27,87.1
+Salt Lake,2024-08,Haemophilus influenzae,Azithromycin,31,26,83.9
+Salt Lake,2024-08,Haemophilus influenzae,Ceftriaxone,31,29,93.5
+Salt Lake,2024-08,Haemophilus influenzae,Doxycycline,31,28,90.3
+Salt Lake,2024-08,Klebsiella pneumoniae,Amoxicillin-Clavulanate,177,125,70.6
+Salt Lake,2024-08,Klebsiella pneumoniae,Ceftriaxone,177,144,81.4
+Salt Lake,2024-08,Klebsiella pneumoniae,Ciprofloxacin,177,143,80.8
+Salt Lake,2024-08,Klebsiella pneumoniae,Ertapenem,177,160,90.4
+Salt Lake,2024-08,Klebsiella pneumoniae,Nitrofurantoin,177,55,31.1
+Salt Lake,2024-08,MRSA,Clindamycin,118,73,61.9
+Salt Lake,2024-08,MRSA,Doxycycline,118,104,88.1
+Salt Lake,2024-08,MRSA,Linezolid,118,107,90.7
+Salt Lake,2024-08,MRSA,TMP-SMX,118,101,85.6
+Salt Lake,2024-08,MRSA,Vancomycin,118,109,92.4
+Salt Lake,2024-08,Pseudomonas aeruginosa,Cefepime,145,114,78.6
+Salt Lake,2024-08,Pseudomonas aeruginosa,Ceftazidime,145,116,80.0
+Salt Lake,2024-08,Pseudomonas aeruginosa,Ciprofloxacin,145,102,70.3
+Salt Lake,2024-08,Pseudomonas aeruginosa,Meropenem,145,115,79.3
+Salt Lake,2024-08,Pseudomonas aeruginosa,Piperacillin-Tazobactam,145,109,75.2
+Salt Lake,2024-08,Staphylococcus aureus,Cephalexin,184,169,91.8
+Salt Lake,2024-08,Staphylococcus aureus,Clindamycin,184,148,80.4
+Salt Lake,2024-08,Staphylococcus aureus,Doxycycline,184,169,91.8
+Salt Lake,2024-08,Staphylococcus aureus,Oxacillin,184,172,93.5
+Salt Lake,2024-08,Staphylococcus aureus,TMP-SMX,184,166,90.2
+Salt Lake,2024-08,Staphylococcus aureus,Vancomycin,184,175,95.1
+Salt Lake,2024-08,Streptococcus pneumoniae,Amoxicillin,36,33,91.7
+Salt Lake,2024-08,Streptococcus pneumoniae,Azithromycin,36,16,44.4
+Salt Lake,2024-08,Streptococcus pneumoniae,Ceftriaxone,36,32,88.9
+Salt Lake,2024-08,Streptococcus pneumoniae,Doxycycline,36,26,72.2
+Salt Lake,2024-08,Streptococcus pneumoniae,Levofloxacin,36,31,86.1
+Salt Lake,2024-08,Streptococcus pneumoniae,Penicillin,36,26,72.2
+Salt Lake,2024-09,Enterococcus species,Ampicillin,146,104,71.2
+Salt Lake,2024-09,Enterococcus species,Linezolid,146,135,92.5
+Salt Lake,2024-09,Enterococcus species,Nitrofurantoin,146,114,78.1
+Salt Lake,2024-09,Enterococcus species,Vancomycin,146,115,78.8
+Salt Lake,2024-09,Escherichia coli,Amoxicillin-Clavulanate,599,362,60.4
+Salt Lake,2024-09,Escherichia coli,Ampicillin,599,239,39.9
+Salt Lake,2024-09,Escherichia coli,Ceftriaxone,599,523,87.3
+Salt Lake,2024-09,Escherichia coli,Ciprofloxacin,599,400,66.8
+Salt Lake,2024-09,Escherichia coli,Fosfomycin,599,549,91.7
+Salt Lake,2024-09,Escherichia coli,Nitrofurantoin,599,542,90.5
+Salt Lake,2024-09,Escherichia coli,TMP-SMX,599,423,70.6
+Salt Lake,2024-09,Haemophilus influenzae,Amoxicillin,41,30,73.2
+Salt Lake,2024-09,Haemophilus influenzae,Amoxicillin-Clavulanate,41,35,85.4
+Salt Lake,2024-09,Haemophilus influenzae,Azithromycin,41,31,75.6
+Salt Lake,2024-09,Haemophilus influenzae,Ceftriaxone,41,35,85.4
+Salt Lake,2024-09,Haemophilus influenzae,Doxycycline,41,30,73.2
+Salt Lake,2024-09,Klebsiella pneumoniae,Amoxicillin-Clavulanate,192,135,70.3
+Salt Lake,2024-09,Klebsiella pneumoniae,Ceftriaxone,192,150,78.1
+Salt Lake,2024-09,Klebsiella pneumoniae,Ciprofloxacin,192,149,77.6
+Salt Lake,2024-09,Klebsiella pneumoniae,Ertapenem,192,177,92.2
+Salt Lake,2024-09,Klebsiella pneumoniae,Nitrofurantoin,192,61,31.8
+Salt Lake,2024-09,MRSA,Clindamycin,123,71,57.7
+Salt Lake,2024-09,MRSA,Doxycycline,123,104,84.6
+Salt Lake,2024-09,MRSA,Linezolid,123,111,90.2
+Salt Lake,2024-09,MRSA,TMP-SMX,123,110,89.4
+Salt Lake,2024-09,MRSA,Vancomycin,123,114,92.7
+Salt Lake,2024-09,Pseudomonas aeruginosa,Cefepime,138,103,74.6
+Salt Lake,2024-09,Pseudomonas aeruginosa,Ceftazidime,138,112,81.2
+Salt Lake,2024-09,Pseudomonas aeruginosa,Ciprofloxacin,138,99,71.7
+Salt Lake,2024-09,Pseudomonas aeruginosa,Meropenem,138,104,75.4
+Salt Lake,2024-09,Pseudomonas aeruginosa,Piperacillin-Tazobactam,138,118,85.5
+Salt Lake,2024-09,Staphylococcus aureus,Cephalexin,188,175,93.1
+Salt Lake,2024-09,Staphylococcus aureus,Clindamycin,188,154,81.9
+Salt Lake,2024-09,Staphylococcus aureus,Doxycycline,188,167,88.8
+Salt Lake,2024-09,Staphylococcus aureus,Oxacillin,188,180,95.7
+Salt Lake,2024-09,Staphylococcus aureus,TMP-SMX,188,166,88.3
+Salt Lake,2024-09,Staphylococcus aureus,Vancomycin,188,176,93.6
+Salt Lake,2024-09,Streptococcus pneumoniae,Amoxicillin,46,40,87.0
+Salt Lake,2024-09,Streptococcus pneumoniae,Azithromycin,46,27,58.7
+Salt Lake,2024-09,Streptococcus pneumoniae,Ceftriaxone,46,43,93.5
+Salt Lake,2024-09,Streptococcus pneumoniae,Doxycycline,46,37,80.4
+Salt Lake,2024-09,Streptococcus pneumoniae,Levofloxacin,46,42,91.3
+Salt Lake,2024-09,Streptococcus pneumoniae,Penicillin,46,37,80.4
+Salt Lake,2024-10,Enterococcus species,Ampicillin,108,78,72.2
+Salt Lake,2024-10,Enterococcus species,Linezolid,108,101,93.5
+Salt Lake,2024-10,Enterococcus species,Nitrofurantoin,108,85,78.7
+Salt Lake,2024-10,Enterococcus species,Vancomycin,108,85,78.7
+Salt Lake,2024-10,Escherichia coli,Amoxicillin-Clavulanate,602,393,65.3
+Salt Lake,2024-10,Escherichia coli,Ampicillin,602,233,38.7
+Salt Lake,2024-10,Escherichia coli,Ceftriaxone,602,504,83.7
+Salt Lake,2024-10,Escherichia coli,Ciprofloxacin,602,425,70.6
+Salt Lake,2024-10,Escherichia coli,Fosfomycin,602,552,91.7
+Salt Lake,2024-10,Escherichia coli,Nitrofurantoin,602,544,90.4
+Salt Lake,2024-10,Escherichia coli,TMP-SMX,602,432,71.8
+Salt Lake,2024-10,Haemophilus influenzae,Amoxicillin,41,28,68.3
+Salt Lake,2024-10,Haemophilus influenzae,Amoxicillin-Clavulanate,41,35,85.4
+Salt Lake,2024-10,Haemophilus influenzae,Azithromycin,41,33,80.5
+Salt Lake,2024-10,Haemophilus influenzae,Ceftriaxone,41,38,92.7
+Salt Lake,2024-10,Haemophilus influenzae,Doxycycline,41,32,78.0
+Salt Lake,2024-10,Klebsiella pneumoniae,Amoxicillin-Clavulanate,183,143,78.1
+Salt Lake,2024-10,Klebsiella pneumoniae,Ceftriaxone,183,139,76.0
+Salt Lake,2024-10,Klebsiella pneumoniae,Ciprofloxacin,183,142,77.6
+Salt Lake,2024-10,Klebsiella pneumoniae,Ertapenem,183,162,88.5
+Salt Lake,2024-10,Klebsiella pneumoniae,Nitrofurantoin,183,55,30.1
+Salt Lake,2024-10,MRSA,Clindamycin,151,89,58.9
+Salt Lake,2024-10,MRSA,Doxycycline,151,131,86.8
+Salt Lake,2024-10,MRSA,Linezolid,151,141,93.4
+Salt Lake,2024-10,MRSA,TMP-SMX,151,127,84.1
+Salt Lake,2024-10,MRSA,Vancomycin,151,139,92.1
+Salt Lake,2024-10,Pseudomonas aeruginosa,Cefepime,183,143,78.1
+Salt Lake,2024-10,Pseudomonas aeruginosa,Ceftazidime,183,152,83.1
+Salt Lake,2024-10,Pseudomonas aeruginosa,Ciprofloxacin,183,122,66.7
+Salt Lake,2024-10,Pseudomonas aeruginosa,Meropenem,183,148,80.9
+Salt Lake,2024-10,Pseudomonas aeruginosa,Piperacillin-Tazobactam,183,144,78.7
+Salt Lake,2024-10,Staphylococcus aureus,Cephalexin,179,167,93.3
+Salt Lake,2024-10,Staphylococcus aureus,Clindamycin,179,145,81.0
+Salt Lake,2024-10,Staphylococcus aureus,Doxycycline,179,156,87.2
+Salt Lake,2024-10,Staphylococcus aureus,Oxacillin,179,168,93.9
+Salt Lake,2024-10,Staphylococcus aureus,TMP-SMX,179,156,87.2
+Salt Lake,2024-10,Staphylococcus aureus,Vancomycin,179,166,92.7
+Salt Lake,2024-10,Streptococcus pneumoniae,Amoxicillin,70,58,82.9
+Salt Lake,2024-10,Streptococcus pneumoniae,Azithromycin,70,43,61.4
+Salt Lake,2024-10,Streptococcus pneumoniae,Ceftriaxone,70,61,87.1
+Salt Lake,2024-10,Streptococcus pneumoniae,Doxycycline,70,61,87.1
+Salt Lake,2024-10,Streptococcus pneumoniae,Levofloxacin,70,64,91.4
+Salt Lake,2024-10,Streptococcus pneumoniae,Penicillin,70,51,72.9
+Salt Lake,2024-11,Enterococcus species,Ampicillin,146,88,60.3
+Salt Lake,2024-11,Enterococcus species,Linezolid,146,135,92.5
+Salt Lake,2024-11,Enterococcus species,Nitrofurantoin,146,109,74.7
+Salt Lake,2024-11,Enterococcus species,Vancomycin,146,119,81.5
+Salt Lake,2024-11,Escherichia coli,Amoxicillin-Clavulanate,606,375,61.9
+Salt Lake,2024-11,Escherichia coli,Ampicillin,606,254,41.9
+Salt Lake,2024-11,Escherichia coli,Ceftriaxone,606,511,84.3
+Salt Lake,2024-11,Escherichia coli,Ciprofloxacin,606,409,67.5
+Salt Lake,2024-11,Escherichia coli,Fosfomycin,606,549,90.6
+Salt Lake,2024-11,Escherichia coli,Nitrofurantoin,606,548,90.4
+Salt Lake,2024-11,Escherichia coli,TMP-SMX,606,436,71.9
+Salt Lake,2024-11,Haemophilus influenzae,Amoxicillin,41,29,70.7
+Salt Lake,2024-11,Haemophilus influenzae,Amoxicillin-Clavulanate,41,38,92.7
+Salt Lake,2024-11,Haemophilus influenzae,Azithromycin,41,37,90.2
+Salt Lake,2024-11,Haemophilus influenzae,Ceftriaxone,41,36,87.8
+Salt Lake,2024-11,Haemophilus influenzae,Doxycycline,41,32,78.0
+Salt Lake,2024-11,Klebsiella pneumoniae,Amoxicillin-Clavulanate,201,146,72.6
+Salt Lake,2024-11,Klebsiella pneumoniae,Ceftriaxone,201,148,73.6
+Salt Lake,2024-11,Klebsiella pneumoniae,Ciprofloxacin,201,144,71.6
+Salt Lake,2024-11,Klebsiella pneumoniae,Ertapenem,201,187,93.0
+Salt Lake,2024-11,Klebsiella pneumoniae,Nitrofurantoin,201,57,28.4
+Salt Lake,2024-11,MRSA,Clindamycin,137,76,55.5
+Salt Lake,2024-11,MRSA,Doxycycline,137,114,83.2
+Salt Lake,2024-11,MRSA,Linezolid,137,124,90.5
+Salt Lake,2024-11,MRSA,TMP-SMX,137,115,83.9
+Salt Lake,2024-11,MRSA,Vancomycin,137,128,93.4
+Salt Lake,2024-11,Pseudomonas aeruginosa,Cefepime,189,148,78.3
+Salt Lake,2024-11,Pseudomonas aeruginosa,Ceftazidime,189,160,84.7
+Salt Lake,2024-11,Pseudomonas aeruginosa,Ciprofloxacin,189,141,74.6
+Salt Lake,2024-11,Pseudomonas aeruginosa,Meropenem,189,152,80.4
+Salt Lake,2024-11,Pseudomonas aeruginosa,Piperacillin-Tazobactam,189,159,84.1
+Salt Lake,2024-11,Staphylococcus aureus,Cephalexin,174,162,93.1
+Salt Lake,2024-11,Staphylococcus aureus,Clindamycin,174,141,81.0
+Salt Lake,2024-11,Staphylococcus aureus,Doxycycline,174,162,93.1
+Salt Lake,2024-11,Staphylococcus aureus,Oxacillin,174,164,94.3
+Salt Lake,2024-11,Staphylococcus aureus,TMP-SMX,174,160,92.0
+Salt Lake,2024-11,Staphylococcus aureus,Vancomycin,174,161,92.5
+Salt Lake,2024-11,Streptococcus pneumoniae,Amoxicillin,57,51,89.5
+Salt Lake,2024-11,Streptococcus pneumoniae,Azithromycin,57,29,50.9
+Salt Lake,2024-11,Streptococcus pneumoniae,Ceftriaxone,57,54,94.7
+Salt Lake,2024-11,Streptococcus pneumoniae,Doxycycline,57,44,77.2
+Salt Lake,2024-11,Streptococcus pneumoniae,Levofloxacin,57,47,82.5
+Salt Lake,2024-11,Streptococcus pneumoniae,Penicillin,57,39,68.4
+Salt Lake,2024-12,Enterococcus species,Ampicillin,149,97,65.1
+Salt Lake,2024-12,Enterococcus species,Linezolid,149,145,97.3
+Salt Lake,2024-12,Enterococcus species,Nitrofurantoin,149,108,72.5
+Salt Lake,2024-12,Enterococcus species,Vancomycin,149,120,80.5
+Salt Lake,2024-12,Escherichia coli,Amoxicillin-Clavulanate,679,431,63.5
+Salt Lake,2024-12,Escherichia coli,Ampicillin,679,285,42.0
+Salt Lake,2024-12,Escherichia coli,Ceftriaxone,679,593,87.3
+Salt Lake,2024-12,Escherichia coli,Ciprofloxacin,679,464,68.3
+Salt Lake,2024-12,Escherichia coli,Fosfomycin,679,619,91.2
+Salt Lake,2024-12,Escherichia coli,Nitrofurantoin,679,600,88.4
+Salt Lake,2024-12,Escherichia coli,TMP-SMX,679,485,71.4
+Salt Lake,2024-12,Haemophilus influenzae,Amoxicillin,47,31,66.0
+Salt Lake,2024-12,Haemophilus influenzae,Amoxicillin-Clavulanate,47,37,78.7
+Salt Lake,2024-12,Haemophilus influenzae,Azithromycin,47,43,91.5
+Salt Lake,2024-12,Haemophilus influenzae,Ceftriaxone,47,43,91.5
+Salt Lake,2024-12,Haemophilus influenzae,Doxycycline,47,42,89.4
+Salt Lake,2024-12,Klebsiella pneumoniae,Amoxicillin-Clavulanate,203,150,73.9
+Salt Lake,2024-12,Klebsiella pneumoniae,Ceftriaxone,203,157,77.3
+Salt Lake,2024-12,Klebsiella pneumoniae,Ciprofloxacin,203,167,82.3
+Salt Lake,2024-12,Klebsiella pneumoniae,Ertapenem,203,183,90.1
+Salt Lake,2024-12,Klebsiella pneumoniae,Nitrofurantoin,203,67,33.0
+Salt Lake,2024-12,MRSA,Clindamycin,160,100,62.5
+Salt Lake,2024-12,MRSA,Doxycycline,160,142,88.8
+Salt Lake,2024-12,MRSA,Linezolid,160,149,93.1
+Salt Lake,2024-12,MRSA,TMP-SMX,160,135,84.4
+Salt Lake,2024-12,MRSA,Vancomycin,160,152,95.0
+Salt Lake,2024-12,Pseudomonas aeruginosa,Cefepime,182,154,84.6
+Salt Lake,2024-12,Pseudomonas aeruginosa,Ceftazidime,182,145,79.7
+Salt Lake,2024-12,Pseudomonas aeruginosa,Ciprofloxacin,182,122,67.0
+Salt Lake,2024-12,Pseudomonas aeruginosa,Meropenem,182,150,82.4
+Salt Lake,2024-12,Pseudomonas aeruginosa,Piperacillin-Tazobactam,182,139,76.4
+Salt Lake,2024-12,Staphylococcus aureus,Cephalexin,206,193,93.7
+Salt Lake,2024-12,Staphylococcus aureus,Clindamycin,206,150,72.8
+Salt Lake,2024-12,Staphylococcus aureus,Doxycycline,206,182,88.3
+Salt Lake,2024-12,Staphylococcus aureus,Oxacillin,206,194,94.2
+Salt Lake,2024-12,Staphylococcus aureus,TMP-SMX,206,183,88.8
+Salt Lake,2024-12,Staphylococcus aureus,Vancomycin,206,191,92.7
+Salt Lake,2024-12,Streptococcus pneumoniae,Amoxicillin,58,49,84.5
+Salt Lake,2024-12,Streptococcus pneumoniae,Azithromycin,58,30,51.7
+Salt Lake,2024-12,Streptococcus pneumoniae,Ceftriaxone,58,55,94.8
+Salt Lake,2024-12,Streptococcus pneumoniae,Doxycycline,58,45,77.6
+Salt Lake,2024-12,Streptococcus pneumoniae,Levofloxacin,58,55,94.8
+Salt Lake,2024-12,Streptococcus pneumoniae,Penicillin,58,40,69.0
+Salt Lake,2025-01,Enterococcus species,Ampicillin,135,83,61.5
+Salt Lake,2025-01,Enterococcus species,Linezolid,135,128,94.8
+Salt Lake,2025-01,Enterococcus species,Nitrofurantoin,135,107,79.3
+Salt Lake,2025-01,Enterococcus species,Vancomycin,135,103,76.3
+Salt Lake,2025-01,Escherichia coli,Amoxicillin-Clavulanate,585,355,60.7
+Salt Lake,2025-01,Escherichia coli,Ampicillin,585,241,41.2
+Salt Lake,2025-01,Escherichia coli,Ceftriaxone,585,503,86.0
+Salt Lake,2025-01,Escherichia coli,Ciprofloxacin,585,425,72.6
+Salt Lake,2025-01,Escherichia coli,Fosfomycin,585,530,90.6
+Salt Lake,2025-01,Escherichia coli,Nitrofurantoin,585,528,90.3
+Salt Lake,2025-01,Escherichia coli,TMP-SMX,585,390,66.7
+Salt Lake,2025-01,Haemophilus influenzae,Amoxicillin,37,25,67.6
+Salt Lake,2025-01,Haemophilus influenzae,Amoxicillin-Clavulanate,37,32,86.5
+Salt Lake,2025-01,Haemophilus influenzae,Azithromycin,37,29,78.4
+Salt Lake,2025-01,Haemophilus influenzae,Ceftriaxone,37,33,89.2
+Salt Lake,2025-01,Haemophilus influenzae,Doxycycline,37,32,86.5
+Salt Lake,2025-01,Klebsiella pneumoniae,Amoxicillin-Clavulanate,186,131,70.4
+Salt Lake,2025-01,Klebsiella pneumoniae,Ceftriaxone,186,145,78.0
+Salt Lake,2025-01,Klebsiella pneumoniae,Ciprofloxacin,186,138,74.2
+Salt Lake,2025-01,Klebsiella pneumoniae,Ertapenem,186,173,93.0
+Salt Lake,2025-01,Klebsiella pneumoniae,Nitrofurantoin,186,61,32.8
+Salt Lake,2025-01,MRSA,Clindamycin,107,64,59.8
+Salt Lake,2025-01,MRSA,Doxycycline,107,91,85.0
+Salt Lake,2025-01,MRSA,Linezolid,107,102,95.3
+Salt Lake,2025-01,MRSA,TMP-SMX,107,91,85.0
+Salt Lake,2025-01,MRSA,Vancomycin,107,96,89.7
+Salt Lake,2025-01,Pseudomonas aeruginosa,Cefepime,178,153,86.0
+Salt Lake,2025-01,Pseudomonas aeruginosa,Ceftazidime,178,144,80.9
+Salt Lake,2025-01,Pseudomonas aeruginosa,Ciprofloxacin,178,134,75.3
+Salt Lake,2025-01,Pseudomonas aeruginosa,Meropenem,178,141,79.2
+Salt Lake,2025-01,Pseudomonas aeruginosa,Piperacillin-Tazobactam,178,144,80.9
+Salt Lake,2025-01,Staphylococcus aureus,Cephalexin,169,158,93.5
+Salt Lake,2025-01,Staphylococcus aureus,Clindamycin,169,134,79.3
+Salt Lake,2025-01,Staphylococcus aureus,Doxycycline,169,150,88.8
+Salt Lake,2025-01,Staphylococcus aureus,Oxacillin,169,160,94.7
+Salt Lake,2025-01,Staphylococcus aureus,TMP-SMX,169,152,89.9
+Salt Lake,2025-01,Staphylococcus aureus,Vancomycin,169,158,93.5
+Salt Lake,2025-01,Streptococcus pneumoniae,Amoxicillin,63,47,74.6
+Salt Lake,2025-01,Streptococcus pneumoniae,Azithromycin,63,33,52.4
+Salt Lake,2025-01,Streptococcus pneumoniae,Ceftriaxone,63,52,82.5
+Salt Lake,2025-01,Streptococcus pneumoniae,Doxycycline,63,52,82.5
+Salt Lake,2025-01,Streptococcus pneumoniae,Levofloxacin,63,56,88.9
+Salt Lake,2025-01,Streptococcus pneumoniae,Penicillin,63,42,66.7
+Salt Lake,2025-02,Enterococcus species,Ampicillin,136,95,69.9
+Salt Lake,2025-02,Enterococcus species,Linezolid,136,127,93.4
+Salt Lake,2025-02,Enterococcus species,Nitrofurantoin,136,101,74.3
+Salt Lake,2025-02,Enterococcus species,Vancomycin,136,102,75.0
+Salt Lake,2025-02,Escherichia coli,Amoxicillin-Clavulanate,663,404,60.9
+Salt Lake,2025-02,Escherichia coli,Ampicillin,663,276,41.6
+Salt Lake,2025-02,Escherichia coli,Ceftriaxone,663,573,86.4
+Salt Lake,2025-02,Escherichia coli,Ciprofloxacin,663,443,66.8
+Salt Lake,2025-02,Escherichia coli,Fosfomycin,663,605,91.3
+Salt Lake,2025-02,Escherichia coli,Nitrofurantoin,663,587,88.5
+Salt Lake,2025-02,Escherichia coli,TMP-SMX,663,463,69.8
+Salt Lake,2025-02,Haemophilus influenzae,Amoxicillin,52,35,67.3
+Salt Lake,2025-02,Haemophilus influenzae,Amoxicillin-Clavulanate,52,51,98.1
+Salt Lake,2025-02,Haemophilus influenzae,Azithromycin,52,40,76.9
+Salt Lake,2025-02,Haemophilus influenzae,Ceftriaxone,52,47,90.4
+Salt Lake,2025-02,Haemophilus influenzae,Doxycycline,52,44,84.6
+Salt Lake,2025-02,Klebsiella pneumoniae,Amoxicillin-Clavulanate,190,131,68.9
+Salt Lake,2025-02,Klebsiella pneumoniae,Ceftriaxone,190,155,81.6
+Salt Lake,2025-02,Klebsiella pneumoniae,Ciprofloxacin,190,144,75.8
+Salt Lake,2025-02,Klebsiella pneumoniae,Ertapenem,190,172,90.5
+Salt Lake,2025-02,Klebsiella pneumoniae,Nitrofurantoin,190,67,35.3
+Salt Lake,2025-02,MRSA,Clindamycin,109,61,56.0
+Salt Lake,2025-02,MRSA,Doxycycline,109,98,89.9
+Salt Lake,2025-02,MRSA,Linezolid,109,104,95.4
+Salt Lake,2025-02,MRSA,TMP-SMX,109,96,88.1
+Salt Lake,2025-02,MRSA,Vancomycin,109,104,95.4
+Salt Lake,2025-02,Pseudomonas aeruginosa,Cefepime,164,120,73.2
+Salt Lake,2025-02,Pseudomonas aeruginosa,Ceftazidime,164,135,82.3
+Salt Lake,2025-02,Pseudomonas aeruginosa,Ciprofloxacin,164,115,70.1
+Salt Lake,2025-02,Pseudomonas aeruginosa,Meropenem,164,132,80.5
+Salt Lake,2025-02,Pseudomonas aeruginosa,Piperacillin-Tazobactam,164,135,82.3
+Salt Lake,2025-02,Staphylococcus aureus,Cephalexin,188,173,92.0
+Salt Lake,2025-02,Staphylococcus aureus,Clindamycin,188,135,71.8
+Salt Lake,2025-02,Staphylococcus aureus,Doxycycline,188,163,86.7
+Salt Lake,2025-02,Staphylococcus aureus,Oxacillin,188,168,89.4
+Salt Lake,2025-02,Staphylococcus aureus,TMP-SMX,188,167,88.8
+Salt Lake,2025-02,Staphylococcus aureus,Vancomycin,188,173,92.0
+Salt Lake,2025-02,Streptococcus pneumoniae,Amoxicillin,66,54,81.8
+Salt Lake,2025-02,Streptococcus pneumoniae,Azithromycin,66,39,59.1
+Salt Lake,2025-02,Streptococcus pneumoniae,Ceftriaxone,66,56,84.8
+Salt Lake,2025-02,Streptococcus pneumoniae,Doxycycline,66,58,87.9
+Salt Lake,2025-02,Streptococcus pneumoniae,Levofloxacin,66,62,93.9
+Salt Lake,2025-02,Streptococcus pneumoniae,Penicillin,66,48,72.7
+Salt Lake,2025-03,Enterococcus species,Ampicillin,147,103,70.1
+Salt Lake,2025-03,Enterococcus species,Linezolid,147,136,92.5
+Salt Lake,2025-03,Enterococcus species,Nitrofurantoin,147,107,72.8
+Salt Lake,2025-03,Enterococcus species,Vancomycin,147,107,72.8
+Salt Lake,2025-03,Escherichia coli,Amoxicillin-Clavulanate,636,386,60.7
+Salt Lake,2025-03,Escherichia coli,Ampicillin,636,276,43.4
+Salt Lake,2025-03,Escherichia coli,Ceftriaxone,636,530,83.3
+Salt Lake,2025-03,Escherichia coli,Ciprofloxacin,636,426,67.0
+Salt Lake,2025-03,Escherichia coli,Fosfomycin,636,567,89.2
+Salt Lake,2025-03,Escherichia coli,Nitrofurantoin,636,563,88.5
+Salt Lake,2025-03,Escherichia coli,TMP-SMX,636,447,70.3
+Salt Lake,2025-03,Haemophilus influenzae,Amoxicillin,43,27,62.8
+Salt Lake,2025-03,Haemophilus influenzae,Amoxicillin-Clavulanate,43,37,86.0
+Salt Lake,2025-03,Haemophilus influenzae,Azithromycin,43,33,76.7
+Salt Lake,2025-03,Haemophilus influenzae,Ceftriaxone,43,38,88.4
+Salt Lake,2025-03,Haemophilus influenzae,Doxycycline,43,41,95.3
+Salt Lake,2025-03,Klebsiella pneumoniae,Amoxicillin-Clavulanate,198,143,72.2
+Salt Lake,2025-03,Klebsiella pneumoniae,Ceftriaxone,198,162,81.8
+Salt Lake,2025-03,Klebsiella pneumoniae,Ciprofloxacin,198,153,77.3
+Salt Lake,2025-03,Klebsiella pneumoniae,Ertapenem,198,176,88.9
+Salt Lake,2025-03,Klebsiella pneumoniae,Nitrofurantoin,198,68,34.3
+Salt Lake,2025-03,MRSA,Clindamycin,126,76,60.3
+Salt Lake,2025-03,MRSA,Doxycycline,126,107,84.9
+Salt Lake,2025-03,MRSA,Linezolid,126,125,99.2
+Salt Lake,2025-03,MRSA,TMP-SMX,126,106,84.1
+Salt Lake,2025-03,MRSA,Vancomycin,126,118,93.7
+Salt Lake,2025-03,Pseudomonas aeruginosa,Cefepime,181,138,76.2
+Salt Lake,2025-03,Pseudomonas aeruginosa,Ceftazidime,181,154,85.1
+Salt Lake,2025-03,Pseudomonas aeruginosa,Ciprofloxacin,181,123,68.0
+Salt Lake,2025-03,Pseudomonas aeruginosa,Meropenem,181,135,74.6
+Salt Lake,2025-03,Pseudomonas aeruginosa,Piperacillin-Tazobactam,181,146,80.7
+Salt Lake,2025-03,Staphylococcus aureus,Cephalexin,181,173,95.6
+Salt Lake,2025-03,Staphylococcus aureus,Clindamycin,181,144,79.6
+Salt Lake,2025-03,Staphylococcus aureus,Doxycycline,181,166,91.7
+Salt Lake,2025-03,Staphylococcus aureus,Oxacillin,181,167,92.3
+Salt Lake,2025-03,Staphylococcus aureus,TMP-SMX,181,169,93.4
+Salt Lake,2025-03,Staphylococcus aureus,Vancomycin,181,176,97.2
+Salt Lake,2025-03,Streptococcus pneumoniae,Amoxicillin,52,45,86.5
+Salt Lake,2025-03,Streptococcus pneumoniae,Azithromycin,52,32,61.5
+Salt Lake,2025-03,Streptococcus pneumoniae,Ceftriaxone,52,47,90.4
+Salt Lake,2025-03,Streptococcus pneumoniae,Doxycycline,52,37,71.2
+Salt Lake,2025-03,Streptococcus pneumoniae,Levofloxacin,52,43,82.7
+Salt Lake,2025-03,Streptococcus pneumoniae,Penicillin,52,40,76.9
+Salt Lake,2025-04,Enterococcus species,Ampicillin,143,96,67.1
+Salt Lake,2025-04,Enterococcus species,Linezolid,143,137,95.8
+Salt Lake,2025-04,Enterococcus species,Nitrofurantoin,143,117,81.8
+Salt Lake,2025-04,Enterococcus species,Vancomycin,143,109,76.2
+Salt Lake,2025-04,Escherichia coli,Amoxicillin-Clavulanate,605,405,66.9
+Salt Lake,2025-04,Escherichia coli,Ampicillin,605,245,40.5
+Salt Lake,2025-04,Escherichia coli,Ceftriaxone,605,508,84.0
+Salt Lake,2025-04,Escherichia coli,Ciprofloxacin,605,417,68.9
+Salt Lake,2025-04,Escherichia coli,Fosfomycin,605,539,89.1
+Salt Lake,2025-04,Escherichia coli,Nitrofurantoin,605,531,87.8
+Salt Lake,2025-04,Escherichia coli,TMP-SMX,605,414,68.4
+Salt Lake,2025-04,Haemophilus influenzae,Amoxicillin,28,19,67.9
+Salt Lake,2025-04,Haemophilus influenzae,Amoxicillin-Clavulanate,28,25,89.3
+Salt Lake,2025-04,Haemophilus influenzae,Azithromycin,28,20,71.4
+Salt Lake,2025-04,Haemophilus influenzae,Ceftriaxone,28,25,89.3
+Salt Lake,2025-04,Haemophilus influenzae,Doxycycline,28,26,92.9
+Salt Lake,2025-04,Klebsiella pneumoniae,Amoxicillin-Clavulanate,185,121,65.4
+Salt Lake,2025-04,Klebsiella pneumoniae,Ceftriaxone,185,150,81.1
+Salt Lake,2025-04,Klebsiella pneumoniae,Ciprofloxacin,185,136,73.5
+Salt Lake,2025-04,Klebsiella pneumoniae,Ertapenem,185,167,90.3
+Salt Lake,2025-04,Klebsiella pneumoniae,Nitrofurantoin,185,69,37.3
+Salt Lake,2025-04,MRSA,Clindamycin,98,63,64.3
+Salt Lake,2025-04,MRSA,Doxycycline,98,88,89.8
+Salt Lake,2025-04,MRSA,Linezolid,98,91,92.9
+Salt Lake,2025-04,MRSA,TMP-SMX,98,89,90.8
+Salt Lake,2025-04,MRSA,Vancomycin,98,93,94.9
+Salt Lake,2025-04,Pseudomonas aeruginosa,Cefepime,163,121,74.2
+Salt Lake,2025-04,Pseudomonas aeruginosa,Ceftazidime,163,139,85.3
+Salt Lake,2025-04,Pseudomonas aeruginosa,Ciprofloxacin,163,111,68.1
+Salt Lake,2025-04,Pseudomonas aeruginosa,Meropenem,163,127,77.9
+Salt Lake,2025-04,Pseudomonas aeruginosa,Piperacillin-Tazobactam,163,133,81.6
+Salt Lake,2025-04,Staphylococcus aureus,Cephalexin,173,160,92.5
+Salt Lake,2025-04,Staphylococcus aureus,Clindamycin,173,139,80.3
+Salt Lake,2025-04,Staphylococcus aureus,Doxycycline,173,156,90.2
+Salt Lake,2025-04,Staphylococcus aureus,Oxacillin,173,159,91.9
+Salt Lake,2025-04,Staphylococcus aureus,TMP-SMX,173,159,91.9
+Salt Lake,2025-04,Staphylococcus aureus,Vancomycin,173,160,92.5
+Salt Lake,2025-04,Streptococcus pneumoniae,Amoxicillin,54,45,83.3
+Salt Lake,2025-04,Streptococcus pneumoniae,Azithromycin,54,29,53.7
+Salt Lake,2025-04,Streptococcus pneumoniae,Ceftriaxone,54,46,85.2
+Salt Lake,2025-04,Streptococcus pneumoniae,Doxycycline,54,45,83.3
+Salt Lake,2025-04,Streptococcus pneumoniae,Levofloxacin,54,49,90.7
+Salt Lake,2025-04,Streptococcus pneumoniae,Penicillin,54,46,85.2
+Salt Lake,2025-05,Enterococcus species,Ampicillin,128,84,65.6
+Salt Lake,2025-05,Enterococcus species,Linezolid,128,123,96.1
+Salt Lake,2025-05,Enterococcus species,Nitrofurantoin,128,104,81.2
+Salt Lake,2025-05,Enterococcus species,Vancomycin,128,109,85.2
+Salt Lake,2025-05,Escherichia coli,Amoxicillin-Clavulanate,558,337,60.4
+Salt Lake,2025-05,Escherichia coli,Ampicillin,558,204,36.6
+Salt Lake,2025-05,Escherichia coli,Ceftriaxone,558,471,84.4
+Salt Lake,2025-05,Escherichia coli,Ciprofloxacin,558,361,64.7
+Salt Lake,2025-05,Escherichia coli,Fosfomycin,558,501,89.8
+Salt Lake,2025-05,Escherichia coli,Nitrofurantoin,558,480,86.0
+Salt Lake,2025-05,Escherichia coli,TMP-SMX,558,402,72.0
+Salt Lake,2025-05,Haemophilus influenzae,Amoxicillin,32,22,68.8
+Salt Lake,2025-05,Haemophilus influenzae,Amoxicillin-Clavulanate,32,29,90.6
+Salt Lake,2025-05,Haemophilus influenzae,Azithromycin,32,26,81.2
+Salt Lake,2025-05,Haemophilus influenzae,Ceftriaxone,32,30,93.8
+Salt Lake,2025-05,Haemophilus influenzae,Doxycycline,32,32,100.0
+Salt Lake,2025-05,Klebsiella pneumoniae,Amoxicillin-Clavulanate,159,110,69.2
+Salt Lake,2025-05,Klebsiella pneumoniae,Ceftriaxone,159,123,77.4
+Salt Lake,2025-05,Klebsiella pneumoniae,Ciprofloxacin,159,132,83.0
+Salt Lake,2025-05,Klebsiella pneumoniae,Ertapenem,159,149,93.7
+Salt Lake,2025-05,Klebsiella pneumoniae,Nitrofurantoin,159,59,37.1
+Salt Lake,2025-05,MRSA,Clindamycin,111,72,64.9
+Salt Lake,2025-05,MRSA,Doxycycline,111,98,88.3
+Salt Lake,2025-05,MRSA,Linezolid,111,104,93.7
+Salt Lake,2025-05,MRSA,TMP-SMX,111,85,76.6
+Salt Lake,2025-05,MRSA,Vancomycin,111,101,91.0
+Salt Lake,2025-05,Pseudomonas aeruginosa,Cefepime,130,102,78.5
+Salt Lake,2025-05,Pseudomonas aeruginosa,Ceftazidime,130,101,77.7
+Salt Lake,2025-05,Pseudomonas aeruginosa,Ciprofloxacin,130,98,75.4
+Salt Lake,2025-05,Pseudomonas aeruginosa,Meropenem,130,104,80.0
+Salt Lake,2025-05,Pseudomonas aeruginosa,Piperacillin-Tazobactam,130,99,76.2
+Salt Lake,2025-05,Staphylococcus aureus,Cephalexin,142,134,94.4
+Salt Lake,2025-05,Staphylococcus aureus,Clindamycin,142,105,73.9
+Salt Lake,2025-05,Staphylococcus aureus,Doxycycline,142,124,87.3
+Salt Lake,2025-05,Staphylococcus aureus,Oxacillin,142,134,94.4
+Salt Lake,2025-05,Staphylococcus aureus,TMP-SMX,142,128,90.1
+Salt Lake,2025-05,Staphylococcus aureus,Vancomycin,142,134,94.4
+Salt Lake,2025-05,Streptococcus pneumoniae,Amoxicillin,34,32,94.1
+Salt Lake,2025-05,Streptococcus pneumoniae,Azithromycin,34,24,70.6
+Salt Lake,2025-05,Streptococcus pneumoniae,Ceftriaxone,34,32,94.1
+Salt Lake,2025-05,Streptococcus pneumoniae,Doxycycline,34,30,88.2
+Salt Lake,2025-05,Streptococcus pneumoniae,Levofloxacin,34,31,91.2
+Salt Lake,2025-05,Streptococcus pneumoniae,Penicillin,34,25,73.5
+Salt Lake,2025-06,Enterococcus species,Ampicillin,127,84,66.1
+Salt Lake,2025-06,Enterococcus species,Linezolid,127,120,94.5
+Salt Lake,2025-06,Enterococcus species,Nitrofurantoin,127,98,77.2
+Salt Lake,2025-06,Enterococcus species,Vancomycin,127,97,76.4
+Salt Lake,2025-06,Escherichia coli,Amoxicillin-Clavulanate,572,364,63.6
+Salt Lake,2025-06,Escherichia coli,Ampicillin,572,221,38.6
+Salt Lake,2025-06,Escherichia coli,Ceftriaxone,572,493,86.2
+Salt Lake,2025-06,Escherichia coli,Ciprofloxacin,572,404,70.6
+Salt Lake,2025-06,Escherichia coli,Fosfomycin,572,523,91.4
+Salt Lake,2025-06,Escherichia coli,Nitrofurantoin,572,512,89.5
+Salt Lake,2025-06,Escherichia coli,TMP-SMX,572,390,68.2
+Salt Lake,2025-06,Haemophilus influenzae,Amoxicillin,29,22,75.9
+Salt Lake,2025-06,Haemophilus influenzae,Amoxicillin-Clavulanate,29,25,86.2
+Salt Lake,2025-06,Haemophilus influenzae,Azithromycin,29,22,75.9
+Salt Lake,2025-06,Haemophilus influenzae,Ceftriaxone,29,23,79.3
+Salt Lake,2025-06,Haemophilus influenzae,Doxycycline,29,23,79.3
+Salt Lake,2025-06,Klebsiella pneumoniae,Amoxicillin-Clavulanate,142,103,72.5
+Salt Lake,2025-06,Klebsiella pneumoniae,Ceftriaxone,142,103,72.5
+Salt Lake,2025-06,Klebsiella pneumoniae,Ciprofloxacin,142,116,81.7
+Salt Lake,2025-06,Klebsiella pneumoniae,Ertapenem,142,131,92.3
+Salt Lake,2025-06,Klebsiella pneumoniae,Nitrofurantoin,142,39,27.5
+Salt Lake,2025-06,MRSA,Clindamycin,108,65,60.2
+Salt Lake,2025-06,MRSA,Doxycycline,108,96,88.9
+Salt Lake,2025-06,MRSA,Linezolid,108,102,94.4
+Salt Lake,2025-06,MRSA,TMP-SMX,108,93,86.1
+Salt Lake,2025-06,MRSA,Vancomycin,108,100,92.6
+Salt Lake,2025-06,Pseudomonas aeruginosa,Cefepime,140,108,77.1
+Salt Lake,2025-06,Pseudomonas aeruginosa,Ceftazidime,140,109,77.9
+Salt Lake,2025-06,Pseudomonas aeruginosa,Ciprofloxacin,140,106,75.7
+Salt Lake,2025-06,Pseudomonas aeruginosa,Meropenem,140,107,76.4
+Salt Lake,2025-06,Pseudomonas aeruginosa,Piperacillin-Tazobactam,140,114,81.4
+Salt Lake,2025-06,Staphylococcus aureus,Cephalexin,139,128,92.1
+Salt Lake,2025-06,Staphylococcus aureus,Clindamycin,139,107,77.0
+Salt Lake,2025-06,Staphylococcus aureus,Doxycycline,139,122,87.8
+Salt Lake,2025-06,Staphylococcus aureus,Oxacillin,139,135,97.1
+Salt Lake,2025-06,Staphylococcus aureus,TMP-SMX,139,127,91.4
+Salt Lake,2025-06,Staphylococcus aureus,Vancomycin,139,129,92.8
+Salt Lake,2025-06,Streptococcus pneumoniae,Amoxicillin,43,37,86.0
+Salt Lake,2025-06,Streptococcus pneumoniae,Azithromycin,43,28,65.1
+Salt Lake,2025-06,Streptococcus pneumoniae,Ceftriaxone,43,37,86.0
+Salt Lake,2025-06,Streptococcus pneumoniae,Doxycycline,43,33,76.7
+Salt Lake,2025-06,Streptococcus pneumoniae,Levofloxacin,43,40,93.0
+Salt Lake,2025-06,Streptococcus pneumoniae,Penicillin,43,38,88.4
+Salt Lake,2025-07,Enterococcus species,Ampicillin,118,66,55.9
+Salt Lake,2025-07,Enterococcus species,Linezolid,118,113,95.8
+Salt Lake,2025-07,Enterococcus species,Nitrofurantoin,118,90,76.3
+Salt Lake,2025-07,Enterococcus species,Vancomycin,118,94,79.7
+Salt Lake,2025-07,Escherichia coli,Amoxicillin-Clavulanate,588,374,63.6
+Salt Lake,2025-07,Escherichia coli,Ampicillin,588,240,40.8
+Salt Lake,2025-07,Escherichia coli,Ceftriaxone,588,490,83.3
+Salt Lake,2025-07,Escherichia coli,Ciprofloxacin,588,400,68.0
+Salt Lake,2025-07,Escherichia coli,Fosfomycin,588,542,92.2
+Salt Lake,2025-07,Escherichia coli,Nitrofurantoin,588,522,88.8
+Salt Lake,2025-07,Escherichia coli,TMP-SMX,588,411,69.9
+Salt Lake,2025-07,Haemophilus influenzae,Amoxicillin,19,11,57.9
+Salt Lake,2025-07,Haemophilus influenzae,Amoxicillin-Clavulanate,19,18,94.7
+Salt Lake,2025-07,Haemophilus influenzae,Azithromycin,19,16,84.2
+Salt Lake,2025-07,Haemophilus influenzae,Ceftriaxone,19,17,89.5
+Salt Lake,2025-07,Haemophilus influenzae,Doxycycline,19,15,78.9
+Salt Lake,2025-07,Klebsiella pneumoniae,Amoxicillin-Clavulanate,160,123,76.9
+Salt Lake,2025-07,Klebsiella pneumoniae,Ceftriaxone,160,127,79.4
+Salt Lake,2025-07,Klebsiella pneumoniae,Ciprofloxacin,160,123,76.9
+Salt Lake,2025-07,Klebsiella pneumoniae,Ertapenem,160,145,90.6
+Salt Lake,2025-07,Klebsiella pneumoniae,Nitrofurantoin,160,59,36.9
+Salt Lake,2025-07,MRSA,Clindamycin,111,64,57.7
+Salt Lake,2025-07,MRSA,Doxycycline,111,96,86.5
+Salt Lake,2025-07,MRSA,Linezolid,111,105,94.6
+Salt Lake,2025-07,MRSA,TMP-SMX,111,95,85.6
+Salt Lake,2025-07,MRSA,Vancomycin,111,108,97.3
+Salt Lake,2025-07,Pseudomonas aeruginosa,Cefepime,106,83,78.3
+Salt Lake,2025-07,Pseudomonas aeruginosa,Ceftazidime,106,88,83.0
+Salt Lake,2025-07,Pseudomonas aeruginosa,Ciprofloxacin,106,78,73.6
+Salt Lake,2025-07,Pseudomonas aeruginosa,Meropenem,106,81,76.4
+Salt Lake,2025-07,Pseudomonas aeruginosa,Piperacillin-Tazobactam,106,79,74.5
+Salt Lake,2025-07,Staphylococcus aureus,Cephalexin,153,141,92.2
+Salt Lake,2025-07,Staphylococcus aureus,Clindamycin,153,111,72.5
+Salt Lake,2025-07,Staphylococcus aureus,Doxycycline,153,137,89.5
+Salt Lake,2025-07,Staphylococcus aureus,Oxacillin,153,140,91.5
+Salt Lake,2025-07,Staphylococcus aureus,TMP-SMX,153,137,89.5
+Salt Lake,2025-07,Staphylococcus aureus,Vancomycin,153,141,92.2
+Salt Lake,2025-07,Streptococcus pneumoniae,Amoxicillin,33,27,81.8
+Salt Lake,2025-07,Streptococcus pneumoniae,Azithromycin,33,17,51.5
+Salt Lake,2025-07,Streptococcus pneumoniae,Ceftriaxone,33,31,93.9
+Salt Lake,2025-07,Streptococcus pneumoniae,Doxycycline,33,27,81.8
+Salt Lake,2025-07,Streptococcus pneumoniae,Levofloxacin,33,31,93.9
+Salt Lake,2025-07,Streptococcus pneumoniae,Penicillin,33,23,69.7
+Salt Lake,2025-08,Enterococcus species,Ampicillin,133,76,57.1
+Salt Lake,2025-08,Enterococcus species,Linezolid,133,120,90.2
+Salt Lake,2025-08,Enterococcus species,Nitrofurantoin,133,99,74.4
+Salt Lake,2025-08,Enterococcus species,Vancomycin,133,107,80.5
+Salt Lake,2025-08,Escherichia coli,Amoxicillin-Clavulanate,568,354,62.3
+Salt Lake,2025-08,Escherichia coli,Ampicillin,568,218,38.4
+Salt Lake,2025-08,Escherichia coli,Ceftriaxone,568,476,83.8
+Salt Lake,2025-08,Escherichia coli,Ciprofloxacin,568,374,65.8
+Salt Lake,2025-08,Escherichia coli,Fosfomycin,568,508,89.4
+Salt Lake,2025-08,Escherichia coli,Nitrofurantoin,568,501,88.2
+Salt Lake,2025-08,Escherichia coli,TMP-SMX,568,422,74.3
+Salt Lake,2025-08,Haemophilus influenzae,Amoxicillin,35,18,51.4
+Salt Lake,2025-08,Haemophilus influenzae,Amoxicillin-Clavulanate,35,29,82.9
+Salt Lake,2025-08,Haemophilus influenzae,Azithromycin,35,28,80.0
+Salt Lake,2025-08,Haemophilus influenzae,Ceftriaxone,35,32,91.4
+Salt Lake,2025-08,Haemophilus influenzae,Doxycycline,35,30,85.7
+Salt Lake,2025-08,Klebsiella pneumoniae,Amoxicillin-Clavulanate,166,124,74.7
+Salt Lake,2025-08,Klebsiella pneumoniae,Ceftriaxone,166,124,74.7
+Salt Lake,2025-08,Klebsiella pneumoniae,Ciprofloxacin,166,129,77.7
+Salt Lake,2025-08,Klebsiella pneumoniae,Ertapenem,166,149,89.8
+Salt Lake,2025-08,Klebsiella pneumoniae,Nitrofurantoin,166,64,38.6
+Salt Lake,2025-08,MRSA,Clindamycin,104,70,67.3
+Salt Lake,2025-08,MRSA,Doxycycline,104,92,88.5
+Salt Lake,2025-08,MRSA,Linezolid,104,98,94.2
+Salt Lake,2025-08,MRSA,TMP-SMX,104,89,85.6
+Salt Lake,2025-08,MRSA,Vancomycin,104,92,88.5
+Salt Lake,2025-08,Pseudomonas aeruginosa,Cefepime,140,111,79.3
+Salt Lake,2025-08,Pseudomonas aeruginosa,Ceftazidime,140,117,83.6
+Salt Lake,2025-08,Pseudomonas aeruginosa,Ciprofloxacin,140,102,72.9
+Salt Lake,2025-08,Pseudomonas aeruginosa,Meropenem,140,121,86.4
+Salt Lake,2025-08,Pseudomonas aeruginosa,Piperacillin-Tazobactam,140,117,83.6
+Salt Lake,2025-08,Staphylococcus aureus,Cephalexin,146,134,91.8
+Salt Lake,2025-08,Staphylococcus aureus,Clindamycin,146,118,80.8
+Salt Lake,2025-08,Staphylococcus aureus,Doxycycline,146,131,89.7
+Salt Lake,2025-08,Staphylococcus aureus,Oxacillin,146,139,95.2
+Salt Lake,2025-08,Staphylococcus aureus,TMP-SMX,146,130,89.0
+Salt Lake,2025-08,Staphylococcus aureus,Vancomycin,146,138,94.5
+Salt Lake,2025-08,Streptococcus pneumoniae,Amoxicillin,44,41,93.2
+Salt Lake,2025-08,Streptococcus pneumoniae,Azithromycin,44,21,47.7
+Salt Lake,2025-08,Streptococcus pneumoniae,Ceftriaxone,44,39,88.6
+Salt Lake,2025-08,Streptococcus pneumoniae,Doxycycline,44,33,75.0
+Salt Lake,2025-08,Streptococcus pneumoniae,Levofloxacin,44,41,93.2
+Salt Lake,2025-08,Streptococcus pneumoniae,Penicillin,44,33,75.0
+Salt Lake,2025-09,Enterococcus species,Ampicillin,129,92,71.3
+Salt Lake,2025-09,Enterococcus species,Linezolid,129,119,92.2
+Salt Lake,2025-09,Enterococcus species,Nitrofurantoin,129,99,76.7
+Salt Lake,2025-09,Enterococcus species,Vancomycin,129,107,82.9
+Salt Lake,2025-09,Escherichia coli,Amoxicillin-Clavulanate,582,368,63.2
+Salt Lake,2025-09,Escherichia coli,Ampicillin,582,236,40.5
+Salt Lake,2025-09,Escherichia coli,Ceftriaxone,582,494,84.9
+Salt Lake,2025-09,Escherichia coli,Ciprofloxacin,582,354,60.8
+Salt Lake,2025-09,Escherichia coli,Fosfomycin,582,533,91.6
+Salt Lake,2025-09,Escherichia coli,Nitrofurantoin,582,520,89.3
+Salt Lake,2025-09,Escherichia coli,TMP-SMX,582,428,73.5
+Salt Lake,2025-09,Haemophilus influenzae,Amoxicillin,34,24,70.6
+Salt Lake,2025-09,Haemophilus influenzae,Amoxicillin-Clavulanate,34,29,85.3
+Salt Lake,2025-09,Haemophilus influenzae,Azithromycin,34,29,85.3
+Salt Lake,2025-09,Haemophilus influenzae,Ceftriaxone,34,34,100.0
+Salt Lake,2025-09,Haemophilus influenzae,Doxycycline,34,31,91.2
+Salt Lake,2025-09,Klebsiella pneumoniae,Amoxicillin-Clavulanate,168,125,74.4
+Salt Lake,2025-09,Klebsiella pneumoniae,Ceftriaxone,168,126,75.0
+Salt Lake,2025-09,Klebsiella pneumoniae,Ciprofloxacin,168,130,77.4
+Salt Lake,2025-09,Klebsiella pneumoniae,Ertapenem,168,151,89.9
+Salt Lake,2025-09,Klebsiella pneumoniae,Nitrofurantoin,168,61,36.3
+Salt Lake,2025-09,MRSA,Clindamycin,111,61,55.0
+Salt Lake,2025-09,MRSA,Doxycycline,111,96,86.5
+Salt Lake,2025-09,MRSA,Linezolid,111,103,92.8
+Salt Lake,2025-09,MRSA,TMP-SMX,111,92,82.9
+Salt Lake,2025-09,MRSA,Vancomycin,111,103,92.8
+Salt Lake,2025-09,Pseudomonas aeruginosa,Cefepime,139,108,77.7
+Salt Lake,2025-09,Pseudomonas aeruginosa,Ceftazidime,139,113,81.3
+Salt Lake,2025-09,Pseudomonas aeruginosa,Ciprofloxacin,139,96,69.1
+Salt Lake,2025-09,Pseudomonas aeruginosa,Meropenem,139,118,84.9
+Salt Lake,2025-09,Pseudomonas aeruginosa,Piperacillin-Tazobactam,139,107,77.0
+Salt Lake,2025-09,Staphylococcus aureus,Cephalexin,177,167,94.4
+Salt Lake,2025-09,Staphylococcus aureus,Clindamycin,177,140,79.1
+Salt Lake,2025-09,Staphylococcus aureus,Doxycycline,177,156,88.1
+Salt Lake,2025-09,Staphylococcus aureus,Oxacillin,177,165,93.2
+Salt Lake,2025-09,Staphylococcus aureus,TMP-SMX,177,159,89.8
+Salt Lake,2025-09,Staphylococcus aureus,Vancomycin,177,161,91.0
+Salt Lake,2025-09,Streptococcus pneumoniae,Amoxicillin,53,46,86.8
+Salt Lake,2025-09,Streptococcus pneumoniae,Azithromycin,53,27,50.9
+Salt Lake,2025-09,Streptococcus pneumoniae,Ceftriaxone,53,48,90.6
+Salt Lake,2025-09,Streptococcus pneumoniae,Doxycycline,53,45,84.9
+Salt Lake,2025-09,Streptococcus pneumoniae,Levofloxacin,53,45,84.9
+Salt Lake,2025-09,Streptococcus pneumoniae,Penicillin,53,38,71.7
+Salt Lake,2025-10,Enterococcus species,Ampicillin,138,89,64.5
+Salt Lake,2025-10,Enterococcus species,Linezolid,138,131,94.9
+Salt Lake,2025-10,Enterococcus species,Nitrofurantoin,138,113,81.9
+Salt Lake,2025-10,Enterococcus species,Vancomycin,138,117,84.8
+Salt Lake,2025-10,Escherichia coli,Amoxicillin-Clavulanate,651,406,62.4
+Salt Lake,2025-10,Escherichia coli,Ampicillin,651,259,39.8
+Salt Lake,2025-10,Escherichia coli,Ceftriaxone,651,569,87.4
+Salt Lake,2025-10,Escherichia coli,Ciprofloxacin,651,422,64.8
+Salt Lake,2025-10,Escherichia coli,Fosfomycin,651,581,89.2
+Salt Lake,2025-10,Escherichia coli,Nitrofurantoin,651,583,89.6
+Salt Lake,2025-10,Escherichia coli,TMP-SMX,651,465,71.4
+Salt Lake,2025-10,Haemophilus influenzae,Amoxicillin,49,27,55.1
+Salt Lake,2025-10,Haemophilus influenzae,Amoxicillin-Clavulanate,49,39,79.6
+Salt Lake,2025-10,Haemophilus influenzae,Azithromycin,49,45,91.8
+Salt Lake,2025-10,Haemophilus influenzae,Ceftriaxone,49,47,95.9
+Salt Lake,2025-10,Haemophilus influenzae,Doxycycline,49,45,91.8
+Salt Lake,2025-10,Klebsiella pneumoniae,Amoxicillin-Clavulanate,213,155,72.8
+Salt Lake,2025-10,Klebsiella pneumoniae,Ceftriaxone,213,163,76.5
+Salt Lake,2025-10,Klebsiella pneumoniae,Ciprofloxacin,213,169,79.3
+Salt Lake,2025-10,Klebsiella pneumoniae,Ertapenem,213,200,93.9
+Salt Lake,2025-10,Klebsiella pneumoniae,Nitrofurantoin,213,66,31.0
+Salt Lake,2025-10,MRSA,Clindamycin,125,80,64.0
+Salt Lake,2025-10,MRSA,Doxycycline,125,110,88.0
+Salt Lake,2025-10,MRSA,Linezolid,125,120,96.0
+Salt Lake,2025-10,MRSA,TMP-SMX,125,102,81.6
+Salt Lake,2025-10,MRSA,Vancomycin,125,119,95.2
+Salt Lake,2025-10,Pseudomonas aeruginosa,Cefepime,184,127,69.0
+Salt Lake,2025-10,Pseudomonas aeruginosa,Ceftazidime,184,155,84.2
+Salt Lake,2025-10,Pseudomonas aeruginosa,Ciprofloxacin,184,124,67.4
+Salt Lake,2025-10,Pseudomonas aeruginosa,Meropenem,184,145,78.8
+Salt Lake,2025-10,Pseudomonas aeruginosa,Piperacillin-Tazobactam,184,146,79.3
+Salt Lake,2025-10,Staphylococcus aureus,Cephalexin,196,183,93.4
+Salt Lake,2025-10,Staphylococcus aureus,Clindamycin,196,163,83.2
+Salt Lake,2025-10,Staphylococcus aureus,Doxycycline,196,176,89.8
+Salt Lake,2025-10,Staphylococcus aureus,Oxacillin,196,187,95.4
+Salt Lake,2025-10,Staphylococcus aureus,TMP-SMX,196,176,89.8
+Salt Lake,2025-10,Staphylococcus aureus,Vancomycin,196,185,94.4
+Salt Lake,2025-10,Streptococcus pneumoniae,Amoxicillin,70,56,80.0
+Salt Lake,2025-10,Streptococcus pneumoniae,Azithromycin,70,39,55.7
+Salt Lake,2025-10,Streptococcus pneumoniae,Ceftriaxone,70,63,90.0
+Salt Lake,2025-10,Streptococcus pneumoniae,Doxycycline,70,57,81.4
+Salt Lake,2025-10,Streptococcus pneumoniae,Levofloxacin,70,65,92.9
+Salt Lake,2025-10,Streptococcus pneumoniae,Penicillin,70,53,75.7
+Salt Lake,2025-11,Enterococcus species,Ampicillin,137,89,65.0
+Salt Lake,2025-11,Enterococcus species,Linezolid,137,120,87.6
+Salt Lake,2025-11,Enterococcus species,Nitrofurantoin,137,105,76.6
+Salt Lake,2025-11,Enterococcus species,Vancomycin,137,110,80.3
+Salt Lake,2025-11,Escherichia coli,Amoxicillin-Clavulanate,629,415,66.0
+Salt Lake,2025-11,Escherichia coli,Ampicillin,629,262,41.7
+Salt Lake,2025-11,Escherichia coli,Ceftriaxone,629,534,84.9
+Salt Lake,2025-11,Escherichia coli,Ciprofloxacin,629,397,63.1
+Salt Lake,2025-11,Escherichia coli,Fosfomycin,629,576,91.6
+Salt Lake,2025-11,Escherichia coli,Nitrofurantoin,629,558,88.7
+Salt Lake,2025-11,Escherichia coli,TMP-SMX,629,450,71.5
+Salt Lake,2025-11,Haemophilus influenzae,Amoxicillin,54,35,64.8
+Salt Lake,2025-11,Haemophilus influenzae,Amoxicillin-Clavulanate,54,44,81.5
+Salt Lake,2025-11,Haemophilus influenzae,Azithromycin,54,44,81.5
+Salt Lake,2025-11,Haemophilus influenzae,Ceftriaxone,54,47,87.0
+Salt Lake,2025-11,Haemophilus influenzae,Doxycycline,54,46,85.2
+Salt Lake,2025-11,Klebsiella pneumoniae,Amoxicillin-Clavulanate,182,131,72.0
+Salt Lake,2025-11,Klebsiella pneumoniae,Ceftriaxone,182,134,73.6
+Salt Lake,2025-11,Klebsiella pneumoniae,Ciprofloxacin,182,152,83.5
+Salt Lake,2025-11,Klebsiella pneumoniae,Ertapenem,182,170,93.4
+Salt Lake,2025-11,Klebsiella pneumoniae,Nitrofurantoin,182,52,28.6
+Salt Lake,2025-11,MRSA,Clindamycin,113,65,57.5
+Salt Lake,2025-11,MRSA,Doxycycline,113,95,84.1
+Salt Lake,2025-11,MRSA,Linezolid,113,108,95.6
+Salt Lake,2025-11,MRSA,TMP-SMX,113,97,85.8
+Salt Lake,2025-11,MRSA,Vancomycin,113,106,93.8
+Salt Lake,2025-11,Pseudomonas aeruginosa,Cefepime,178,147,82.6
+Salt Lake,2025-11,Pseudomonas aeruginosa,Ceftazidime,178,144,80.9
+Salt Lake,2025-11,Pseudomonas aeruginosa,Ciprofloxacin,178,137,77.0
+Salt Lake,2025-11,Pseudomonas aeruginosa,Meropenem,178,142,79.8
+Salt Lake,2025-11,Pseudomonas aeruginosa,Piperacillin-Tazobactam,178,144,80.9
+Salt Lake,2025-11,Staphylococcus aureus,Cephalexin,180,166,92.2
+Salt Lake,2025-11,Staphylococcus aureus,Clindamycin,180,145,80.6
+Salt Lake,2025-11,Staphylococcus aureus,Doxycycline,180,164,91.1
+Salt Lake,2025-11,Staphylococcus aureus,Oxacillin,180,170,94.4
+Salt Lake,2025-11,Staphylococcus aureus,TMP-SMX,180,159,88.3
+Salt Lake,2025-11,Staphylococcus aureus,Vancomycin,180,170,94.4
+Salt Lake,2025-11,Streptococcus pneumoniae,Amoxicillin,54,48,88.9
+Salt Lake,2025-11,Streptococcus pneumoniae,Azithromycin,54,32,59.3
+Salt Lake,2025-11,Streptococcus pneumoniae,Ceftriaxone,54,49,90.7
+Salt Lake,2025-11,Streptococcus pneumoniae,Doxycycline,54,43,79.6
+Salt Lake,2025-11,Streptococcus pneumoniae,Levofloxacin,54,53,98.1
+Salt Lake,2025-11,Streptococcus pneumoniae,Penicillin,54,43,79.6
+Salt Lake,2025-12,Enterococcus species,Ampicillin,134,90,67.2
+Salt Lake,2025-12,Enterococcus species,Linezolid,134,127,94.8
+Salt Lake,2025-12,Enterococcus species,Nitrofurantoin,134,96,71.6
+Salt Lake,2025-12,Enterococcus species,Vancomycin,134,108,80.6
+Salt Lake,2025-12,Escherichia coli,Amoxicillin-Clavulanate,634,389,61.4
+Salt Lake,2025-12,Escherichia coli,Ampicillin,634,252,39.7
+Salt Lake,2025-12,Escherichia coli,Ceftriaxone,634,538,84.9
+Salt Lake,2025-12,Escherichia coli,Ciprofloxacin,634,433,68.3
+Salt Lake,2025-12,Escherichia coli,Fosfomycin,634,560,88.3
+Salt Lake,2025-12,Escherichia coli,Nitrofurantoin,634,563,88.8
+Salt Lake,2025-12,Escherichia coli,TMP-SMX,634,465,73.3
+Salt Lake,2025-12,Haemophilus influenzae,Amoxicillin,49,30,61.2
+Salt Lake,2025-12,Haemophilus influenzae,Amoxicillin-Clavulanate,49,46,93.9
+Salt Lake,2025-12,Haemophilus influenzae,Azithromycin,49,37,75.5
+Salt Lake,2025-12,Haemophilus influenzae,Ceftriaxone,49,43,87.8
+Salt Lake,2025-12,Haemophilus influenzae,Doxycycline,49,39,79.6
+Salt Lake,2025-12,Klebsiella pneumoniae,Amoxicillin-Clavulanate,197,149,75.6
+Salt Lake,2025-12,Klebsiella pneumoniae,Ceftriaxone,197,159,80.7
+Salt Lake,2025-12,Klebsiella pneumoniae,Ciprofloxacin,197,161,81.7
+Salt Lake,2025-12,Klebsiella pneumoniae,Ertapenem,197,178,90.4
+Salt Lake,2025-12,Klebsiella pneumoniae,Nitrofurantoin,197,67,34.0
+Salt Lake,2025-12,MRSA,Clindamycin,125,77,61.6
+Salt Lake,2025-12,MRSA,Doxycycline,125,110,88.0
+Salt Lake,2025-12,MRSA,Linezolid,125,117,93.6
+Salt Lake,2025-12,MRSA,TMP-SMX,125,107,85.6
+Salt Lake,2025-12,MRSA,Vancomycin,125,116,92.8
+Salt Lake,2025-12,Pseudomonas aeruginosa,Cefepime,174,129,74.1
+Salt Lake,2025-12,Pseudomonas aeruginosa,Ceftazidime,174,137,78.7
+Salt Lake,2025-12,Pseudomonas aeruginosa,Ciprofloxacin,174,121,69.5
+Salt Lake,2025-12,Pseudomonas aeruginosa,Meropenem,174,141,81.0
+Salt Lake,2025-12,Pseudomonas aeruginosa,Piperacillin-Tazobactam,174,135,77.6
+Salt Lake,2025-12,Staphylococcus aureus,Cephalexin,188,174,92.6
+Salt Lake,2025-12,Staphylococcus aureus,Clindamycin,188,140,74.5
+Salt Lake,2025-12,Staphylococcus aureus,Doxycycline,188,169,89.9
+Salt Lake,2025-12,Staphylococcus aureus,Oxacillin,188,180,95.7
+Salt Lake,2025-12,Staphylococcus aureus,TMP-SMX,188,167,88.8
+Salt Lake,2025-12,Staphylococcus aureus,Vancomycin,188,183,97.3
+Salt Lake,2025-12,Streptococcus pneumoniae,Amoxicillin,52,43,82.7
+Salt Lake,2025-12,Streptococcus pneumoniae,Azithromycin,52,28,53.8
+Salt Lake,2025-12,Streptococcus pneumoniae,Ceftriaxone,52,45,86.5
+Salt Lake,2025-12,Streptococcus pneumoniae,Doxycycline,52,39,75.0
+Salt Lake,2025-12,Streptococcus pneumoniae,Levofloxacin,52,44,84.6
+Salt Lake,2025-12,Streptococcus pneumoniae,Penicillin,52,38,73.1
+Salt Lake,2026-01,Enterococcus species,Ampicillin,142,94,66.2
+Salt Lake,2026-01,Enterococcus species,Linezolid,142,137,96.5
+Salt Lake,2026-01,Enterococcus species,Nitrofurantoin,142,104,73.2
+Salt Lake,2026-01,Enterococcus species,Vancomycin,142,113,79.6
+Salt Lake,2026-01,Escherichia coli,Amoxicillin-Clavulanate,612,378,61.8
+Salt Lake,2026-01,Escherichia coli,Ampicillin,612,228,37.3
+Salt Lake,2026-01,Escherichia coli,Ceftriaxone,612,518,84.6
+Salt Lake,2026-01,Escherichia coli,Ciprofloxacin,612,411,67.2
+Salt Lake,2026-01,Escherichia coli,Fosfomycin,612,562,91.8
+Salt Lake,2026-01,Escherichia coli,Nitrofurantoin,612,556,90.8
+Salt Lake,2026-01,Escherichia coli,TMP-SMX,612,446,72.9
+Salt Lake,2026-01,Haemophilus influenzae,Amoxicillin,47,36,76.6
+Salt Lake,2026-01,Haemophilus influenzae,Amoxicillin-Clavulanate,47,45,95.7
+Salt Lake,2026-01,Haemophilus influenzae,Azithromycin,47,44,93.6
+Salt Lake,2026-01,Haemophilus influenzae,Ceftriaxone,47,45,95.7
+Salt Lake,2026-01,Haemophilus influenzae,Doxycycline,47,42,89.4
+Salt Lake,2026-01,Klebsiella pneumoniae,Amoxicillin-Clavulanate,174,127,73.0
+Salt Lake,2026-01,Klebsiella pneumoniae,Ceftriaxone,174,135,77.6
+Salt Lake,2026-01,Klebsiella pneumoniae,Ciprofloxacin,174,136,78.2
+Salt Lake,2026-01,Klebsiella pneumoniae,Ertapenem,174,155,89.1
+Salt Lake,2026-01,Klebsiella pneumoniae,Nitrofurantoin,174,58,33.3
+Salt Lake,2026-01,MRSA,Clindamycin,112,65,58.0
+Salt Lake,2026-01,MRSA,Doxycycline,112,91,81.2
+Salt Lake,2026-01,MRSA,Linezolid,112,102,91.1
+Salt Lake,2026-01,MRSA,TMP-SMX,112,95,84.8
+Salt Lake,2026-01,MRSA,Vancomycin,112,106,94.6
+Salt Lake,2026-01,Pseudomonas aeruginosa,Cefepime,176,128,72.7
+Salt Lake,2026-01,Pseudomonas aeruginosa,Ceftazidime,176,143,81.2
+Salt Lake,2026-01,Pseudomonas aeruginosa,Ciprofloxacin,176,127,72.2
+Salt Lake,2026-01,Pseudomonas aeruginosa,Meropenem,176,135,76.7
+Salt Lake,2026-01,Pseudomonas aeruginosa,Piperacillin-Tazobactam,176,139,79.0
+Salt Lake,2026-01,Staphylococcus aureus,Cephalexin,163,154,94.5
+Salt Lake,2026-01,Staphylococcus aureus,Clindamycin,163,129,79.1
+Salt Lake,2026-01,Staphylococcus aureus,Doxycycline,163,142,87.1
+Salt Lake,2026-01,Staphylococcus aureus,Oxacillin,163,158,96.9
+Salt Lake,2026-01,Staphylococcus aureus,TMP-SMX,163,152,93.3
+Salt Lake,2026-01,Staphylococcus aureus,Vancomycin,163,152,93.3
+Salt Lake,2026-01,Streptococcus pneumoniae,Amoxicillin,74,63,85.1
+Salt Lake,2026-01,Streptococcus pneumoniae,Azithromycin,74,44,59.5
+Salt Lake,2026-01,Streptococcus pneumoniae,Ceftriaxone,74,64,86.5
+Salt Lake,2026-01,Streptococcus pneumoniae,Doxycycline,74,62,83.8
+Salt Lake,2026-01,Streptococcus pneumoniae,Levofloxacin,74,72,97.3
+Salt Lake,2026-01,Streptococcus pneumoniae,Penicillin,74,61,82.4
+Salt Lake,2026-02,Enterococcus species,Ampicillin,126,77,61.1
+Salt Lake,2026-02,Enterococcus species,Linezolid,126,121,96.0
+Salt Lake,2026-02,Enterococcus species,Nitrofurantoin,126,89,70.6
+Salt Lake,2026-02,Enterococcus species,Vancomycin,126,100,79.4
+Salt Lake,2026-02,Escherichia coli,Amoxicillin-Clavulanate,603,381,63.2
+Salt Lake,2026-02,Escherichia coli,Ampicillin,603,242,40.1
+Salt Lake,2026-02,Escherichia coli,Ceftriaxone,603,509,84.4
+Salt Lake,2026-02,Escherichia coli,Ciprofloxacin,603,355,58.9
+Salt Lake,2026-02,Escherichia coli,Fosfomycin,603,535,88.7
+Salt Lake,2026-02,Escherichia coli,Nitrofurantoin,603,531,88.1
+Salt Lake,2026-02,Escherichia coli,TMP-SMX,603,425,70.5
+Salt Lake,2026-02,Haemophilus influenzae,Amoxicillin,41,23,56.1
+Salt Lake,2026-02,Haemophilus influenzae,Amoxicillin-Clavulanate,41,38,92.7
+Salt Lake,2026-02,Haemophilus influenzae,Azithromycin,41,38,92.7
+Salt Lake,2026-02,Haemophilus influenzae,Ceftriaxone,41,38,92.7
+Salt Lake,2026-02,Haemophilus influenzae,Doxycycline,41,37,90.2
+Salt Lake,2026-02,Klebsiella pneumoniae,Amoxicillin-Clavulanate,183,133,72.7
+Salt Lake,2026-02,Klebsiella pneumoniae,Ceftriaxone,183,149,81.4
+Salt Lake,2026-02,Klebsiella pneumoniae,Ciprofloxacin,183,142,77.6
+Salt Lake,2026-02,Klebsiella pneumoniae,Ertapenem,183,163,89.1
+Salt Lake,2026-02,Klebsiella pneumoniae,Nitrofurantoin,183,67,36.6
+Salt Lake,2026-02,MRSA,Clindamycin,124,67,54.0
+Salt Lake,2026-02,MRSA,Doxycycline,124,104,83.9
+Salt Lake,2026-02,MRSA,Linezolid,124,115,92.7
+Salt Lake,2026-02,MRSA,TMP-SMX,124,103,83.1
+Salt Lake,2026-02,MRSA,Vancomycin,124,117,94.4
+Salt Lake,2026-02,Pseudomonas aeruginosa,Cefepime,160,125,78.1
+Salt Lake,2026-02,Pseudomonas aeruginosa,Ceftazidime,160,129,80.6
+Salt Lake,2026-02,Pseudomonas aeruginosa,Ciprofloxacin,160,116,72.5
+Salt Lake,2026-02,Pseudomonas aeruginosa,Meropenem,160,127,79.4
+Salt Lake,2026-02,Pseudomonas aeruginosa,Piperacillin-Tazobactam,160,132,82.5
+Salt Lake,2026-02,Staphylococcus aureus,Cephalexin,191,180,94.2
+Salt Lake,2026-02,Staphylococcus aureus,Clindamycin,191,152,79.6
+Salt Lake,2026-02,Staphylococcus aureus,Doxycycline,191,174,91.1
+Salt Lake,2026-02,Staphylococcus aureus,Oxacillin,191,181,94.8
+Salt Lake,2026-02,Staphylococcus aureus,TMP-SMX,191,172,90.1
+Salt Lake,2026-02,Staphylococcus aureus,Vancomycin,191,178,93.2
+Salt Lake,2026-02,Streptococcus pneumoniae,Amoxicillin,44,42,95.5
+Salt Lake,2026-02,Streptococcus pneumoniae,Azithromycin,44,29,65.9
+Salt Lake,2026-02,Streptococcus pneumoniae,Ceftriaxone,44,39,88.6
+Salt Lake,2026-02,Streptococcus pneumoniae,Doxycycline,44,39,88.6
+Salt Lake,2026-02,Streptococcus pneumoniae,Levofloxacin,44,42,95.5
+Salt Lake,2026-02,Streptococcus pneumoniae,Penicillin,44,37,84.1
+Salt Lake,2026-03,Enterococcus species,Ampicillin,125,83,66.4
+Salt Lake,2026-03,Enterococcus species,Linezolid,125,117,93.6
+Salt Lake,2026-03,Enterococcus species,Nitrofurantoin,125,82,65.6
+Salt Lake,2026-03,Enterococcus species,Vancomycin,125,98,78.4
+Salt Lake,2026-03,Escherichia coli,Amoxicillin-Clavulanate,615,389,63.3
+Salt Lake,2026-03,Escherichia coli,Ampicillin,615,239,38.9
+Salt Lake,2026-03,Escherichia coli,Ceftriaxone,615,523,85.0
+Salt Lake,2026-03,Escherichia coli,Ciprofloxacin,615,400,65.0
+Salt Lake,2026-03,Escherichia coli,Fosfomycin,615,563,91.5
+Salt Lake,2026-03,Escherichia coli,Nitrofurantoin,615,539,87.6
+Salt Lake,2026-03,Escherichia coli,TMP-SMX,615,443,72.0
+Salt Lake,2026-03,Haemophilus influenzae,Amoxicillin,39,26,66.7
+Salt Lake,2026-03,Haemophilus influenzae,Amoxicillin-Clavulanate,39,37,94.9
+Salt Lake,2026-03,Haemophilus influenzae,Azithromycin,39,31,79.5
+Salt Lake,2026-03,Haemophilus influenzae,Ceftriaxone,39,37,94.9
+Salt Lake,2026-03,Haemophilus influenzae,Doxycycline,39,34,87.2
+Salt Lake,2026-03,Klebsiella pneumoniae,Amoxicillin-Clavulanate,200,149,74.5
+Salt Lake,2026-03,Klebsiella pneumoniae,Ceftriaxone,200,156,78.0
+Salt Lake,2026-03,Klebsiella pneumoniae,Ciprofloxacin,200,165,82.5
+Salt Lake,2026-03,Klebsiella pneumoniae,Ertapenem,200,173,86.5
+Salt Lake,2026-03,Klebsiella pneumoniae,Nitrofurantoin,200,64,32.0
+Salt Lake,2026-03,MRSA,Clindamycin,134,80,59.7
+Salt Lake,2026-03,MRSA,Doxycycline,134,120,89.6
+Salt Lake,2026-03,MRSA,Linezolid,134,127,94.8
+Salt Lake,2026-03,MRSA,TMP-SMX,134,105,78.4
+Salt Lake,2026-03,MRSA,Vancomycin,134,129,96.3
+Salt Lake,2026-03,Pseudomonas aeruginosa,Cefepime,187,152,81.3
+Salt Lake,2026-03,Pseudomonas aeruginosa,Ceftazidime,187,158,84.5
+Salt Lake,2026-03,Pseudomonas aeruginosa,Ciprofloxacin,187,131,70.1
+Salt Lake,2026-03,Pseudomonas aeruginosa,Meropenem,187,149,79.7
+Salt Lake,2026-03,Pseudomonas aeruginosa,Piperacillin-Tazobactam,187,156,83.4
+Salt Lake,2026-03,Staphylococcus aureus,Cephalexin,172,166,96.5
+Salt Lake,2026-03,Staphylococcus aureus,Clindamycin,172,135,78.5
+Salt Lake,2026-03,Staphylococcus aureus,Doxycycline,172,157,91.3
+Salt Lake,2026-03,Staphylococcus aureus,Oxacillin,172,164,95.3
+Salt Lake,2026-03,Staphylococcus aureus,TMP-SMX,172,157,91.3
+Salt Lake,2026-03,Staphylococcus aureus,Vancomycin,172,158,91.9
+Salt Lake,2026-03,Streptococcus pneumoniae,Amoxicillin,60,52,86.7
+Salt Lake,2026-03,Streptococcus pneumoniae,Azithromycin,60,36,60.0
+Salt Lake,2026-03,Streptococcus pneumoniae,Ceftriaxone,60,53,88.3
+Salt Lake,2026-03,Streptococcus pneumoniae,Doxycycline,60,46,76.7
+Salt Lake,2026-03,Streptococcus pneumoniae,Levofloxacin,60,57,95.0
+Salt Lake,2026-03,Streptococcus pneumoniae,Penicillin,60,43,71.7
+Salt Lake,2026-04,Enterococcus species,Ampicillin,143,92,64.3
+Salt Lake,2026-04,Enterococcus species,Linezolid,143,134,93.7
+Salt Lake,2026-04,Enterococcus species,Nitrofurantoin,143,112,78.3
+Salt Lake,2026-04,Enterococcus species,Vancomycin,143,105,73.4
+Salt Lake,2026-04,Escherichia coli,Amoxicillin-Clavulanate,578,360,62.3
+Salt Lake,2026-04,Escherichia coli,Ampicillin,578,216,37.4
+Salt Lake,2026-04,Escherichia coli,Ceftriaxone,578,493,85.3
+Salt Lake,2026-04,Escherichia coli,Ciprofloxacin,578,374,64.7
+Salt Lake,2026-04,Escherichia coli,Fosfomycin,578,516,89.3
+Salt Lake,2026-04,Escherichia coli,Nitrofurantoin,578,496,85.8
+Salt Lake,2026-04,Escherichia coli,TMP-SMX,578,436,75.4
+Salt Lake,2026-04,Haemophilus influenzae,Amoxicillin,36,23,63.9
+Salt Lake,2026-04,Haemophilus influenzae,Amoxicillin-Clavulanate,36,32,88.9
+Salt Lake,2026-04,Haemophilus influenzae,Azithromycin,36,24,66.7
+Salt Lake,2026-04,Haemophilus influenzae,Ceftriaxone,36,33,91.7
+Salt Lake,2026-04,Haemophilus influenzae,Doxycycline,36,33,91.7
+Salt Lake,2026-04,Klebsiella pneumoniae,Amoxicillin-Clavulanate,165,120,72.7
+Salt Lake,2026-04,Klebsiella pneumoniae,Ceftriaxone,165,131,79.4
+Salt Lake,2026-04,Klebsiella pneumoniae,Ciprofloxacin,165,140,84.8
+Salt Lake,2026-04,Klebsiella pneumoniae,Ertapenem,165,146,88.5
+Salt Lake,2026-04,Klebsiella pneumoniae,Nitrofurantoin,165,58,35.2
+Salt Lake,2026-04,MRSA,Clindamycin,108,64,59.3
+Salt Lake,2026-04,MRSA,Doxycycline,108,89,82.4
+Salt Lake,2026-04,MRSA,Linezolid,108,100,92.6
+Salt Lake,2026-04,MRSA,TMP-SMX,108,89,82.4
+Salt Lake,2026-04,MRSA,Vancomycin,108,100,92.6
+Salt Lake,2026-04,Pseudomonas aeruginosa,Cefepime,140,109,77.9
+Salt Lake,2026-04,Pseudomonas aeruginosa,Ceftazidime,140,113,80.7
+Salt Lake,2026-04,Pseudomonas aeruginosa,Ciprofloxacin,140,106,75.7
+Salt Lake,2026-04,Pseudomonas aeruginosa,Meropenem,140,110,78.6
+Salt Lake,2026-04,Pseudomonas aeruginosa,Piperacillin-Tazobactam,140,109,77.9
+Salt Lake,2026-04,Staphylococcus aureus,Cephalexin,150,139,92.7
+Salt Lake,2026-04,Staphylococcus aureus,Clindamycin,150,118,78.7
+Salt Lake,2026-04,Staphylococcus aureus,Doxycycline,150,128,85.3
+Salt Lake,2026-04,Staphylococcus aureus,Oxacillin,150,140,93.3
+Salt Lake,2026-04,Staphylococcus aureus,TMP-SMX,150,135,90.0
+Salt Lake,2026-04,Staphylococcus aureus,Vancomycin,150,135,90.0
+Salt Lake,2026-04,Streptococcus pneumoniae,Amoxicillin,57,49,86.0
+Salt Lake,2026-04,Streptococcus pneumoniae,Azithromycin,57,35,61.4
+Salt Lake,2026-04,Streptococcus pneumoniae,Ceftriaxone,57,46,80.7
+Salt Lake,2026-04,Streptococcus pneumoniae,Doxycycline,57,40,70.2
+Salt Lake,2026-04,Streptococcus pneumoniae,Levofloxacin,57,53,93.0
+Salt Lake,2026-04,Streptococcus pneumoniae,Penicillin,57,42,73.7
+Utah,2024-05,Enterococcus species,Ampicillin,74,44,59.5
+Utah,2024-05,Enterococcus species,Linezolid,74,71,95.9
+Utah,2024-05,Enterococcus species,Nitrofurantoin,74,64,86.5
+Utah,2024-05,Enterococcus species,Vancomycin,74,55,74.3
+Utah,2024-05,Escherichia coli,Amoxicillin-Clavulanate,351,227,64.7
+Utah,2024-05,Escherichia coli,Ampicillin,351,152,43.3
+Utah,2024-05,Escherichia coli,Ceftriaxone,351,309,88.0
+Utah,2024-05,Escherichia coli,Ciprofloxacin,351,254,72.4
+Utah,2024-05,Escherichia coli,Fosfomycin,351,322,91.7
+Utah,2024-05,Escherichia coli,Nitrofurantoin,351,326,92.9
+Utah,2024-05,Escherichia coli,TMP-SMX,351,251,71.5
+Utah,2024-05,Haemophilus influenzae,Amoxicillin,21,14,66.7
+Utah,2024-05,Haemophilus influenzae,Amoxicillin-Clavulanate,21,20,95.2
+Utah,2024-05,Haemophilus influenzae,Azithromycin,21,17,81.0
+Utah,2024-05,Haemophilus influenzae,Ceftriaxone,21,19,90.5
+Utah,2024-05,Haemophilus influenzae,Doxycycline,21,20,95.2
+Utah,2024-05,Klebsiella pneumoniae,Amoxicillin-Clavulanate,103,65,63.1
+Utah,2024-05,Klebsiella pneumoniae,Ceftriaxone,103,93,90.3
+Utah,2024-05,Klebsiella pneumoniae,Ciprofloxacin,103,83,80.6
+Utah,2024-05,Klebsiella pneumoniae,Ertapenem,103,96,93.2
+Utah,2024-05,Klebsiella pneumoniae,Nitrofurantoin,103,30,29.1
+Utah,2024-05,MRSA,Clindamycin,53,31,58.5
+Utah,2024-05,MRSA,Doxycycline,53,44,83.0
+Utah,2024-05,MRSA,Linezolid,53,49,92.5
+Utah,2024-05,MRSA,TMP-SMX,53,47,88.7
+Utah,2024-05,MRSA,Vancomycin,53,53,100.0
+Utah,2024-05,Pseudomonas aeruginosa,Cefepime,87,71,81.6
+Utah,2024-05,Pseudomonas aeruginosa,Ceftazidime,87,70,80.5
+Utah,2024-05,Pseudomonas aeruginosa,Ciprofloxacin,87,70,80.5
+Utah,2024-05,Pseudomonas aeruginosa,Meropenem,87,76,87.4
+Utah,2024-05,Pseudomonas aeruginosa,Piperacillin-Tazobactam,87,72,82.8
+Utah,2024-05,Staphylococcus aureus,Cephalexin,126,125,99.2
+Utah,2024-05,Staphylococcus aureus,Clindamycin,126,100,79.4
+Utah,2024-05,Staphylococcus aureus,Doxycycline,126,116,92.1
+Utah,2024-05,Staphylococcus aureus,Oxacillin,126,119,94.4
+Utah,2024-05,Staphylococcus aureus,TMP-SMX,126,118,93.7
+Utah,2024-05,Staphylococcus aureus,Vancomycin,126,126,100.0
+Utah,2024-05,Streptococcus pneumoniae,Amoxicillin,22,21,95.5
+Utah,2024-05,Streptococcus pneumoniae,Azithromycin,22,16,72.7
+Utah,2024-05,Streptococcus pneumoniae,Ceftriaxone,22,22,100.0
+Utah,2024-05,Streptococcus pneumoniae,Doxycycline,22,20,90.9
+Utah,2024-05,Streptococcus pneumoniae,Levofloxacin,22,19,86.4
+Utah,2024-05,Streptococcus pneumoniae,Penicillin,22,16,72.7
+Utah,2024-06,Enterococcus species,Ampicillin,83,56,67.5
+Utah,2024-06,Enterococcus species,Linezolid,83,79,95.2
+Utah,2024-06,Enterococcus species,Nitrofurantoin,83,66,79.5
+Utah,2024-06,Enterococcus species,Vancomycin,83,66,79.5
+Utah,2024-06,Escherichia coli,Amoxicillin-Clavulanate,370,247,66.8
+Utah,2024-06,Escherichia coli,Ampicillin,370,159,43.0
+Utah,2024-06,Escherichia coli,Ceftriaxone,370,333,90.0
+Utah,2024-06,Escherichia coli,Ciprofloxacin,370,260,70.3
+Utah,2024-06,Escherichia coli,Fosfomycin,370,352,95.1
+Utah,2024-06,Escherichia coli,Nitrofurantoin,370,340,91.9
+Utah,2024-06,Escherichia coli,TMP-SMX,370,268,72.4
+Utah,2024-06,Haemophilus influenzae,Amoxicillin,14,5,35.7
+Utah,2024-06,Haemophilus influenzae,Amoxicillin-Clavulanate,14,11,78.6
+Utah,2024-06,Haemophilus influenzae,Azithromycin,14,11,78.6
+Utah,2024-06,Haemophilus influenzae,Ceftriaxone,14,12,85.7
+Utah,2024-06,Haemophilus influenzae,Doxycycline,14,12,85.7
+Utah,2024-06,Klebsiella pneumoniae,Amoxicillin-Clavulanate,95,75,78.9
+Utah,2024-06,Klebsiella pneumoniae,Ceftriaxone,95,83,87.4
+Utah,2024-06,Klebsiella pneumoniae,Ciprofloxacin,95,73,76.8
+Utah,2024-06,Klebsiella pneumoniae,Ertapenem,95,86,90.5
+Utah,2024-06,Klebsiella pneumoniae,Nitrofurantoin,95,31,32.6
+Utah,2024-06,MRSA,Clindamycin,56,37,66.1
+Utah,2024-06,MRSA,Doxycycline,56,52,92.9
+Utah,2024-06,MRSA,Linezolid,56,53,94.6
+Utah,2024-06,MRSA,TMP-SMX,56,47,83.9
+Utah,2024-06,MRSA,Vancomycin,56,54,96.4
+Utah,2024-06,Pseudomonas aeruginosa,Cefepime,83,64,77.1
+Utah,2024-06,Pseudomonas aeruginosa,Ceftazidime,83,69,83.1
+Utah,2024-06,Pseudomonas aeruginosa,Ciprofloxacin,83,65,78.3
+Utah,2024-06,Pseudomonas aeruginosa,Meropenem,83,72,86.7
+Utah,2024-06,Pseudomonas aeruginosa,Piperacillin-Tazobactam,83,68,81.9
+Utah,2024-06,Staphylococcus aureus,Cephalexin,106,100,94.3
+Utah,2024-06,Staphylococcus aureus,Clindamycin,106,94,88.7
+Utah,2024-06,Staphylococcus aureus,Doxycycline,106,98,92.5
+Utah,2024-06,Staphylococcus aureus,Oxacillin,106,103,97.2
+Utah,2024-06,Staphylococcus aureus,TMP-SMX,106,100,94.3
+Utah,2024-06,Staphylococcus aureus,Vancomycin,106,100,94.3
+Utah,2024-06,Streptococcus pneumoniae,Amoxicillin,26,22,84.6
+Utah,2024-06,Streptococcus pneumoniae,Azithromycin,26,16,61.5
+Utah,2024-06,Streptococcus pneumoniae,Ceftriaxone,26,26,100.0
+Utah,2024-06,Streptococcus pneumoniae,Doxycycline,26,23,88.5
+Utah,2024-06,Streptococcus pneumoniae,Levofloxacin,26,24,92.3
+Utah,2024-06,Streptococcus pneumoniae,Penicillin,26,22,84.6
+Utah,2024-07,Enterococcus species,Ampicillin,88,59,67.0
+Utah,2024-07,Enterococcus species,Linezolid,88,82,93.2
+Utah,2024-07,Enterococcus species,Nitrofurantoin,88,71,80.7
+Utah,2024-07,Enterococcus species,Vancomycin,88,70,79.5
+Utah,2024-07,Escherichia coli,Amoxicillin-Clavulanate,345,236,68.4
+Utah,2024-07,Escherichia coli,Ampicillin,345,133,38.6
+Utah,2024-07,Escherichia coli,Ceftriaxone,345,294,85.2
+Utah,2024-07,Escherichia coli,Ciprofloxacin,345,248,71.9
+Utah,2024-07,Escherichia coli,Fosfomycin,345,319,92.5
+Utah,2024-07,Escherichia coli,Nitrofurantoin,345,322,93.3
+Utah,2024-07,Escherichia coli,TMP-SMX,345,238,69.0
+Utah,2024-07,Haemophilus influenzae,Amoxicillin,12,9,75.0
+Utah,2024-07,Haemophilus influenzae,Amoxicillin-Clavulanate,12,12,100.0
+Utah,2024-07,Haemophilus influenzae,Azithromycin,12,7,58.3
+Utah,2024-07,Haemophilus influenzae,Ceftriaxone,12,12,100.0
+Utah,2024-07,Haemophilus influenzae,Doxycycline,12,11,91.7
+Utah,2024-07,Klebsiella pneumoniae,Amoxicillin-Clavulanate,105,79,75.2
+Utah,2024-07,Klebsiella pneumoniae,Ceftriaxone,105,84,80.0
+Utah,2024-07,Klebsiella pneumoniae,Ciprofloxacin,105,84,80.0
+Utah,2024-07,Klebsiella pneumoniae,Ertapenem,105,97,92.4
+Utah,2024-07,Klebsiella pneumoniae,Nitrofurantoin,105,35,33.3
+Utah,2024-07,MRSA,Clindamycin,66,39,59.1
+Utah,2024-07,MRSA,Doxycycline,66,58,87.9
+Utah,2024-07,MRSA,Linezolid,66,56,84.8
+Utah,2024-07,MRSA,TMP-SMX,66,57,86.4
+Utah,2024-07,MRSA,Vancomycin,66,61,92.4
+Utah,2024-07,Pseudomonas aeruginosa,Cefepime,72,61,84.7
+Utah,2024-07,Pseudomonas aeruginosa,Ceftazidime,72,58,80.6
+Utah,2024-07,Pseudomonas aeruginosa,Ciprofloxacin,72,50,69.4
+Utah,2024-07,Pseudomonas aeruginosa,Meropenem,72,59,81.9
+Utah,2024-07,Pseudomonas aeruginosa,Piperacillin-Tazobactam,72,58,80.6
+Utah,2024-07,Staphylococcus aureus,Cephalexin,96,88,91.7
+Utah,2024-07,Staphylococcus aureus,Clindamycin,96,78,81.2
+Utah,2024-07,Staphylococcus aureus,Doxycycline,96,88,91.7
+Utah,2024-07,Staphylococcus aureus,Oxacillin,96,90,93.8
+Utah,2024-07,Staphylococcus aureus,TMP-SMX,96,86,89.6
+Utah,2024-07,Staphylococcus aureus,Vancomycin,96,90,93.8
+Utah,2024-07,Streptococcus pneumoniae,Amoxicillin,30,24,80.0
+Utah,2024-07,Streptococcus pneumoniae,Azithromycin,30,18,60.0
+Utah,2024-07,Streptococcus pneumoniae,Ceftriaxone,30,29,96.7
+Utah,2024-07,Streptococcus pneumoniae,Doxycycline,30,21,70.0
+Utah,2024-07,Streptococcus pneumoniae,Levofloxacin,30,27,90.0
+Utah,2024-07,Streptococcus pneumoniae,Penicillin,30,25,83.3
+Utah,2024-08,Enterococcus species,Ampicillin,77,59,76.6
+Utah,2024-08,Enterococcus species,Linezolid,77,74,96.1
+Utah,2024-08,Enterococcus species,Nitrofurantoin,77,58,75.3
+Utah,2024-08,Enterococcus species,Vancomycin,77,58,75.3
+Utah,2024-08,Escherichia coli,Amoxicillin-Clavulanate,371,233,62.8
+Utah,2024-08,Escherichia coli,Ampicillin,371,142,38.3
+Utah,2024-08,Escherichia coli,Ceftriaxone,371,306,82.5
+Utah,2024-08,Escherichia coli,Ciprofloxacin,371,261,70.4
+Utah,2024-08,Escherichia coli,Fosfomycin,371,352,94.9
+Utah,2024-08,Escherichia coli,Nitrofurantoin,371,341,91.9
+Utah,2024-08,Escherichia coli,TMP-SMX,371,282,76.0
+Utah,2024-08,Haemophilus influenzae,Amoxicillin,19,12,63.2
+Utah,2024-08,Haemophilus influenzae,Amoxicillin-Clavulanate,19,19,100.0
+Utah,2024-08,Haemophilus influenzae,Azithromycin,19,15,78.9
+Utah,2024-08,Haemophilus influenzae,Ceftriaxone,19,18,94.7
+Utah,2024-08,Haemophilus influenzae,Doxycycline,19,16,84.2
+Utah,2024-08,Klebsiella pneumoniae,Amoxicillin-Clavulanate,87,68,78.2
+Utah,2024-08,Klebsiella pneumoniae,Ceftriaxone,87,70,80.5
+Utah,2024-08,Klebsiella pneumoniae,Ciprofloxacin,87,75,86.2
+Utah,2024-08,Klebsiella pneumoniae,Ertapenem,87,83,95.4
+Utah,2024-08,Klebsiella pneumoniae,Nitrofurantoin,87,35,40.2
+Utah,2024-08,MRSA,Clindamycin,63,34,54.0
+Utah,2024-08,MRSA,Doxycycline,63,58,92.1
+Utah,2024-08,MRSA,Linezolid,63,60,95.2
+Utah,2024-08,MRSA,TMP-SMX,63,60,95.2
+Utah,2024-08,MRSA,Vancomycin,63,59,93.7
+Utah,2024-08,Pseudomonas aeruginosa,Cefepime,100,82,82.0
+Utah,2024-08,Pseudomonas aeruginosa,Ceftazidime,100,84,84.0
+Utah,2024-08,Pseudomonas aeruginosa,Ciprofloxacin,100,78,78.0
+Utah,2024-08,Pseudomonas aeruginosa,Meropenem,100,85,85.0
+Utah,2024-08,Pseudomonas aeruginosa,Piperacillin-Tazobactam,100,88,88.0
+Utah,2024-08,Staphylococcus aureus,Cephalexin,105,100,95.2
+Utah,2024-08,Staphylococcus aureus,Clindamycin,105,85,81.0
+Utah,2024-08,Staphylococcus aureus,Doxycycline,105,96,91.4
+Utah,2024-08,Staphylococcus aureus,Oxacillin,105,100,95.2
+Utah,2024-08,Staphylococcus aureus,TMP-SMX,105,97,92.4
+Utah,2024-08,Staphylococcus aureus,Vancomycin,105,101,96.2
+Utah,2024-08,Streptococcus pneumoniae,Amoxicillin,31,26,83.9
+Utah,2024-08,Streptococcus pneumoniae,Azithromycin,31,17,54.8
+Utah,2024-08,Streptococcus pneumoniae,Ceftriaxone,31,27,87.1
+Utah,2024-08,Streptococcus pneumoniae,Doxycycline,31,26,83.9
+Utah,2024-08,Streptococcus pneumoniae,Levofloxacin,31,28,90.3
+Utah,2024-08,Streptococcus pneumoniae,Penicillin,31,25,80.6
+Utah,2024-09,Enterococcus species,Ampicillin,90,61,67.8
+Utah,2024-09,Enterococcus species,Linezolid,90,88,97.8
+Utah,2024-09,Enterococcus species,Nitrofurantoin,90,68,75.6
+Utah,2024-09,Enterococcus species,Vancomycin,90,79,87.8
+Utah,2024-09,Escherichia coli,Amoxicillin-Clavulanate,341,213,62.5
+Utah,2024-09,Escherichia coli,Ampicillin,341,143,41.9
+Utah,2024-09,Escherichia coli,Ceftriaxone,341,307,90.0
+Utah,2024-09,Escherichia coli,Ciprofloxacin,341,248,72.7
+Utah,2024-09,Escherichia coli,Fosfomycin,341,322,94.4
+Utah,2024-09,Escherichia coli,Nitrofurantoin,341,310,90.9
+Utah,2024-09,Escherichia coli,TMP-SMX,341,248,72.7
+Utah,2024-09,Haemophilus influenzae,Amoxicillin,24,18,75.0
+Utah,2024-09,Haemophilus influenzae,Amoxicillin-Clavulanate,24,23,95.8
+Utah,2024-09,Haemophilus influenzae,Azithromycin,24,18,75.0
+Utah,2024-09,Haemophilus influenzae,Ceftriaxone,24,21,87.5
+Utah,2024-09,Haemophilus influenzae,Doxycycline,24,21,87.5
+Utah,2024-09,Klebsiella pneumoniae,Amoxicillin-Clavulanate,123,89,72.4
+Utah,2024-09,Klebsiella pneumoniae,Ceftriaxone,123,100,81.3
+Utah,2024-09,Klebsiella pneumoniae,Ciprofloxacin,123,95,77.2
+Utah,2024-09,Klebsiella pneumoniae,Ertapenem,123,117,95.1
+Utah,2024-09,Klebsiella pneumoniae,Nitrofurantoin,123,46,37.4
+Utah,2024-09,MRSA,Clindamycin,72,46,63.9
+Utah,2024-09,MRSA,Doxycycline,72,64,88.9
+Utah,2024-09,MRSA,Linezolid,72,69,95.8
+Utah,2024-09,MRSA,TMP-SMX,72,63,87.5
+Utah,2024-09,MRSA,Vancomycin,72,65,90.3
+Utah,2024-09,Pseudomonas aeruginosa,Cefepime,88,71,80.7
+Utah,2024-09,Pseudomonas aeruginosa,Ceftazidime,88,74,84.1
+Utah,2024-09,Pseudomonas aeruginosa,Ciprofloxacin,88,67,76.1
+Utah,2024-09,Pseudomonas aeruginosa,Meropenem,88,71,80.7
+Utah,2024-09,Pseudomonas aeruginosa,Piperacillin-Tazobactam,88,76,86.4
+Utah,2024-09,Staphylococcus aureus,Cephalexin,111,100,90.1
+Utah,2024-09,Staphylococcus aureus,Clindamycin,111,90,81.1
+Utah,2024-09,Staphylococcus aureus,Doxycycline,111,102,91.9
+Utah,2024-09,Staphylococcus aureus,Oxacillin,111,107,96.4
+Utah,2024-09,Staphylococcus aureus,TMP-SMX,111,97,87.4
+Utah,2024-09,Staphylococcus aureus,Vancomycin,111,105,94.6
+Utah,2024-09,Streptococcus pneumoniae,Amoxicillin,18,15,83.3
+Utah,2024-09,Streptococcus pneumoniae,Azithromycin,18,12,66.7
+Utah,2024-09,Streptococcus pneumoniae,Ceftriaxone,18,15,83.3
+Utah,2024-09,Streptococcus pneumoniae,Doxycycline,18,15,83.3
+Utah,2024-09,Streptococcus pneumoniae,Levofloxacin,18,17,94.4
+Utah,2024-09,Streptococcus pneumoniae,Penicillin,18,15,83.3
+Utah,2024-10,Enterococcus species,Ampicillin,76,53,69.7
+Utah,2024-10,Enterococcus species,Linezolid,76,73,96.1
+Utah,2024-10,Enterococcus species,Nitrofurantoin,76,63,82.9
+Utah,2024-10,Enterococcus species,Vancomycin,76,64,84.2
+Utah,2024-10,Escherichia coli,Amoxicillin-Clavulanate,378,239,63.2
+Utah,2024-10,Escherichia coli,Ampicillin,378,159,42.1
+Utah,2024-10,Escherichia coli,Ceftriaxone,378,342,90.5
+Utah,2024-10,Escherichia coli,Ciprofloxacin,378,267,70.6
+Utah,2024-10,Escherichia coli,Fosfomycin,378,344,91.0
+Utah,2024-10,Escherichia coli,Nitrofurantoin,378,342,90.5
+Utah,2024-10,Escherichia coli,TMP-SMX,378,270,71.4
+Utah,2024-10,Haemophilus influenzae,Amoxicillin,30,23,76.7
+Utah,2024-10,Haemophilus influenzae,Amoxicillin-Clavulanate,30,29,96.7
+Utah,2024-10,Haemophilus influenzae,Azithromycin,30,27,90.0
+Utah,2024-10,Haemophilus influenzae,Ceftriaxone,30,27,90.0
+Utah,2024-10,Haemophilus influenzae,Doxycycline,30,28,93.3
+Utah,2024-10,Klebsiella pneumoniae,Amoxicillin-Clavulanate,104,80,76.9
+Utah,2024-10,Klebsiella pneumoniae,Ceftriaxone,104,85,81.7
+Utah,2024-10,Klebsiella pneumoniae,Ciprofloxacin,104,82,78.8
+Utah,2024-10,Klebsiella pneumoniae,Ertapenem,104,97,93.3
+Utah,2024-10,Klebsiella pneumoniae,Nitrofurantoin,104,45,43.3
+Utah,2024-10,MRSA,Clindamycin,62,40,64.5
+Utah,2024-10,MRSA,Doxycycline,62,60,96.8
+Utah,2024-10,MRSA,Linezolid,62,59,95.2
+Utah,2024-10,MRSA,TMP-SMX,62,57,91.9
+Utah,2024-10,MRSA,Vancomycin,62,61,98.4
+Utah,2024-10,Pseudomonas aeruginosa,Cefepime,97,73,75.3
+Utah,2024-10,Pseudomonas aeruginosa,Ceftazidime,97,89,91.8
+Utah,2024-10,Pseudomonas aeruginosa,Ciprofloxacin,97,79,81.4
+Utah,2024-10,Pseudomonas aeruginosa,Meropenem,97,75,77.3
+Utah,2024-10,Pseudomonas aeruginosa,Piperacillin-Tazobactam,97,79,81.4
+Utah,2024-10,Staphylococcus aureus,Cephalexin,132,121,91.7
+Utah,2024-10,Staphylococcus aureus,Clindamycin,132,106,80.3
+Utah,2024-10,Staphylococcus aureus,Doxycycline,132,119,90.2
+Utah,2024-10,Staphylococcus aureus,Oxacillin,132,127,96.2
+Utah,2024-10,Staphylococcus aureus,TMP-SMX,132,126,95.5
+Utah,2024-10,Staphylococcus aureus,Vancomycin,132,126,95.5
+Utah,2024-10,Streptococcus pneumoniae,Amoxicillin,32,28,87.5
+Utah,2024-10,Streptococcus pneumoniae,Azithromycin,32,15,46.9
+Utah,2024-10,Streptococcus pneumoniae,Ceftriaxone,32,29,90.6
+Utah,2024-10,Streptococcus pneumoniae,Doxycycline,32,24,75.0
+Utah,2024-10,Streptococcus pneumoniae,Levofloxacin,32,29,90.6
+Utah,2024-10,Streptococcus pneumoniae,Penicillin,32,24,75.0
+Utah,2024-11,Enterococcus species,Ampicillin,60,45,75.0
+Utah,2024-11,Enterococcus species,Linezolid,60,60,100.0
+Utah,2024-11,Enterococcus species,Nitrofurantoin,60,51,85.0
+Utah,2024-11,Enterococcus species,Vancomycin,60,48,80.0
+Utah,2024-11,Escherichia coli,Amoxicillin-Clavulanate,388,253,65.2
+Utah,2024-11,Escherichia coli,Ampicillin,388,157,40.5
+Utah,2024-11,Escherichia coli,Ceftriaxone,388,326,84.0
+Utah,2024-11,Escherichia coli,Ciprofloxacin,388,274,70.6
+Utah,2024-11,Escherichia coli,Fosfomycin,388,374,96.4
+Utah,2024-11,Escherichia coli,Nitrofurantoin,388,350,90.2
+Utah,2024-11,Escherichia coli,TMP-SMX,388,275,70.9
+Utah,2024-11,Haemophilus influenzae,Amoxicillin,29,17,58.6
+Utah,2024-11,Haemophilus influenzae,Amoxicillin-Clavulanate,29,28,96.6
+Utah,2024-11,Haemophilus influenzae,Azithromycin,29,23,79.3
+Utah,2024-11,Haemophilus influenzae,Ceftriaxone,29,26,89.7
+Utah,2024-11,Haemophilus influenzae,Doxycycline,29,23,79.3
+Utah,2024-11,Klebsiella pneumoniae,Amoxicillin-Clavulanate,101,79,78.2
+Utah,2024-11,Klebsiella pneumoniae,Ceftriaxone,101,77,76.2
+Utah,2024-11,Klebsiella pneumoniae,Ciprofloxacin,101,79,78.2
+Utah,2024-11,Klebsiella pneumoniae,Ertapenem,101,89,88.1
+Utah,2024-11,Klebsiella pneumoniae,Nitrofurantoin,101,38,37.6
+Utah,2024-11,MRSA,Clindamycin,64,41,64.1
+Utah,2024-11,MRSA,Doxycycline,64,53,82.8
+Utah,2024-11,MRSA,Linezolid,64,60,93.8
+Utah,2024-11,MRSA,TMP-SMX,64,59,92.2
+Utah,2024-11,MRSA,Vancomycin,64,62,96.9
+Utah,2024-11,Pseudomonas aeruginosa,Cefepime,103,80,77.7
+Utah,2024-11,Pseudomonas aeruginosa,Ceftazidime,103,87,84.5
+Utah,2024-11,Pseudomonas aeruginosa,Ciprofloxacin,103,79,76.7
+Utah,2024-11,Pseudomonas aeruginosa,Meropenem,103,85,82.5
+Utah,2024-11,Pseudomonas aeruginosa,Piperacillin-Tazobactam,103,86,83.5
+Utah,2024-11,Staphylococcus aureus,Cephalexin,104,99,95.2
+Utah,2024-11,Staphylococcus aureus,Clindamycin,104,82,78.8
+Utah,2024-11,Staphylococcus aureus,Doxycycline,104,93,89.4
+Utah,2024-11,Staphylococcus aureus,Oxacillin,104,100,96.2
+Utah,2024-11,Staphylococcus aureus,TMP-SMX,104,99,95.2
+Utah,2024-11,Staphylococcus aureus,Vancomycin,104,102,98.1
+Utah,2024-11,Streptococcus pneumoniae,Amoxicillin,36,32,88.9
+Utah,2024-11,Streptococcus pneumoniae,Azithromycin,36,18,50.0
+Utah,2024-11,Streptococcus pneumoniae,Ceftriaxone,36,34,94.4
+Utah,2024-11,Streptococcus pneumoniae,Doxycycline,36,33,91.7
+Utah,2024-11,Streptococcus pneumoniae,Levofloxacin,36,35,97.2
+Utah,2024-11,Streptococcus pneumoniae,Penicillin,36,32,88.9
+Utah,2024-12,Enterococcus species,Ampicillin,88,65,73.9
+Utah,2024-12,Enterococcus species,Linezolid,88,81,92.0
+Utah,2024-12,Enterococcus species,Nitrofurantoin,88,75,85.2
+Utah,2024-12,Enterococcus species,Vancomycin,88,67,76.1
+Utah,2024-12,Escherichia coli,Amoxicillin-Clavulanate,384,263,68.5
+Utah,2024-12,Escherichia coli,Ampicillin,384,164,42.7
+Utah,2024-12,Escherichia coli,Ceftriaxone,384,337,87.8
+Utah,2024-12,Escherichia coli,Ciprofloxacin,384,278,72.4
+Utah,2024-12,Escherichia coli,Fosfomycin,384,358,93.2
+Utah,2024-12,Escherichia coli,Nitrofurantoin,384,351,91.4
+Utah,2024-12,Escherichia coli,TMP-SMX,384,283,73.7
+Utah,2024-12,Haemophilus influenzae,Amoxicillin,24,20,83.3
+Utah,2024-12,Haemophilus influenzae,Amoxicillin-Clavulanate,24,22,91.7
+Utah,2024-12,Haemophilus influenzae,Azithromycin,24,22,91.7
+Utah,2024-12,Haemophilus influenzae,Ceftriaxone,24,23,95.8
+Utah,2024-12,Haemophilus influenzae,Doxycycline,24,23,95.8
+Utah,2024-12,Klebsiella pneumoniae,Amoxicillin-Clavulanate,135,100,74.1
+Utah,2024-12,Klebsiella pneumoniae,Ceftriaxone,135,105,77.8
+Utah,2024-12,Klebsiella pneumoniae,Ciprofloxacin,135,104,77.0
+Utah,2024-12,Klebsiella pneumoniae,Ertapenem,135,125,92.6
+Utah,2024-12,Klebsiella pneumoniae,Nitrofurantoin,135,54,40.0
+Utah,2024-12,MRSA,Clindamycin,63,38,60.3
+Utah,2024-12,MRSA,Doxycycline,63,53,84.1
+Utah,2024-12,MRSA,Linezolid,63,57,90.5
+Utah,2024-12,MRSA,TMP-SMX,63,54,85.7
+Utah,2024-12,MRSA,Vancomycin,63,61,96.8
+Utah,2024-12,Pseudomonas aeruginosa,Cefepime,113,98,86.7
+Utah,2024-12,Pseudomonas aeruginosa,Ceftazidime,113,99,87.6
+Utah,2024-12,Pseudomonas aeruginosa,Ciprofloxacin,113,84,74.3
+Utah,2024-12,Pseudomonas aeruginosa,Meropenem,113,93,82.3
+Utah,2024-12,Pseudomonas aeruginosa,Piperacillin-Tazobactam,113,85,75.2
+Utah,2024-12,Staphylococcus aureus,Cephalexin,112,105,93.8
+Utah,2024-12,Staphylococcus aureus,Clindamycin,112,95,84.8
+Utah,2024-12,Staphylococcus aureus,Doxycycline,112,104,92.9
+Utah,2024-12,Staphylococcus aureus,Oxacillin,112,108,96.4
+Utah,2024-12,Staphylococcus aureus,TMP-SMX,112,107,95.5
+Utah,2024-12,Staphylococcus aureus,Vancomycin,112,109,97.3
+Utah,2024-12,Streptococcus pneumoniae,Amoxicillin,38,34,89.5
+Utah,2024-12,Streptococcus pneumoniae,Azithromycin,38,24,63.2
+Utah,2024-12,Streptococcus pneumoniae,Ceftriaxone,38,33,86.8
+Utah,2024-12,Streptococcus pneumoniae,Doxycycline,38,29,76.3
+Utah,2024-12,Streptococcus pneumoniae,Levofloxacin,38,34,89.5
+Utah,2024-12,Streptococcus pneumoniae,Penicillin,38,31,81.6
+Utah,2025-01,Enterococcus species,Ampicillin,90,68,75.6
+Utah,2025-01,Enterococcus species,Linezolid,90,89,98.9
+Utah,2025-01,Enterococcus species,Nitrofurantoin,90,58,64.4
+Utah,2025-01,Enterococcus species,Vancomycin,90,81,90.0
+Utah,2025-01,Escherichia coli,Amoxicillin-Clavulanate,358,234,65.4
+Utah,2025-01,Escherichia coli,Ampicillin,358,143,39.9
+Utah,2025-01,Escherichia coli,Ceftriaxone,358,322,89.9
+Utah,2025-01,Escherichia coli,Ciprofloxacin,358,244,68.2
+Utah,2025-01,Escherichia coli,Fosfomycin,358,328,91.6
+Utah,2025-01,Escherichia coli,Nitrofurantoin,358,318,88.8
+Utah,2025-01,Escherichia coli,TMP-SMX,358,259,72.3
+Utah,2025-01,Haemophilus influenzae,Amoxicillin,28,23,82.1
+Utah,2025-01,Haemophilus influenzae,Amoxicillin-Clavulanate,28,21,75.0
+Utah,2025-01,Haemophilus influenzae,Azithromycin,28,25,89.3
+Utah,2025-01,Haemophilus influenzae,Ceftriaxone,28,27,96.4
+Utah,2025-01,Haemophilus influenzae,Doxycycline,28,25,89.3
+Utah,2025-01,Klebsiella pneumoniae,Amoxicillin-Clavulanate,124,90,72.6
+Utah,2025-01,Klebsiella pneumoniae,Ceftriaxone,124,101,81.5
+Utah,2025-01,Klebsiella pneumoniae,Ciprofloxacin,124,84,67.7
+Utah,2025-01,Klebsiella pneumoniae,Ertapenem,124,114,91.9
+Utah,2025-01,Klebsiella pneumoniae,Nitrofurantoin,124,37,29.8
+Utah,2025-01,MRSA,Clindamycin,61,38,62.3
+Utah,2025-01,MRSA,Doxycycline,61,55,90.2
+Utah,2025-01,MRSA,Linezolid,61,57,93.4
+Utah,2025-01,MRSA,TMP-SMX,61,52,85.2
+Utah,2025-01,MRSA,Vancomycin,61,60,98.4
+Utah,2025-01,Pseudomonas aeruginosa,Cefepime,87,68,78.2
+Utah,2025-01,Pseudomonas aeruginosa,Ceftazidime,87,79,90.8
+Utah,2025-01,Pseudomonas aeruginosa,Ciprofloxacin,87,62,71.3
+Utah,2025-01,Pseudomonas aeruginosa,Meropenem,87,70,80.5
+Utah,2025-01,Pseudomonas aeruginosa,Piperacillin-Tazobactam,87,64,73.6
+Utah,2025-01,Staphylococcus aureus,Cephalexin,104,100,96.2
+Utah,2025-01,Staphylococcus aureus,Clindamycin,104,79,76.0
+Utah,2025-01,Staphylococcus aureus,Doxycycline,104,94,90.4
+Utah,2025-01,Staphylococcus aureus,Oxacillin,104,100,96.2
+Utah,2025-01,Staphylococcus aureus,TMP-SMX,104,96,92.3
+Utah,2025-01,Staphylococcus aureus,Vancomycin,104,102,98.1
+Utah,2025-01,Streptococcus pneumoniae,Amoxicillin,33,27,81.8
+Utah,2025-01,Streptococcus pneumoniae,Azithromycin,33,20,60.6
+Utah,2025-01,Streptococcus pneumoniae,Ceftriaxone,33,31,93.9
+Utah,2025-01,Streptococcus pneumoniae,Doxycycline,33,26,78.8
+Utah,2025-01,Streptococcus pneumoniae,Levofloxacin,33,29,87.9
+Utah,2025-01,Streptococcus pneumoniae,Penicillin,33,26,78.8
+Utah,2025-02,Enterococcus species,Ampicillin,89,55,61.8
+Utah,2025-02,Enterococcus species,Linezolid,89,86,96.6
+Utah,2025-02,Enterococcus species,Nitrofurantoin,89,66,74.2
+Utah,2025-02,Enterococcus species,Vancomycin,89,76,85.4
+Utah,2025-02,Escherichia coli,Amoxicillin-Clavulanate,359,234,65.2
+Utah,2025-02,Escherichia coli,Ampicillin,359,145,40.4
+Utah,2025-02,Escherichia coli,Ceftriaxone,359,318,88.6
+Utah,2025-02,Escherichia coli,Ciprofloxacin,359,258,71.9
+Utah,2025-02,Escherichia coli,Fosfomycin,359,333,92.8
+Utah,2025-02,Escherichia coli,Nitrofurantoin,359,325,90.5
+Utah,2025-02,Escherichia coli,TMP-SMX,359,266,74.1
+Utah,2025-02,Haemophilus influenzae,Amoxicillin,23,15,65.2
+Utah,2025-02,Haemophilus influenzae,Amoxicillin-Clavulanate,23,21,91.3
+Utah,2025-02,Haemophilus influenzae,Azithromycin,23,21,91.3
+Utah,2025-02,Haemophilus influenzae,Ceftriaxone,23,22,95.7
+Utah,2025-02,Haemophilus influenzae,Doxycycline,23,23,100.0
+Utah,2025-02,Klebsiella pneumoniae,Amoxicillin-Clavulanate,118,76,64.4
+Utah,2025-02,Klebsiella pneumoniae,Ceftriaxone,118,102,86.4
+Utah,2025-02,Klebsiella pneumoniae,Ciprofloxacin,118,83,70.3
+Utah,2025-02,Klebsiella pneumoniae,Ertapenem,118,110,93.2
+Utah,2025-02,Klebsiella pneumoniae,Nitrofurantoin,118,43,36.4
+Utah,2025-02,MRSA,Clindamycin,68,43,63.2
+Utah,2025-02,MRSA,Doxycycline,68,62,91.2
+Utah,2025-02,MRSA,Linezolid,68,67,98.5
+Utah,2025-02,MRSA,TMP-SMX,68,60,88.2
+Utah,2025-02,MRSA,Vancomycin,68,65,95.6
+Utah,2025-02,Pseudomonas aeruginosa,Cefepime,98,76,77.6
+Utah,2025-02,Pseudomonas aeruginosa,Ceftazidime,98,81,82.7
+Utah,2025-02,Pseudomonas aeruginosa,Ciprofloxacin,98,77,78.6
+Utah,2025-02,Pseudomonas aeruginosa,Meropenem,98,81,82.7
+Utah,2025-02,Pseudomonas aeruginosa,Piperacillin-Tazobactam,98,77,78.6
+Utah,2025-02,Staphylococcus aureus,Cephalexin,122,119,97.5
+Utah,2025-02,Staphylococcus aureus,Clindamycin,122,96,78.7
+Utah,2025-02,Staphylococcus aureus,Doxycycline,122,113,92.6
+Utah,2025-02,Staphylococcus aureus,Oxacillin,122,119,97.5
+Utah,2025-02,Staphylococcus aureus,TMP-SMX,122,118,96.7
+Utah,2025-02,Staphylococcus aureus,Vancomycin,122,116,95.1
+Utah,2025-02,Streptococcus pneumoniae,Amoxicillin,35,33,94.3
+Utah,2025-02,Streptococcus pneumoniae,Azithromycin,35,17,48.6
+Utah,2025-02,Streptococcus pneumoniae,Ceftriaxone,35,30,85.7
+Utah,2025-02,Streptococcus pneumoniae,Doxycycline,35,31,88.6
+Utah,2025-02,Streptococcus pneumoniae,Levofloxacin,35,34,97.1
+Utah,2025-02,Streptococcus pneumoniae,Penicillin,35,26,74.3
+Utah,2025-03,Enterococcus species,Ampicillin,89,62,69.7
+Utah,2025-03,Enterococcus species,Linezolid,89,86,96.6
+Utah,2025-03,Enterococcus species,Nitrofurantoin,89,70,78.7
+Utah,2025-03,Enterococcus species,Vancomycin,89,72,80.9
+Utah,2025-03,Escherichia coli,Amoxicillin-Clavulanate,348,217,62.4
+Utah,2025-03,Escherichia coli,Ampicillin,348,144,41.4
+Utah,2025-03,Escherichia coli,Ceftriaxone,348,300,86.2
+Utah,2025-03,Escherichia coli,Ciprofloxacin,348,241,69.3
+Utah,2025-03,Escherichia coli,Fosfomycin,348,318,91.4
+Utah,2025-03,Escherichia coli,Nitrofurantoin,348,306,87.9
+Utah,2025-03,Escherichia coli,TMP-SMX,348,238,68.4
+Utah,2025-03,Haemophilus influenzae,Amoxicillin,25,17,68.0
+Utah,2025-03,Haemophilus influenzae,Amoxicillin-Clavulanate,25,23,92.0
+Utah,2025-03,Haemophilus influenzae,Azithromycin,25,19,76.0
+Utah,2025-03,Haemophilus influenzae,Ceftriaxone,25,23,92.0
+Utah,2025-03,Haemophilus influenzae,Doxycycline,25,22,88.0
+Utah,2025-03,Klebsiella pneumoniae,Amoxicillin-Clavulanate,107,77,72.0
+Utah,2025-03,Klebsiella pneumoniae,Ceftriaxone,107,85,79.4
+Utah,2025-03,Klebsiella pneumoniae,Ciprofloxacin,107,83,77.6
+Utah,2025-03,Klebsiella pneumoniae,Ertapenem,107,98,91.6
+Utah,2025-03,Klebsiella pneumoniae,Nitrofurantoin,107,40,37.4
+Utah,2025-03,MRSA,Clindamycin,54,39,72.2
+Utah,2025-03,MRSA,Doxycycline,54,49,90.7
+Utah,2025-03,MRSA,Linezolid,54,53,98.1
+Utah,2025-03,MRSA,TMP-SMX,54,49,90.7
+Utah,2025-03,MRSA,Vancomycin,54,53,98.1
+Utah,2025-03,Pseudomonas aeruginosa,Cefepime,89,73,82.0
+Utah,2025-03,Pseudomonas aeruginosa,Ceftazidime,89,74,83.1
+Utah,2025-03,Pseudomonas aeruginosa,Ciprofloxacin,89,67,75.3
+Utah,2025-03,Pseudomonas aeruginosa,Meropenem,89,71,79.8
+Utah,2025-03,Pseudomonas aeruginosa,Piperacillin-Tazobactam,89,69,77.5
+Utah,2025-03,Staphylococcus aureus,Cephalexin,116,114,98.3
+Utah,2025-03,Staphylococcus aureus,Clindamycin,116,98,84.5
+Utah,2025-03,Staphylococcus aureus,Doxycycline,116,107,92.2
+Utah,2025-03,Staphylococcus aureus,Oxacillin,116,113,97.4
+Utah,2025-03,Staphylococcus aureus,TMP-SMX,116,111,95.7
+Utah,2025-03,Staphylococcus aureus,Vancomycin,116,108,93.1
+Utah,2025-03,Streptococcus pneumoniae,Amoxicillin,32,28,87.5
+Utah,2025-03,Streptococcus pneumoniae,Azithromycin,32,20,62.5
+Utah,2025-03,Streptococcus pneumoniae,Ceftriaxone,32,27,84.4
+Utah,2025-03,Streptococcus pneumoniae,Doxycycline,32,23,71.9
+Utah,2025-03,Streptococcus pneumoniae,Levofloxacin,32,30,93.8
+Utah,2025-03,Streptococcus pneumoniae,Penicillin,32,24,75.0
+Utah,2025-04,Enterococcus species,Ampicillin,88,65,73.9
+Utah,2025-04,Enterococcus species,Linezolid,88,82,93.2
+Utah,2025-04,Enterococcus species,Nitrofurantoin,88,72,81.8
+Utah,2025-04,Enterococcus species,Vancomycin,88,73,83.0
+Utah,2025-04,Escherichia coli,Amoxicillin-Clavulanate,337,218,64.7
+Utah,2025-04,Escherichia coli,Ampicillin,337,135,40.1
+Utah,2025-04,Escherichia coli,Ceftriaxone,337,300,89.0
+Utah,2025-04,Escherichia coli,Ciprofloxacin,337,232,68.8
+Utah,2025-04,Escherichia coli,Fosfomycin,337,313,92.9
+Utah,2025-04,Escherichia coli,Nitrofurantoin,337,298,88.4
+Utah,2025-04,Escherichia coli,TMP-SMX,337,255,75.7
+Utah,2025-04,Haemophilus influenzae,Amoxicillin,18,15,83.3
+Utah,2025-04,Haemophilus influenzae,Amoxicillin-Clavulanate,18,17,94.4
+Utah,2025-04,Haemophilus influenzae,Azithromycin,18,15,83.3
+Utah,2025-04,Haemophilus influenzae,Ceftriaxone,18,18,100.0
+Utah,2025-04,Haemophilus influenzae,Doxycycline,18,18,100.0
+Utah,2025-04,Klebsiella pneumoniae,Amoxicillin-Clavulanate,118,78,66.1
+Utah,2025-04,Klebsiella pneumoniae,Ceftriaxone,118,98,83.1
+Utah,2025-04,Klebsiella pneumoniae,Ciprofloxacin,118,92,78.0
+Utah,2025-04,Klebsiella pneumoniae,Ertapenem,118,107,90.7
+Utah,2025-04,Klebsiella pneumoniae,Nitrofurantoin,118,44,37.3
+Utah,2025-04,MRSA,Clindamycin,70,43,61.4
+Utah,2025-04,MRSA,Doxycycline,70,62,88.6
+Utah,2025-04,MRSA,Linezolid,70,68,97.1
+Utah,2025-04,MRSA,TMP-SMX,70,60,85.7
+Utah,2025-04,MRSA,Vancomycin,70,68,97.1
+Utah,2025-04,Pseudomonas aeruginosa,Cefepime,102,80,78.4
+Utah,2025-04,Pseudomonas aeruginosa,Ceftazidime,102,85,83.3
+Utah,2025-04,Pseudomonas aeruginosa,Ciprofloxacin,102,71,69.6
+Utah,2025-04,Pseudomonas aeruginosa,Meropenem,102,82,80.4
+Utah,2025-04,Pseudomonas aeruginosa,Piperacillin-Tazobactam,102,87,85.3
+Utah,2025-04,Staphylococcus aureus,Cephalexin,137,130,94.9
+Utah,2025-04,Staphylococcus aureus,Clindamycin,137,116,84.7
+Utah,2025-04,Staphylococcus aureus,Doxycycline,137,121,88.3
+Utah,2025-04,Staphylococcus aureus,Oxacillin,137,133,97.1
+Utah,2025-04,Staphylococcus aureus,TMP-SMX,137,126,92.0
+Utah,2025-04,Staphylococcus aureus,Vancomycin,137,128,93.4
+Utah,2025-04,Streptococcus pneumoniae,Amoxicillin,21,19,90.5
+Utah,2025-04,Streptococcus pneumoniae,Azithromycin,21,12,57.1
+Utah,2025-04,Streptococcus pneumoniae,Ceftriaxone,21,20,95.2
+Utah,2025-04,Streptococcus pneumoniae,Doxycycline,21,18,85.7
+Utah,2025-04,Streptococcus pneumoniae,Levofloxacin,21,20,95.2
+Utah,2025-04,Streptococcus pneumoniae,Penicillin,21,16,76.2
+Utah,2025-05,Enterococcus species,Ampicillin,72,42,58.3
+Utah,2025-05,Enterococcus species,Linezolid,72,67,93.1
+Utah,2025-05,Enterococcus species,Nitrofurantoin,72,60,83.3
+Utah,2025-05,Enterococcus species,Vancomycin,72,60,83.3
+Utah,2025-05,Escherichia coli,Amoxicillin-Clavulanate,365,235,64.4
+Utah,2025-05,Escherichia coli,Ampicillin,365,141,38.6
+Utah,2025-05,Escherichia coli,Ceftriaxone,365,319,87.4
+Utah,2025-05,Escherichia coli,Ciprofloxacin,365,274,75.1
+Utah,2025-05,Escherichia coli,Fosfomycin,365,337,92.3
+Utah,2025-05,Escherichia coli,Nitrofurantoin,365,329,90.1
+Utah,2025-05,Escherichia coli,TMP-SMX,365,264,72.3
+Utah,2025-05,Haemophilus influenzae,Amoxicillin,20,12,60.0
+Utah,2025-05,Haemophilus influenzae,Amoxicillin-Clavulanate,20,19,95.0
+Utah,2025-05,Haemophilus influenzae,Azithromycin,20,19,95.0
+Utah,2025-05,Haemophilus influenzae,Ceftriaxone,20,20,100.0
+Utah,2025-05,Haemophilus influenzae,Doxycycline,20,20,100.0
+Utah,2025-05,Klebsiella pneumoniae,Amoxicillin-Clavulanate,98,73,74.5
+Utah,2025-05,Klebsiella pneumoniae,Ceftriaxone,98,83,84.7
+Utah,2025-05,Klebsiella pneumoniae,Ciprofloxacin,98,82,83.7
+Utah,2025-05,Klebsiella pneumoniae,Ertapenem,98,94,95.9
+Utah,2025-05,Klebsiella pneumoniae,Nitrofurantoin,98,35,35.7
+Utah,2025-05,MRSA,Clindamycin,58,36,62.1
+Utah,2025-05,MRSA,Doxycycline,58,55,94.8
+Utah,2025-05,MRSA,Linezolid,58,55,94.8
+Utah,2025-05,MRSA,TMP-SMX,58,48,82.8
+Utah,2025-05,MRSA,Vancomycin,58,57,98.3
+Utah,2025-05,Pseudomonas aeruginosa,Cefepime,79,66,83.5
+Utah,2025-05,Pseudomonas aeruginosa,Ceftazidime,79,63,79.7
+Utah,2025-05,Pseudomonas aeruginosa,Ciprofloxacin,79,57,72.2
+Utah,2025-05,Pseudomonas aeruginosa,Meropenem,79,63,79.7
+Utah,2025-05,Pseudomonas aeruginosa,Piperacillin-Tazobactam,79,65,82.3
+Utah,2025-05,Staphylococcus aureus,Cephalexin,101,93,92.1
+Utah,2025-05,Staphylococcus aureus,Clindamycin,101,81,80.2
+Utah,2025-05,Staphylococcus aureus,Doxycycline,101,93,92.1
+Utah,2025-05,Staphylococcus aureus,Oxacillin,101,97,96.0
+Utah,2025-05,Staphylococcus aureus,TMP-SMX,101,96,95.0
+Utah,2025-05,Staphylococcus aureus,Vancomycin,101,98,97.0
+Utah,2025-05,Streptococcus pneumoniae,Amoxicillin,21,17,81.0
+Utah,2025-05,Streptococcus pneumoniae,Azithromycin,21,11,52.4
+Utah,2025-05,Streptococcus pneumoniae,Ceftriaxone,21,17,81.0
+Utah,2025-05,Streptococcus pneumoniae,Doxycycline,21,18,85.7
+Utah,2025-05,Streptococcus pneumoniae,Levofloxacin,21,19,90.5
+Utah,2025-05,Streptococcus pneumoniae,Penicillin,21,17,81.0
+Utah,2025-06,Enterococcus species,Ampicillin,94,58,61.7
+Utah,2025-06,Enterococcus species,Linezolid,94,91,96.8
+Utah,2025-06,Enterococcus species,Nitrofurantoin,94,83,88.3
+Utah,2025-06,Enterococcus species,Vancomycin,94,82,87.2
+Utah,2025-06,Escherichia coli,Amoxicillin-Clavulanate,381,260,68.2
+Utah,2025-06,Escherichia coli,Ampicillin,381,161,42.3
+Utah,2025-06,Escherichia coli,Ceftriaxone,381,338,88.7
+Utah,2025-06,Escherichia coli,Ciprofloxacin,381,268,70.3
+Utah,2025-06,Escherichia coli,Fosfomycin,381,347,91.1
+Utah,2025-06,Escherichia coli,Nitrofurantoin,381,336,88.2
+Utah,2025-06,Escherichia coli,TMP-SMX,381,272,71.4
+Utah,2025-06,Haemophilus influenzae,Amoxicillin,12,7,58.3
+Utah,2025-06,Haemophilus influenzae,Amoxicillin-Clavulanate,12,10,83.3
+Utah,2025-06,Haemophilus influenzae,Azithromycin,12,11,91.7
+Utah,2025-06,Haemophilus influenzae,Ceftriaxone,12,12,100.0
+Utah,2025-06,Haemophilus influenzae,Doxycycline,12,11,91.7
+Utah,2025-06,Klebsiella pneumoniae,Amoxicillin-Clavulanate,101,73,72.3
+Utah,2025-06,Klebsiella pneumoniae,Ceftriaxone,101,82,81.2
+Utah,2025-06,Klebsiella pneumoniae,Ciprofloxacin,101,80,79.2
+Utah,2025-06,Klebsiella pneumoniae,Ertapenem,101,91,90.1
+Utah,2025-06,Klebsiella pneumoniae,Nitrofurantoin,101,34,33.7
+Utah,2025-06,MRSA,Clindamycin,65,36,55.4
+Utah,2025-06,MRSA,Doxycycline,65,62,95.4
+Utah,2025-06,MRSA,Linezolid,65,63,96.9
+Utah,2025-06,MRSA,TMP-SMX,65,53,81.5
+Utah,2025-06,MRSA,Vancomycin,65,64,98.5
+Utah,2025-06,Pseudomonas aeruginosa,Cefepime,86,70,81.4
+Utah,2025-06,Pseudomonas aeruginosa,Ceftazidime,86,80,93.0
+Utah,2025-06,Pseudomonas aeruginosa,Ciprofloxacin,86,60,69.8
+Utah,2025-06,Pseudomonas aeruginosa,Meropenem,86,69,80.2
+Utah,2025-06,Pseudomonas aeruginosa,Piperacillin-Tazobactam,86,67,77.9
+Utah,2025-06,Staphylococcus aureus,Cephalexin,110,100,90.9
+Utah,2025-06,Staphylococcus aureus,Clindamycin,110,91,82.7
+Utah,2025-06,Staphylococcus aureus,Doxycycline,110,101,91.8
+Utah,2025-06,Staphylococcus aureus,Oxacillin,110,105,95.5
+Utah,2025-06,Staphylococcus aureus,TMP-SMX,110,107,97.3
+Utah,2025-06,Staphylococcus aureus,Vancomycin,110,109,99.1
+Utah,2025-06,Streptococcus pneumoniae,Amoxicillin,19,17,89.5
+Utah,2025-06,Streptococcus pneumoniae,Azithromycin,19,12,63.2
+Utah,2025-06,Streptococcus pneumoniae,Ceftriaxone,19,18,94.7
+Utah,2025-06,Streptococcus pneumoniae,Doxycycline,19,17,89.5
+Utah,2025-06,Streptococcus pneumoniae,Levofloxacin,19,18,94.7
+Utah,2025-06,Streptococcus pneumoniae,Penicillin,19,14,73.7
+Utah,2025-07,Enterococcus species,Ampicillin,79,58,73.4
+Utah,2025-07,Enterococcus species,Linezolid,79,75,94.9
+Utah,2025-07,Enterococcus species,Nitrofurantoin,79,61,77.2
+Utah,2025-07,Enterococcus species,Vancomycin,79,67,84.8
+Utah,2025-07,Escherichia coli,Amoxicillin-Clavulanate,373,232,62.2
+Utah,2025-07,Escherichia coli,Ampicillin,373,162,43.4
+Utah,2025-07,Escherichia coli,Ceftriaxone,373,328,87.9
+Utah,2025-07,Escherichia coli,Ciprofloxacin,373,246,66.0
+Utah,2025-07,Escherichia coli,Fosfomycin,373,345,92.5
+Utah,2025-07,Escherichia coli,Nitrofurantoin,373,346,92.8
+Utah,2025-07,Escherichia coli,TMP-SMX,373,276,74.0
+Utah,2025-07,Haemophilus influenzae,Amoxicillin,19,15,78.9
+Utah,2025-07,Haemophilus influenzae,Amoxicillin-Clavulanate,19,16,84.2
+Utah,2025-07,Haemophilus influenzae,Azithromycin,19,16,84.2
+Utah,2025-07,Haemophilus influenzae,Ceftriaxone,19,18,94.7
+Utah,2025-07,Haemophilus influenzae,Doxycycline,19,16,84.2
+Utah,2025-07,Klebsiella pneumoniae,Amoxicillin-Clavulanate,90,63,70.0
+Utah,2025-07,Klebsiella pneumoniae,Ceftriaxone,90,74,82.2
+Utah,2025-07,Klebsiella pneumoniae,Ciprofloxacin,90,70,77.8
+Utah,2025-07,Klebsiella pneumoniae,Ertapenem,90,85,94.4
+Utah,2025-07,Klebsiella pneumoniae,Nitrofurantoin,90,33,36.7
+Utah,2025-07,MRSA,Clindamycin,67,32,47.8
+Utah,2025-07,MRSA,Doxycycline,67,61,91.0
+Utah,2025-07,MRSA,Linezolid,67,60,89.6
+Utah,2025-07,MRSA,TMP-SMX,67,58,86.6
+Utah,2025-07,MRSA,Vancomycin,67,60,89.6
+Utah,2025-07,Pseudomonas aeruginosa,Cefepime,99,80,80.8
+Utah,2025-07,Pseudomonas aeruginosa,Ceftazidime,99,85,85.9
+Utah,2025-07,Pseudomonas aeruginosa,Ciprofloxacin,99,79,79.8
+Utah,2025-07,Pseudomonas aeruginosa,Meropenem,99,75,75.8
+Utah,2025-07,Pseudomonas aeruginosa,Piperacillin-Tazobactam,99,76,76.8
+Utah,2025-07,Staphylococcus aureus,Cephalexin,100,94,94.0
+Utah,2025-07,Staphylococcus aureus,Clindamycin,100,76,76.0
+Utah,2025-07,Staphylococcus aureus,Doxycycline,100,96,96.0
+Utah,2025-07,Staphylococcus aureus,Oxacillin,100,97,97.0
+Utah,2025-07,Staphylococcus aureus,TMP-SMX,100,94,94.0
+Utah,2025-07,Staphylococcus aureus,Vancomycin,100,96,96.0
+Utah,2025-07,Streptococcus pneumoniae,Amoxicillin,20,16,80.0
+Utah,2025-07,Streptococcus pneumoniae,Azithromycin,20,12,60.0
+Utah,2025-07,Streptococcus pneumoniae,Ceftriaxone,20,19,95.0
+Utah,2025-07,Streptococcus pneumoniae,Doxycycline,20,15,75.0
+Utah,2025-07,Streptococcus pneumoniae,Levofloxacin,20,19,95.0
+Utah,2025-07,Streptococcus pneumoniae,Penicillin,20,15,75.0
+Utah,2025-08,Enterococcus species,Ampicillin,76,57,75.0
+Utah,2025-08,Enterococcus species,Linezolid,76,72,94.7
+Utah,2025-08,Enterococcus species,Nitrofurantoin,76,56,73.7
+Utah,2025-08,Enterococcus species,Vancomycin,76,61,80.3
+Utah,2025-08,Escherichia coli,Amoxicillin-Clavulanate,389,242,62.2
+Utah,2025-08,Escherichia coli,Ampicillin,389,168,43.2
+Utah,2025-08,Escherichia coli,Ceftriaxone,389,347,89.2
+Utah,2025-08,Escherichia coli,Ciprofloxacin,389,269,69.2
+Utah,2025-08,Escherichia coli,Fosfomycin,389,356,91.5
+Utah,2025-08,Escherichia coli,Nitrofurantoin,389,357,91.8
+Utah,2025-08,Escherichia coli,TMP-SMX,389,279,71.7
+Utah,2025-08,Haemophilus influenzae,Amoxicillin,22,17,77.3
+Utah,2025-08,Haemophilus influenzae,Amoxicillin-Clavulanate,22,21,95.5
+Utah,2025-08,Haemophilus influenzae,Azithromycin,22,17,77.3
+Utah,2025-08,Haemophilus influenzae,Ceftriaxone,22,21,95.5
+Utah,2025-08,Haemophilus influenzae,Doxycycline,22,17,77.3
+Utah,2025-08,Klebsiella pneumoniae,Amoxicillin-Clavulanate,103,77,74.8
+Utah,2025-08,Klebsiella pneumoniae,Ceftriaxone,103,88,85.4
+Utah,2025-08,Klebsiella pneumoniae,Ciprofloxacin,103,80,77.7
+Utah,2025-08,Klebsiella pneumoniae,Ertapenem,103,95,92.2
+Utah,2025-08,Klebsiella pneumoniae,Nitrofurantoin,103,35,34.0
+Utah,2025-08,MRSA,Clindamycin,58,41,70.7
+Utah,2025-08,MRSA,Doxycycline,58,54,93.1
+Utah,2025-08,MRSA,Linezolid,58,56,96.6
+Utah,2025-08,MRSA,TMP-SMX,58,50,86.2
+Utah,2025-08,MRSA,Vancomycin,58,55,94.8
+Utah,2025-08,Pseudomonas aeruginosa,Cefepime,70,52,74.3
+Utah,2025-08,Pseudomonas aeruginosa,Ceftazidime,70,59,84.3
+Utah,2025-08,Pseudomonas aeruginosa,Ciprofloxacin,70,47,67.1
+Utah,2025-08,Pseudomonas aeruginosa,Meropenem,70,55,78.6
+Utah,2025-08,Pseudomonas aeruginosa,Piperacillin-Tazobactam,70,58,82.9
+Utah,2025-08,Staphylococcus aureus,Cephalexin,97,93,95.9
+Utah,2025-08,Staphylococcus aureus,Clindamycin,97,80,82.5
+Utah,2025-08,Staphylococcus aureus,Doxycycline,97,89,91.8
+Utah,2025-08,Staphylococcus aureus,Oxacillin,97,95,97.9
+Utah,2025-08,Staphylococcus aureus,TMP-SMX,97,92,94.8
+Utah,2025-08,Staphylococcus aureus,Vancomycin,97,95,97.9
+Utah,2025-08,Streptococcus pneumoniae,Amoxicillin,20,14,70.0
+Utah,2025-08,Streptococcus pneumoniae,Azithromycin,20,10,50.0
+Utah,2025-08,Streptococcus pneumoniae,Ceftriaxone,20,18,90.0
+Utah,2025-08,Streptococcus pneumoniae,Doxycycline,20,17,85.0
+Utah,2025-08,Streptococcus pneumoniae,Levofloxacin,20,18,90.0
+Utah,2025-08,Streptococcus pneumoniae,Penicillin,20,11,55.0
+Utah,2025-09,Enterococcus species,Ampicillin,81,50,61.7
+Utah,2025-09,Enterococcus species,Linezolid,81,75,92.6
+Utah,2025-09,Enterococcus species,Nitrofurantoin,81,70,86.4
+Utah,2025-09,Enterococcus species,Vancomycin,81,53,65.4
+Utah,2025-09,Escherichia coli,Amoxicillin-Clavulanate,388,249,64.2
+Utah,2025-09,Escherichia coli,Ampicillin,388,160,41.2
+Utah,2025-09,Escherichia coli,Ceftriaxone,388,339,87.4
+Utah,2025-09,Escherichia coli,Ciprofloxacin,388,271,69.8
+Utah,2025-09,Escherichia coli,Fosfomycin,388,362,93.3
+Utah,2025-09,Escherichia coli,Nitrofurantoin,388,358,92.3
+Utah,2025-09,Escherichia coli,TMP-SMX,388,280,72.2
+Utah,2025-09,Haemophilus influenzae,Amoxicillin,23,19,82.6
+Utah,2025-09,Haemophilus influenzae,Amoxicillin-Clavulanate,23,22,95.7
+Utah,2025-09,Haemophilus influenzae,Azithromycin,23,18,78.3
+Utah,2025-09,Haemophilus influenzae,Ceftriaxone,23,22,95.7
+Utah,2025-09,Haemophilus influenzae,Doxycycline,23,21,91.3
+Utah,2025-09,Klebsiella pneumoniae,Amoxicillin-Clavulanate,112,81,72.3
+Utah,2025-09,Klebsiella pneumoniae,Ceftriaxone,112,97,86.6
+Utah,2025-09,Klebsiella pneumoniae,Ciprofloxacin,112,92,82.1
+Utah,2025-09,Klebsiella pneumoniae,Ertapenem,112,100,89.3
+Utah,2025-09,Klebsiella pneumoniae,Nitrofurantoin,112,45,40.2
+Utah,2025-09,MRSA,Clindamycin,56,33,58.9
+Utah,2025-09,MRSA,Doxycycline,56,54,96.4
+Utah,2025-09,MRSA,Linezolid,56,55,98.2
+Utah,2025-09,MRSA,TMP-SMX,56,50,89.3
+Utah,2025-09,MRSA,Vancomycin,56,56,100.0
+Utah,2025-09,Pseudomonas aeruginosa,Cefepime,99,80,80.8
+Utah,2025-09,Pseudomonas aeruginosa,Ceftazidime,99,87,87.9
+Utah,2025-09,Pseudomonas aeruginosa,Ciprofloxacin,99,72,72.7
+Utah,2025-09,Pseudomonas aeruginosa,Meropenem,99,77,77.8
+Utah,2025-09,Pseudomonas aeruginosa,Piperacillin-Tazobactam,99,88,88.9
+Utah,2025-09,Staphylococcus aureus,Cephalexin,132,126,95.5
+Utah,2025-09,Staphylococcus aureus,Clindamycin,132,111,84.1
+Utah,2025-09,Staphylococcus aureus,Doxycycline,132,128,97.0
+Utah,2025-09,Staphylococcus aureus,Oxacillin,132,127,96.2
+Utah,2025-09,Staphylococcus aureus,TMP-SMX,132,127,96.2
+Utah,2025-09,Staphylococcus aureus,Vancomycin,132,126,95.5
+Utah,2025-09,Streptococcus pneumoniae,Amoxicillin,33,27,81.8
+Utah,2025-09,Streptococcus pneumoniae,Azithromycin,33,20,60.6
+Utah,2025-09,Streptococcus pneumoniae,Ceftriaxone,33,30,90.9
+Utah,2025-09,Streptococcus pneumoniae,Doxycycline,33,29,87.9
+Utah,2025-09,Streptococcus pneumoniae,Levofloxacin,33,29,87.9
+Utah,2025-09,Streptococcus pneumoniae,Penicillin,33,24,72.7
+Utah,2025-10,Enterococcus species,Ampicillin,74,49,66.2
+Utah,2025-10,Enterococcus species,Linezolid,74,71,95.9
+Utah,2025-10,Enterococcus species,Nitrofurantoin,74,51,68.9
+Utah,2025-10,Enterococcus species,Vancomycin,74,57,77.0
+Utah,2025-10,Escherichia coli,Amoxicillin-Clavulanate,365,236,64.7
+Utah,2025-10,Escherichia coli,Ampicillin,365,164,44.9
+Utah,2025-10,Escherichia coli,Ceftriaxone,365,311,85.2
+Utah,2025-10,Escherichia coli,Ciprofloxacin,365,254,69.6
+Utah,2025-10,Escherichia coli,Fosfomycin,365,331,90.7
+Utah,2025-10,Escherichia coli,Nitrofurantoin,365,329,90.1
+Utah,2025-10,Escherichia coli,TMP-SMX,365,270,74.0
+Utah,2025-10,Haemophilus influenzae,Amoxicillin,22,14,63.6
+Utah,2025-10,Haemophilus influenzae,Amoxicillin-Clavulanate,22,20,90.9
+Utah,2025-10,Haemophilus influenzae,Azithromycin,22,18,81.8
+Utah,2025-10,Haemophilus influenzae,Ceftriaxone,22,22,100.0
+Utah,2025-10,Haemophilus influenzae,Doxycycline,22,20,90.9
+Utah,2025-10,Klebsiella pneumoniae,Amoxicillin-Clavulanate,100,73,73.0
+Utah,2025-10,Klebsiella pneumoniae,Ceftriaxone,100,85,85.0
+Utah,2025-10,Klebsiella pneumoniae,Ciprofloxacin,100,76,76.0
+Utah,2025-10,Klebsiella pneumoniae,Ertapenem,100,94,94.0
+Utah,2025-10,Klebsiella pneumoniae,Nitrofurantoin,100,33,33.0
+Utah,2025-10,MRSA,Clindamycin,57,36,63.2
+Utah,2025-10,MRSA,Doxycycline,57,52,91.2
+Utah,2025-10,MRSA,Linezolid,57,54,94.7
+Utah,2025-10,MRSA,TMP-SMX,57,50,87.7
+Utah,2025-10,MRSA,Vancomycin,57,54,94.7
+Utah,2025-10,Pseudomonas aeruginosa,Cefepime,109,81,74.3
+Utah,2025-10,Pseudomonas aeruginosa,Ceftazidime,109,92,84.4
+Utah,2025-10,Pseudomonas aeruginosa,Ciprofloxacin,109,82,75.2
+Utah,2025-10,Pseudomonas aeruginosa,Meropenem,109,94,86.2
+Utah,2025-10,Pseudomonas aeruginosa,Piperacillin-Tazobactam,109,91,83.5
+Utah,2025-10,Staphylococcus aureus,Cephalexin,120,112,93.3
+Utah,2025-10,Staphylococcus aureus,Clindamycin,120,95,79.2
+Utah,2025-10,Staphylococcus aureus,Doxycycline,120,109,90.8
+Utah,2025-10,Staphylococcus aureus,Oxacillin,120,111,92.5
+Utah,2025-10,Staphylococcus aureus,TMP-SMX,120,114,95.0
+Utah,2025-10,Staphylococcus aureus,Vancomycin,120,114,95.0
+Utah,2025-10,Streptococcus pneumoniae,Amoxicillin,27,25,92.6
+Utah,2025-10,Streptococcus pneumoniae,Azithromycin,27,16,59.3
+Utah,2025-10,Streptococcus pneumoniae,Ceftriaxone,27,24,88.9
+Utah,2025-10,Streptococcus pneumoniae,Doxycycline,27,20,74.1
+Utah,2025-10,Streptococcus pneumoniae,Levofloxacin,27,23,85.2
+Utah,2025-10,Streptococcus pneumoniae,Penicillin,27,20,74.1
+Utah,2025-11,Enterococcus species,Ampicillin,98,67,68.4
+Utah,2025-11,Enterococcus species,Linezolid,98,94,95.9
+Utah,2025-11,Enterococcus species,Nitrofurantoin,98,82,83.7
+Utah,2025-11,Enterococcus species,Vancomycin,98,81,82.7
+Utah,2025-11,Escherichia coli,Amoxicillin-Clavulanate,357,234,65.5
+Utah,2025-11,Escherichia coli,Ampicillin,357,150,42.0
+Utah,2025-11,Escherichia coli,Ceftriaxone,357,305,85.4
+Utah,2025-11,Escherichia coli,Ciprofloxacin,357,253,70.9
+Utah,2025-11,Escherichia coli,Fosfomycin,357,339,95.0
+Utah,2025-11,Escherichia coli,Nitrofurantoin,357,311,87.1
+Utah,2025-11,Escherichia coli,TMP-SMX,357,259,72.5
+Utah,2025-11,Haemophilus influenzae,Amoxicillin,38,23,60.5
+Utah,2025-11,Haemophilus influenzae,Amoxicillin-Clavulanate,38,35,92.1
+Utah,2025-11,Haemophilus influenzae,Azithromycin,38,30,78.9
+Utah,2025-11,Haemophilus influenzae,Ceftriaxone,38,36,94.7
+Utah,2025-11,Haemophilus influenzae,Doxycycline,38,31,81.6
+Utah,2025-11,Klebsiella pneumoniae,Amoxicillin-Clavulanate,118,81,68.6
+Utah,2025-11,Klebsiella pneumoniae,Ceftriaxone,118,93,78.8
+Utah,2025-11,Klebsiella pneumoniae,Ciprofloxacin,118,92,78.0
+Utah,2025-11,Klebsiella pneumoniae,Ertapenem,118,108,91.5
+Utah,2025-11,Klebsiella pneumoniae,Nitrofurantoin,118,42,35.6
+Utah,2025-11,MRSA,Clindamycin,66,41,62.1
+Utah,2025-11,MRSA,Doxycycline,66,59,89.4
+Utah,2025-11,MRSA,Linezolid,66,62,93.9
+Utah,2025-11,MRSA,TMP-SMX,66,57,86.4
+Utah,2025-11,MRSA,Vancomycin,66,66,100.0
+Utah,2025-11,Pseudomonas aeruginosa,Cefepime,110,82,74.5
+Utah,2025-11,Pseudomonas aeruginosa,Ceftazidime,110,91,82.7
+Utah,2025-11,Pseudomonas aeruginosa,Ciprofloxacin,110,75,68.2
+Utah,2025-11,Pseudomonas aeruginosa,Meropenem,110,88,80.0
+Utah,2025-11,Pseudomonas aeruginosa,Piperacillin-Tazobactam,110,93,84.5
+Utah,2025-11,Staphylococcus aureus,Cephalexin,121,115,95.0
+Utah,2025-11,Staphylococcus aureus,Clindamycin,121,90,74.4
+Utah,2025-11,Staphylococcus aureus,Doxycycline,121,110,90.9
+Utah,2025-11,Staphylococcus aureus,Oxacillin,121,110,90.9
+Utah,2025-11,Staphylococcus aureus,TMP-SMX,121,110,90.9
+Utah,2025-11,Staphylococcus aureus,Vancomycin,121,114,94.2
+Utah,2025-11,Streptococcus pneumoniae,Amoxicillin,45,43,95.6
+Utah,2025-11,Streptococcus pneumoniae,Azithromycin,45,23,51.1
+Utah,2025-11,Streptococcus pneumoniae,Ceftriaxone,45,40,88.9
+Utah,2025-11,Streptococcus pneumoniae,Doxycycline,45,37,82.2
+Utah,2025-11,Streptococcus pneumoniae,Levofloxacin,45,40,88.9
+Utah,2025-11,Streptococcus pneumoniae,Penicillin,45,36,80.0
+Utah,2025-12,Enterococcus species,Ampicillin,89,52,58.4
+Utah,2025-12,Enterococcus species,Linezolid,89,84,94.4
+Utah,2025-12,Enterococcus species,Nitrofurantoin,89,69,77.5
+Utah,2025-12,Enterococcus species,Vancomycin,89,80,89.9
+Utah,2025-12,Escherichia coli,Amoxicillin-Clavulanate,376,249,66.2
+Utah,2025-12,Escherichia coli,Ampicillin,376,161,42.8
+Utah,2025-12,Escherichia coli,Ceftriaxone,376,316,84.0
+Utah,2025-12,Escherichia coli,Ciprofloxacin,376,267,71.0
+Utah,2025-12,Escherichia coli,Fosfomycin,376,348,92.6
+Utah,2025-12,Escherichia coli,Nitrofurantoin,376,338,89.9
+Utah,2025-12,Escherichia coli,TMP-SMX,376,266,70.7
+Utah,2025-12,Haemophilus influenzae,Amoxicillin,24,15,62.5
+Utah,2025-12,Haemophilus influenzae,Amoxicillin-Clavulanate,24,22,91.7
+Utah,2025-12,Haemophilus influenzae,Azithromycin,24,20,83.3
+Utah,2025-12,Haemophilus influenzae,Ceftriaxone,24,22,91.7
+Utah,2025-12,Haemophilus influenzae,Doxycycline,24,23,95.8
+Utah,2025-12,Klebsiella pneumoniae,Amoxicillin-Clavulanate,124,93,75.0
+Utah,2025-12,Klebsiella pneumoniae,Ceftriaxone,124,100,80.6
+Utah,2025-12,Klebsiella pneumoniae,Ciprofloxacin,124,97,78.2
+Utah,2025-12,Klebsiella pneumoniae,Ertapenem,124,120,96.8
+Utah,2025-12,Klebsiella pneumoniae,Nitrofurantoin,124,47,37.9
+Utah,2025-12,MRSA,Clindamycin,70,44,62.9
+Utah,2025-12,MRSA,Doxycycline,70,62,88.6
+Utah,2025-12,MRSA,Linezolid,70,66,94.3
+Utah,2025-12,MRSA,TMP-SMX,70,61,87.1
+Utah,2025-12,MRSA,Vancomycin,70,69,98.6
+Utah,2025-12,Pseudomonas aeruginosa,Cefepime,116,86,74.1
+Utah,2025-12,Pseudomonas aeruginosa,Ceftazidime,116,99,85.3
+Utah,2025-12,Pseudomonas aeruginosa,Ciprofloxacin,116,80,69.0
+Utah,2025-12,Pseudomonas aeruginosa,Meropenem,116,95,81.9
+Utah,2025-12,Pseudomonas aeruginosa,Piperacillin-Tazobactam,116,94,81.0
+Utah,2025-12,Staphylococcus aureus,Cephalexin,132,125,94.7
+Utah,2025-12,Staphylococcus aureus,Clindamycin,132,109,82.6
+Utah,2025-12,Staphylococcus aureus,Doxycycline,132,123,93.2
+Utah,2025-12,Staphylococcus aureus,Oxacillin,132,129,97.7
+Utah,2025-12,Staphylococcus aureus,TMP-SMX,132,123,93.2
+Utah,2025-12,Staphylococcus aureus,Vancomycin,132,123,93.2
+Utah,2025-12,Streptococcus pneumoniae,Amoxicillin,44,34,77.3
+Utah,2025-12,Streptococcus pneumoniae,Azithromycin,44,25,56.8
+Utah,2025-12,Streptococcus pneumoniae,Ceftriaxone,44,39,88.6
+Utah,2025-12,Streptococcus pneumoniae,Doxycycline,44,34,77.3
+Utah,2025-12,Streptococcus pneumoniae,Levofloxacin,44,40,90.9
+Utah,2025-12,Streptococcus pneumoniae,Penicillin,44,30,68.2
+Utah,2026-01,Enterococcus species,Ampicillin,67,45,67.2
+Utah,2026-01,Enterococcus species,Linezolid,67,64,95.5
+Utah,2026-01,Enterococcus species,Nitrofurantoin,67,53,79.1
+Utah,2026-01,Enterococcus species,Vancomycin,67,56,83.6
+Utah,2026-01,Escherichia coli,Amoxicillin-Clavulanate,366,222,60.7
+Utah,2026-01,Escherichia coli,Ampicillin,366,155,42.3
+Utah,2026-01,Escherichia coli,Ceftriaxone,366,324,88.5
+Utah,2026-01,Escherichia coli,Ciprofloxacin,366,227,62.0
+Utah,2026-01,Escherichia coli,Fosfomycin,366,344,94.0
+Utah,2026-01,Escherichia coli,Nitrofurantoin,366,330,90.2
+Utah,2026-01,Escherichia coli,TMP-SMX,366,276,75.4
+Utah,2026-01,Haemophilus influenzae,Amoxicillin,33,23,69.7
+Utah,2026-01,Haemophilus influenzae,Amoxicillin-Clavulanate,33,28,84.8
+Utah,2026-01,Haemophilus influenzae,Azithromycin,33,29,87.9
+Utah,2026-01,Haemophilus influenzae,Ceftriaxone,33,32,97.0
+Utah,2026-01,Haemophilus influenzae,Doxycycline,33,32,97.0
+Utah,2026-01,Klebsiella pneumoniae,Amoxicillin-Clavulanate,115,86,74.8
+Utah,2026-01,Klebsiella pneumoniae,Ceftriaxone,115,94,81.7
+Utah,2026-01,Klebsiella pneumoniae,Ciprofloxacin,115,85,73.9
+Utah,2026-01,Klebsiella pneumoniae,Ertapenem,115,106,92.2
+Utah,2026-01,Klebsiella pneumoniae,Nitrofurantoin,115,49,42.6
+Utah,2026-01,MRSA,Clindamycin,57,35,61.4
+Utah,2026-01,MRSA,Doxycycline,57,53,93.0
+Utah,2026-01,MRSA,Linezolid,57,55,96.5
+Utah,2026-01,MRSA,TMP-SMX,57,51,89.5
+Utah,2026-01,MRSA,Vancomycin,57,55,96.5
+Utah,2026-01,Pseudomonas aeruginosa,Cefepime,94,84,89.4
+Utah,2026-01,Pseudomonas aeruginosa,Ceftazidime,94,77,81.9
+Utah,2026-01,Pseudomonas aeruginosa,Ciprofloxacin,94,71,75.5
+Utah,2026-01,Pseudomonas aeruginosa,Meropenem,94,71,75.5
+Utah,2026-01,Pseudomonas aeruginosa,Piperacillin-Tazobactam,94,76,80.9
+Utah,2026-01,Staphylococcus aureus,Cephalexin,111,104,93.7
+Utah,2026-01,Staphylococcus aureus,Clindamycin,111,83,74.8
+Utah,2026-01,Staphylococcus aureus,Doxycycline,111,104,93.7
+Utah,2026-01,Staphylococcus aureus,Oxacillin,111,106,95.5
+Utah,2026-01,Staphylococcus aureus,TMP-SMX,111,100,90.1
+Utah,2026-01,Staphylococcus aureus,Vancomycin,111,107,96.4
+Utah,2026-01,Streptococcus pneumoniae,Amoxicillin,34,31,91.2
+Utah,2026-01,Streptococcus pneumoniae,Azithromycin,34,25,73.5
+Utah,2026-01,Streptococcus pneumoniae,Ceftriaxone,34,30,88.2
+Utah,2026-01,Streptococcus pneumoniae,Doxycycline,34,26,76.5
+Utah,2026-01,Streptococcus pneumoniae,Levofloxacin,34,30,88.2
+Utah,2026-01,Streptococcus pneumoniae,Penicillin,34,21,61.8
+Utah,2026-02,Enterococcus species,Ampicillin,80,56,70.0
+Utah,2026-02,Enterococcus species,Linezolid,80,76,95.0
+Utah,2026-02,Enterococcus species,Nitrofurantoin,80,59,73.8
+Utah,2026-02,Enterococcus species,Vancomycin,80,64,80.0
+Utah,2026-02,Escherichia coli,Amoxicillin-Clavulanate,349,207,59.3
+Utah,2026-02,Escherichia coli,Ampicillin,349,149,42.7
+Utah,2026-02,Escherichia coli,Ceftriaxone,349,305,87.4
+Utah,2026-02,Escherichia coli,Ciprofloxacin,349,245,70.2
+Utah,2026-02,Escherichia coli,Fosfomycin,349,331,94.8
+Utah,2026-02,Escherichia coli,Nitrofurantoin,349,310,88.8
+Utah,2026-02,Escherichia coli,TMP-SMX,349,248,71.1
+Utah,2026-02,Haemophilus influenzae,Amoxicillin,30,20,66.7
+Utah,2026-02,Haemophilus influenzae,Amoxicillin-Clavulanate,30,25,83.3
+Utah,2026-02,Haemophilus influenzae,Azithromycin,30,24,80.0
+Utah,2026-02,Haemophilus influenzae,Ceftriaxone,30,28,93.3
+Utah,2026-02,Haemophilus influenzae,Doxycycline,30,26,86.7
+Utah,2026-02,Klebsiella pneumoniae,Amoxicillin-Clavulanate,118,88,74.6
+Utah,2026-02,Klebsiella pneumoniae,Ceftriaxone,118,94,79.7
+Utah,2026-02,Klebsiella pneumoniae,Ciprofloxacin,118,95,80.5
+Utah,2026-02,Klebsiella pneumoniae,Ertapenem,118,103,87.3
+Utah,2026-02,Klebsiella pneumoniae,Nitrofurantoin,118,46,39.0
+Utah,2026-02,MRSA,Clindamycin,61,39,63.9
+Utah,2026-02,MRSA,Doxycycline,61,57,93.4
+Utah,2026-02,MRSA,Linezolid,61,59,96.7
+Utah,2026-02,MRSA,TMP-SMX,61,53,86.9
+Utah,2026-02,MRSA,Vancomycin,61,59,96.7
+Utah,2026-02,Pseudomonas aeruginosa,Cefepime,95,77,81.1
+Utah,2026-02,Pseudomonas aeruginosa,Ceftazidime,95,76,80.0
+Utah,2026-02,Pseudomonas aeruginosa,Ciprofloxacin,95,67,70.5
+Utah,2026-02,Pseudomonas aeruginosa,Meropenem,95,73,76.8
+Utah,2026-02,Pseudomonas aeruginosa,Piperacillin-Tazobactam,95,80,84.2
+Utah,2026-02,Staphylococcus aureus,Cephalexin,115,111,96.5
+Utah,2026-02,Staphylococcus aureus,Clindamycin,115,93,80.9
+Utah,2026-02,Staphylococcus aureus,Doxycycline,115,109,94.8
+Utah,2026-02,Staphylococcus aureus,Oxacillin,115,111,96.5
+Utah,2026-02,Staphylococcus aureus,TMP-SMX,115,109,94.8
+Utah,2026-02,Staphylococcus aureus,Vancomycin,115,111,96.5
+Utah,2026-02,Streptococcus pneumoniae,Amoxicillin,29,25,86.2
+Utah,2026-02,Streptococcus pneumoniae,Azithromycin,29,21,72.4
+Utah,2026-02,Streptococcus pneumoniae,Ceftriaxone,29,26,89.7
+Utah,2026-02,Streptococcus pneumoniae,Doxycycline,29,23,79.3
+Utah,2026-02,Streptococcus pneumoniae,Levofloxacin,29,29,100.0
+Utah,2026-02,Streptococcus pneumoniae,Penicillin,29,22,75.9
+Utah,2026-03,Enterococcus species,Ampicillin,93,69,74.2
+Utah,2026-03,Enterococcus species,Linezolid,93,91,97.8
+Utah,2026-03,Enterococcus species,Nitrofurantoin,93,75,80.6
+Utah,2026-03,Enterococcus species,Vancomycin,93,76,81.7
+Utah,2026-03,Escherichia coli,Amoxicillin-Clavulanate,356,227,63.8
+Utah,2026-03,Escherichia coli,Ampicillin,356,156,43.8
+Utah,2026-03,Escherichia coli,Ceftriaxone,356,311,87.4
+Utah,2026-03,Escherichia coli,Ciprofloxacin,356,250,70.2
+Utah,2026-03,Escherichia coli,Fosfomycin,356,323,90.7
+Utah,2026-03,Escherichia coli,Nitrofurantoin,356,321,90.2
+Utah,2026-03,Escherichia coli,TMP-SMX,356,259,72.8
+Utah,2026-03,Haemophilus influenzae,Amoxicillin,31,21,67.7
+Utah,2026-03,Haemophilus influenzae,Amoxicillin-Clavulanate,31,24,77.4
+Utah,2026-03,Haemophilus influenzae,Azithromycin,31,26,83.9
+Utah,2026-03,Haemophilus influenzae,Ceftriaxone,31,31,100.0
+Utah,2026-03,Haemophilus influenzae,Doxycycline,31,24,77.4
+Utah,2026-03,Klebsiella pneumoniae,Amoxicillin-Clavulanate,107,84,78.5
+Utah,2026-03,Klebsiella pneumoniae,Ceftriaxone,107,80,74.8
+Utah,2026-03,Klebsiella pneumoniae,Ciprofloxacin,107,86,80.4
+Utah,2026-03,Klebsiella pneumoniae,Ertapenem,107,102,95.3
+Utah,2026-03,Klebsiella pneumoniae,Nitrofurantoin,107,32,29.9
+Utah,2026-03,MRSA,Clindamycin,70,47,67.1
+Utah,2026-03,MRSA,Doxycycline,70,63,90.0
+Utah,2026-03,MRSA,Linezolid,70,65,92.9
+Utah,2026-03,MRSA,TMP-SMX,70,60,85.7
+Utah,2026-03,MRSA,Vancomycin,70,67,95.7
+Utah,2026-03,Pseudomonas aeruginosa,Cefepime,82,58,70.7
+Utah,2026-03,Pseudomonas aeruginosa,Ceftazidime,82,71,86.6
+Utah,2026-03,Pseudomonas aeruginosa,Ciprofloxacin,82,60,73.2
+Utah,2026-03,Pseudomonas aeruginosa,Meropenem,82,68,82.9
+Utah,2026-03,Pseudomonas aeruginosa,Piperacillin-Tazobactam,82,64,78.0
+Utah,2026-03,Staphylococcus aureus,Cephalexin,122,114,93.4
+Utah,2026-03,Staphylococcus aureus,Clindamycin,122,95,77.9
+Utah,2026-03,Staphylococcus aureus,Doxycycline,122,117,95.9
+Utah,2026-03,Staphylococcus aureus,Oxacillin,122,116,95.1
+Utah,2026-03,Staphylococcus aureus,TMP-SMX,122,114,93.4
+Utah,2026-03,Staphylococcus aureus,Vancomycin,122,117,95.9
+Utah,2026-03,Streptococcus pneumoniae,Amoxicillin,34,31,91.2
+Utah,2026-03,Streptococcus pneumoniae,Azithromycin,34,22,64.7
+Utah,2026-03,Streptococcus pneumoniae,Ceftriaxone,34,31,91.2
+Utah,2026-03,Streptococcus pneumoniae,Doxycycline,34,28,82.4
+Utah,2026-03,Streptococcus pneumoniae,Levofloxacin,34,31,91.2
+Utah,2026-03,Streptococcus pneumoniae,Penicillin,34,29,85.3
+Utah,2026-04,Enterococcus species,Ampicillin,87,58,66.7
+Utah,2026-04,Enterococcus species,Linezolid,87,87,100.0
+Utah,2026-04,Enterococcus species,Nitrofurantoin,87,71,81.6
+Utah,2026-04,Enterococcus species,Vancomycin,87,68,78.2
+Utah,2026-04,Escherichia coli,Amoxicillin-Clavulanate,369,243,65.9
+Utah,2026-04,Escherichia coli,Ampicillin,369,148,40.1
+Utah,2026-04,Escherichia coli,Ceftriaxone,369,327,88.6
+Utah,2026-04,Escherichia coli,Ciprofloxacin,369,244,66.1
+Utah,2026-04,Escherichia coli,Fosfomycin,369,334,90.5
+Utah,2026-04,Escherichia coli,Nitrofurantoin,369,337,91.3
+Utah,2026-04,Escherichia coli,TMP-SMX,369,279,75.6
+Utah,2026-04,Haemophilus influenzae,Amoxicillin,28,20,71.4
+Utah,2026-04,Haemophilus influenzae,Amoxicillin-Clavulanate,28,27,96.4
+Utah,2026-04,Haemophilus influenzae,Azithromycin,28,19,67.9
+Utah,2026-04,Haemophilus influenzae,Ceftriaxone,28,27,96.4
+Utah,2026-04,Haemophilus influenzae,Doxycycline,28,21,75.0
+Utah,2026-04,Klebsiella pneumoniae,Amoxicillin-Clavulanate,101,68,67.3
+Utah,2026-04,Klebsiella pneumoniae,Ceftriaxone,101,84,83.2
+Utah,2026-04,Klebsiella pneumoniae,Ciprofloxacin,101,86,85.1
+Utah,2026-04,Klebsiella pneumoniae,Ertapenem,101,97,96.0
+Utah,2026-04,Klebsiella pneumoniae,Nitrofurantoin,101,40,39.6
+Utah,2026-04,MRSA,Clindamycin,76,49,64.5
+Utah,2026-04,MRSA,Doxycycline,76,66,86.8
+Utah,2026-04,MRSA,Linezolid,76,76,100.0
+Utah,2026-04,MRSA,TMP-SMX,76,67,88.2
+Utah,2026-04,MRSA,Vancomycin,76,76,100.0
+Utah,2026-04,Pseudomonas aeruginosa,Cefepime,89,68,76.4
+Utah,2026-04,Pseudomonas aeruginosa,Ceftazidime,89,83,93.3
+Utah,2026-04,Pseudomonas aeruginosa,Ciprofloxacin,89,69,77.5
+Utah,2026-04,Pseudomonas aeruginosa,Meropenem,89,77,86.5
+Utah,2026-04,Pseudomonas aeruginosa,Piperacillin-Tazobactam,89,74,83.1
+Utah,2026-04,Staphylococcus aureus,Cephalexin,115,110,95.7
+Utah,2026-04,Staphylococcus aureus,Clindamycin,115,89,77.4
+Utah,2026-04,Staphylococcus aureus,Doxycycline,115,106,92.2
+Utah,2026-04,Staphylococcus aureus,Oxacillin,115,110,95.7
+Utah,2026-04,Staphylococcus aureus,TMP-SMX,115,107,93.0
+Utah,2026-04,Staphylococcus aureus,Vancomycin,115,112,97.4
+Utah,2026-04,Streptococcus pneumoniae,Amoxicillin,34,28,82.4
+Utah,2026-04,Streptococcus pneumoniae,Azithromycin,34,19,55.9
+Utah,2026-04,Streptococcus pneumoniae,Ceftriaxone,34,31,91.2
+Utah,2026-04,Streptococcus pneumoniae,Doxycycline,34,30,88.2
+Utah,2026-04,Streptococcus pneumoniae,Levofloxacin,34,32,94.1
+Utah,2026-04,Streptococcus pneumoniae,Penicillin,34,26,76.5
+Washington,2024-05,Enterococcus species,Ampicillin,21,15,71.4
+Washington,2024-05,Enterococcus species,Linezolid,21,21,100.0
+Washington,2024-05,Enterococcus species,Nitrofurantoin,21,13,61.9
+Washington,2024-05,Enterococcus species,Vancomycin,21,17,81.0
+Washington,2024-05,Escherichia coli,Amoxicillin-Clavulanate,109,76,69.7
+Washington,2024-05,Escherichia coli,Ampicillin,109,53,48.6
+Washington,2024-05,Escherichia coli,Ceftriaxone,109,99,90.8
+Washington,2024-05,Escherichia coli,Ciprofloxacin,109,77,70.6
+Washington,2024-05,Escherichia coli,Fosfomycin,109,103,94.5
+Washington,2024-05,Escherichia coli,Nitrofurantoin,109,99,90.8
+Washington,2024-05,Escherichia coli,TMP-SMX,109,74,67.9
+Washington,2024-05,Haemophilus influenzae,Amoxicillin,2,1,50.0
+Washington,2024-05,Haemophilus influenzae,Amoxicillin-Clavulanate,2,2,100.0
+Washington,2024-05,Haemophilus influenzae,Azithromycin,2,1,50.0
+Washington,2024-05,Haemophilus influenzae,Ceftriaxone,2,2,100.0
+Washington,2024-05,Haemophilus influenzae,Doxycycline,2,2,100.0
+Washington,2024-05,Klebsiella pneumoniae,Amoxicillin-Clavulanate,33,25,75.8
+Washington,2024-05,Klebsiella pneumoniae,Ceftriaxone,33,23,69.7
+Washington,2024-05,Klebsiella pneumoniae,Ciprofloxacin,33,26,78.8
+Washington,2024-05,Klebsiella pneumoniae,Ertapenem,33,32,97.0
+Washington,2024-05,Klebsiella pneumoniae,Nitrofurantoin,33,12,36.4
+Washington,2024-05,MRSA,Clindamycin,16,11,68.8
+Washington,2024-05,MRSA,Doxycycline,16,13,81.2
+Washington,2024-05,MRSA,Linezolid,16,16,100.0
+Washington,2024-05,MRSA,TMP-SMX,16,13,81.2
+Washington,2024-05,MRSA,Vancomycin,16,16,100.0
+Washington,2024-05,Pseudomonas aeruginosa,Cefepime,30,21,70.0
+Washington,2024-05,Pseudomonas aeruginosa,Ceftazidime,30,27,90.0
+Washington,2024-05,Pseudomonas aeruginosa,Ciprofloxacin,30,24,80.0
+Washington,2024-05,Pseudomonas aeruginosa,Meropenem,30,24,80.0
+Washington,2024-05,Pseudomonas aeruginosa,Piperacillin-Tazobactam,30,22,73.3
+Washington,2024-05,Staphylococcus aureus,Cephalexin,40,39,97.5
+Washington,2024-05,Staphylococcus aureus,Clindamycin,40,31,77.5
+Washington,2024-05,Staphylococcus aureus,Doxycycline,40,36,90.0
+Washington,2024-05,Staphylococcus aureus,Oxacillin,40,40,100.0
+Washington,2024-05,Staphylococcus aureus,TMP-SMX,40,37,92.5
+Washington,2024-05,Staphylococcus aureus,Vancomycin,40,39,97.5
+Washington,2024-05,Streptococcus pneumoniae,Amoxicillin,8,6,75.0
+Washington,2024-05,Streptococcus pneumoniae,Azithromycin,8,4,50.0
+Washington,2024-05,Streptococcus pneumoniae,Ceftriaxone,8,7,87.5
+Washington,2024-05,Streptococcus pneumoniae,Doxycycline,8,6,75.0
+Washington,2024-05,Streptococcus pneumoniae,Levofloxacin,8,6,75.0
+Washington,2024-05,Streptococcus pneumoniae,Penicillin,8,6,75.0
+Washington,2024-06,Enterococcus species,Ampicillin,24,21,87.5
+Washington,2024-06,Enterococcus species,Linezolid,24,22,91.7
+Washington,2024-06,Enterococcus species,Nitrofurantoin,24,19,79.2
+Washington,2024-06,Enterococcus species,Vancomycin,24,19,79.2
+Washington,2024-06,Escherichia coli,Amoxicillin-Clavulanate,97,65,67.0
+Washington,2024-06,Escherichia coli,Ampicillin,97,40,41.2
+Washington,2024-06,Escherichia coli,Ceftriaxone,97,88,90.7
+Washington,2024-06,Escherichia coli,Ciprofloxacin,97,73,75.3
+Washington,2024-06,Escherichia coli,Fosfomycin,97,92,94.8
+Washington,2024-06,Escherichia coli,Nitrofurantoin,97,92,94.8
+Washington,2024-06,Escherichia coli,TMP-SMX,97,71,73.2
+Washington,2024-06,Haemophilus influenzae,Amoxicillin,7,4,57.1
+Washington,2024-06,Haemophilus influenzae,Amoxicillin-Clavulanate,7,7,100.0
+Washington,2024-06,Haemophilus influenzae,Azithromycin,7,6,85.7
+Washington,2024-06,Haemophilus influenzae,Ceftriaxone,7,7,100.0
+Washington,2024-06,Haemophilus influenzae,Doxycycline,7,7,100.0
+Washington,2024-06,Klebsiella pneumoniae,Amoxicillin-Clavulanate,27,16,59.3
+Washington,2024-06,Klebsiella pneumoniae,Ceftriaxone,27,23,85.2
+Washington,2024-06,Klebsiella pneumoniae,Ciprofloxacin,27,21,77.8
+Washington,2024-06,Klebsiella pneumoniae,Ertapenem,27,27,100.0
+Washington,2024-06,Klebsiella pneumoniae,Nitrofurantoin,27,10,37.0
+Washington,2024-06,MRSA,Clindamycin,19,9,47.4
+Washington,2024-06,MRSA,Doxycycline,19,15,78.9
+Washington,2024-06,MRSA,Linezolid,19,18,94.7
+Washington,2024-06,MRSA,TMP-SMX,19,17,89.5
+Washington,2024-06,MRSA,Vancomycin,19,17,89.5
+Washington,2024-06,Pseudomonas aeruginosa,Cefepime,32,23,71.9
+Washington,2024-06,Pseudomonas aeruginosa,Ceftazidime,32,30,93.8
+Washington,2024-06,Pseudomonas aeruginosa,Ciprofloxacin,32,22,68.8
+Washington,2024-06,Pseudomonas aeruginosa,Meropenem,32,24,75.0
+Washington,2024-06,Pseudomonas aeruginosa,Piperacillin-Tazobactam,32,27,84.4
+Washington,2024-06,Staphylococcus aureus,Cephalexin,35,31,88.6
+Washington,2024-06,Staphylococcus aureus,Clindamycin,35,28,80.0
+Washington,2024-06,Staphylococcus aureus,Doxycycline,35,33,94.3
+Washington,2024-06,Staphylococcus aureus,Oxacillin,35,32,91.4
+Washington,2024-06,Staphylococcus aureus,TMP-SMX,35,30,85.7
+Washington,2024-06,Staphylococcus aureus,Vancomycin,35,34,97.1
+Washington,2024-06,Streptococcus pneumoniae,Amoxicillin,8,8,100.0
+Washington,2024-06,Streptococcus pneumoniae,Azithromycin,8,5,62.5
+Washington,2024-06,Streptococcus pneumoniae,Ceftriaxone,8,8,100.0
+Washington,2024-06,Streptococcus pneumoniae,Doxycycline,8,5,62.5
+Washington,2024-06,Streptococcus pneumoniae,Levofloxacin,8,8,100.0
+Washington,2024-06,Streptococcus pneumoniae,Penicillin,8,8,100.0
+Washington,2024-07,Enterococcus species,Ampicillin,21,18,85.7
+Washington,2024-07,Enterococcus species,Linezolid,21,21,100.0
+Washington,2024-07,Enterococcus species,Nitrofurantoin,21,19,90.5
+Washington,2024-07,Enterococcus species,Vancomycin,21,19,90.5
+Washington,2024-07,Escherichia coli,Amoxicillin-Clavulanate,110,69,62.7
+Washington,2024-07,Escherichia coli,Ampicillin,110,47,42.7
+Washington,2024-07,Escherichia coli,Ceftriaxone,110,100,90.9
+Washington,2024-07,Escherichia coli,Ciprofloxacin,110,85,77.3
+Washington,2024-07,Escherichia coli,Fosfomycin,110,104,94.5
+Washington,2024-07,Escherichia coli,Nitrofurantoin,110,105,95.5
+Washington,2024-07,Escherichia coli,TMP-SMX,110,76,69.1
+Washington,2024-07,Haemophilus influenzae,Amoxicillin,4,2,50.0
+Washington,2024-07,Haemophilus influenzae,Amoxicillin-Clavulanate,4,4,100.0
+Washington,2024-07,Haemophilus influenzae,Azithromycin,4,4,100.0
+Washington,2024-07,Haemophilus influenzae,Ceftriaxone,4,4,100.0
+Washington,2024-07,Haemophilus influenzae,Doxycycline,4,4,100.0
+Washington,2024-07,Klebsiella pneumoniae,Amoxicillin-Clavulanate,30,23,76.7
+Washington,2024-07,Klebsiella pneumoniae,Ceftriaxone,30,25,83.3
+Washington,2024-07,Klebsiella pneumoniae,Ciprofloxacin,30,24,80.0
+Washington,2024-07,Klebsiella pneumoniae,Ertapenem,30,28,93.3
+Washington,2024-07,Klebsiella pneumoniae,Nitrofurantoin,30,10,33.3
+Washington,2024-07,MRSA,Clindamycin,12,10,83.3
+Washington,2024-07,MRSA,Doxycycline,12,12,100.0
+Washington,2024-07,MRSA,Linezolid,12,12,100.0
+Washington,2024-07,MRSA,TMP-SMX,12,10,83.3
+Washington,2024-07,MRSA,Vancomycin,12,12,100.0
+Washington,2024-07,Pseudomonas aeruginosa,Cefepime,30,29,96.7
+Washington,2024-07,Pseudomonas aeruginosa,Ceftazidime,30,26,86.7
+Washington,2024-07,Pseudomonas aeruginosa,Ciprofloxacin,30,21,70.0
+Washington,2024-07,Pseudomonas aeruginosa,Meropenem,30,22,73.3
+Washington,2024-07,Pseudomonas aeruginosa,Piperacillin-Tazobactam,30,27,90.0
+Washington,2024-07,Staphylococcus aureus,Cephalexin,23,23,100.0
+Washington,2024-07,Staphylococcus aureus,Clindamycin,23,18,78.3
+Washington,2024-07,Staphylococcus aureus,Doxycycline,23,19,82.6
+Washington,2024-07,Staphylococcus aureus,Oxacillin,23,23,100.0
+Washington,2024-07,Staphylococcus aureus,TMP-SMX,23,22,95.7
+Washington,2024-07,Staphylococcus aureus,Vancomycin,23,20,87.0
+Washington,2024-07,Streptococcus pneumoniae,Amoxicillin,5,3,60.0
+Washington,2024-07,Streptococcus pneumoniae,Azithromycin,5,3,60.0
+Washington,2024-07,Streptococcus pneumoniae,Ceftriaxone,5,5,100.0
+Washington,2024-07,Streptococcus pneumoniae,Doxycycline,5,3,60.0
+Washington,2024-07,Streptococcus pneumoniae,Levofloxacin,5,5,100.0
+Washington,2024-07,Streptococcus pneumoniae,Penicillin,5,5,100.0
+Washington,2024-08,Enterococcus species,Ampicillin,32,31,96.9
+Washington,2024-08,Enterococcus species,Linezolid,32,31,96.9
+Washington,2024-08,Enterococcus species,Nitrofurantoin,32,22,68.8
+Washington,2024-08,Enterococcus species,Vancomycin,32,29,90.6
+Washington,2024-08,Escherichia coli,Amoxicillin-Clavulanate,90,60,66.7
+Washington,2024-08,Escherichia coli,Ampicillin,90,40,44.4
+Washington,2024-08,Escherichia coli,Ceftriaxone,90,77,85.6
+Washington,2024-08,Escherichia coli,Ciprofloxacin,90,71,78.9
+Washington,2024-08,Escherichia coli,Fosfomycin,90,82,91.1
+Washington,2024-08,Escherichia coli,Nitrofurantoin,90,85,94.4
+Washington,2024-08,Escherichia coli,TMP-SMX,90,66,73.3
+Washington,2024-08,Haemophilus influenzae,Amoxicillin,2,1,50.0
+Washington,2024-08,Haemophilus influenzae,Amoxicillin-Clavulanate,2,2,100.0
+Washington,2024-08,Haemophilus influenzae,Azithromycin,2,2,100.0
+Washington,2024-08,Haemophilus influenzae,Ceftriaxone,2,2,100.0
+Washington,2024-08,Haemophilus influenzae,Doxycycline,2,2,100.0
+Washington,2024-08,Klebsiella pneumoniae,Amoxicillin-Clavulanate,34,23,67.6
+Washington,2024-08,Klebsiella pneumoniae,Ceftriaxone,34,25,73.5
+Washington,2024-08,Klebsiella pneumoniae,Ciprofloxacin,34,25,73.5
+Washington,2024-08,Klebsiella pneumoniae,Ertapenem,34,31,91.2
+Washington,2024-08,Klebsiella pneumoniae,Nitrofurantoin,34,11,32.4
+Washington,2024-08,MRSA,Clindamycin,13,8,61.5
+Washington,2024-08,MRSA,Doxycycline,13,13,100.0
+Washington,2024-08,MRSA,Linezolid,13,13,100.0
+Washington,2024-08,MRSA,TMP-SMX,13,11,84.6
+Washington,2024-08,MRSA,Vancomycin,13,13,100.0
+Washington,2024-08,Pseudomonas aeruginosa,Cefepime,35,25,71.4
+Washington,2024-08,Pseudomonas aeruginosa,Ceftazidime,35,31,88.6
+Washington,2024-08,Pseudomonas aeruginosa,Ciprofloxacin,35,29,82.9
+Washington,2024-08,Pseudomonas aeruginosa,Meropenem,35,25,71.4
+Washington,2024-08,Pseudomonas aeruginosa,Piperacillin-Tazobactam,35,29,82.9
+Washington,2024-08,Staphylococcus aureus,Cephalexin,33,33,100.0
+Washington,2024-08,Staphylococcus aureus,Clindamycin,33,30,90.9
+Washington,2024-08,Staphylococcus aureus,Doxycycline,33,33,100.0
+Washington,2024-08,Staphylococcus aureus,Oxacillin,33,33,100.0
+Washington,2024-08,Staphylococcus aureus,TMP-SMX,33,30,90.9
+Washington,2024-08,Staphylococcus aureus,Vancomycin,33,33,100.0
+Washington,2024-08,Streptococcus pneumoniae,Amoxicillin,8,6,75.0
+Washington,2024-08,Streptococcus pneumoniae,Azithromycin,8,4,50.0
+Washington,2024-08,Streptococcus pneumoniae,Ceftriaxone,8,6,75.0
+Washington,2024-08,Streptococcus pneumoniae,Doxycycline,8,8,100.0
+Washington,2024-08,Streptococcus pneumoniae,Levofloxacin,8,6,75.0
+Washington,2024-08,Streptococcus pneumoniae,Penicillin,8,5,62.5
+Washington,2024-09,Enterococcus species,Ampicillin,21,16,76.2
+Washington,2024-09,Enterococcus species,Linezolid,21,20,95.2
+Washington,2024-09,Enterococcus species,Nitrofurantoin,21,17,81.0
+Washington,2024-09,Enterococcus species,Vancomycin,21,17,81.0
+Washington,2024-09,Escherichia coli,Amoxicillin-Clavulanate,109,74,67.9
+Washington,2024-09,Escherichia coli,Ampicillin,109,36,33.0
+Washington,2024-09,Escherichia coli,Ceftriaxone,109,98,89.9
+Washington,2024-09,Escherichia coli,Ciprofloxacin,109,81,74.3
+Washington,2024-09,Escherichia coli,Fosfomycin,109,103,94.5
+Washington,2024-09,Escherichia coli,Nitrofurantoin,109,103,94.5
+Washington,2024-09,Escherichia coli,TMP-SMX,109,74,67.9
+Washington,2024-09,Haemophilus influenzae,Amoxicillin,6,5,83.3
+Washington,2024-09,Haemophilus influenzae,Amoxicillin-Clavulanate,6,5,83.3
+Washington,2024-09,Haemophilus influenzae,Azithromycin,6,5,83.3
+Washington,2024-09,Haemophilus influenzae,Ceftriaxone,6,6,100.0
+Washington,2024-09,Haemophilus influenzae,Doxycycline,6,6,100.0
+Washington,2024-09,Klebsiella pneumoniae,Amoxicillin-Clavulanate,31,25,80.6
+Washington,2024-09,Klebsiella pneumoniae,Ceftriaxone,31,28,90.3
+Washington,2024-09,Klebsiella pneumoniae,Ciprofloxacin,31,26,83.9
+Washington,2024-09,Klebsiella pneumoniae,Ertapenem,31,27,87.1
+Washington,2024-09,Klebsiella pneumoniae,Nitrofurantoin,31,12,38.7
+Washington,2024-09,MRSA,Clindamycin,20,10,50.0
+Washington,2024-09,MRSA,Doxycycline,20,18,90.0
+Washington,2024-09,MRSA,Linezolid,20,19,95.0
+Washington,2024-09,MRSA,TMP-SMX,20,16,80.0
+Washington,2024-09,MRSA,Vancomycin,20,20,100.0
+Washington,2024-09,Pseudomonas aeruginosa,Cefepime,29,25,86.2
+Washington,2024-09,Pseudomonas aeruginosa,Ceftazidime,29,24,82.8
+Washington,2024-09,Pseudomonas aeruginosa,Ciprofloxacin,29,18,62.1
+Washington,2024-09,Pseudomonas aeruginosa,Meropenem,29,25,86.2
+Washington,2024-09,Pseudomonas aeruginosa,Piperacillin-Tazobactam,29,21,72.4
+Washington,2024-09,Staphylococcus aureus,Cephalexin,34,33,97.1
+Washington,2024-09,Staphylococcus aureus,Clindamycin,34,29,85.3
+Washington,2024-09,Staphylococcus aureus,Doxycycline,34,32,94.1
+Washington,2024-09,Staphylococcus aureus,Oxacillin,34,34,100.0
+Washington,2024-09,Staphylococcus aureus,TMP-SMX,34,32,94.1
+Washington,2024-09,Staphylococcus aureus,Vancomycin,34,33,97.1
+Washington,2024-09,Streptococcus pneumoniae,Amoxicillin,10,10,100.0
+Washington,2024-09,Streptococcus pneumoniae,Azithromycin,10,4,40.0
+Washington,2024-09,Streptococcus pneumoniae,Ceftriaxone,10,8,80.0
+Washington,2024-09,Streptococcus pneumoniae,Doxycycline,10,7,70.0
+Washington,2024-09,Streptococcus pneumoniae,Levofloxacin,10,9,90.0
+Washington,2024-09,Streptococcus pneumoniae,Penicillin,10,10,100.0
+Washington,2024-10,Enterococcus species,Ampicillin,23,18,78.3
+Washington,2024-10,Enterococcus species,Linezolid,23,21,91.3
+Washington,2024-10,Enterococcus species,Nitrofurantoin,23,18,78.3
+Washington,2024-10,Enterococcus species,Vancomycin,23,15,65.2
+Washington,2024-10,Escherichia coli,Amoxicillin-Clavulanate,95,63,66.3
+Washington,2024-10,Escherichia coli,Ampicillin,95,43,45.3
+Washington,2024-10,Escherichia coli,Ceftriaxone,95,75,78.9
+Washington,2024-10,Escherichia coli,Ciprofloxacin,95,62,65.3
+Washington,2024-10,Escherichia coli,Fosfomycin,95,88,92.6
+Washington,2024-10,Escherichia coli,Nitrofurantoin,95,90,94.7
+Washington,2024-10,Escherichia coli,TMP-SMX,95,66,69.5
+Washington,2024-10,Haemophilus influenzae,Amoxicillin,9,9,100.0
+Washington,2024-10,Haemophilus influenzae,Amoxicillin-Clavulanate,9,9,100.0
+Washington,2024-10,Haemophilus influenzae,Azithromycin,9,8,88.9
+Washington,2024-10,Haemophilus influenzae,Ceftriaxone,9,8,88.9
+Washington,2024-10,Haemophilus influenzae,Doxycycline,9,7,77.8
+Washington,2024-10,Klebsiella pneumoniae,Amoxicillin-Clavulanate,37,35,94.6
+Washington,2024-10,Klebsiella pneumoniae,Ceftriaxone,37,32,86.5
+Washington,2024-10,Klebsiella pneumoniae,Ciprofloxacin,37,27,73.0
+Washington,2024-10,Klebsiella pneumoniae,Ertapenem,37,36,97.3
+Washington,2024-10,Klebsiella pneumoniae,Nitrofurantoin,37,19,51.4
+Washington,2024-10,MRSA,Clindamycin,8,8,100.0
+Washington,2024-10,MRSA,Doxycycline,8,7,87.5
+Washington,2024-10,MRSA,Linezolid,8,8,100.0
+Washington,2024-10,MRSA,TMP-SMX,8,6,75.0
+Washington,2024-10,MRSA,Vancomycin,8,8,100.0
+Washington,2024-10,Pseudomonas aeruginosa,Cefepime,24,18,75.0
+Washington,2024-10,Pseudomonas aeruginosa,Ceftazidime,24,18,75.0
+Washington,2024-10,Pseudomonas aeruginosa,Ciprofloxacin,24,19,79.2
+Washington,2024-10,Pseudomonas aeruginosa,Meropenem,24,22,91.7
+Washington,2024-10,Pseudomonas aeruginosa,Piperacillin-Tazobactam,24,22,91.7
+Washington,2024-10,Staphylococcus aureus,Cephalexin,42,42,100.0
+Washington,2024-10,Staphylococcus aureus,Clindamycin,42,30,71.4
+Washington,2024-10,Staphylococcus aureus,Doxycycline,42,39,92.9
+Washington,2024-10,Staphylococcus aureus,Oxacillin,42,39,92.9
+Washington,2024-10,Staphylococcus aureus,TMP-SMX,42,39,92.9
+Washington,2024-10,Staphylococcus aureus,Vancomycin,42,41,97.6
+Washington,2024-10,Streptococcus pneumoniae,Amoxicillin,10,9,90.0
+Washington,2024-10,Streptococcus pneumoniae,Azithromycin,10,9,90.0
+Washington,2024-10,Streptococcus pneumoniae,Ceftriaxone,10,10,100.0
+Washington,2024-10,Streptococcus pneumoniae,Doxycycline,10,10,100.0
+Washington,2024-10,Streptococcus pneumoniae,Levofloxacin,10,10,100.0
+Washington,2024-10,Streptococcus pneumoniae,Penicillin,10,9,90.0
+Washington,2024-11,Enterococcus species,Ampicillin,26,17,65.4
+Washington,2024-11,Enterococcus species,Linezolid,26,26,100.0
+Washington,2024-11,Enterococcus species,Nitrofurantoin,26,20,76.9
+Washington,2024-11,Enterococcus species,Vancomycin,26,22,84.6
+Washington,2024-11,Escherichia coli,Amoxicillin-Clavulanate,98,68,69.4
+Washington,2024-11,Escherichia coli,Ampicillin,98,41,41.8
+Washington,2024-11,Escherichia coli,Ceftriaxone,98,88,89.8
+Washington,2024-11,Escherichia coli,Ciprofloxacin,98,65,66.3
+Washington,2024-11,Escherichia coli,Fosfomycin,98,91,92.9
+Washington,2024-11,Escherichia coli,Nitrofurantoin,98,89,90.8
+Washington,2024-11,Escherichia coli,TMP-SMX,98,65,66.3
+Washington,2024-11,Haemophilus influenzae,Amoxicillin,6,5,83.3
+Washington,2024-11,Haemophilus influenzae,Amoxicillin-Clavulanate,6,5,83.3
+Washington,2024-11,Haemophilus influenzae,Azithromycin,6,5,83.3
+Washington,2024-11,Haemophilus influenzae,Ceftriaxone,6,6,100.0
+Washington,2024-11,Haemophilus influenzae,Doxycycline,6,6,100.0
+Washington,2024-11,Klebsiella pneumoniae,Amoxicillin-Clavulanate,25,21,84.0
+Washington,2024-11,Klebsiella pneumoniae,Ceftriaxone,25,24,96.0
+Washington,2024-11,Klebsiella pneumoniae,Ciprofloxacin,25,21,84.0
+Washington,2024-11,Klebsiella pneumoniae,Ertapenem,25,25,100.0
+Washington,2024-11,Klebsiella pneumoniae,Nitrofurantoin,25,12,48.0
+Washington,2024-11,MRSA,Clindamycin,12,6,50.0
+Washington,2024-11,MRSA,Doxycycline,12,12,100.0
+Washington,2024-11,MRSA,Linezolid,12,12,100.0
+Washington,2024-11,MRSA,TMP-SMX,12,11,91.7
+Washington,2024-11,MRSA,Vancomycin,12,12,100.0
+Washington,2024-11,Pseudomonas aeruginosa,Cefepime,22,19,86.4
+Washington,2024-11,Pseudomonas aeruginosa,Ceftazidime,22,19,86.4
+Washington,2024-11,Pseudomonas aeruginosa,Ciprofloxacin,22,15,68.2
+Washington,2024-11,Pseudomonas aeruginosa,Meropenem,22,15,68.2
+Washington,2024-11,Pseudomonas aeruginosa,Piperacillin-Tazobactam,22,17,77.3
+Washington,2024-11,Staphylococcus aureus,Cephalexin,35,32,91.4
+Washington,2024-11,Staphylococcus aureus,Clindamycin,35,30,85.7
+Washington,2024-11,Staphylococcus aureus,Doxycycline,35,33,94.3
+Washington,2024-11,Staphylococcus aureus,Oxacillin,35,33,94.3
+Washington,2024-11,Staphylococcus aureus,TMP-SMX,35,34,97.1
+Washington,2024-11,Staphylococcus aureus,Vancomycin,35,34,97.1
+Washington,2024-11,Streptococcus pneumoniae,Amoxicillin,11,10,90.9
+Washington,2024-11,Streptococcus pneumoniae,Azithromycin,11,4,36.4
+Washington,2024-11,Streptococcus pneumoniae,Ceftriaxone,11,10,90.9
+Washington,2024-11,Streptococcus pneumoniae,Doxycycline,11,6,54.5
+Washington,2024-11,Streptococcus pneumoniae,Levofloxacin,11,11,100.0
+Washington,2024-11,Streptococcus pneumoniae,Penicillin,11,7,63.6
+Washington,2024-12,Enterococcus species,Ampicillin,19,14,73.7
+Washington,2024-12,Enterococcus species,Linezolid,19,18,94.7
+Washington,2024-12,Enterococcus species,Nitrofurantoin,19,14,73.7
+Washington,2024-12,Enterococcus species,Vancomycin,19,15,78.9
+Washington,2024-12,Escherichia coli,Amoxicillin-Clavulanate,101,68,67.3
+Washington,2024-12,Escherichia coli,Ampicillin,101,44,43.6
+Washington,2024-12,Escherichia coli,Ceftriaxone,101,88,87.1
+Washington,2024-12,Escherichia coli,Ciprofloxacin,101,70,69.3
+Washington,2024-12,Escherichia coli,Fosfomycin,101,94,93.1
+Washington,2024-12,Escherichia coli,Nitrofurantoin,101,95,94.1
+Washington,2024-12,Escherichia coli,TMP-SMX,101,71,70.3
+Washington,2024-12,Haemophilus influenzae,Amoxicillin,5,5,100.0
+Washington,2024-12,Haemophilus influenzae,Amoxicillin-Clavulanate,5,5,100.0
+Washington,2024-12,Haemophilus influenzae,Azithromycin,5,4,80.0
+Washington,2024-12,Haemophilus influenzae,Ceftriaxone,5,4,80.0
+Washington,2024-12,Haemophilus influenzae,Doxycycline,5,4,80.0
+Washington,2024-12,Klebsiella pneumoniae,Amoxicillin-Clavulanate,33,21,63.6
+Washington,2024-12,Klebsiella pneumoniae,Ceftriaxone,33,23,69.7
+Washington,2024-12,Klebsiella pneumoniae,Ciprofloxacin,33,28,84.8
+Washington,2024-12,Klebsiella pneumoniae,Ertapenem,33,30,90.9
+Washington,2024-12,Klebsiella pneumoniae,Nitrofurantoin,33,8,24.2
+Washington,2024-12,MRSA,Clindamycin,10,8,80.0
+Washington,2024-12,MRSA,Doxycycline,10,8,80.0
+Washington,2024-12,MRSA,Linezolid,10,10,100.0
+Washington,2024-12,MRSA,TMP-SMX,10,7,70.0
+Washington,2024-12,MRSA,Vancomycin,10,10,100.0
+Washington,2024-12,Pseudomonas aeruginosa,Cefepime,31,21,67.7
+Washington,2024-12,Pseudomonas aeruginosa,Ceftazidime,31,29,93.5
+Washington,2024-12,Pseudomonas aeruginosa,Ciprofloxacin,31,25,80.6
+Washington,2024-12,Pseudomonas aeruginosa,Meropenem,31,21,67.7
+Washington,2024-12,Pseudomonas aeruginosa,Piperacillin-Tazobactam,31,22,71.0
+Washington,2024-12,Staphylococcus aureus,Cephalexin,49,47,95.9
+Washington,2024-12,Staphylococcus aureus,Clindamycin,49,44,89.8
+Washington,2024-12,Staphylococcus aureus,Doxycycline,49,48,98.0
+Washington,2024-12,Staphylococcus aureus,Oxacillin,49,49,100.0
+Washington,2024-12,Staphylococcus aureus,TMP-SMX,49,40,81.6
+Washington,2024-12,Staphylococcus aureus,Vancomycin,49,47,95.9
+Washington,2024-12,Streptococcus pneumoniae,Amoxicillin,13,11,84.6
+Washington,2024-12,Streptococcus pneumoniae,Azithromycin,13,6,46.2
+Washington,2024-12,Streptococcus pneumoniae,Ceftriaxone,13,11,84.6
+Washington,2024-12,Streptococcus pneumoniae,Doxycycline,13,11,84.6
+Washington,2024-12,Streptococcus pneumoniae,Levofloxacin,13,11,84.6
+Washington,2024-12,Streptococcus pneumoniae,Penicillin,13,11,84.6
+Washington,2025-01,Enterococcus species,Ampicillin,21,16,76.2
+Washington,2025-01,Enterococcus species,Linezolid,21,20,95.2
+Washington,2025-01,Enterococcus species,Nitrofurantoin,21,13,61.9
+Washington,2025-01,Enterococcus species,Vancomycin,21,20,95.2
+Washington,2025-01,Escherichia coli,Amoxicillin-Clavulanate,108,67,62.0
+Washington,2025-01,Escherichia coli,Ampicillin,108,45,41.7
+Washington,2025-01,Escherichia coli,Ceftriaxone,108,93,86.1
+Washington,2025-01,Escherichia coli,Ciprofloxacin,108,79,73.1
+Washington,2025-01,Escherichia coli,Fosfomycin,108,100,92.6
+Washington,2025-01,Escherichia coli,Nitrofurantoin,108,98,90.7
+Washington,2025-01,Escherichia coli,TMP-SMX,108,73,67.6
+Washington,2025-01,Haemophilus influenzae,Amoxicillin,7,5,71.4
+Washington,2025-01,Haemophilus influenzae,Amoxicillin-Clavulanate,7,7,100.0
+Washington,2025-01,Haemophilus influenzae,Azithromycin,7,6,85.7
+Washington,2025-01,Haemophilus influenzae,Ceftriaxone,7,6,85.7
+Washington,2025-01,Haemophilus influenzae,Doxycycline,7,6,85.7
+Washington,2025-01,Klebsiella pneumoniae,Amoxicillin-Clavulanate,32,23,71.9
+Washington,2025-01,Klebsiella pneumoniae,Ceftriaxone,32,29,90.6
+Washington,2025-01,Klebsiella pneumoniae,Ciprofloxacin,32,27,84.4
+Washington,2025-01,Klebsiella pneumoniae,Ertapenem,32,28,87.5
+Washington,2025-01,Klebsiella pneumoniae,Nitrofurantoin,32,10,31.2
+Washington,2025-01,MRSA,Clindamycin,19,13,68.4
+Washington,2025-01,MRSA,Doxycycline,19,17,89.5
+Washington,2025-01,MRSA,Linezolid,19,18,94.7
+Washington,2025-01,MRSA,TMP-SMX,19,15,78.9
+Washington,2025-01,MRSA,Vancomycin,19,18,94.7
+Washington,2025-01,Pseudomonas aeruginosa,Cefepime,33,27,81.8
+Washington,2025-01,Pseudomonas aeruginosa,Ceftazidime,33,27,81.8
+Washington,2025-01,Pseudomonas aeruginosa,Ciprofloxacin,33,25,75.8
+Washington,2025-01,Pseudomonas aeruginosa,Meropenem,33,28,84.8
+Washington,2025-01,Pseudomonas aeruginosa,Piperacillin-Tazobactam,33,22,66.7
+Washington,2025-01,Staphylococcus aureus,Cephalexin,22,21,95.5
+Washington,2025-01,Staphylococcus aureus,Clindamycin,22,18,81.8
+Washington,2025-01,Staphylococcus aureus,Doxycycline,22,20,90.9
+Washington,2025-01,Staphylococcus aureus,Oxacillin,22,22,100.0
+Washington,2025-01,Staphylococcus aureus,TMP-SMX,22,21,95.5
+Washington,2025-01,Staphylococcus aureus,Vancomycin,22,21,95.5
+Washington,2025-01,Streptococcus pneumoniae,Amoxicillin,8,7,87.5
+Washington,2025-01,Streptococcus pneumoniae,Azithromycin,8,6,75.0
+Washington,2025-01,Streptococcus pneumoniae,Ceftriaxone,8,7,87.5
+Washington,2025-01,Streptococcus pneumoniae,Doxycycline,8,7,87.5
+Washington,2025-01,Streptococcus pneumoniae,Levofloxacin,8,8,100.0
+Washington,2025-01,Streptococcus pneumoniae,Penicillin,8,7,87.5
+Washington,2025-02,Enterococcus species,Ampicillin,22,16,72.7
+Washington,2025-02,Enterococcus species,Linezolid,22,21,95.5
+Washington,2025-02,Enterococcus species,Nitrofurantoin,22,18,81.8
+Washington,2025-02,Enterococcus species,Vancomycin,22,20,90.9
+Washington,2025-02,Escherichia coli,Amoxicillin-Clavulanate,106,76,71.7
+Washington,2025-02,Escherichia coli,Ampicillin,106,40,37.7
+Washington,2025-02,Escherichia coli,Ceftriaxone,106,95,89.6
+Washington,2025-02,Escherichia coli,Ciprofloxacin,106,81,76.4
+Washington,2025-02,Escherichia coli,Fosfomycin,106,97,91.5
+Washington,2025-02,Escherichia coli,Nitrofurantoin,106,95,89.6
+Washington,2025-02,Escherichia coli,TMP-SMX,106,80,75.5
+Washington,2025-02,Haemophilus influenzae,Amoxicillin,4,3,75.0
+Washington,2025-02,Haemophilus influenzae,Amoxicillin-Clavulanate,4,4,100.0
+Washington,2025-02,Haemophilus influenzae,Azithromycin,4,4,100.0
+Washington,2025-02,Haemophilus influenzae,Ceftriaxone,4,4,100.0
+Washington,2025-02,Haemophilus influenzae,Doxycycline,4,3,75.0
+Washington,2025-02,Klebsiella pneumoniae,Amoxicillin-Clavulanate,25,19,76.0
+Washington,2025-02,Klebsiella pneumoniae,Ceftriaxone,25,21,84.0
+Washington,2025-02,Klebsiella pneumoniae,Ciprofloxacin,25,21,84.0
+Washington,2025-02,Klebsiella pneumoniae,Ertapenem,25,25,100.0
+Washington,2025-02,Klebsiella pneumoniae,Nitrofurantoin,25,10,40.0
+Washington,2025-02,MRSA,Clindamycin,12,8,66.7
+Washington,2025-02,MRSA,Doxycycline,12,12,100.0
+Washington,2025-02,MRSA,Linezolid,12,12,100.0
+Washington,2025-02,MRSA,TMP-SMX,12,11,91.7
+Washington,2025-02,MRSA,Vancomycin,12,11,91.7
+Washington,2025-02,Pseudomonas aeruginosa,Cefepime,23,19,82.6
+Washington,2025-02,Pseudomonas aeruginosa,Ceftazidime,23,18,78.3
+Washington,2025-02,Pseudomonas aeruginosa,Ciprofloxacin,23,19,82.6
+Washington,2025-02,Pseudomonas aeruginosa,Meropenem,23,17,73.9
+Washington,2025-02,Pseudomonas aeruginosa,Piperacillin-Tazobactam,23,22,95.7
+Washington,2025-02,Staphylococcus aureus,Cephalexin,32,29,90.6
+Washington,2025-02,Staphylococcus aureus,Clindamycin,32,29,90.6
+Washington,2025-02,Staphylococcus aureus,Doxycycline,32,30,93.8
+Washington,2025-02,Staphylococcus aureus,Oxacillin,32,29,90.6
+Washington,2025-02,Staphylococcus aureus,TMP-SMX,32,29,90.6
+Washington,2025-02,Staphylococcus aureus,Vancomycin,32,32,100.0
+Washington,2025-02,Streptococcus pneumoniae,Amoxicillin,11,9,81.8
+Washington,2025-02,Streptococcus pneumoniae,Azithromycin,11,6,54.5
+Washington,2025-02,Streptococcus pneumoniae,Ceftriaxone,11,9,81.8
+Washington,2025-02,Streptococcus pneumoniae,Doxycycline,11,11,100.0
+Washington,2025-02,Streptococcus pneumoniae,Levofloxacin,11,10,90.9
+Washington,2025-02,Streptococcus pneumoniae,Penicillin,11,11,100.0
+Washington,2025-03,Enterococcus species,Ampicillin,23,18,78.3
+Washington,2025-03,Enterococcus species,Linezolid,23,22,95.7
+Washington,2025-03,Enterococcus species,Nitrofurantoin,23,18,78.3
+Washington,2025-03,Enterococcus species,Vancomycin,23,19,82.6
+Washington,2025-03,Escherichia coli,Amoxicillin-Clavulanate,92,59,64.1
+Washington,2025-03,Escherichia coli,Ampicillin,92,32,34.8
+Washington,2025-03,Escherichia coli,Ceftriaxone,92,79,85.9
+Washington,2025-03,Escherichia coli,Ciprofloxacin,92,63,68.5
+Washington,2025-03,Escherichia coli,Fosfomycin,92,86,93.5
+Washington,2025-03,Escherichia coli,Nitrofurantoin,92,89,96.7
+Washington,2025-03,Escherichia coli,TMP-SMX,92,72,78.3
+Washington,2025-03,Haemophilus influenzae,Amoxicillin,11,9,81.8
+Washington,2025-03,Haemophilus influenzae,Amoxicillin-Clavulanate,11,11,100.0
+Washington,2025-03,Haemophilus influenzae,Azithromycin,11,9,81.8
+Washington,2025-03,Haemophilus influenzae,Ceftriaxone,11,11,100.0
+Washington,2025-03,Haemophilus influenzae,Doxycycline,11,10,90.9
+Washington,2025-03,Klebsiella pneumoniae,Amoxicillin-Clavulanate,28,21,75.0
+Washington,2025-03,Klebsiella pneumoniae,Ceftriaxone,28,23,82.1
+Washington,2025-03,Klebsiella pneumoniae,Ciprofloxacin,28,24,85.7
+Washington,2025-03,Klebsiella pneumoniae,Ertapenem,28,27,96.4
+Washington,2025-03,Klebsiella pneumoniae,Nitrofurantoin,28,12,42.9
+Washington,2025-03,MRSA,Clindamycin,15,12,80.0
+Washington,2025-03,MRSA,Doxycycline,15,14,93.3
+Washington,2025-03,MRSA,Linezolid,15,15,100.0
+Washington,2025-03,MRSA,TMP-SMX,15,14,93.3
+Washington,2025-03,MRSA,Vancomycin,15,15,100.0
+Washington,2025-03,Pseudomonas aeruginosa,Cefepime,32,22,68.8
+Washington,2025-03,Pseudomonas aeruginosa,Ceftazidime,32,24,75.0
+Washington,2025-03,Pseudomonas aeruginosa,Ciprofloxacin,32,24,75.0
+Washington,2025-03,Pseudomonas aeruginosa,Meropenem,32,24,75.0
+Washington,2025-03,Pseudomonas aeruginosa,Piperacillin-Tazobactam,32,27,84.4
+Washington,2025-03,Staphylococcus aureus,Cephalexin,29,29,100.0
+Washington,2025-03,Staphylococcus aureus,Clindamycin,29,25,86.2
+Washington,2025-03,Staphylococcus aureus,Doxycycline,29,29,100.0
+Washington,2025-03,Staphylococcus aureus,Oxacillin,29,28,96.6
+Washington,2025-03,Staphylococcus aureus,TMP-SMX,29,26,89.7
+Washington,2025-03,Staphylococcus aureus,Vancomycin,29,29,100.0
+Washington,2025-03,Streptococcus pneumoniae,Amoxicillin,13,12,92.3
+Washington,2025-03,Streptococcus pneumoniae,Azithromycin,13,8,61.5
+Washington,2025-03,Streptococcus pneumoniae,Ceftriaxone,13,12,92.3
+Washington,2025-03,Streptococcus pneumoniae,Doxycycline,13,10,76.9
+Washington,2025-03,Streptococcus pneumoniae,Levofloxacin,13,10,76.9
+Washington,2025-03,Streptococcus pneumoniae,Penicillin,13,12,92.3
+Washington,2025-04,Enterococcus species,Ampicillin,23,16,69.6
+Washington,2025-04,Enterococcus species,Linezolid,23,23,100.0
+Washington,2025-04,Enterococcus species,Nitrofurantoin,23,19,82.6
+Washington,2025-04,Enterococcus species,Vancomycin,23,16,69.6
+Washington,2025-04,Escherichia coli,Amoxicillin-Clavulanate,104,56,53.8
+Washington,2025-04,Escherichia coli,Ampicillin,104,41,39.4
+Washington,2025-04,Escherichia coli,Ceftriaxone,104,89,85.6
+Washington,2025-04,Escherichia coli,Ciprofloxacin,104,71,68.3
+Washington,2025-04,Escherichia coli,Fosfomycin,104,99,95.2
+Washington,2025-04,Escherichia coli,Nitrofurantoin,104,93,89.4
+Washington,2025-04,Escherichia coli,TMP-SMX,104,69,66.3
+Washington,2025-04,Haemophilus influenzae,Amoxicillin,5,2,40.0
+Washington,2025-04,Haemophilus influenzae,Amoxicillin-Clavulanate,5,5,100.0
+Washington,2025-04,Haemophilus influenzae,Azithromycin,5,5,100.0
+Washington,2025-04,Haemophilus influenzae,Ceftriaxone,5,4,80.0
+Washington,2025-04,Haemophilus influenzae,Doxycycline,5,4,80.0
+Washington,2025-04,Klebsiella pneumoniae,Amoxicillin-Clavulanate,36,23,63.9
+Washington,2025-04,Klebsiella pneumoniae,Ceftriaxone,36,26,72.2
+Washington,2025-04,Klebsiella pneumoniae,Ciprofloxacin,36,32,88.9
+Washington,2025-04,Klebsiella pneumoniae,Ertapenem,36,34,94.4
+Washington,2025-04,Klebsiella pneumoniae,Nitrofurantoin,36,13,36.1
+Washington,2025-04,MRSA,Clindamycin,13,11,84.6
+Washington,2025-04,MRSA,Doxycycline,13,11,84.6
+Washington,2025-04,MRSA,Linezolid,13,13,100.0
+Washington,2025-04,MRSA,TMP-SMX,13,11,84.6
+Washington,2025-04,MRSA,Vancomycin,13,13,100.0
+Washington,2025-04,Pseudomonas aeruginosa,Cefepime,27,20,74.1
+Washington,2025-04,Pseudomonas aeruginosa,Ceftazidime,27,21,77.8
+Washington,2025-04,Pseudomonas aeruginosa,Ciprofloxacin,27,21,77.8
+Washington,2025-04,Pseudomonas aeruginosa,Meropenem,27,22,81.5
+Washington,2025-04,Pseudomonas aeruginosa,Piperacillin-Tazobactam,27,19,70.4
+Washington,2025-04,Staphylococcus aureus,Cephalexin,24,23,95.8
+Washington,2025-04,Staphylococcus aureus,Clindamycin,24,22,91.7
+Washington,2025-04,Staphylococcus aureus,Doxycycline,24,24,100.0
+Washington,2025-04,Staphylococcus aureus,Oxacillin,24,24,100.0
+Washington,2025-04,Staphylococcus aureus,TMP-SMX,24,20,83.3
+Washington,2025-04,Staphylococcus aureus,Vancomycin,24,24,100.0
+Washington,2025-04,Streptococcus pneumoniae,Amoxicillin,6,5,83.3
+Washington,2025-04,Streptococcus pneumoniae,Azithromycin,6,3,50.0
+Washington,2025-04,Streptococcus pneumoniae,Ceftriaxone,6,6,100.0
+Washington,2025-04,Streptococcus pneumoniae,Doxycycline,6,5,83.3
+Washington,2025-04,Streptococcus pneumoniae,Levofloxacin,6,5,83.3
+Washington,2025-04,Streptococcus pneumoniae,Penicillin,6,5,83.3
+Washington,2025-05,Enterococcus species,Ampicillin,22,16,72.7
+Washington,2025-05,Enterococcus species,Linezolid,22,21,95.5
+Washington,2025-05,Enterococcus species,Nitrofurantoin,22,16,72.7
+Washington,2025-05,Enterococcus species,Vancomycin,22,20,90.9
+Washington,2025-05,Escherichia coli,Amoxicillin-Clavulanate,109,70,64.2
+Washington,2025-05,Escherichia coli,Ampicillin,109,44,40.4
+Washington,2025-05,Escherichia coli,Ceftriaxone,109,97,89.0
+Washington,2025-05,Escherichia coli,Ciprofloxacin,109,83,76.1
+Washington,2025-05,Escherichia coli,Fosfomycin,109,101,92.7
+Washington,2025-05,Escherichia coli,Nitrofurantoin,109,101,92.7
+Washington,2025-05,Escherichia coli,TMP-SMX,109,87,79.8
+Washington,2025-05,Haemophilus influenzae,Amoxicillin,4,2,50.0
+Washington,2025-05,Haemophilus influenzae,Amoxicillin-Clavulanate,4,4,100.0
+Washington,2025-05,Haemophilus influenzae,Azithromycin,4,4,100.0
+Washington,2025-05,Haemophilus influenzae,Ceftriaxone,4,4,100.0
+Washington,2025-05,Haemophilus influenzae,Doxycycline,4,4,100.0
+Washington,2025-05,Klebsiella pneumoniae,Amoxicillin-Clavulanate,29,22,75.9
+Washington,2025-05,Klebsiella pneumoniae,Ceftriaxone,29,27,93.1
+Washington,2025-05,Klebsiella pneumoniae,Ciprofloxacin,29,24,82.8
+Washington,2025-05,Klebsiella pneumoniae,Ertapenem,29,27,93.1
+Washington,2025-05,Klebsiella pneumoniae,Nitrofurantoin,29,15,51.7
+Washington,2025-05,MRSA,Clindamycin,14,9,64.3
+Washington,2025-05,MRSA,Doxycycline,14,14,100.0
+Washington,2025-05,MRSA,Linezolid,14,14,100.0
+Washington,2025-05,MRSA,TMP-SMX,14,13,92.9
+Washington,2025-05,MRSA,Vancomycin,14,14,100.0
+Washington,2025-05,Pseudomonas aeruginosa,Cefepime,24,22,91.7
+Washington,2025-05,Pseudomonas aeruginosa,Ceftazidime,24,21,87.5
+Washington,2025-05,Pseudomonas aeruginosa,Ciprofloxacin,24,19,79.2
+Washington,2025-05,Pseudomonas aeruginosa,Meropenem,24,22,91.7
+Washington,2025-05,Pseudomonas aeruginosa,Piperacillin-Tazobactam,24,19,79.2
+Washington,2025-05,Staphylococcus aureus,Cephalexin,36,36,100.0
+Washington,2025-05,Staphylococcus aureus,Clindamycin,36,25,69.4
+Washington,2025-05,Staphylococcus aureus,Doxycycline,36,32,88.9
+Washington,2025-05,Staphylococcus aureus,Oxacillin,36,34,94.4
+Washington,2025-05,Staphylococcus aureus,TMP-SMX,36,34,94.4
+Washington,2025-05,Staphylococcus aureus,Vancomycin,36,36,100.0
+Washington,2025-05,Streptococcus pneumoniae,Amoxicillin,12,8,66.7
+Washington,2025-05,Streptococcus pneumoniae,Azithromycin,12,9,75.0
+Washington,2025-05,Streptococcus pneumoniae,Ceftriaxone,12,10,83.3
+Washington,2025-05,Streptococcus pneumoniae,Doxycycline,12,9,75.0
+Washington,2025-05,Streptococcus pneumoniae,Levofloxacin,12,9,75.0
+Washington,2025-05,Streptococcus pneumoniae,Penicillin,12,9,75.0
+Washington,2025-06,Enterococcus species,Ampicillin,22,18,81.8
+Washington,2025-06,Enterococcus species,Linezolid,22,20,90.9
+Washington,2025-06,Enterococcus species,Nitrofurantoin,22,18,81.8
+Washington,2025-06,Enterococcus species,Vancomycin,22,17,77.3
+Washington,2025-06,Escherichia coli,Amoxicillin-Clavulanate,112,72,64.3
+Washington,2025-06,Escherichia coli,Ampicillin,112,45,40.2
+Washington,2025-06,Escherichia coli,Ceftriaxone,112,95,84.8
+Washington,2025-06,Escherichia coli,Ciprofloxacin,112,82,73.2
+Washington,2025-06,Escherichia coli,Fosfomycin,112,109,97.3
+Washington,2025-06,Escherichia coli,Nitrofurantoin,112,106,94.6
+Washington,2025-06,Escherichia coli,TMP-SMX,112,84,75.0
+Washington,2025-06,Haemophilus influenzae,Amoxicillin,2,2,100.0
+Washington,2025-06,Haemophilus influenzae,Amoxicillin-Clavulanate,2,2,100.0
+Washington,2025-06,Haemophilus influenzae,Azithromycin,2,2,100.0
+Washington,2025-06,Haemophilus influenzae,Ceftriaxone,2,2,100.0
+Washington,2025-06,Haemophilus influenzae,Doxycycline,2,2,100.0
+Washington,2025-06,Klebsiella pneumoniae,Amoxicillin-Clavulanate,21,19,90.5
+Washington,2025-06,Klebsiella pneumoniae,Ceftriaxone,21,18,85.7
+Washington,2025-06,Klebsiella pneumoniae,Ciprofloxacin,21,19,90.5
+Washington,2025-06,Klebsiella pneumoniae,Ertapenem,21,20,95.2
+Washington,2025-06,Klebsiella pneumoniae,Nitrofurantoin,21,5,23.8
+Washington,2025-06,MRSA,Clindamycin,16,9,56.2
+Washington,2025-06,MRSA,Doxycycline,16,15,93.8
+Washington,2025-06,MRSA,Linezolid,16,16,100.0
+Washington,2025-06,MRSA,TMP-SMX,16,13,81.2
+Washington,2025-06,MRSA,Vancomycin,16,15,93.8
+Washington,2025-06,Pseudomonas aeruginosa,Cefepime,27,24,88.9
+Washington,2025-06,Pseudomonas aeruginosa,Ceftazidime,27,22,81.5
+Washington,2025-06,Pseudomonas aeruginosa,Ciprofloxacin,27,16,59.3
+Washington,2025-06,Pseudomonas aeruginosa,Meropenem,27,23,85.2
+Washington,2025-06,Pseudomonas aeruginosa,Piperacillin-Tazobactam,27,21,77.8
+Washington,2025-06,Staphylococcus aureus,Cephalexin,37,35,94.6
+Washington,2025-06,Staphylococcus aureus,Clindamycin,37,34,91.9
+Washington,2025-06,Staphylococcus aureus,Doxycycline,37,35,94.6
+Washington,2025-06,Staphylococcus aureus,Oxacillin,37,34,91.9
+Washington,2025-06,Staphylococcus aureus,TMP-SMX,37,32,86.5
+Washington,2025-06,Staphylococcus aureus,Vancomycin,37,37,100.0
+Washington,2025-06,Streptococcus pneumoniae,Amoxicillin,4,3,75.0
+Washington,2025-06,Streptococcus pneumoniae,Azithromycin,4,2,50.0
+Washington,2025-06,Streptococcus pneumoniae,Ceftriaxone,4,4,100.0
+Washington,2025-06,Streptococcus pneumoniae,Doxycycline,4,2,50.0
+Washington,2025-06,Streptococcus pneumoniae,Levofloxacin,4,4,100.0
+Washington,2025-06,Streptococcus pneumoniae,Penicillin,4,4,100.0
+Washington,2025-07,Enterococcus species,Ampicillin,32,22,68.8
+Washington,2025-07,Enterococcus species,Linezolid,32,31,96.9
+Washington,2025-07,Enterococcus species,Nitrofurantoin,32,24,75.0
+Washington,2025-07,Enterococcus species,Vancomycin,32,26,81.2
+Washington,2025-07,Escherichia coli,Amoxicillin-Clavulanate,91,57,62.6
+Washington,2025-07,Escherichia coli,Ampicillin,91,47,51.6
+Washington,2025-07,Escherichia coli,Ceftriaxone,91,77,84.6
+Washington,2025-07,Escherichia coli,Ciprofloxacin,91,63,69.2
+Washington,2025-07,Escherichia coli,Fosfomycin,91,84,92.3
+Washington,2025-07,Escherichia coli,Nitrofurantoin,91,86,94.5
+Washington,2025-07,Escherichia coli,TMP-SMX,91,62,68.1
+Washington,2025-07,Haemophilus influenzae,Amoxicillin,8,5,62.5
+Washington,2025-07,Haemophilus influenzae,Amoxicillin-Clavulanate,8,6,75.0
+Washington,2025-07,Haemophilus influenzae,Azithromycin,8,7,87.5
+Washington,2025-07,Haemophilus influenzae,Ceftriaxone,8,6,75.0
+Washington,2025-07,Haemophilus influenzae,Doxycycline,8,8,100.0
+Washington,2025-07,Klebsiella pneumoniae,Amoxicillin-Clavulanate,25,18,72.0
+Washington,2025-07,Klebsiella pneumoniae,Ceftriaxone,25,22,88.0
+Washington,2025-07,Klebsiella pneumoniae,Ciprofloxacin,25,20,80.0
+Washington,2025-07,Klebsiella pneumoniae,Ertapenem,25,24,96.0
+Washington,2025-07,Klebsiella pneumoniae,Nitrofurantoin,25,3,12.0
+Washington,2025-07,MRSA,Clindamycin,9,7,77.8
+Washington,2025-07,MRSA,Doxycycline,9,9,100.0
+Washington,2025-07,MRSA,Linezolid,9,9,100.0
+Washington,2025-07,MRSA,TMP-SMX,9,7,77.8
+Washington,2025-07,MRSA,Vancomycin,9,8,88.9
+Washington,2025-07,Pseudomonas aeruginosa,Cefepime,26,22,84.6
+Washington,2025-07,Pseudomonas aeruginosa,Ceftazidime,26,25,96.2
+Washington,2025-07,Pseudomonas aeruginosa,Ciprofloxacin,26,22,84.6
+Washington,2025-07,Pseudomonas aeruginosa,Meropenem,26,22,84.6
+Washington,2025-07,Pseudomonas aeruginosa,Piperacillin-Tazobactam,26,21,80.8
+Washington,2025-07,Staphylococcus aureus,Cephalexin,31,28,90.3
+Washington,2025-07,Staphylococcus aureus,Clindamycin,31,22,71.0
+Washington,2025-07,Staphylococcus aureus,Doxycycline,31,29,93.5
+Washington,2025-07,Staphylococcus aureus,Oxacillin,31,30,96.8
+Washington,2025-07,Staphylococcus aureus,TMP-SMX,31,28,90.3
+Washington,2025-07,Staphylococcus aureus,Vancomycin,31,29,93.5
+Washington,2025-07,Streptococcus pneumoniae,Amoxicillin,4,3,75.0
+Washington,2025-07,Streptococcus pneumoniae,Azithromycin,4,3,75.0
+Washington,2025-07,Streptococcus pneumoniae,Ceftriaxone,4,4,100.0
+Washington,2025-07,Streptococcus pneumoniae,Doxycycline,4,3,75.0
+Washington,2025-07,Streptococcus pneumoniae,Levofloxacin,4,4,100.0
+Washington,2025-07,Streptococcus pneumoniae,Penicillin,4,3,75.0
+Washington,2025-08,Enterococcus species,Ampicillin,26,18,69.2
+Washington,2025-08,Enterococcus species,Linezolid,26,25,96.2
+Washington,2025-08,Enterococcus species,Nitrofurantoin,26,22,84.6
+Washington,2025-08,Enterococcus species,Vancomycin,26,19,73.1
+Washington,2025-08,Escherichia coli,Amoxicillin-Clavulanate,118,74,62.7
+Washington,2025-08,Escherichia coli,Ampicillin,118,51,43.2
+Washington,2025-08,Escherichia coli,Ceftriaxone,118,99,83.9
+Washington,2025-08,Escherichia coli,Ciprofloxacin,118,79,66.9
+Washington,2025-08,Escherichia coli,Fosfomycin,118,109,92.4
+Washington,2025-08,Escherichia coli,Nitrofurantoin,118,111,94.1
+Washington,2025-08,Escherichia coli,TMP-SMX,118,83,70.3
+Washington,2025-08,Haemophilus influenzae,Amoxicillin,7,4,57.1
+Washington,2025-08,Haemophilus influenzae,Amoxicillin-Clavulanate,7,7,100.0
+Washington,2025-08,Haemophilus influenzae,Azithromycin,7,6,85.7
+Washington,2025-08,Haemophilus influenzae,Ceftriaxone,7,7,100.0
+Washington,2025-08,Haemophilus influenzae,Doxycycline,7,7,100.0
+Washington,2025-08,Klebsiella pneumoniae,Amoxicillin-Clavulanate,37,31,83.8
+Washington,2025-08,Klebsiella pneumoniae,Ceftriaxone,37,33,89.2
+Washington,2025-08,Klebsiella pneumoniae,Ciprofloxacin,37,35,94.6
+Washington,2025-08,Klebsiella pneumoniae,Ertapenem,37,35,94.6
+Washington,2025-08,Klebsiella pneumoniae,Nitrofurantoin,37,16,43.2
+Washington,2025-08,MRSA,Clindamycin,16,9,56.2
+Washington,2025-08,MRSA,Doxycycline,16,16,100.0
+Washington,2025-08,MRSA,Linezolid,16,15,93.8
+Washington,2025-08,MRSA,TMP-SMX,16,13,81.2
+Washington,2025-08,MRSA,Vancomycin,16,16,100.0
+Washington,2025-08,Pseudomonas aeruginosa,Cefepime,27,25,92.6
+Washington,2025-08,Pseudomonas aeruginosa,Ceftazidime,27,24,88.9
+Washington,2025-08,Pseudomonas aeruginosa,Ciprofloxacin,27,16,59.3
+Washington,2025-08,Pseudomonas aeruginosa,Meropenem,27,23,85.2
+Washington,2025-08,Pseudomonas aeruginosa,Piperacillin-Tazobactam,27,23,85.2
+Washington,2025-08,Staphylococcus aureus,Cephalexin,34,32,94.1
+Washington,2025-08,Staphylococcus aureus,Clindamycin,34,28,82.4
+Washington,2025-08,Staphylococcus aureus,Doxycycline,34,30,88.2
+Washington,2025-08,Staphylococcus aureus,Oxacillin,34,33,97.1
+Washington,2025-08,Staphylococcus aureus,TMP-SMX,34,30,88.2
+Washington,2025-08,Staphylococcus aureus,Vancomycin,34,33,97.1
+Washington,2025-08,Streptococcus pneumoniae,Amoxicillin,6,4,66.7
+Washington,2025-08,Streptococcus pneumoniae,Azithromycin,6,5,83.3
+Washington,2025-08,Streptococcus pneumoniae,Ceftriaxone,6,6,100.0
+Washington,2025-08,Streptococcus pneumoniae,Doxycycline,6,3,50.0
+Washington,2025-08,Streptococcus pneumoniae,Levofloxacin,6,6,100.0
+Washington,2025-08,Streptococcus pneumoniae,Penicillin,6,6,100.0
+Washington,2025-09,Enterococcus species,Ampicillin,26,21,80.8
+Washington,2025-09,Enterococcus species,Linezolid,26,25,96.2
+Washington,2025-09,Enterococcus species,Nitrofurantoin,26,22,84.6
+Washington,2025-09,Enterococcus species,Vancomycin,26,21,80.8
+Washington,2025-09,Escherichia coli,Amoxicillin-Clavulanate,108,71,65.7
+Washington,2025-09,Escherichia coli,Ampicillin,108,51,47.2
+Washington,2025-09,Escherichia coli,Ceftriaxone,108,97,89.8
+Washington,2025-09,Escherichia coli,Ciprofloxacin,108,79,73.1
+Washington,2025-09,Escherichia coli,Fosfomycin,108,106,98.1
+Washington,2025-09,Escherichia coli,Nitrofurantoin,108,101,93.5
+Washington,2025-09,Escherichia coli,TMP-SMX,108,72,66.7
+Washington,2025-09,Haemophilus influenzae,Amoxicillin,7,6,85.7
+Washington,2025-09,Haemophilus influenzae,Amoxicillin-Clavulanate,7,7,100.0
+Washington,2025-09,Haemophilus influenzae,Azithromycin,7,6,85.7
+Washington,2025-09,Haemophilus influenzae,Ceftriaxone,7,7,100.0
+Washington,2025-09,Haemophilus influenzae,Doxycycline,7,7,100.0
+Washington,2025-09,Klebsiella pneumoniae,Amoxicillin-Clavulanate,40,28,70.0
+Washington,2025-09,Klebsiella pneumoniae,Ceftriaxone,40,34,85.0
+Washington,2025-09,Klebsiella pneumoniae,Ciprofloxacin,40,36,90.0
+Washington,2025-09,Klebsiella pneumoniae,Ertapenem,40,38,95.0
+Washington,2025-09,Klebsiella pneumoniae,Nitrofurantoin,40,14,35.0
+Washington,2025-09,MRSA,Clindamycin,12,10,83.3
+Washington,2025-09,MRSA,Doxycycline,12,12,100.0
+Washington,2025-09,MRSA,Linezolid,12,12,100.0
+Washington,2025-09,MRSA,TMP-SMX,12,11,91.7
+Washington,2025-09,MRSA,Vancomycin,12,11,91.7
+Washington,2025-09,Pseudomonas aeruginosa,Cefepime,25,22,88.0
+Washington,2025-09,Pseudomonas aeruginosa,Ceftazidime,25,21,84.0
+Washington,2025-09,Pseudomonas aeruginosa,Ciprofloxacin,25,20,80.0
+Washington,2025-09,Pseudomonas aeruginosa,Meropenem,25,18,72.0
+Washington,2025-09,Pseudomonas aeruginosa,Piperacillin-Tazobactam,25,22,88.0
+Washington,2025-09,Staphylococcus aureus,Cephalexin,36,33,91.7
+Washington,2025-09,Staphylococcus aureus,Clindamycin,36,29,80.6
+Washington,2025-09,Staphylococcus aureus,Doxycycline,36,32,88.9
+Washington,2025-09,Staphylococcus aureus,Oxacillin,36,32,88.9
+Washington,2025-09,Staphylococcus aureus,TMP-SMX,36,34,94.4
+Washington,2025-09,Staphylococcus aureus,Vancomycin,36,35,97.2
+Washington,2025-09,Streptococcus pneumoniae,Amoxicillin,8,5,62.5
+Washington,2025-09,Streptococcus pneumoniae,Azithromycin,8,5,62.5
+Washington,2025-09,Streptococcus pneumoniae,Ceftriaxone,8,8,100.0
+Washington,2025-09,Streptococcus pneumoniae,Doxycycline,8,7,87.5
+Washington,2025-09,Streptococcus pneumoniae,Levofloxacin,8,7,87.5
+Washington,2025-09,Streptococcus pneumoniae,Penicillin,8,7,87.5
+Washington,2025-10,Enterococcus species,Ampicillin,15,8,53.3
+Washington,2025-10,Enterococcus species,Linezolid,15,15,100.0
+Washington,2025-10,Enterococcus species,Nitrofurantoin,15,10,66.7
+Washington,2025-10,Enterococcus species,Vancomycin,15,14,93.3
+Washington,2025-10,Escherichia coli,Amoxicillin-Clavulanate,90,56,62.2
+Washington,2025-10,Escherichia coli,Ampicillin,90,40,44.4
+Washington,2025-10,Escherichia coli,Ceftriaxone,90,76,84.4
+Washington,2025-10,Escherichia coli,Ciprofloxacin,90,69,76.7
+Washington,2025-10,Escherichia coli,Fosfomycin,90,84,93.3
+Washington,2025-10,Escherichia coli,Nitrofurantoin,90,86,95.6
+Washington,2025-10,Escherichia coli,TMP-SMX,90,63,70.0
+Washington,2025-10,Haemophilus influenzae,Amoxicillin,7,4,57.1
+Washington,2025-10,Haemophilus influenzae,Amoxicillin-Clavulanate,7,5,71.4
+Washington,2025-10,Haemophilus influenzae,Azithromycin,7,7,100.0
+Washington,2025-10,Haemophilus influenzae,Ceftriaxone,7,7,100.0
+Washington,2025-10,Haemophilus influenzae,Doxycycline,7,7,100.0
+Washington,2025-10,Klebsiella pneumoniae,Amoxicillin-Clavulanate,34,26,76.5
+Washington,2025-10,Klebsiella pneumoniae,Ceftriaxone,34,27,79.4
+Washington,2025-10,Klebsiella pneumoniae,Ciprofloxacin,34,29,85.3
+Washington,2025-10,Klebsiella pneumoniae,Ertapenem,34,29,85.3
+Washington,2025-10,Klebsiella pneumoniae,Nitrofurantoin,34,8,23.5
+Washington,2025-10,MRSA,Clindamycin,19,11,57.9
+Washington,2025-10,MRSA,Doxycycline,19,16,84.2
+Washington,2025-10,MRSA,Linezolid,19,18,94.7
+Washington,2025-10,MRSA,TMP-SMX,19,17,89.5
+Washington,2025-10,MRSA,Vancomycin,19,18,94.7
+Washington,2025-10,Pseudomonas aeruginosa,Cefepime,32,25,78.1
+Washington,2025-10,Pseudomonas aeruginosa,Ceftazidime,32,21,65.6
+Washington,2025-10,Pseudomonas aeruginosa,Ciprofloxacin,32,29,90.6
+Washington,2025-10,Pseudomonas aeruginosa,Meropenem,32,30,93.8
+Washington,2025-10,Pseudomonas aeruginosa,Piperacillin-Tazobactam,32,27,84.4
+Washington,2025-10,Staphylococcus aureus,Cephalexin,35,32,91.4
+Washington,2025-10,Staphylococcus aureus,Clindamycin,35,27,77.1
+Washington,2025-10,Staphylococcus aureus,Doxycycline,35,30,85.7
+Washington,2025-10,Staphylococcus aureus,Oxacillin,35,33,94.3
+Washington,2025-10,Staphylococcus aureus,TMP-SMX,35,31,88.6
+Washington,2025-10,Staphylococcus aureus,Vancomycin,35,35,100.0
+Washington,2025-10,Streptococcus pneumoniae,Amoxicillin,13,9,69.2
+Washington,2025-10,Streptococcus pneumoniae,Azithromycin,13,6,46.2
+Washington,2025-10,Streptococcus pneumoniae,Ceftriaxone,13,11,84.6
+Washington,2025-10,Streptococcus pneumoniae,Doxycycline,13,12,92.3
+Washington,2025-10,Streptococcus pneumoniae,Levofloxacin,13,12,92.3
+Washington,2025-10,Streptococcus pneumoniae,Penicillin,13,13,100.0
+Washington,2025-11,Enterococcus species,Ampicillin,19,12,63.2
+Washington,2025-11,Enterococcus species,Linezolid,19,18,94.7
+Washington,2025-11,Enterococcus species,Nitrofurantoin,19,15,78.9
+Washington,2025-11,Enterococcus species,Vancomycin,19,16,84.2
+Washington,2025-11,Escherichia coli,Amoxicillin-Clavulanate,118,94,79.7
+Washington,2025-11,Escherichia coli,Ampicillin,118,46,39.0
+Washington,2025-11,Escherichia coli,Ceftriaxone,118,98,83.1
+Washington,2025-11,Escherichia coli,Ciprofloxacin,118,86,72.9
+Washington,2025-11,Escherichia coli,Fosfomycin,118,114,96.6
+Washington,2025-11,Escherichia coli,Nitrofurantoin,118,105,89.0
+Washington,2025-11,Escherichia coli,TMP-SMX,118,84,71.2
+Washington,2025-11,Haemophilus influenzae,Amoxicillin,6,5,83.3
+Washington,2025-11,Haemophilus influenzae,Amoxicillin-Clavulanate,6,5,83.3
+Washington,2025-11,Haemophilus influenzae,Azithromycin,6,4,66.7
+Washington,2025-11,Haemophilus influenzae,Ceftriaxone,6,5,83.3
+Washington,2025-11,Haemophilus influenzae,Doxycycline,6,5,83.3
+Washington,2025-11,Klebsiella pneumoniae,Amoxicillin-Clavulanate,34,28,82.4
+Washington,2025-11,Klebsiella pneumoniae,Ceftriaxone,34,26,76.5
+Washington,2025-11,Klebsiella pneumoniae,Ciprofloxacin,34,29,85.3
+Washington,2025-11,Klebsiella pneumoniae,Ertapenem,34,34,100.0
+Washington,2025-11,Klebsiella pneumoniae,Nitrofurantoin,34,15,44.1
+Washington,2025-11,MRSA,Clindamycin,17,6,35.3
+Washington,2025-11,MRSA,Doxycycline,17,15,88.2
+Washington,2025-11,MRSA,Linezolid,17,16,94.1
+Washington,2025-11,MRSA,TMP-SMX,17,14,82.4
+Washington,2025-11,MRSA,Vancomycin,17,13,76.5
+Washington,2025-11,Pseudomonas aeruginosa,Cefepime,34,26,76.5
+Washington,2025-11,Pseudomonas aeruginosa,Ceftazidime,34,26,76.5
+Washington,2025-11,Pseudomonas aeruginosa,Ciprofloxacin,34,19,55.9
+Washington,2025-11,Pseudomonas aeruginosa,Meropenem,34,27,79.4
+Washington,2025-11,Pseudomonas aeruginosa,Piperacillin-Tazobactam,34,23,67.6
+Washington,2025-11,Staphylococcus aureus,Cephalexin,38,33,86.8
+Washington,2025-11,Staphylococcus aureus,Clindamycin,38,33,86.8
+Washington,2025-11,Staphylococcus aureus,Doxycycline,38,36,94.7
+Washington,2025-11,Staphylococcus aureus,Oxacillin,38,38,100.0
+Washington,2025-11,Staphylococcus aureus,TMP-SMX,38,32,84.2
+Washington,2025-11,Staphylococcus aureus,Vancomycin,38,38,100.0
+Washington,2025-11,Streptococcus pneumoniae,Amoxicillin,14,12,85.7
+Washington,2025-11,Streptococcus pneumoniae,Azithromycin,14,6,42.9
+Washington,2025-11,Streptococcus pneumoniae,Ceftriaxone,14,12,85.7
+Washington,2025-11,Streptococcus pneumoniae,Doxycycline,14,12,85.7
+Washington,2025-11,Streptococcus pneumoniae,Levofloxacin,14,13,92.9
+Washington,2025-11,Streptococcus pneumoniae,Penicillin,14,12,85.7
+Washington,2025-12,Enterococcus species,Ampicillin,22,16,72.7
+Washington,2025-12,Enterococcus species,Linezolid,22,22,100.0
+Washington,2025-12,Enterococcus species,Nitrofurantoin,22,19,86.4
+Washington,2025-12,Enterococcus species,Vancomycin,22,19,86.4
+Washington,2025-12,Escherichia coli,Amoxicillin-Clavulanate,119,79,66.4
+Washington,2025-12,Escherichia coli,Ampicillin,119,58,48.7
+Washington,2025-12,Escherichia coli,Ceftriaxone,119,105,88.2
+Washington,2025-12,Escherichia coli,Ciprofloxacin,119,85,71.4
+Washington,2025-12,Escherichia coli,Fosfomycin,119,111,93.3
+Washington,2025-12,Escherichia coli,Nitrofurantoin,119,109,91.6
+Washington,2025-12,Escherichia coli,TMP-SMX,119,89,74.8
+Washington,2025-12,Haemophilus influenzae,Amoxicillin,10,8,80.0
+Washington,2025-12,Haemophilus influenzae,Amoxicillin-Clavulanate,10,10,100.0
+Washington,2025-12,Haemophilus influenzae,Azithromycin,10,9,90.0
+Washington,2025-12,Haemophilus influenzae,Ceftriaxone,10,10,100.0
+Washington,2025-12,Haemophilus influenzae,Doxycycline,10,10,100.0
+Washington,2025-12,Klebsiella pneumoniae,Amoxicillin-Clavulanate,28,22,78.6
+Washington,2025-12,Klebsiella pneumoniae,Ceftriaxone,28,22,78.6
+Washington,2025-12,Klebsiella pneumoniae,Ciprofloxacin,28,25,89.3
+Washington,2025-12,Klebsiella pneumoniae,Ertapenem,28,25,89.3
+Washington,2025-12,Klebsiella pneumoniae,Nitrofurantoin,28,8,28.6
+Washington,2025-12,MRSA,Clindamycin,15,9,60.0
+Washington,2025-12,MRSA,Doxycycline,15,15,100.0
+Washington,2025-12,MRSA,Linezolid,15,14,93.3
+Washington,2025-12,MRSA,TMP-SMX,15,13,86.7
+Washington,2025-12,MRSA,Vancomycin,15,15,100.0
+Washington,2025-12,Pseudomonas aeruginosa,Cefepime,22,16,72.7
+Washington,2025-12,Pseudomonas aeruginosa,Ceftazidime,22,20,90.9
+Washington,2025-12,Pseudomonas aeruginosa,Ciprofloxacin,22,15,68.2
+Washington,2025-12,Pseudomonas aeruginosa,Meropenem,22,20,90.9
+Washington,2025-12,Pseudomonas aeruginosa,Piperacillin-Tazobactam,22,20,90.9
+Washington,2025-12,Staphylococcus aureus,Cephalexin,38,37,97.4
+Washington,2025-12,Staphylococcus aureus,Clindamycin,38,35,92.1
+Washington,2025-12,Staphylococcus aureus,Doxycycline,38,35,92.1
+Washington,2025-12,Staphylococcus aureus,Oxacillin,38,34,89.5
+Washington,2025-12,Staphylococcus aureus,TMP-SMX,38,36,94.7
+Washington,2025-12,Staphylococcus aureus,Vancomycin,38,34,89.5
+Washington,2025-12,Streptococcus pneumoniae,Amoxicillin,7,6,85.7
+Washington,2025-12,Streptococcus pneumoniae,Azithromycin,7,6,85.7
+Washington,2025-12,Streptococcus pneumoniae,Ceftriaxone,7,7,100.0
+Washington,2025-12,Streptococcus pneumoniae,Doxycycline,7,6,85.7
+Washington,2025-12,Streptococcus pneumoniae,Levofloxacin,7,7,100.0
+Washington,2025-12,Streptococcus pneumoniae,Penicillin,7,6,85.7
+Washington,2026-01,Enterococcus species,Ampicillin,21,19,90.5
+Washington,2026-01,Enterococcus species,Linezolid,21,21,100.0
+Washington,2026-01,Enterococcus species,Nitrofurantoin,21,18,85.7
+Washington,2026-01,Enterococcus species,Vancomycin,21,18,85.7
+Washington,2026-01,Escherichia coli,Amoxicillin-Clavulanate,108,75,69.4
+Washington,2026-01,Escherichia coli,Ampicillin,108,50,46.3
+Washington,2026-01,Escherichia coli,Ceftriaxone,108,97,89.8
+Washington,2026-01,Escherichia coli,Ciprofloxacin,108,77,71.3
+Washington,2026-01,Escherichia coli,Fosfomycin,108,98,90.7
+Washington,2026-01,Escherichia coli,Nitrofurantoin,108,97,89.8
+Washington,2026-01,Escherichia coli,TMP-SMX,108,64,59.3
+Washington,2026-01,Haemophilus influenzae,Amoxicillin,12,12,100.0
+Washington,2026-01,Haemophilus influenzae,Amoxicillin-Clavulanate,12,10,83.3
+Washington,2026-01,Haemophilus influenzae,Azithromycin,12,9,75.0
+Washington,2026-01,Haemophilus influenzae,Ceftriaxone,12,9,75.0
+Washington,2026-01,Haemophilus influenzae,Doxycycline,12,9,75.0
+Washington,2026-01,Klebsiella pneumoniae,Amoxicillin-Clavulanate,36,29,80.6
+Washington,2026-01,Klebsiella pneumoniae,Ceftriaxone,36,28,77.8
+Washington,2026-01,Klebsiella pneumoniae,Ciprofloxacin,36,28,77.8
+Washington,2026-01,Klebsiella pneumoniae,Ertapenem,36,34,94.4
+Washington,2026-01,Klebsiella pneumoniae,Nitrofurantoin,36,16,44.4
+Washington,2026-01,MRSA,Clindamycin,7,4,57.1
+Washington,2026-01,MRSA,Doxycycline,7,6,85.7
+Washington,2026-01,MRSA,Linezolid,7,7,100.0
+Washington,2026-01,MRSA,TMP-SMX,7,7,100.0
+Washington,2026-01,MRSA,Vancomycin,7,7,100.0
+Washington,2026-01,Pseudomonas aeruginosa,Cefepime,32,28,87.5
+Washington,2026-01,Pseudomonas aeruginosa,Ceftazidime,32,26,81.2
+Washington,2026-01,Pseudomonas aeruginosa,Ciprofloxacin,32,24,75.0
+Washington,2026-01,Pseudomonas aeruginosa,Meropenem,32,26,81.2
+Washington,2026-01,Pseudomonas aeruginosa,Piperacillin-Tazobactam,32,29,90.6
+Washington,2026-01,Staphylococcus aureus,Cephalexin,33,32,97.0
+Washington,2026-01,Staphylococcus aureus,Clindamycin,33,26,78.8
+Washington,2026-01,Staphylococcus aureus,Doxycycline,33,33,100.0
+Washington,2026-01,Staphylococcus aureus,Oxacillin,33,31,93.9
+Washington,2026-01,Staphylococcus aureus,TMP-SMX,33,32,97.0
+Washington,2026-01,Staphylococcus aureus,Vancomycin,33,32,97.0
+Washington,2026-01,Streptococcus pneumoniae,Amoxicillin,13,11,84.6
+Washington,2026-01,Streptococcus pneumoniae,Azithromycin,13,5,38.5
+Washington,2026-01,Streptococcus pneumoniae,Ceftriaxone,13,12,92.3
+Washington,2026-01,Streptococcus pneumoniae,Doxycycline,13,10,76.9
+Washington,2026-01,Streptococcus pneumoniae,Levofloxacin,13,11,84.6
+Washington,2026-01,Streptococcus pneumoniae,Penicillin,13,11,84.6
+Washington,2026-02,Enterococcus species,Ampicillin,16,11,68.8
+Washington,2026-02,Enterococcus species,Linezolid,16,16,100.0
+Washington,2026-02,Enterococcus species,Nitrofurantoin,16,14,87.5
+Washington,2026-02,Enterococcus species,Vancomycin,16,15,93.8
+Washington,2026-02,Escherichia coli,Amoxicillin-Clavulanate,101,69,68.3
+Washington,2026-02,Escherichia coli,Ampicillin,101,46,45.5
+Washington,2026-02,Escherichia coli,Ceftriaxone,101,94,93.1
+Washington,2026-02,Escherichia coli,Ciprofloxacin,101,68,67.3
+Washington,2026-02,Escherichia coli,Fosfomycin,101,93,92.1
+Washington,2026-02,Escherichia coli,Nitrofurantoin,101,94,93.1
+Washington,2026-02,Escherichia coli,TMP-SMX,101,72,71.3
+Washington,2026-02,Haemophilus influenzae,Amoxicillin,6,6,100.0
+Washington,2026-02,Haemophilus influenzae,Amoxicillin-Clavulanate,6,5,83.3
+Washington,2026-02,Haemophilus influenzae,Azithromycin,6,5,83.3
+Washington,2026-02,Haemophilus influenzae,Ceftriaxone,6,6,100.0
+Washington,2026-02,Haemophilus influenzae,Doxycycline,6,6,100.0
+Washington,2026-02,Klebsiella pneumoniae,Amoxicillin-Clavulanate,38,31,81.6
+Washington,2026-02,Klebsiella pneumoniae,Ceftriaxone,38,32,84.2
+Washington,2026-02,Klebsiella pneumoniae,Ciprofloxacin,38,31,81.6
+Washington,2026-02,Klebsiella pneumoniae,Ertapenem,38,33,86.8
+Washington,2026-02,Klebsiella pneumoniae,Nitrofurantoin,38,17,44.7
+Washington,2026-02,MRSA,Clindamycin,18,10,55.6
+Washington,2026-02,MRSA,Doxycycline,18,16,88.9
+Washington,2026-02,MRSA,Linezolid,18,18,100.0
+Washington,2026-02,MRSA,TMP-SMX,18,13,72.2
+Washington,2026-02,MRSA,Vancomycin,18,18,100.0
+Washington,2026-02,Pseudomonas aeruginosa,Cefepime,30,23,76.7
+Washington,2026-02,Pseudomonas aeruginosa,Ceftazidime,30,25,83.3
+Washington,2026-02,Pseudomonas aeruginosa,Ciprofloxacin,30,21,70.0
+Washington,2026-02,Pseudomonas aeruginosa,Meropenem,30,20,66.7
+Washington,2026-02,Pseudomonas aeruginosa,Piperacillin-Tazobactam,30,20,66.7
+Washington,2026-02,Staphylococcus aureus,Cephalexin,41,39,95.1
+Washington,2026-02,Staphylococcus aureus,Clindamycin,41,31,75.6
+Washington,2026-02,Staphylococcus aureus,Doxycycline,41,37,90.2
+Washington,2026-02,Staphylococcus aureus,Oxacillin,41,41,100.0
+Washington,2026-02,Staphylococcus aureus,TMP-SMX,41,36,87.8
+Washington,2026-02,Staphylococcus aureus,Vancomycin,41,39,95.1
+Washington,2026-02,Streptococcus pneumoniae,Amoxicillin,11,10,90.9
+Washington,2026-02,Streptococcus pneumoniae,Azithromycin,11,6,54.5
+Washington,2026-02,Streptococcus pneumoniae,Ceftriaxone,11,11,100.0
+Washington,2026-02,Streptococcus pneumoniae,Doxycycline,11,6,54.5
+Washington,2026-02,Streptococcus pneumoniae,Levofloxacin,11,11,100.0
+Washington,2026-02,Streptococcus pneumoniae,Penicillin,11,10,90.9
+Washington,2026-03,Enterococcus species,Ampicillin,17,12,70.6
+Washington,2026-03,Enterococcus species,Linezolid,17,17,100.0
+Washington,2026-03,Enterococcus species,Nitrofurantoin,17,14,82.4
+Washington,2026-03,Enterococcus species,Vancomycin,17,14,82.4
+Washington,2026-03,Escherichia coli,Amoxicillin-Clavulanate,112,62,55.4
+Washington,2026-03,Escherichia coli,Ampicillin,112,52,46.4
+Washington,2026-03,Escherichia coli,Ceftriaxone,112,98,87.5
+Washington,2026-03,Escherichia coli,Ciprofloxacin,112,71,63.4
+Washington,2026-03,Escherichia coli,Fosfomycin,112,100,89.3
+Washington,2026-03,Escherichia coli,Nitrofurantoin,112,101,90.2
+Washington,2026-03,Escherichia coli,TMP-SMX,112,84,75.0
+Washington,2026-03,Haemophilus influenzae,Amoxicillin,11,10,90.9
+Washington,2026-03,Haemophilus influenzae,Amoxicillin-Clavulanate,11,9,81.8
+Washington,2026-03,Haemophilus influenzae,Azithromycin,11,10,90.9
+Washington,2026-03,Haemophilus influenzae,Ceftriaxone,11,8,72.7
+Washington,2026-03,Haemophilus influenzae,Doxycycline,11,10,90.9
+Washington,2026-03,Klebsiella pneumoniae,Amoxicillin-Clavulanate,27,20,74.1
+Washington,2026-03,Klebsiella pneumoniae,Ceftriaxone,27,21,77.8
+Washington,2026-03,Klebsiella pneumoniae,Ciprofloxacin,27,21,77.8
+Washington,2026-03,Klebsiella pneumoniae,Ertapenem,27,25,92.6
+Washington,2026-03,Klebsiella pneumoniae,Nitrofurantoin,27,12,44.4
+Washington,2026-03,MRSA,Clindamycin,13,11,84.6
+Washington,2026-03,MRSA,Doxycycline,13,10,76.9
+Washington,2026-03,MRSA,Linezolid,13,11,84.6
+Washington,2026-03,MRSA,TMP-SMX,13,12,92.3
+Washington,2026-03,MRSA,Vancomycin,13,13,100.0
+Washington,2026-03,Pseudomonas aeruginosa,Cefepime,28,26,92.9
+Washington,2026-03,Pseudomonas aeruginosa,Ceftazidime,28,24,85.7
+Washington,2026-03,Pseudomonas aeruginosa,Ciprofloxacin,28,22,78.6
+Washington,2026-03,Pseudomonas aeruginosa,Meropenem,28,25,89.3
+Washington,2026-03,Pseudomonas aeruginosa,Piperacillin-Tazobactam,28,23,82.1
+Washington,2026-03,Staphylococcus aureus,Cephalexin,33,31,93.9
+Washington,2026-03,Staphylococcus aureus,Clindamycin,33,26,78.8
+Washington,2026-03,Staphylococcus aureus,Doxycycline,33,30,90.9
+Washington,2026-03,Staphylococcus aureus,Oxacillin,33,33,100.0
+Washington,2026-03,Staphylococcus aureus,TMP-SMX,33,32,97.0
+Washington,2026-03,Staphylococcus aureus,Vancomycin,33,33,100.0
+Washington,2026-03,Streptococcus pneumoniae,Amoxicillin,11,10,90.9
+Washington,2026-03,Streptococcus pneumoniae,Azithromycin,11,6,54.5
+Washington,2026-03,Streptococcus pneumoniae,Ceftriaxone,11,11,100.0
+Washington,2026-03,Streptococcus pneumoniae,Doxycycline,11,7,63.6
+Washington,2026-03,Streptococcus pneumoniae,Levofloxacin,11,10,90.9
+Washington,2026-03,Streptococcus pneumoniae,Penicillin,11,10,90.9
+Washington,2026-04,Enterococcus species,Ampicillin,31,22,71.0
+Washington,2026-04,Enterococcus species,Linezolid,31,29,93.5
+Washington,2026-04,Enterococcus species,Nitrofurantoin,31,29,93.5
+Washington,2026-04,Enterococcus species,Vancomycin,31,25,80.6
+Washington,2026-04,Escherichia coli,Amoxicillin-Clavulanate,96,64,66.7
+Washington,2026-04,Escherichia coli,Ampicillin,96,49,51.0
+Washington,2026-04,Escherichia coli,Ceftriaxone,96,89,92.7
+Washington,2026-04,Escherichia coli,Ciprofloxacin,96,60,62.5
+Washington,2026-04,Escherichia coli,Fosfomycin,96,91,94.8
+Washington,2026-04,Escherichia coli,Nitrofurantoin,96,91,94.8
+Washington,2026-04,Escherichia coli,TMP-SMX,96,69,71.9
+Washington,2026-04,Haemophilus influenzae,Amoxicillin,7,5,71.4
+Washington,2026-04,Haemophilus influenzae,Amoxicillin-Clavulanate,7,5,71.4
+Washington,2026-04,Haemophilus influenzae,Azithromycin,7,6,85.7
+Washington,2026-04,Haemophilus influenzae,Ceftriaxone,7,6,85.7
+Washington,2026-04,Haemophilus influenzae,Doxycycline,7,6,85.7
+Washington,2026-04,Klebsiella pneumoniae,Amoxicillin-Clavulanate,23,14,60.9
+Washington,2026-04,Klebsiella pneumoniae,Ceftriaxone,23,19,82.6
+Washington,2026-04,Klebsiella pneumoniae,Ciprofloxacin,23,12,52.2
+Washington,2026-04,Klebsiella pneumoniae,Ertapenem,23,22,95.7
+Washington,2026-04,Klebsiella pneumoniae,Nitrofurantoin,23,11,47.8
+Washington,2026-04,MRSA,Clindamycin,14,11,78.6
+Washington,2026-04,MRSA,Doxycycline,14,14,100.0
+Washington,2026-04,MRSA,Linezolid,14,13,92.9
+Washington,2026-04,MRSA,TMP-SMX,14,11,78.6
+Washington,2026-04,MRSA,Vancomycin,14,14,100.0
+Washington,2026-04,Pseudomonas aeruginosa,Cefepime,31,26,83.9
+Washington,2026-04,Pseudomonas aeruginosa,Ceftazidime,31,25,80.6
+Washington,2026-04,Pseudomonas aeruginosa,Ciprofloxacin,31,23,74.2
+Washington,2026-04,Pseudomonas aeruginosa,Meropenem,31,28,90.3
+Washington,2026-04,Pseudomonas aeruginosa,Piperacillin-Tazobactam,31,24,77.4
+Washington,2026-04,Staphylococcus aureus,Cephalexin,37,37,100.0
+Washington,2026-04,Staphylococcus aureus,Clindamycin,37,34,91.9
+Washington,2026-04,Staphylococcus aureus,Doxycycline,37,33,89.2
+Washington,2026-04,Staphylococcus aureus,Oxacillin,37,36,97.3
+Washington,2026-04,Staphylococcus aureus,TMP-SMX,37,33,89.2
+Washington,2026-04,Staphylococcus aureus,Vancomycin,37,37,100.0
+Washington,2026-04,Streptococcus pneumoniae,Amoxicillin,11,10,90.9
+Washington,2026-04,Streptococcus pneumoniae,Azithromycin,11,6,54.5
+Washington,2026-04,Streptococcus pneumoniae,Ceftriaxone,11,11,100.0
+Washington,2026-04,Streptococcus pneumoniae,Doxycycline,11,9,81.8
+Washington,2026-04,Streptococcus pneumoniae,Levofloxacin,11,9,81.8
+Washington,2026-04,Streptococcus pneumoniae,Penicillin,11,6,54.5

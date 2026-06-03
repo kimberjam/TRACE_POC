@@ -177,37 +177,55 @@ hr {{
 }}
 
 /* ===== Sidebar toggle labels ===== */
-/* When collapsed: show "Filters →" next to the expand arrow */
+/* COLLAPSED state: "Filters →" pill that contains the expand arrow */
 [data-testid="stSidebarCollapsedControl"],
 [data-testid="collapsedControl"] {{
-    display: flex !important;
+    display: inline-flex !important;
+    flex-direction: row !important;
     align-items: center !important;
     gap: 6px !important;
-    padding: 8px 12px !important;
+    padding: 6px 12px !important;
+    margin: 10px 0 0 10px !important;
     background: {t.MIST_WHITE} !important;
-    border: 1px solid {t.COOL_GRAY}66 !important;
+    border: 1px solid {t.COOL_GRAY} !important;
     border-radius: 6px !important;
-    color: {t.PRIMARY_NAVY} !important;
-    font-family: {t.FONT_UI} !important;
-    font-weight: 600 !important;
-    font-size: 0.85em !important;
+    width: auto !important;
+    min-width: 105px !important;
+    height: auto !important;
+    overflow: visible !important;
+    cursor: pointer !important;
+    box-shadow: 0 1px 2px rgba(7,26,61,0.06) !important;
 }}
 
 [data-testid="stSidebarCollapsedControl"]::before,
 [data-testid="collapsedControl"]::before {{
-    content: "Filters";
-    color: {t.PRIMARY_NAVY};
-    font-family: {t.FONT_UI};
-    font-weight: 600;
-    font-size: 0.85em;
-    letter-spacing: 0.02em;
-    padding-right: 4px;
+    content: "Filters" !important;
+    color: {t.PRIMARY_NAVY} !important;
+    font-family: {t.FONT_UI} !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    letter-spacing: 0.02em !important;
+    display: inline-block !important;
+    white-space: nowrap !important;
+    line-height: 1 !important;
 }}
 
-/* When expanded: show "Collapse" next to the close arrow inside sidebar */
+/* Ensure the embedded button doesn't override our container styling */
+[data-testid="stSidebarCollapsedControl"] button,
+[data-testid="collapsedControl"] button {{
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    color: {t.PRIMARY_NAVY} !important;
+}}
+
+/* EXPANDED state: "Collapse" next to close arrow inside the sidebar */
 [data-testid="stSidebarCollapseButton"],
-[data-testid="baseButton-headerNoPadding"] {{
-    display: flex !important;
+section[data-testid="stSidebar"] [data-testid="baseButton-headerNoPadding"] {{
+    display: inline-flex !important;
     align-items: center !important;
     gap: 6px !important;
     color: {t.SLATE_BLUE} !important;
@@ -225,7 +243,6 @@ hr {{
     padding-right: 4px;
 }}
 
-/* Header-level label inside sidebar reinforces that it's the Filters panel */
 section[data-testid="stSidebar"] [data-testid="stSidebarUserContent"] {{
     padding-top: 0.5rem;
 }}

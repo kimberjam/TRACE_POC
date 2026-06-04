@@ -107,11 +107,10 @@ div[data-baseweb="tab-list"] {{
     overflow-x: auto;
     scrollbar-width: thin;
     position: sticky !important;
-    top: 72px;
-    z-index: 998;
+    top: 88px !important;
+    z-index: 998 !important;
     background: {t.MIST_WHITE} !important;
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 2px 6px rgba(7,26,61,0.04);
 }}
 
 div[data-baseweb="tab-list"] button {{
@@ -267,15 +266,29 @@ section[data-testid="stSidebar"] [data-testid="stSidebarUserContent"] {{
     margin-bottom: 0.4rem;
 }}
 
+/* Force Streamlit's container hierarchy to allow sticky positioning.
+   Without these overrides Streamlit's emotion-cache wrappers clip
+   `position: sticky` so the brand header and tabs scroll away. */
+[data-testid="stMarkdownContainer"],
+[data-testid="stMarkdownContainer"] > div,
+[data-testid="stVerticalBlock"],
+[data-testid="stVerticalBlockBorderWrapper"],
+[data-testid="stMainBlockContainer"],
+.stMainBlockContainer,
+.block-container,
+section[data-testid="stMain"] {{
+    overflow: visible !important;
+}}
+
 /* STICKY DEMO DATA BANNER + brand header */
 .trace-sticky-top {{
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background: {t.MIST_WHITE};
-    margin: -1rem -1rem 0.75rem -1rem;
-    padding: 0;
-    border-bottom: 1px solid {t.COOL_GRAY}33;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 999 !important;
+    background: {t.MIST_WHITE} !important;
+    margin: -1rem -1rem 0.75rem -1rem !important;
+    padding: 0 !important;
+    border-bottom: 1px solid {t.COOL_GRAY}33 !important;
 }}
 
 .trace-demo-banner {{

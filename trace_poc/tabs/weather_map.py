@@ -318,7 +318,7 @@ def _map_view(df_recent: pd.DataFrame, organism: str, drug: str,
               pairing_label: str) -> None:
     """ZIP-level scatter plot colored by %S, sized by N."""
     with st.container(border=True):
-        title_cols = st.columns([5, 1])
+        title_cols = st.columns([3, 2, 1])
         with title_cols[0]:
             st.markdown(
                 f'<div style="font-family: {t.FONT_HEADING}; '
@@ -328,6 +328,17 @@ def _map_view(df_recent: pd.DataFrame, organism: str, drug: str,
                 unsafe_allow_html=True,
             )
         with title_cols[1]:
+            zoom = st.radio(
+                "Map view",
+                options=list(ZOOM_PRESETS.keys()),
+                index=list(ZOOM_PRESETS.keys()).index(
+                    st.session_state.get("wm_zoom", "Statewide")
+                ),
+                horizontal=True,
+                label_visibility="collapsed",
+                key="wm_zoom",
+            )
+        with title_cols[2]:
             st.markdown(
                 ui.evidence_chip("Stewardship concern", tone="concern"),
                 unsafe_allow_html=True,
@@ -362,22 +373,40 @@ def _map_view(df_recent: pd.DataFrame, organism: str, drug: str,
             return
 
         # Render inline SVG of Utah with county lines + ZIP bubbles overlaid.
-        svg = _render_utah_svg(agg)
+        svg = _render_utah_svg(agg, zoom=zoom)
         st.markdown(svg, unsafe_allow_html=True)
         _render_legend()
 
 
-def _render_utah_svg(agg: pd.DataFrame) -> str:
-    """Build the inline Utah SVG with county lines, metro labels, ZIP bubbles."""
-    w, h = UTAH_VIEWBOX
+# Zoom presets — change the SVG viewBox to focus on a region.
+# Format: (x_min, y_min, width, height) in SVG coordinate space.
+ZOOM_PRESETS = {
+    "Statewide":      (0,   0,   520, 640),
+    "Wasatch Front":  (160, 60,  220, 230),
+    "St. George":     (15,  470, 200, 170),
+}
+
+
+def _render_utah_svg(agg: pd.DataFrame, zoom: str = "Statewide") -> str:
+    """Build the inline Utah SVG with county lines, metro labels, ZIP bubbles.
+
+    The `zoom` arg picks a preset region from ZOOM_PRESETS — the SVG viewBox
+    changes so the same drawing is rendered but cropped + magnified.
+    """
+    vb = ZOOM_PRESETS.get(zoom, ZOOM_PRESETS["Statewide"])
+    vx, vy, vw, vh = vb
     parts: list[str] = []
+
+    # Higher max-height when zoomed so the cluster has room to breathe
+    max_h = "640px" if zoom != "Statewide" else "580px"
 
     parts.append(
         f'<div style="background: {t.MIST_WHITE}; border-radius: 4px; '
         f'padding: 6px; display: flex; justify-content: center;">'
-        f'<svg viewBox="0 0 {w} {h}" xmlns="http://www.w3.org/2000/svg" '
+        f'<svg viewBox="{vx} {vy} {vw} {vh}" '
+        f'xmlns="http://www.w3.org/2000/svg" '
         f'width="100%" preserveAspectRatio="xMidYMid meet" '
-        f'style="max-width: 540px; max-height: 580px; '
+        f'style="max-width: 720px; max-height: {max_h}; '
         f'font-family: {t.FONT_UI};">'
     )
 

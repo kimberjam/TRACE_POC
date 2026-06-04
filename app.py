@@ -97,20 +97,29 @@ h1, h2, h3, h4, h5, h6,
     font-size: 0.8em;
 }}
 
-/* TAB LIST: wider buttons + sticky below the brand header so users can
-   switch tabs at any scroll position. The brand-header sticky container
-   sits at top:0 with z-index 999; this sits just below it at z-index 998. */
+/* TAB LIST: fixed below the brand header so users can switch at any
+   scroll position. Width spans the viewport; padding matches the content
+   area's margins. */
 div[data-baseweb="tab-list"] {{
     gap: 4px !important;
     border-bottom: 1px solid {t.COOL_GRAY}88;
-    padding: 6px 4px 0 4px !important;
     overflow-x: auto;
     scrollbar-width: thin;
-    position: sticky !important;
-    top: 88px !important;
-    z-index: 998 !important;
+    position: fixed !important;
+    top: 8rem !important;  /* below Streamlit header + brand header */
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 99 !important;
     background: {t.MIST_WHITE} !important;
+    padding: 6px 5% 0 5% !important;
     box-shadow: 0 2px 6px rgba(7,26,61,0.04);
+}}
+
+/* Push content down so it doesn't hide behind the fixed brand + tabs */
+[data-testid="stMainBlockContainer"],
+.stMainBlockContainer,
+.block-container {{
+    padding-top: 11rem !important;
 }}
 
 div[data-baseweb="tab-list"] button {{
@@ -266,25 +275,27 @@ section[data-testid="stSidebar"] [data-testid="stSidebarUserContent"] {{
     margin-bottom: 0.4rem;
 }}
 
-/* Allow sticky positioning through the inner wrapper chain without
-   touching the actual scroll container (stMain). Setting overflow:visible
-   on stMain disables page scrolling. We only override the intermediate
-   wrappers that would otherwise clip sticky elements. */
-[data-testid="stMarkdownContainer"],
-[data-testid="stMarkdownContainer"] > div,
-[data-testid="stVerticalBlock"] {{
-    overflow: visible !important;
+/* FIXED brand header + tabs — position: sticky is unreliable inside
+   Streamlit's container hierarchy (silently clipped by emotion-cache
+   wrappers in unpredictable ways across versions). Using position: fixed
+   pins both elements to the viewport regardless of container behavior. */
+
+.trace-sticky-top {{
+    position: fixed !important;
+    top: 2.875rem !important;  /* below Streamlit's app header */
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 100 !important;
+    background: {t.MIST_WHITE} !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-bottom: 1px solid {t.COOL_GRAY}55 !important;
 }}
 
-/* STICKY DEMO DATA BANNER + brand header */
-.trace-sticky-top {{
-    position: sticky !important;
-    top: 0 !important;
-    z-index: 999 !important;
+/* Make Streamlit's app header background match ours so they blend */
+header[data-testid="stHeader"] {{
     background: {t.MIST_WHITE} !important;
-    margin: -1rem -1rem 0.75rem -1rem !important;
-    padding: 0 !important;
-    border-bottom: 1px solid {t.COOL_GRAY}33 !important;
+    z-index: 99 !important;
 }}
 
 .trace-demo-banner {{

@@ -97,13 +97,21 @@ h1, h2, h3, h4, h5, h6,
     font-size: 0.8em;
 }}
 
-/* TAB LIST: wider buttons with proper padding */
+/* TAB LIST: wider buttons + sticky below the brand header so users can
+   switch tabs at any scroll position. The brand-header sticky container
+   sits at top:0 with z-index 999; this sits just below it at z-index 998. */
 div[data-baseweb="tab-list"] {{
     gap: 4px !important;
     border-bottom: 1px solid {t.COOL_GRAY}88;
-    padding: 0 4px;
+    padding: 6px 4px 0 4px !important;
     overflow-x: auto;
     scrollbar-width: thin;
+    position: sticky !important;
+    top: 72px;
+    z-index: 998;
+    background: {t.MIST_WHITE} !important;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 }}
 
 div[data-baseweb="tab-list"] button {{

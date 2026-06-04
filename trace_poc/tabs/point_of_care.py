@@ -119,7 +119,7 @@ def _infection_site(specimen: str) -> str | None:
 
 def render(filters: dict) -> None:
     ui.tab_header(
-        "Point of care",
+        "Point of Care",
         "Local susceptibility patterns and guideline-aligned empiric options "
         "for the patient in front of you. Descriptive context — not a "
         "prescribing tool.",

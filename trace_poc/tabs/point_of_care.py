@@ -161,65 +161,82 @@ def render(filters: dict) -> None:
 
     st.markdown("")
 
-    # ----- KPI ROW -----
-    kpi_cols = st.columns(3)
-
-    # Card 1: Empiric coverage of the FIRST listed option
+    # ----- HERO STAT CARD: empiric coverage of the first-listed option -----
     options_for_setting = (
         _EMPIRIC_OPTIONS.get(infection_site or "", {}).get(care_setting, [])
     )
-    with kpi_cols[0]:
-        if options_for_setting:
-            label, drugs = options_for_setting[0]
-            cov = m.empiric_coverage(df, organism, drugs)
-            ui.kpi_card(
-                "Empiric Coverage Score",
-                f"{cov.pct_covered:.0f}%" if cov.pct_covered is not None else "—",
-                sublabel=f"Estimated coverage if {label} chosen empirically",
-                help_text=(
-                    "Share of locally-isolated organisms that test susceptible "
-                    "to at least one drug in the regimen. Higher is better."
-                ),
-            )
-        else:
-            ui.kpi_card("Empiric Coverage Score", "—",
-                        sublabel="No mapping for this combination")
+    n_iso = m.isolate_count(df, organism)
+    sus_table = m.susceptibility_table(df, organism)
+    ttr = m.time_to_result_hours(df)
 
-    # Card 2: Local susceptibility snapshot
-    with kpi_cols[1]:
-        sus_table = m.susceptibility_table(df, organism)
-        if not sus_table.empty:
-            top = sus_table.iloc[0]
-            ui.kpi_card(
-                "Local Susceptibility Snapshot",
-                f"{top['drug']}",
-                sublabel=(
-                    f"{top['pct_susceptible']:.0f}% susceptible "
-                    f"(N = {int(top['n_isolates'])})"
-                ),
-                help_text="Best-tested antibiotic for this organism in the "
-                          "current filter scope.",
-            )
-        else:
-            ui.kpi_card("Local Susceptibility Snapshot", "—",
-                        sublabel="No isolates in current scope")
+    if options_for_setting:
+        top_label, top_drugs = options_for_setting[0]
+        cov = m.empiric_coverage(df, organism, top_drugs)
+        if cov.pct_covered is not None and cov.n_isolates > 0:
+            ci_lo, ci_hi = m.wilson_ci(cov.pct_covered / 100.0, cov.n_isolates)
+            chips = []
+            if sus_table is not None and not sus_table.empty:
+                top_drug = sus_table.iloc[0]
+                chips.append((
+                    f"Top: {top_drug['drug']} {top_drug['pct_susceptible']:.0f}%",
+                    "stable" if top_drug['pct_susceptible'] >= 85 else "watch",
+                ))
+            if ttr is not None:
+                chips.append((f"Median TAT {ttr:.1f}h", "neutral"))
+            chips.append((f"N = {cov.n_isolates:,} isolates", "neutral"))
 
-    # Card 3: Time to effective therapy (proxy)
-    with kpi_cols[2]:
-        ttr = m.time_to_result_hours(df)
-        if ttr is not None:
-            ui.kpi_card(
-                "Time to Result (median)",
-                f"{ttr:.1f} h",
-                sublabel="Collection → susceptibility result",
-                help_text=(
-                    "Proxy for time-to-effective-therapy. Faster turnaround "
-                    "means de-escalation can happen sooner."
+            ui.hero_stat_card(
+                brand_title=f"TRACE · Point of Care intelligence",
+                meta_text=(
+                    f"<strong style='color:{t.PRIMARY_NAVY};'>"
+                    f"{organism} × {top_label}</strong>"
+                    f"&nbsp;&nbsp;|&nbsp;&nbsp;{care_setting}"
+                    f"&nbsp;·&nbsp;{', '.join(filters['counties'])}"
+                    f"&nbsp;&nbsp;|&nbsp;&nbsp;trailing 24 months"
                 ),
+                stat_label=f"EMPIRIC COVERAGE — {top_label}",
+                stat_value=f"{cov.pct_covered:.0f}",
+                stat_unit="%",
+                sub_text=(
+                    f"95% Wilson CI <strong>{ci_lo:.0f}–{ci_hi:.0f}%</strong>"
+                    f" · informational only, not a recommendation"
+                ),
+                chips=chips,
+                comparison_cells=[
+                    (
+                        "Top option",
+                        f"{sus_table.iloc[0]['drug']}"
+                        if sus_table is not None and not sus_table.empty
+                        else "—",
+                        f"{sus_table.iloc[0]['pct_susceptible']:.0f}% susceptible"
+                        if sus_table is not None and not sus_table.empty
+                        else "—",
+                    ),
+                    (
+                        "Time to result",
+                        f"{ttr:.1f} h" if ttr is not None else "—",
+                        "collection → susceptibility",
+                    ),
+                    (
+                        "Scope",
+                        f"{n_iso:,}",
+                        "isolates in current filter",
+                    ),
+                ],
+                live=True,
             )
         else:
-            ui.kpi_card("Time to Result", "—",
-                        sublabel="No completed tests in scope")
+            ui.empty_state(
+                "No isolates for the active scenario.",
+                "Try widening the county selection or changing the encounter "
+                "setting.",
+            )
+    else:
+        ui.empty_state(
+            "No empiric options mapped for this infection × setting yet.",
+            "Phase 2 expands the curated empiric library beyond the current "
+            "UTI / Pneumonia / Bloodstream / Pharyngitis / GI scope.",
+        )
 
     st.markdown("")
 
@@ -315,16 +332,28 @@ def render(filters: dict) -> None:
             )
 
         ui.section_header("Clinical risk & alerts")
-        # Build alerts dynamically from the data
+        # Build alerts dynamically from the data, render as branded cards
         alerts = _build_alerts(df, organism, care_setting)
         if alerts:
             for level, text in alerts:
-                if level == "warn":
-                    st.warning(text, icon="⚠️")
-                else:
-                    st.info(text, icon="ℹ️")
+                # Split into title (first sentence) + body if there's a period
+                parts = text.split(" — ", 1) if " — " in text else (
+                    text.split(". ", 1)
+                    if ". " in text else [text, ""]
+                )
+                title = parts[0]
+                body = parts[1] if len(parts) > 1 else ""
+                tone = "watch" if level == "warn" else "info"
+                icon = "⚠" if level == "warn" else "ℹ"
+                ui.branded_alert(title, body, tone=tone, icon=icon)
         else:
-            st.caption("No alerts triggered for the current scope.")
+            ui.branded_alert(
+                "No stewardship alerts triggered",
+                "Local susceptibility patterns are within expected ranges "
+                "for the current filter scope.",
+                tone="stable",
+                icon="✓",
+            )
 
     st.markdown("---")
 

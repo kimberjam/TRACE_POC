@@ -46,6 +46,24 @@ def filter_susceptibility(
     return sub
 
 
+def wilson_ci(p_hat: float, n: int, z: float = 1.959964) -> tuple[float, float]:
+    """Wilson-score 95% CI on a proportion.
+
+    p_hat: observed proportion (0–1).  n: denominator.
+    Returns (lo, hi) as percentages.
+    """
+    import math
+    if n <= 0:
+        return (0.0, 0.0)
+    z2 = z * z
+    denom = 1 + z2 / n
+    center = (p_hat + z2 / (2 * n)) / denom
+    margin = (z * math.sqrt(p_hat * (1 - p_hat) / n + z2 / (4 * n * n))) / denom
+    lo = max(0.0, center - margin) * 100
+    hi = min(1.0, center + margin) * 100
+    return (round(lo, 1), round(hi, 1))
+
+
 def percent_susceptible(df: pd.DataFrame) -> Optional[float]:
     """% of isolates marked Susceptible. Returns None if no isolates."""
     if df.empty:

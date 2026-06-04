@@ -230,6 +230,198 @@ def coming_next_phase(message: str = "This view is part of the Phase-2 build.") 
         st.caption(message)
 
 
+# ----- Branded clinical alert -----
+
+def branded_alert(
+    title: str,
+    body: str,
+    tone: str = "watch",
+    icon: str = "⚠",
+) -> None:
+    """TRACE-styled clinical alert card with colored left border and icon.
+
+    Tones:
+      watch    — Muted Amber  (stewardship concern, trend to watch)
+      concern  — Clinical Coral (high concern, worsening)
+      info     — Soft Blue (neutral information)
+      stable   — Soft Green (success, validated)
+    """
+    palettes = {
+        "watch":   (t.MUTED_AMBER, "#FFFBED"),
+        "concern": (t.CLINICAL_CORAL, "#FFF5F2"),
+        "info":    (t.SOFT_BLUE, "#F4F8FC"),
+        "stable":  (t.SOFT_GREEN, "#F0F8F3"),
+    }
+    border_color, bg_color = palettes.get(tone, palettes["watch"])
+    st.markdown(
+        f'<div style="background: {bg_color}; '
+        f'border-left: 4px solid {border_color}; '
+        f'padding: 10px 14px; border-radius: 4px; '
+        f'margin: 4px 0 8px 0; font-family: {t.FONT_UI};">'
+        f'<div style="display: flex; gap: 10px; align-items: flex-start;">'
+        f'<div style="color: {border_color}; font-size: 1.1em; '
+        f'flex-shrink: 0; line-height: 1.3;">{icon}</div>'
+        f'<div style="flex: 1;">'
+        f'<div style="font-weight: 600; color: {t.PRIMARY_NAVY}; '
+        f'font-size: 0.9em;">{title}</div>'
+        f'<div style="color: {t.INK}; font-size: 0.85em; '
+        f'margin-top: 4px; line-height: 1.45;">{body}</div>'
+        f'</div></div></div>',
+        unsafe_allow_html=True,
+    )
+
+
+# ----- Hero stat card (TRACE-card pattern) -----
+
+def hero_stat_card(
+    brand_title: str,
+    meta_text: str,
+    stat_label: str,
+    stat_value: str,
+    stat_unit: str = "",
+    sub_text: str = "",
+    chips: Optional[list] = None,
+    comparison_cells: Optional[list] = None,
+    live: bool = True,
+) -> None:
+    """Big-number TRACE card: navy header, meta row, hero stat, chip row,
+    optional comparison-strip footer.
+
+    Args:
+        brand_title: text in the navy header (e.g., "TRACE · Point of Care")
+        meta_text: secondary context line (HTML allowed)
+        stat_label: small uppercase label above the big number
+        stat_value: the headline number/text
+        stat_unit: a small suffix (e.g., "%", "/1k adm")
+        sub_text: line beneath the stat — CI, baseline, etc.
+        chips: list of (label, tone) tuples — rendered as evidence chips
+        comparison_cells: list of (label, value, sub) — rendered as a 3-col
+                          comparison strip in the footer
+        live: whether to show the green "LIVE" indicator in the header
+    """
+    chips_html = ""
+    if chips:
+        chips_html = "".join(_chip_html(label, tone) for label, tone in chips)
+
+    live_html = ""
+    if live:
+        live_html = (
+            f'<div style="font-size: 0.75em; color: {t.SOFT_GREEN}; '
+            f'display: flex; align-items: center; gap: 6px;">'
+            f'<span style="width: 7px; height: 7px; background: '
+            f'{t.SOFT_GREEN}; border-radius: 50%; display: inline-block;">'
+            f'</span>LIVE</div>'
+        )
+
+    comparison_html = ""
+    if comparison_cells:
+        cells = "".join(
+            f'<div>'
+            f'<div style="font-size: 0.7em; color: {t.SLATE_BLUE}; '
+            f'letter-spacing: 0.05em; font-weight: 600; '
+            f'text-transform: uppercase;">{lbl}</div>'
+            f'<div style="font-weight: 600; color: {t.PRIMARY_NAVY}; '
+            f'font-size: 0.95em; margin-top: 2px;">{val}</div>'
+            f'<div style="font-size: 0.75em; color: {t.SLATE_BLUE}; '
+            f'margin-top: 2px;">{sub}</div>'
+            f'</div>'
+            for lbl, val, sub in comparison_cells
+        )
+        comparison_html = (
+            f'<div style="background: {t.MIST_WHITE}; '
+            f'border-top: 1px solid {t.COOL_GRAY}55; '
+            f'padding: 12px 16px; display: grid; '
+            f'grid-template-columns: repeat({len(comparison_cells)}, 1fr); '
+            f'gap: 14px; font-family: {t.FONT_UI};">{cells}</div>'
+        )
+
+    chips_block = ""
+    if chips_html:
+        chips_block = (
+            f'<div style="margin-top: 10px;">{chips_html}</div>'
+        )
+
+    st.markdown(
+        f'<div style="background: white; border: 1px solid {t.COOL_GRAY}; '
+        f'border-radius: 8px; overflow: hidden; margin-bottom: 0.5rem; '
+        f'box-shadow: 0 1px 4px rgba(7,26,61,0.06);">'
+        # Navy header
+        f'<div style="background: {t.PRIMARY_NAVY}; color: white; '
+        f'padding: 10px 16px; display: flex; justify-content: space-between; '
+        f'align-items: center; font-family: {t.FONT_UI}; font-size: 0.92em;">'
+        f'<div><strong style="letter-spacing: 0.02em;">{brand_title}</strong>'
+        f'</div>{live_html}</div>'
+        # Meta row
+        f'<div style="background: {t.MIST_WHITE}; padding: 8px 16px; '
+        f'border-bottom: 1px solid {t.COOL_GRAY}55; '
+        f'font-family: {t.FONT_UI}; font-size: 0.82em; '
+        f'color: {t.SLATE_BLUE};">{meta_text}</div>'
+        # Body
+        f'<div style="padding: 18px 16px;">'
+        f'<div style="font-family: {t.FONT_UI}; font-size: 0.72em; '
+        f'color: {t.SLATE_BLUE}; letter-spacing: 0.06em; '
+        f'font-weight: 600; text-transform: uppercase;">{stat_label}</div>'
+        f'<div style="font-family: {t.FONT_HEADING}; font-size: 3.0em; '
+        f'font-weight: 700; color: {t.PRIMARY_NAVY}; line-height: 1; '
+        f'margin: 4px 0;">{stat_value}'
+        f'<span style="font-size: 0.36em; color: {t.SLATE_BLUE}; '
+        f'font-weight: 600; margin-left: 2px;">{stat_unit}</span></div>'
+        f'<div style="font-size: 0.88em; color: {t.INK}; line-height: 1.45;">'
+        f'{sub_text}</div>'
+        f'{chips_block}'
+        f'</div>'
+        f'{comparison_html}'
+        f'</div>',
+        unsafe_allow_html=True,
+    )
+
+
+# ----- Compact KPI pill (used inside st.columns rows) -----
+
+def metric_pill(
+    label: str,
+    value: str,
+    sub: str = "",
+    delta: str = "",
+    delta_tone: str = "neutral",
+) -> None:
+    """Brand-aligned compact KPI card. Render inside an st.columns() block."""
+    delta_palette = {
+        "up_bad":     t.CLINICAL_CORAL,
+        "down_bad":   t.CLINICAL_CORAL,
+        "up_good":    t.SOFT_GREEN,
+        "down_good":  t.SOFT_GREEN,
+        "neutral":    t.SLATE_BLUE,
+        "warn":       t.MUTED_AMBER,
+    }
+    delta_color = delta_palette.get(delta_tone, t.SLATE_BLUE)
+
+    delta_html = ""
+    if delta:
+        delta_html = (
+            f'<div style="font-size: 0.78em; color: {delta_color}; '
+            f'font-weight: 600; margin-top: 4px;">{delta}</div>'
+        )
+
+    st.markdown(
+        f'<div style="background: white; '
+        f'border: 1px solid {t.COOL_GRAY}55; border-radius: 6px; '
+        f'padding: 12px 14px; height: 100%; '
+        f'font-family: {t.FONT_UI};">'
+        f'<div style="font-size: 0.7em; color: {t.SLATE_BLUE}; '
+        f'letter-spacing: 0.06em; font-weight: 600; '
+        f'text-transform: uppercase;">{label}</div>'
+        f'<div style="font-family: {t.FONT_HEADING}; font-size: 1.7em; '
+        f'font-weight: 700; color: {t.PRIMARY_NAVY}; line-height: 1.1; '
+        f'margin: 4px 0;">{value}</div>'
+        f'<div style="font-size: 0.78em; color: {t.SLATE_BLUE}; '
+        f'line-height: 1.35;">{sub}</div>'
+        f'{delta_html}'
+        f'</div>',
+        unsafe_allow_html=True,
+    )
+
+
 # ----- DEMO DATA banner -----
 
 def demo_data_banner() -> None:

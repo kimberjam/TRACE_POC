@@ -266,17 +266,13 @@ section[data-testid="stSidebar"] [data-testid="stSidebarUserContent"] {{
     margin-bottom: 0.4rem;
 }}
 
-/* Force Streamlit's container hierarchy to allow sticky positioning.
-   Without these overrides Streamlit's emotion-cache wrappers clip
-   `position: sticky` so the brand header and tabs scroll away. */
+/* Allow sticky positioning through the inner wrapper chain without
+   touching the actual scroll container (stMain). Setting overflow:visible
+   on stMain disables page scrolling. We only override the intermediate
+   wrappers that would otherwise clip sticky elements. */
 [data-testid="stMarkdownContainer"],
 [data-testid="stMarkdownContainer"] > div,
-[data-testid="stVerticalBlock"],
-[data-testid="stVerticalBlockBorderWrapper"],
-[data-testid="stMainBlockContainer"],
-.stMainBlockContainer,
-.block-container,
-section[data-testid="stMain"] {{
+[data-testid="stVerticalBlock"] {{
     overflow: visible !important;
 }}
 

@@ -20,7 +20,7 @@ from .. import theme as t
 
 def render(filters: dict) -> None:
     ui.tab_header(
-        "Stewardship view",
+        "Stewardship View",
         "Hospital and antimicrobial stewardship leadership metrics: usage "
         "patterns, resistance burden, facility-level outliers, peer "
         "comparisons. Aligned with CDC NHSN AUR reporting.",

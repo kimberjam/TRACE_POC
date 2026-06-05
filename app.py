@@ -115,11 +115,18 @@ div[data-baseweb="tab-list"] {{
     box-shadow: 0 2px 6px rgba(7,26,61,0.04);
 }}
 
-/* Push content down so it doesn't hide behind the fixed brand + tabs */
+/* Push content down so it doesn't hide behind the fixed brand + tabs.
+   Brand row (~4.75rem) + tab list (~2.6rem) ≈ 7.4rem, so use 6.5rem with
+   a slight buffer baked into the tab list's own padding. Also reset
+   stMain's default top spacing so nothing else stacks on top. */
+section[data-testid="stMain"] {{
+    padding-top: 0 !important;
+}}
+
 [data-testid="stMainBlockContainer"],
 .stMainBlockContainer,
 .block-container {{
-    padding-top: 8rem !important;
+    padding-top: 6.5rem !important;
 }}
 
 div[data-baseweb="tab-list"] button {{

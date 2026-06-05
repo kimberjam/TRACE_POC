@@ -106,7 +106,7 @@ div[data-baseweb="tab-list"] {{
     overflow-x: auto;
     scrollbar-width: thin;
     position: fixed !important;
-    top: 5rem !important;  /* just below the brand header */
+    top: 4rem !important;  /* flush below the brand header */
     left: 0 !important;
     right: 0 !important;
     z-index: 99 !important;
@@ -116,8 +116,7 @@ div[data-baseweb="tab-list"] {{
 }}
 
 /* Push content down so it doesn't hide behind the fixed brand + tabs.
-   Brand (~5.5rem) + tab list (~3rem) = ~8.5rem, so use 8.5rem for tight
-   alignment. */
+   Brand (~4rem) + tab list (~3rem) = ~7rem, with a small buffer. */
 section[data-testid="stMain"] {{
     padding-top: 0 !important;
 }}
@@ -125,7 +124,7 @@ section[data-testid="stMain"] {{
 [data-testid="stMainBlockContainer"],
 .stMainBlockContainer,
 .block-container {{
-    padding-top: 8.5rem !important;
+    padding-top: 7rem !important;
 }}
 
 div[data-baseweb="tab-list"] button {{
@@ -309,11 +308,16 @@ header[data-testid="stHeader"] {{
 }}
 
 /* Hide Streamlit Cloud's dev decorations (Share, star, edit, GitHub,
-   kebab menu) — none of these are useful for end users. Target the
-   decoration container, not the whole toolbar. */
+   kebab menu, status widget) — none of these are useful for end users.
+   Target each container by testid so the Filters expand button (also a
+   child of stToolbar) stays untouched. */
 [data-testid="stDecoration"],
-header[data-testid="stHeader"] [data-testid="stMainMenu"],
-header[data-testid="stHeader"] [data-testid="stStatusWidget"] {{
+[data-testid="stToolbarActions"],
+[data-testid="stStatusWidget"],
+[data-testid="stMainMenu"],
+header[data-testid="stHeader"] [data-testid="stToolbarActionButton"],
+header[data-testid="stHeader"] [data-testid="stAppDeployButton"],
+[data-testid="stAppDeployButton"] {{
     display: none !important;
 }}
 

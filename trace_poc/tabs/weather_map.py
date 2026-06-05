@@ -623,7 +623,7 @@ def _zip_to_neighborhood(zip_code: str) -> str:
 
 def render(filters: dict) -> None:
     ui.tab_header(
-        "Resistance weather map",
+        "Resistance Weather Map",
         "ZIP-level resistance intelligence across the Mountain West region. "
         "Pick a common pairing to see where local treatment is — and isn't — "
         "likely to work.",

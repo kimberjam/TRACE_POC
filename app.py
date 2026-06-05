@@ -106,7 +106,7 @@ div[data-baseweb="tab-list"] {{
     overflow-x: auto;
     scrollbar-width: thin;
     position: fixed !important;
-    top: 8rem !important;  /* below Streamlit header + brand header */
+    top: 5rem !important;  /* just below the brand header */
     left: 0 !important;
     right: 0 !important;
     z-index: 99 !important;
@@ -119,7 +119,7 @@ div[data-baseweb="tab-list"] {{
 [data-testid="stMainBlockContainer"],
 .stMainBlockContainer,
 .block-container {{
-    padding-top: 11rem !important;
+    padding-top: 8rem !important;
 }}
 
 div[data-baseweb="tab-list"] button {{
@@ -282,7 +282,7 @@ section[data-testid="stSidebar"] [data-testid="stSidebarUserContent"] {{
 
 .trace-sticky-top {{
     position: fixed !important;
-    top: 2.875rem !important;  /* below Streamlit's app header */
+    top: 0 !important;
     left: 0 !important;
     right: 0 !important;
     z-index: 100 !important;
@@ -292,10 +292,27 @@ section[data-testid="stSidebar"] [data-testid="stSidebarUserContent"] {{
     border-bottom: 1px solid {t.COOL_GRAY}55 !important;
 }}
 
-/* Make Streamlit's app header background match ours so they blend */
+/* Collapse Streamlit's app header to zero height — it only carries dev
+   tooling (Share / star / GitHub / kebab menu) that isn't relevant for
+   end users, and the sidebar "Filters" button gets repositioned below
+   the tab bar where it's more discoverable. */
 header[data-testid="stHeader"] {{
-    background: {t.MIST_WHITE} !important;
-    z-index: 99 !important;
+    background: transparent !important;
+    height: 0 !important;
+    min-height: 0 !important;
+}}
+
+[data-testid="stToolbar"] {{
+    display: none !important;
+}}
+
+/* Filters / sidebar expand button — moved below the tab bar */
+button[data-testid="stExpandSidebarButton"] {{
+    position: fixed !important;
+    top: 8.5rem !important;
+    left: 1rem !important;
+    z-index: 50 !important;
+    margin: 0 !important;
 }}
 
 .trace-demo-banner {{

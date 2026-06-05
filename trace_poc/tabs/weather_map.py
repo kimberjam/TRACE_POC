@@ -444,12 +444,16 @@ def _render_utah_svg(agg: pd.DataFrame, zoom: str = "Statewide") -> str:
             f'pointer-events="none">{m["name"]}</text>'
         )
 
-    # ZIP bubbles overlaid — labels only for top-N by isolate count to
-    # prevent the Wasatch Front cluster from becoming unreadable. Smaller
-    # ZIPs still show as bubbles with hover tooltips.
-    LABEL_TOP_N = 6
-    agg_sorted = agg.sort_values("n_iso", ascending=False).reset_index(drop=True)
-    labelled_zips = set(agg_sorted.head(LABEL_TOP_N)["patient_zip"].astype(str))
+    # ZIP bubbles overlaid. When statewide we label only the top 6 to
+    # prevent the Wasatch Front cluster from becoming unreadable. When
+    # zoomed in (Wasatch Front / St. George) we label EVERY ZIP because
+    # the magnified view gives each bubble its own breathing room.
+    if zoom == "Statewide":
+        LABEL_TOP_N = 6
+        agg_sorted = agg.sort_values("n_iso", ascending=False).reset_index(drop=True)
+        labelled_zips = set(agg_sorted.head(LABEL_TOP_N)["patient_zip"].astype(str))
+    else:
+        labelled_zips = set(agg["patient_zip"].astype(str))
 
     # Draw the lower-N bubbles first so the larger ones sit on top
     draw_order = agg.sort_values("n_iso", ascending=True)

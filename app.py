@@ -116,9 +116,8 @@ div[data-baseweb="tab-list"] {{
 }}
 
 /* Push content down so it doesn't hide behind the fixed brand + tabs.
-   Brand row (~4.75rem) + tab list (~2.6rem) ≈ 7.4rem, so use 6.5rem with
-   a slight buffer baked into the tab list's own padding. Also reset
-   stMain's default top spacing so nothing else stacks on top. */
+   Brand (~5.5rem) + tab list (~3rem) = ~8.5rem, so use 8.5rem for tight
+   alignment. */
 section[data-testid="stMain"] {{
     padding-top: 0 !important;
 }}
@@ -126,7 +125,7 @@ section[data-testid="stMain"] {{
 [data-testid="stMainBlockContainer"],
 .stMainBlockContainer,
 .block-container {{
-    padding-top: 6.5rem !important;
+    padding-top: 8.5rem !important;
 }}
 
 div[data-baseweb="tab-list"] button {{
@@ -299,25 +298,30 @@ section[data-testid="stSidebar"] [data-testid="stSidebarUserContent"] {{
     border-bottom: 1px solid {t.COOL_GRAY}55 !important;
 }}
 
-/* Collapse Streamlit's app header to zero height — it only carries dev
-   tooling (Share / star / GitHub / kebab menu) that isn't relevant for
-   end users, and the sidebar "Filters" button gets repositioned below
-   the tab bar where it's more discoverable. */
+/* Make Streamlit's app header thin and transparent so our brand sits at
+   the top, but DON'T hide stToolbar entirely — it contains the sidebar
+   Filters/expand button which we need to keep visible. */
 header[data-testid="stHeader"] {{
     background: transparent !important;
     height: 0 !important;
     min-height: 0 !important;
+    overflow: visible !important;  /* let the Filters button render outside */
 }}
 
-[data-testid="stToolbar"] {{
+/* Hide Streamlit Cloud's dev decorations (Share, star, edit, GitHub,
+   kebab menu) — none of these are useful for end users. Target the
+   decoration container, not the whole toolbar. */
+[data-testid="stDecoration"],
+header[data-testid="stHeader"] [data-testid="stMainMenu"],
+header[data-testid="stHeader"] [data-testid="stStatusWidget"] {{
     display: none !important;
 }}
 
-/* Filters / sidebar expand button — moved below the tab bar */
+/* Filters / sidebar expand button — fixed below the tab bar */
 button[data-testid="stExpandSidebarButton"] {{
     position: fixed !important;
-    top: 8.5rem !important;
-    left: 1rem !important;
+    top: 9rem !important;
+    left: 0.75rem !important;
     z-index: 50 !important;
     margin: 0 !important;
 }}

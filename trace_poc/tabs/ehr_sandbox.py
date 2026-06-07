@@ -157,6 +157,143 @@ PATIENT_CONTEXT = {
             ("2026-04-22 06:15", "Chest X-ray", "RLL consolidation", "A"),
         ],
     },
+
+    # Hernandez, Maria — uncomplicated UTI, healthy young female
+    "MH": {
+        "visit": [
+            ("Reason for visit", "Dysuria, urinary frequency × 2 days"),
+            ("BP", "118/74"),
+            ("Heart rate", "82"),
+            ("Temperature", "99.4°F"),
+            ("Respirations", "16"),
+            ("SpO₂", "99% RA"),
+        ],
+        "problems": [
+            ("N39.0 · ICD-10", "Urinary tract infection, site not specified",
+             "Onset 2026-04-22 · active", "PRIMARY"),
+            ("Z79.3 · ICD-10",
+             "Long-term use of hormonal contraceptives",
+             "Active since 2018-04 · active", None),
+        ],
+        "meds": [
+            ("Drospirenone-EE", "3 mg / 30 mcg PO daily · since 2018-04-12"),
+            ("Cetirizine", "10 mg PO PRN allergies · since 2022-03-15"),
+        ],
+        "results": [
+            ("2026-04-22 09:15", "Urine dipstick — leuk esterase", "Positive", "A"),
+            ("2026-04-22 09:15", "Urine dipstick — nitrite", "Positive", "A"),
+            ("2026-04-22 09:15", "Urine WBC", "> 25 / hpf", "H"),
+            ("2026-04-22 09:20", "Urine culture", "Pending · expected 24–48h", None),
+        ],
+    },
+
+    # Ahmadi, Sarah — skin and soft-tissue infection, prior MRSA
+    "SA": {
+        "visit": [
+            ("Reason for visit", "Red, warm, tender forearm × 3 days; "
+             "no fluctuance"),
+            ("BP", "132/80"),
+            ("Heart rate", "92"),
+            ("Temperature", "100.8°F"),
+            ("Respirations", "18"),
+            ("SpO₂", "98% RA"),
+        ],
+        "problems": [
+            ("L03.114 · ICD-10",
+             "Cellulitis of left upper limb",
+             "Onset 2026-04-19 · active", "PRIMARY"),
+            ("Z16.11 · ICD-10",
+             "Resistance to penicillins — prior MRSA isolate",
+             "Documented 2024-08-03 · active", "MRSA"),
+            ("I10 · ICD-10", "Essential hypertension",
+             "Onset 2019-02-11 · active", None),
+        ],
+        "meds": [
+            ("Lisinopril", "10 mg PO daily · since 2019-02-11"),
+            ("Hydrochlorothiazide", "12.5 mg PO daily · since 2019-02-11"),
+        ],
+        "results": [
+            ("2026-04-22 10:30", "WBC", "13.8", "H"),
+            ("2026-04-22 10:30", "CRP", "42 mg/L", "H"),
+            ("2024-08-03", "Wound culture (prior episode)",
+             "S. aureus, methicillin-resistant", "A"),
+            ("2026-04-22 10:45", "Wound culture (current)",
+             "Pending · expected 48–72h", None),
+        ],
+    },
+
+    # Chen, Robert — pre-op clearance, routine UA, asymptomatic
+    "RC": {
+        "visit": [
+            ("Reason for visit", "Pre-op clearance — elective right TKA"),
+            ("BP", "136/82"),
+            ("Heart rate", "72"),
+            ("Temperature", "98.4°F"),
+            ("Respirations", "14"),
+            ("SpO₂", "97% RA"),
+        ],
+        "problems": [
+            ("M17.11 · ICD-10",
+             "Unilateral primary osteoarthritis, right knee",
+             "Onset 2022-06-09 · active", "PRIMARY"),
+            ("I25.10 · ICD-10", "Atherosclerotic heart disease",
+             "Onset 2017-03-14 · active", None),
+            ("E11.9 · ICD-10",
+             "Type 2 diabetes mellitus without complications",
+             "Onset 2014-11-20 · active", None),
+        ],
+        "meds": [
+            ("Atorvastatin", "40 mg PO qHS · since 2017-03-14"),
+            ("Metformin", "1,000 mg PO BID · since 2014-11-20"),
+            ("Aspirin", "81 mg PO daily · since 2017-03-14"),
+            ("Acetaminophen", "650 mg PO TID PRN knee pain · since 2022-07-01"),
+        ],
+        "results": [
+            ("2026-04-22 08:00", "Urine dipstick — leuk esterase",
+             "Negative", None),
+            ("2026-04-22 08:00", "Urine dipstick — nitrite",
+             "Negative", None),
+            ("2026-04-22 08:00", "Urine WBC", "2 / hpf", None),
+            ("2026-04-22 07:45", "HbA1c", "6.8%", None),
+            ("2026-04-22 07:45", "Basic metabolic panel", "Within range", None),
+        ],
+    },
+
+    # Bennett, Rebecca — recurrent UTI, treatment-history relevant
+    "RB": {
+        "visit": [
+            ("Reason for visit", "Dysuria × 2 days — third UTI in 18 months"),
+            ("BP", "120/76"),
+            ("Heart rate", "80"),
+            ("Temperature", "99.6°F"),
+            ("Respirations", "16"),
+            ("SpO₂", "99% RA"),
+        ],
+        "problems": [
+            ("N39.0 · ICD-10",
+             "Urinary tract infection, recurrent",
+             "Onset 2026-04-22 · active", "PRIMARY"),
+            ("Z87.440 · ICD-10",
+             "Personal history of recurrent UTI",
+             "Documented 2025-10-18 · active", None),
+        ],
+        "meds": [
+            ("Combined oral contraceptive", "1 tab PO daily · since 2021-05-10"),
+            ("Ibuprofen", "400 mg PO PRN pain · since 2024-01-08"),
+        ],
+        "results": [
+            ("2026-04-22 14:35", "Urine dipstick — leuk esterase",
+             "Positive", "A"),
+            ("2026-04-22 14:35", "Urine dipstick — nitrite", "Positive", "A"),
+            ("2026-04-22 14:35", "Urine WBC", "> 50 / hpf", "H"),
+            ("2025-10-18", "Prior urine culture",
+             "E. coli — R to TMP-SMX, S to nitrofurantoin", "A"),
+            ("2025-03-04", "Prior urine culture",
+             "E. coli — S to nitrofurantoin, S to fosfomycin", None),
+            ("2026-04-22 14:50", "Urine culture (current)",
+             "Pending · expected 24–48h", None),
+        ],
+    },
 }
 
 

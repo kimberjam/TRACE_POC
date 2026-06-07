@@ -19,7 +19,97 @@ from .. import components as ui
 from .. import theme as t
 
 
-def _hero() -> None:
+# ----- Scenario → comparison-example mapping -----
+
+# Each scenario maps to a comparison example used by the hero pill and the
+# TRACE card. Fields are illustrative — the underlying message ("ZIP-level
+# vs statewide aggregate") doesn't depend on real values.
+_ORGANISM_SHORT = {
+    "Escherichia coli": "E. coli",
+    "Staphylococcus aureus": "S. aureus",
+    "Streptococcus pneumoniae": "S. pneumoniae",
+    "Klebsiella pneumoniae": "K. pneumoniae",
+    "Pseudomonas aeruginosa": "P. aeruginosa",
+    "MRSA": "MRSA",
+    "Enterococcus species": "Enterococcus spp.",
+    "Group A Strep": "S. pyogenes",
+    "C. difficile": "C. difficile",
+    "Haemophilus influenzae": "H. influenzae",
+}
+
+_DRUG_FOR = {
+    "Escherichia coli":          ("Ciprofloxacin", "CIP"),
+    "Staphylococcus aureus":     ("Clindamycin",   "CLI"),
+    "MRSA":                      ("Vancomycin",    "VAN"),
+    "Streptococcus pneumoniae":  ("Azithromycin",  "AZM"),
+    "Klebsiella pneumoniae":     ("Ceftriaxone",   "CRO"),
+    "Pseudomonas aeruginosa":    ("Pip-Tazo",      "TZP"),
+    "Enterococcus species":      ("Vancomycin",    "VAN"),
+    "Group A Strep":             ("Penicillin",    "PEN"),
+    "C. difficile":              ("Vancomycin PO", "VAN"),
+    "Haemophilus influenzae":    ("Ceftriaxone",   "CRO"),
+}
+
+_COUNTY_ZIP = {
+    "Salt Lake":  ("84101", "Downtown SLC"),
+    "Utah":       ("84601", "Provo"),
+    "Washington": ("84770", "St. George area"),
+}
+
+_SCENARIO_LABEL = {
+    "UTI / Outpatient":  "Uncomplicated UTI",
+    "UTI / Inpatient":   "Complicated UTI / pyelo",
+    "Pneumonia":         "Community-acquired pneumonia",
+    "Bloodstream":       "S. aureus bacteremia",
+    "Pharyngitis":       "GAS pharyngitis",
+    "Default":           "Same scenario, same patient, same day",
+}
+
+
+def _resolve_scenario(filters: dict) -> dict:
+    """Derive comparison-example metadata from active filter state."""
+    organism = filters.get("organism", "Escherichia coli")
+    encounter = filters.get("encounter_setting", "Outpatient")
+    specimen = filters.get("specimen_type", "Urine")
+    counties = filters.get("counties") or ["Washington"]
+    # Pick first county for the example ZIP
+    primary_county = counties[0]
+    zip_code, zip_label = _COUNTY_ZIP.get(
+        primary_county, ("84770", "St. George area")
+    )
+    drug, drug_short = _DRUG_FOR.get(
+        organism, ("Ciprofloxacin", "CIP")
+    )
+    org_short = _ORGANISM_SHORT.get(organism, organism)
+    # Choose presenting-scenario phrase
+    if specimen == "Urine":
+        ctx = "Uncomplicated UTI" if encounter == "Outpatient" \
+              else "Complicated UTI / pyelonephritis"
+    elif specimen == "Respiratory":
+        ctx = "Community-acquired pneumonia" if encounter != "ICU" \
+              else "Hospital-acquired pneumonia"
+    elif specimen == "Blood":
+        ctx = f"{org_short} bacteremia"
+    elif specimen == "Throat":
+        ctx = "GAS pharyngitis"
+    elif specimen == "Wound":
+        ctx = "Skin & soft-tissue infection"
+    else:
+        ctx = "Same pathogen-drug pair"
+    return {
+        "organism": organism,
+        "org_short": org_short,
+        "drug": drug,
+        "drug_short": drug_short,
+        "pair": f"{org_short} × {drug}",
+        "zip": zip_code,
+        "zip_label": zip_label,
+        "county": primary_county,
+        "context": ctx,
+    }
+
+
+def _hero(scenario: dict) -> None:
     st.markdown(
         f'<div style="font-family: {t.FONT_HEADING}; font-size: 1.6em; '
         f'font-weight: 600; color: {t.PRIMARY_NAVY}; '
@@ -49,10 +139,11 @@ def _hero() -> None:
             f'border: 1px solid {t.COOL_GRAY}; border-radius: 8px; '
             f'padding: 14px 18px; font-family: {t.FONT_UI};">'
             f'<div style="font-weight: 700; color: {t.PRIMARY_NAVY}; '
-            f'font-size: 1.05em;">E. coli × Ciprofloxacin</div>'
+            f'font-size: 1.05em;">{scenario["pair"]}</div>'
             f'<div style="color: {t.SLATE_BLUE}; font-size: 0.82em; '
             f'margin-top: 4px;">'
-            f'Uncomplicated UTI · ZIP 84770 (St. George) · '
+            f'{scenario["context"]} · ZIP {scenario["zip"]} '
+            f'({scenario["zip_label"]}) · '
             f'same pathogen-drug pair, same patient, same day'
             f'</div></div>',
             unsafe_allow_html=True,
@@ -185,7 +276,7 @@ def _today_panel() -> None:
     )
 
 
-def _trace_panel() -> None:
+def _trace_panel(scenario: dict) -> None:
     st.markdown(
         f'<div style="font-family: {t.FONT_UI}; font-size: 0.78em; '
         f'color: {t.SLATE_BLUE}; letter-spacing: 0.06em; '
@@ -224,8 +315,9 @@ def _trace_panel() -> None:
         f'<div style="background: {t.MIST_WHITE}; padding: 8px 18px; '
         f'border-bottom: 1px solid {t.COOL_GRAY}55; '
         f'font-family: {t.FONT_UI}; font-size: 0.82em; color: {t.SLATE_BLUE};">'
-        f'<strong style="color: {t.PRIMARY_NAVY};">E. coli × Ciprofloxacin</strong>'
-        f'&nbsp;&nbsp;|&nbsp;&nbsp;ZIP <strong>84770</strong> · St. George'
+        f'<strong style="color: {t.PRIMARY_NAVY};">{scenario["pair"]}</strong>'
+        f'&nbsp;&nbsp;|&nbsp;&nbsp;ZIP <strong>{scenario["zip"]}</strong> · '
+        f'{scenario["zip_label"]}'
         f'&nbsp;&nbsp;|&nbsp;&nbsp;Updated <strong>April 2026</strong>'
         f'&nbsp;&nbsp;|&nbsp;&nbsp;n=<strong>41</strong> trailing 12 mo'
         f'</div>'
@@ -377,11 +469,12 @@ def _closing_cta() -> None:
 
 
 def render(filters: dict) -> None:
-    _hero()
+    scenario = _resolve_scenario(filters)
+    _hero(scenario)
     cols = st.columns(2)
     with cols[0]:
         _today_panel()
     with cols[1]:
-        _trace_panel()
+        _trace_panel(scenario)
     _contrast_strip()
     _closing_cta()

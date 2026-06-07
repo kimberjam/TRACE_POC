@@ -321,12 +321,13 @@ header[data-testid="stHeader"] [data-testid="stAppDeployButton"],
     display: none !important;
 }}
 
-/* Filters / sidebar expand button — fixed below the tab bar */
+/* Filters / sidebar expand button — fixed inside the tab bar area, so
+   it doesn't visually collide with the page title below the tabs. */
 button[data-testid="stExpandSidebarButton"] {{
     position: fixed !important;
-    top: 9rem !important;
-    left: 0.75rem !important;
-    z-index: 50 !important;
+    top: 4.25rem !important;
+    left: 0.5rem !important;
+    z-index: 100 !important;
     margin: 0 !important;
 }}
 
@@ -581,6 +582,69 @@ def _resolve_mode() -> str:
     return st.session_state.get("mode", "investor")
 
 
+def _resolve_drilldown() -> None:
+    """If the user clicked a ZIP bubble on the map, capture the drill-down
+    intent from query params into session_state. The query params get
+    cleared so a refresh doesn't re-trigger the drill-down."""
+    qp = st.query_params
+    if "focus_zip" in qp:
+        zip_code = qp["focus_zip"]
+        organism = qp.get("focus_organism", "")
+        # Look up county for the ZIP
+        zip_map = dl.load_zip_county_map()
+        county = "—"
+        if not zip_map.empty:
+            match = zip_map[zip_map["zip"] == zip_code]
+            if not match.empty:
+                county = match.iloc[0]["county"]
+        st.session_state["drilldown"] = {
+            "zip": zip_code,
+            "organism": organism,
+            "county": county,
+        }
+        # Clear so refresh doesn't re-trigger
+        for k in ("focus_zip", "focus_organism"):
+            if k in qp:
+                del st.query_params[k]
+    if "clear_drilldown" in qp:
+        st.session_state.pop("drilldown", None)
+        if "clear_drilldown" in qp:
+            del st.query_params["clear_drilldown"]
+
+
+def _drilldown_banner() -> None:
+    """Show a TRACE-branded banner when a ZIP drill-down is active."""
+    dd = st.session_state.get("drilldown")
+    if not dd:
+        return
+    st.markdown(
+        f'<div style="background: {t.TRACE_TEAL}1A; '
+        f'border: 1px solid {t.TRACE_TEAL}; border-radius: 6px; '
+        f'padding: 10px 16px; margin: 0.5rem 0 1rem 0; '
+        f'font-family: {t.FONT_UI}; font-size: 0.9em; '
+        f'display: flex; justify-content: space-between; '
+        f'align-items: center; gap: 12px;">'
+        f'<div>'
+        f'<strong style="color: {t.PRIMARY_NAVY};">'
+        f'Drilling down:</strong> '
+        f'<span style="color: {t.INK};">'
+        f'{dd["organism"] or "all organisms"} in ZIP <strong>{dd["zip"]}</strong> '
+        f'({dd["county"]} County)'
+        f'</span>'
+        f'<span style="color: {t.SLATE_BLUE}; margin-left: 12px; '
+        f'font-size: 0.88em;">Switch to <strong>Point of Care</strong> '
+        f'for clinical detail on this scope.</span>'
+        f'</div>'
+        f'<a href="?clear_drilldown=1" target="_self" '
+        f'style="background: white; border: 1px solid {t.COOL_GRAY}; '
+        f'color: {t.SLATE_BLUE}; padding: 4px 12px; border-radius: 4px; '
+        f'font-size: 0.82em; font-weight: 500; text-decoration: none;">'
+        f'Clear ×</a>'
+        f'</div>',
+        unsafe_allow_html=True,
+    )
+
+
 def main() -> None:
     # Inject CSS once
     st.markdown(_CUSTOM_CSS, unsafe_allow_html=True)
@@ -601,8 +665,20 @@ def main() -> None:
         ehr_sandbox.render({})
         return
 
-    # Investor Demo mode: six tabs, shared sidebar filters
+    # Investor Demo mode: read drill-down state from query params (if any),
+    # then render the shared sidebar + tabs.
+    _resolve_drilldown()
     filters = render_sidebar()
+
+    # If a drill-down is active, override the filters' organism + county
+    dd = st.session_state.get("drilldown")
+    if dd:
+        if dd.get("organism"):
+            filters["organism"] = dd["organism"]
+        if dd.get("county") and dd["county"] != "—":
+            filters["counties"] = [dd["county"]]
+
+    _drilldown_banner()
 
     tabs = st.tabs([
         "Resistance Weather Map",

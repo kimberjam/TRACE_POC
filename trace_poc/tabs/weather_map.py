@@ -13,6 +13,7 @@ from __future__ import annotations
 
 from datetime import timedelta
 from typing import Optional
+from urllib.parse import quote
 
 import altair as alt
 import pandas as pd
@@ -181,15 +182,37 @@ COMMON_PAIRINGS = [
 ]
 
 
-def _pairing_chips() -> tuple[str, str, str]:
+def _pick_pairing_idx(organism: str, encounter: str) -> int:
+    """Pick the best-matching Common Pairing chip index for a given scenario."""
+    if "Escherichia coli" in organism:
+        return 1 if encounter == "Outpatient" else 0  # Nitro outpt, Cipro otherwise
+    if "Staphylococcus aureus" in organism or organism == "MRSA":
+        return 2  # S. aureus × Clindamycin
+    if "Streptococcus pneumoniae" in organism:
+        return 3  # S. pneumoniae × Azithromycin
+    if "Klebsiella pneumoniae" in organism:
+        return 4  # K. pneumoniae × Ceftriaxone
+    return 0  # fallback
+
+
+def _pairing_chips(filters: dict) -> tuple[str, str, str]:
     """Render a compact horizontal Common Pairings chip row.
 
-    Replaces the heavier in-tab Filters card with a streamlined picker that
-    sets both pathogen and drug from a single click. The sidebar (Streamlit
-    native, collapsed by default) covers global filter context.
+    When a sidebar demo scenario is picked, auto-select the closest matching
+    chip — but only on scenario-change, so a user clicking chips manually
+    afterwards retains their choice until the next scenario change.
 
     Returns (label, organism, drug).
     """
+    scenario_label = filters.get("scenario_label")
+    last_scenario = st.session_state.get("wm_last_scenario")
+    if scenario_label and scenario_label != last_scenario:
+        st.session_state["wm_pairing_idx"] = _pick_pairing_idx(
+            filters.get("organism", ""),
+            filters.get("encounter_setting", ""),
+        )
+        st.session_state["wm_last_scenario"] = scenario_label
+
     if "wm_pairing_idx" not in st.session_state:
         st.session_state["wm_pairing_idx"] = 0
     idx = st.session_state["wm_pairing_idx"]
@@ -373,7 +396,7 @@ def _map_view(df_recent: pd.DataFrame, organism: str, drug: str,
             return
 
         # Render inline SVG of Utah with county lines + ZIP bubbles overlaid.
-        svg = _render_utah_svg(agg, zoom=zoom)
+        svg = _render_utah_svg(agg, zoom=zoom, organism=organism)
         st.markdown(svg, unsafe_allow_html=True)
         _render_legend()
 
@@ -387,7 +410,11 @@ ZOOM_PRESETS = {
 }
 
 
-def _render_utah_svg(agg: pd.DataFrame, zoom: str = "Statewide") -> str:
+def _render_utah_svg(
+    agg: pd.DataFrame,
+    zoom: str = "Statewide",
+    organism: str = "",
+) -> str:
     """Build the inline Utah SVG with county lines, metro labels, ZIP bubbles.
 
     The `zoom` arg picks a preset region from ZOOM_PRESETS — the SVG viewBox
@@ -472,15 +499,22 @@ def _render_utah_svg(agg: pd.DataFrame, zoom: str = "Statewide") -> str:
         color = _color_for_pct(float(row["pct_s"]))
         tooltip = (
             f'ZIP {zip_code} — {row["pct_s"]:.1f}% susceptible '
-            f'(n={int(row["n_iso"])})'
+            f'(n={int(row["n_iso"])}). Click to drill down.'
+        )
+        # Wrap circle in an anchor so clicks navigate with query params
+        href = (
+            f'?focus_zip={zip_code}'
+            f'&focus_organism={quote(organism)}'
         )
         parts.append(
+            f'<a href="{href}" target="_self">'
             f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r:.1f}" '
             f'fill="{color}" fill-opacity="0.7" '
             f'stroke="{t.PRIMARY_NAVY}" stroke-width="1" '
             f'style="cursor: pointer;">'
             f'<title>{tooltip}</title>'
             f'</circle>'
+            f'</a>'
         )
         # Only the top-N labelled — keeps the cluster readable
         if zip_code in labelled_zips:
@@ -638,7 +672,7 @@ def render(filters: dict) -> None:
     df_recent = df[df["collection_date"] >= cutoff]
 
     # Single-column layout: chip row → KPIs → map → timeline → hotspots
-    pairing_label, organism, drug = _pairing_chips()
+    pairing_label, organism, drug = _pairing_chips(filters)
     st.markdown("")
     _kpi_strip(df_recent, organism, drug)
     st.markdown("")

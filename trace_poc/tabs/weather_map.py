@@ -279,7 +279,7 @@ def _kpi_strip(df_recent: pd.DataFrame, organism: str, drug: str) -> None:
         ui.kpi_card(
             "Isolates (last 90d)",
             f"{n_iso:,}",
-            sublabel="After small-cell suppression",
+            sublabel="ZIPs with n<30 excluded from map",
         )
 
     # Data latency (static: 14 days for monthly aggregates)
@@ -363,7 +363,7 @@ def _map_view(df_recent: pd.DataFrame, organism: str, drug: str,
             )
         with title_cols[2]:
             st.markdown(
-                ui.evidence_chip("Stewardship concern", tone="concern"),
+                ui.evidence_chip("% Susceptible · local", tone="neutral"),
                 unsafe_allow_html=True,
             )
 
@@ -659,8 +659,8 @@ def render(filters: dict) -> None:
     ui.tab_header(
         "Resistance Weather Map",
         "ZIP-level resistance intelligence across the Mountain West region. "
-        "Pick a common pairing to see where local treatment is — and isn't — "
-        "likely to work.",
+        "Pick a common pairing to see where local susceptibility rates are — "
+        "and aren't — favorable.",
     )
 
     # Pull last 180 days for the trend / hotspot calculations

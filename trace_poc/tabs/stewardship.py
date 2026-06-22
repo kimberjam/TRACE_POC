@@ -118,8 +118,8 @@ def render(filters: dict) -> None:
 
     with mid_left:
         ui.section_header(
-            "Resistance & usage trend",
-            "Monthly trend of resistance burden across the selected counties.",
+            "Resistance trend",
+            "Monthly E. coli ciprofloxacin resistance rate across the selected counties.",
         )
 
         # Monthly resistance index using aggregates
@@ -184,7 +184,7 @@ def render(filters: dict) -> None:
                     f"{row['facility_name']}",
                     f"SAAR proxy {row['saar_proxy']:.2f} — "
                     f"{(row['saar_proxy'] - 1.0) * 100:+.0f}% vs peer "
-                    f"median. Stewardship review suggested.",
+                    f"median. Antibiotic use is elevated relative to peer facilities.",
                     tone="watch",
                     icon="⚠",
                 )
@@ -192,17 +192,16 @@ def render(filters: dict) -> None:
         ui.section_header("Stewardship signals")
         ui.branded_alert(
             "Fluoroquinolone resistance trending up",
-            "Local E. coli ciprofloxacin susceptibility has dropped this "
-            "quarter. Consider stewardship intervention for ED empiric "
-            "UTI orders — non-fluoroquinolone first-line where appropriate.",
+            "Local E. coli ciprofloxacin susceptibility has declined this "
+            "quarter. Fluoroquinolone resistance rates are higher than "
+            "the prior 90-day window for this area.",
             tone="info",
             icon="ℹ",
         )
         ui.branded_alert(
             "Broad-spectrum use elevated in ICU",
-            "ICU broad-spectrum prescribing exceeds peer ICUs by "
-            "approximately 18%. De-escalation review at 48–72h is the "
-            "highest-leverage intervention.",
+            "ICU broad-spectrum antibiotic use exceeds peer ICUs by "
+            "approximately 18% based on available prescribing data.",
             tone="info",
             icon="ℹ",
         )

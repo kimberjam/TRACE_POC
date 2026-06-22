@@ -128,8 +128,9 @@ def _hero(scenario: dict) -> None:
             f'prescriber has access to is a state-aggregated annual '
             f'antibiogram, released 12–18 months after the data was '
             f'collected. It\'s a single number for an entire state, often '
-            f'delivered as a PDF. TRACE replaces that with continuously '
-            f'updated, ZIP-level intelligence at the point of decision.'
+            f'delivered as a PDF. TRACE converts that same data into '
+            f'continuously updated, ZIP-level susceptibility context '
+            f'accessible at the point of care.'
             f'</div>',
             unsafe_allow_html=True,
         )
@@ -352,7 +353,7 @@ def _trace_panel(scenario: dict) -> None:
         f'letter-spacing: 0.05em; font-weight: 600; '
         f'text-transform: uppercase;">Granularity</div>'
         f'<div style="font-weight: 600; color: {t.PRIMARY_NAVY}; '
-        f'font-size: 0.95em;">ZIP 84770</div>'
+        f'font-size: 0.95em;">ZIP {scenario["zip"]}</div>'
         f'<div style="font-size: 0.75em; color: {t.SLATE_BLUE};">'
         f'29 ZIPs · vs 1 statewide</div></div>'
         f'<div><div style="font-size: 0.72em; color: {t.SLATE_BLUE}; '
@@ -377,10 +378,10 @@ def _trace_panel(scenario: dict) -> None:
         f'font-size: 0.82em; color: {t.SLATE_BLUE};">'
         f'<span style="background: {t.TRACE_TEAL}; color: white; '
         f'padding: 2px 8px; border-radius: 3px; font-family: monospace; '
-        f'font-size: 0.82em;">⟨/⟩ CDS Hooks · order-sign</span>'
-        f'&nbsp;&nbsp;Surfaced <strong style="color: {t.PRIMARY_NAVY};">'
-        f'at the moment of prescribing</strong> · '
-        f'suggests Nitrofurantoin (87%, n=53)'
+        f'font-size: 0.82em;">⟨/⟩ CDS Hooks · order-select</span>'
+        f'&nbsp;&nbsp;Local susceptibility context surfaced '
+        f'<strong style="color: {t.PRIMARY_NAVY};">at the point of care</strong> '
+        f'— population-level data for clinical context'
         f'</div>'
 
         f'</div>',
@@ -388,7 +389,7 @@ def _trace_panel(scenario: dict) -> None:
     )
 
 
-def _contrast_strip() -> None:
+def _contrast_strip(scenario: dict) -> None:
     st.markdown("")
     st.markdown(
         f'<div style="font-family: {t.FONT_HEADING}; font-weight: 600; '
@@ -399,14 +400,14 @@ def _contrast_strip() -> None:
     cells = [
         ("Granularity", "1 unit (state)", "29 ZIP units",
          "≥3,400× finer geographic resolution."),
-        ("Recency", "12–18 mo lag", "Monthly · live in Phase 2",
-         "Catches resistance shifts before clinicians do."),
+        ("Recency", "12–18 mo lag", "Monthly update cycle",
+         "More recent than annual state antibiograms."),
         ("Statistical depth", "Single point estimate", "CI · OR · trend",
          "Quantifies uncertainty &amp; significance."),
         ("Delivery", "PDF / email", "CDS Hook in EHR",
          "Right info, right person, right moment."),
-        ("Action", "Read &amp; remember", "One-click drug swap",
-         "Suggestion array creates the MedicationRequest."),
+        ("Context", "Read &amp; remember", "In-workflow context card",
+         "Population-level susceptibility data surfaced at the point of care."),
     ]
     cols = st.columns(5)
     for col, (dim, today, trace, note) in zip(cols, cells):
@@ -445,12 +446,13 @@ def _closing_cta() -> None:
         f'The gap is the opportunity.</div>'
         f'<p style="color: #B7C4CE; font-size: 0.9em; line-height: 1.55; '
         f'margin-top: 8px;">'
-        f'Every U.S. hospital that bills Medicare already submits the '
-        f'underlying AU/AR data under the 2024 CMS NHSN mandate. The '
-        f'plumbing exists. The data exists. What doesn\'t exist is the '
-        f'layer that turns it into something a prescriber can actually '
-        f'use during a 12-minute visit. <strong style="color: white;">'
-        f'TRACE is that layer.</strong>'
+        f'The 2024 CMS NHSN mandate requires hospitals billing Medicare '
+        f'to report antibiotic use and resistance data. That data exists '
+        f'— but it flows into federal and state silos, returning to '
+        f'clinicians, if at all, as blurred annual aggregates. What '
+        f'doesn\'t exist is the layer that turns it into something a '
+        f'prescriber can actually use during a 12-minute visit. '
+        f'<strong style="color: white;">TRACE is that layer.</strong>'
         f'</p>'
         f'</div>'
         f'<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">'
@@ -459,9 +461,10 @@ def _closing_cta() -> None:
         f'<div style="color: #B7C4CE; font-size: 0.8em;">'
         f'U.S. outpatient antibiotic Rx / yr potentially affected</div></div>'
         f'<div><div style="font-family: {t.FONT_HEADING}; font-size: 2em; '
-        f'font-weight: 700; color: {t.TRACE_TEAL};">≥30%</div>'
+        f'font-weight: 700; color: {t.TRACE_TEAL};">≥28%</div>'
         f'<div style="color: #B7C4CE; font-size: 0.8em;">'
-        f'CDC-estimated avoidable Rx · stewardship target</div></div>'
+        f'CDC-estimated outpatient antibiotic prescriptions unnecessary '
+        f'(2016 MMWR estimate)</div></div>'
         f'</div>'
         f'</div>',
         unsafe_allow_html=True,
@@ -476,5 +479,5 @@ def render(filters: dict) -> None:
         _today_panel()
     with cols[1]:
         _trace_panel(scenario)
-    _contrast_strip()
+    _contrast_strip(scenario)
     _closing_cta()

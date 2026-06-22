@@ -608,11 +608,12 @@ def _trace_panel(patient: dict, df: pd.DataFrame) -> None:
             f"baseline across 12 ZIPs."
         )
     elif organism == "Staphylococcus aureus":
-        alert_text = "Recent MRSA cluster — empiric coverage warranted"
+        alert_text = "Elevated local MRSA prevalence in recent isolates"
         body = (
             f"MRSA accounts for an elevated share of S. aureus isolates "
-            f"in ZIP <strong>{zip_code}</strong> over the last 90 days. "
-            f"N = {n} isolates."
+            f"in ZIP <strong>{zip_code}</strong> over the last 90 days "
+            f"(n={n} isolates). This patient has a documented prior MRSA isolate. "
+            f"Local susceptibility context is shown below."
         )
     else:
         alert_text = "Local susceptibility available"
@@ -644,7 +645,7 @@ def _trace_panel(patient: dict, df: pd.DataFrame) -> None:
             f'<div style="font-family: {t.FONT_UI}; '
             f'font-size: 0.72em; color: {t.SLATE_BLUE}; '
             f'letter-spacing: 0.08em; font-weight: 600; '
-            f'margin: 16px 0 8px 0;">LOCAL SUSCEPTIBILITY · TOP 5</div>',
+            f'margin: 16px 0 8px 0;">SELECTED LOCAL SUSCEPTIBILITY INDICATORS</div>',
             unsafe_allow_html=True,
         )
         for _, row in sus_table.iterrows():
@@ -762,6 +763,35 @@ def render(filters: dict) -> None:
         _chart_center(patient)
 
     with trace_col:
-        _trace_panel(patient, df)
+        # CR-12: TRACE only fires when there is a clinical indication.
+        # Robert Chen is pre-op clearance with no active infection — panel hidden.
+        if patient["scenario"]["infection"] == "Asymptomatic bacteriuria":
+            st.markdown(
+                f'<div style="background: {t.PRIMARY_NAVY}; color: white; '
+                f'padding: 10px 14px; font-family: {t.FONT_UI}; '
+                f'display: flex; justify-content: space-between; '
+                f'align-items: center;">'
+                f'<div><span style="color: {t.TRACE_TEAL};">●</span>&nbsp;&nbsp;'
+                f'<strong style="letter-spacing: 0.08em;">TRACE · ANTIBIOGRAM</strong>'
+                f'</div>'
+                f'<div style="background: {t.COOL_GRAY}; color: {t.PRIMARY_NAVY}; '
+                f'padding: 2px 10px; border-radius: 3px; font-size: 0.72em; '
+                f'letter-spacing: 0.06em; font-weight: 600;">NOT ACTIVATED</div>'
+                f'</div>'
+                f'<div style="padding: 14px; font-family: {t.FONT_UI}; '
+                f'font-size: 0.85em; color: {t.SLATE_BLUE}; line-height: 1.5; '
+                f'border: 1px solid {t.COOL_GRAY}44; border-top: none; '
+                f'border-radius: 0 0 6px 6px;">'
+                f'<strong style="color: {t.PRIMARY_NAVY};">No active infection context.</strong><br/>'
+                f'TRACE activates when there is a clinical indication for '
+                f'antimicrobial therapy. This patient is presenting for '
+                f'pre-operative clearance with no active infection. '
+                f'Local susceptibility data is available but not surfaced '
+                f'for asymptomatic presentations.'
+                f'</div>',
+                unsafe_allow_html=True,
+            )
+        else:
+            _trace_panel(patient, df)
 
     _footer_status_bar()

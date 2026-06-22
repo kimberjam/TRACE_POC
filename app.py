@@ -21,7 +21,7 @@ from trace_poc import theme as t
 from trace_poc import components as ui
 from trace_poc.tabs import (
     weather_map,
-    point_of_care,
+    clinical_context,
     stewardship,
     today_vs_trace,
     about_architecture,
@@ -682,7 +682,7 @@ def main() -> None:
 
     tabs = st.tabs([
         "Resistance Weather Map",
-        "Point of Care",
+        "Clinical Context View",
         "Stewardship View",
         "Today vs TRACE",
         "About & Architecture",
@@ -691,7 +691,7 @@ def main() -> None:
     with tabs[0]:
         weather_map.render(filters)
     with tabs[1]:
-        point_of_care.render(filters)
+        clinical_context.render(filters)
     with tabs[2]:
         stewardship.render(filters)
     with tabs[3]:

@@ -663,6 +663,10 @@ def render(filters: dict) -> None:
         "and aren't — favorable.",
     )
 
+    # Default zoom to Wasatch Front on first load
+    if "wm_zoom" not in st.session_state:
+        st.session_state["wm_zoom"] = "Wasatch Front"
+
     # Pull last 180 days for the trend / hotspot calculations
     df = dl.load_test_results()
     if df.empty:

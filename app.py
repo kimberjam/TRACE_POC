@@ -328,7 +328,7 @@ header[data-testid="stHeader"] [data-testid="stAppDeployButton"],
 button[data-testid="stExpandSidebarButton"] {{
     position: fixed !important;
     top: 0.55rem !important;
-    right: 14rem !important;
+    right: 19rem !important;
     z-index: 101 !important;
     margin: 0 !important;
 }}

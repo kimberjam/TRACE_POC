@@ -493,7 +493,8 @@ def _render_utah_svg(
         x, y = _project_zip(lat, lon)
         if not (20 < x < 500) or not (15 < y < 625):
             continue
-        r = _bubble_radius(int(row["n_iso"]))
+        # Scale radius proportionally to zoom: statewide vw=520 is baseline
+        r = _bubble_radius(int(row["n_iso"])) * (vw / 520.0)
         if r <= 0:
             continue
         color = _color_for_pct(float(row["pct_s"]))
@@ -663,9 +664,11 @@ def render(filters: dict) -> None:
         "and aren't — favorable.",
     )
 
-    # Default zoom to Wasatch Front on first load
-    if "wm_zoom" not in st.session_state:
+    # Default zoom to Wasatch Front. Use a versioned flag so existing
+    # browser sessions that cached "Statewide" also get reset.
+    if not st.session_state.get("_wm_zoom_default_v2"):
         st.session_state["wm_zoom"] = "Wasatch Front"
+        st.session_state["_wm_zoom_default_v2"] = True
 
     # Pull last 180 days for the trend / hotspot calculations
     df = dl.load_test_results()

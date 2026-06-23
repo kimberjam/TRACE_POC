@@ -558,23 +558,37 @@ def _trace_panel(patient: dict, df: pd.DataFrame) -> None:
     organism = patient["scenario"]["organism"]
     zip_code = patient["zip"]
 
-    # Pull the actual susceptibility profile for this organism × this ZIP
+    # Pull the actual susceptibility profile for this organism × this ZIP.
+    # Fallback chain: ZIP → county → statewide, tracking which level is used.
+    data_scope_label = f"ZIP {zip_code}"
     sub = df[
         (df["organism"] == organism)
         & (df["patient_zip"] == zip_code)
         & df["susceptibility"].isin(["S", "R"])
     ]
-    # Fallback: if no data in this exact ZIP, expand to the county
-    if sub.empty:
-        county = dl.load_zip_county_map()
-        c = county[county["zip"] == zip_code]
+
+    if sub.empty or sub["test_id"].nunique() < 5:
+        # Fallback 1: county level
+        zip_map = dl.load_zip_county_map()
+        c = zip_map[zip_map["zip"] == zip_code]
         if not c.empty:
             cname = c["county"].iloc[0]
-            sub = df[
+            sub_county = df[
                 (df["organism"] == organism)
                 & (df["county"] == cname)
                 & df["susceptibility"].isin(["S", "R"])
             ]
+            if not sub_county.empty and sub_county["test_id"].nunique() >= 5:
+                sub = sub_county
+                data_scope_label = f"{cname} County"
+            else:
+                # Fallback 2: statewide
+                sub_state = df[
+                    (df["organism"] == organism)
+                    & df["susceptibility"].isin(["S", "R"])
+                ]
+                sub = sub_state
+                data_scope_label = "statewide (sparse local data)"
 
     n = sub["test_id"].nunique() if not sub.empty else 0
 
@@ -597,15 +611,15 @@ def _trace_panel(patient: dict, df: pd.DataFrame) -> None:
     alert_text = ""
     if organism == "Streptococcus pneumoniae":
         alert_text = (
-            "Elevated local resistance for S. pneumoniae in ZIP "
-            f"{zip_code}"
+            f"Local S. pneumoniae susceptibility — {data_scope_label}"
         )
         body = (
-            f"Patient's ZIP polygon <strong>{zip_code}</strong> has the "
-            f"following local susceptibility for S. pneumoniae across "
-            f"<strong>{n} isolates</strong> over the last 12 months. Values "
-            f"shown with Wilson-score 95% CIs; comparisons use regional "
-            f"baseline across 12 ZIPs."
+            f"Local susceptibility for S. pneumoniae across "
+            f"<strong>{n} isolates</strong> — scope: "
+            f"<strong>{data_scope_label}</strong> · trailing 12 months. "
+            f"ZIP {zip_code} has sparse isolate volume; data expanded to "
+            f"the nearest available geographic level. Values shown with "
+            f"Wilson-score 95% CIs."
         )
     elif organism == "Staphylococcus aureus":
         alert_text = "Elevated local MRSA prevalence in recent isolates"
@@ -680,7 +694,7 @@ def _trace_panel(patient: dict, df: pd.DataFrame) -> None:
         f'font-family: {t.FONT_UI}; font-size: 0.78em; '
         f'color: {t.SLATE_BLUE};">'
         f'<strong style="color: {t.PRIMARY_NAVY};">TRACE</strong> · '
-        f'ZIP {zip_code} · updated Apr 2026<br/>'
+        f'{data_scope_label} · updated Apr 2026<br/>'
         f'Full local antibiogram · Method: Wilson-score CI, n≥30 threshold · '
         f'<a href="#" style="color: {t.SLATE_BLUE};">Dismiss</a>'
         f'</div>',

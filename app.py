@@ -106,7 +106,7 @@ div[data-baseweb="tab-list"] {{
     overflow-x: auto;
     scrollbar-width: thin;
     position: fixed !important;
-    top: 4rem !important;  /* flush below the brand header */
+    top: 2.5rem !important;  /* flush below the brand header (no top banner) */
     left: 0 !important;
     right: 0 !important;
     z-index: 99 !important;
@@ -116,7 +116,8 @@ div[data-baseweb="tab-list"] {{
 }}
 
 /* Push content down so it doesn't hide behind the fixed brand + tabs.
-   Brand (~4rem) + tab list (~3rem) = ~7rem, with a small buffer. */
+   Brand (~2.5rem) + tab list (~3rem) = ~5.5rem, with a small buffer.
+   padding-bottom clears the fixed bottom status bar (~1.5rem). */
 section[data-testid="stMain"] {{
     padding-top: 0 !important;
 }}
@@ -124,7 +125,8 @@ section[data-testid="stMain"] {{
 [data-testid="stMainBlockContainer"],
 .stMainBlockContainer,
 .block-container {{
-    padding-top: 7rem !important;
+    padding-top: 5.5rem !important;
+    padding-bottom: 2rem !important;
 }}
 
 div[data-baseweb="tab-list"] button {{
@@ -179,7 +181,7 @@ div[data-baseweb="tab-highlight"] {{
 /* Dividers */
 hr {{
     border-color: {t.COOL_GRAY}55;
-    margin: 0.6rem 0 !important;
+    margin: 0.25rem 0 !important;
 }}
 
 /* Primary button: TRACE Teal */
@@ -198,34 +200,34 @@ hr {{
 }}
 
 /* ===== Sidebar toggle labels ===== */
-/* COLLAPSED state — "Filters" pill containing the expand arrow.
+/* COLLAPSED state — small scenario icon in the header row (top-right).
    Real testid (per inspector on Streamlit 1.58): stExpandSidebarButton */
 button[data-testid="stExpandSidebarButton"] {{
     display: inline-flex !important;
     flex-direction: row !important;
     align-items: center !important;
-    gap: 6px !important;
-    padding: 6px 12px !important;
-    margin: 10px 0 0 10px !important;
-    background: {t.MIST_WHITE} !important;
-    border: 1px solid {t.COOL_GRAY} !important;
-    border-radius: 6px !important;
+    gap: 4px !important;
+    padding: 3px 10px !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border: 1px solid {t.COOL_GRAY}88 !important;
+    border-radius: 4px !important;
     width: auto !important;
-    min-width: 105px !important;
+    min-width: auto !important;
     height: auto !important;
     overflow: visible !important;
     cursor: pointer !important;
-    color: {t.PRIMARY_NAVY} !important;
-    box-shadow: 0 1px 2px rgba(7,26,61,0.06) !important;
+    color: {t.SLATE_BLUE} !important;
+    box-shadow: none !important;
 }}
 
 button[data-testid="stExpandSidebarButton"]::before {{
-    content: "Filters" !important;
-    color: {t.PRIMARY_NAVY} !important;
+    content: "⚙ Scenario" !important;
+    color: {t.SLATE_BLUE} !important;
     font-family: {t.FONT_UI} !important;
-    font-weight: 600 !important;
-    font-size: 13px !important;
-    letter-spacing: 0.02em !important;
+    font-weight: 500 !important;
+    font-size: 11px !important;
+    letter-spacing: 0.03em !important;
     white-space: nowrap !important;
     line-height: 1 !important;
 }}
@@ -272,12 +274,12 @@ section[data-testid="stSidebar"] [data-testid="stSidebarUserContent"] {{
 
 /* Tighten Streamlit column gaps */
 [data-testid="stHorizontalBlock"] {{
-    gap: 0.75rem !important;
+    gap: 0.5rem !important;
 }}
 
 /* Tighten vertical spacing between blocks */
 [data-testid="stVerticalBlock"] > [data-testid="element-container"] {{
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.1rem;
 }}
 
 /* FIXED brand header + tabs — position: sticky is unreliable inside
@@ -321,30 +323,36 @@ header[data-testid="stHeader"] [data-testid="stAppDeployButton"],
     display: none !important;
 }}
 
-/* Filters / sidebar expand button — fixed inside the tab bar area, so
-   it doesn't visually collide with the page title below the tabs. */
+/* Filters / sidebar expand button — tucked into the top-right of the
+   brand header row, to the left of the mode pills. */
 button[data-testid="stExpandSidebarButton"] {{
     position: fixed !important;
-    top: 4.25rem !important;
-    left: 0.5rem !important;
-    z-index: 100 !important;
+    top: 0.55rem !important;
+    right: 14rem !important;
+    z-index: 101 !important;
     margin: 0 !important;
 }}
 
 .trace-demo-banner {{
-    background: {t.SOFT_BLUE}1A;
-    border-bottom: 1px solid {t.SOFT_BLUE}44;
-    padding: 5px 24px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: {t.MIST_WHITE};
+    border-top: 1px solid {t.COOL_GRAY}55;
+    padding: 3px 24px;
     font-family: {t.FONT_UI};
-    font-size: 0.78em;
+    font-size: 0.72em;
     color: {t.SLATE_BLUE};
     text-align: center;
     letter-spacing: 0.02em;
+    line-height: 1.2;
 }}
 
 .trace-demo-banner strong {{
-    color: {t.PRIMARY_NAVY};
-    letter-spacing: 0.08em;
+    color: {t.SLATE_BLUE};
+    letter-spacing: 0.06em;
 }}
 
 .trace-header-row {{
@@ -429,23 +437,30 @@ def _sticky_header(mode: str) -> None:
 
     st.markdown(
         f'<div class="trace-sticky-top">'
-        f'<div class="trace-demo-banner">'
-        f'<strong>DEMO DATA</strong>'
-        f'&nbsp;&nbsp;·&nbsp;&nbsp;Illustrative only'
-        f'&nbsp;&nbsp;·&nbsp;&nbsp;Not live clinical data'
-        f'&nbsp;&nbsp;·&nbsp;&nbsp;Values are synthetic, geographically plausible'
-        f'</div>'
         f'<div class="trace-header-row">'
         f'<div class="trace-brand-block">'
         f'<div style="display:inline-block; width:24px; height:24px;">{t.LOGO_SVG_SMALL}</div>'
         f'<span class="wordmark">TRACE</span>'
-        f'<span class="sub">Integrated POC</span>'
         f'</div>'
         f'<div class="trace-mode-pills">'
         f'<a class="{investor_class}" href="?mode=investor" target="_self">Investor Demo</a>'
         f'<a class="{ehr_class}" href="?mode=ehr_sandbox" target="_self">EHR Sandbox</a>'
         f'</div>'
         f'</div>'
+        f'</div>',
+        unsafe_allow_html=True,
+    )
+
+
+# ----- Fixed bottom status bar: DEMO DATA notice -----
+
+def _demo_footer_banner() -> None:
+    st.markdown(
+        f'<div class="trace-demo-banner">'
+        f'<strong>DEMO DATA</strong>'
+        f'&nbsp;&nbsp;·&nbsp;&nbsp;Illustrative only'
+        f'&nbsp;&nbsp;·&nbsp;&nbsp;Not live clinical data'
+        f'&nbsp;&nbsp;·&nbsp;&nbsp;Values are synthetic, geographically plausible'
         f'</div>',
         unsafe_allow_html=True,
     )
@@ -632,8 +647,8 @@ def _drilldown_banner() -> None:
         f'({dd["county"]} County)'
         f'</span>'
         f'<span style="color: {t.SLATE_BLUE}; margin-left: 12px; '
-        f'font-size: 0.88em;">Switch to <strong>Point of Care</strong> '
-        f'for clinical detail on this scope.</span>'
+        f'font-size: 0.88em;">Switch to <strong>Clinical Context View</strong> '
+        f'for local susceptibility detail on this scope.</span>'
         f'</div>'
         f'<a href="?clear_drilldown=1" target="_self" '
         f'style="background: white; border: 1px solid {t.COOL_GRAY}; '
@@ -681,25 +696,24 @@ def main() -> None:
     _drilldown_banner()
 
     tabs = st.tabs([
-        "Resistance Weather Map",
-        "Clinical Context View",
-        "Stewardship View",
-        "Today vs TRACE",
         "About & Architecture",
-        "Admin",
+        "Today vs TRACE",
+        "Resistance Weather Map",
+        "Stewardship View",
+        "Clinical Context View",
     ])
     with tabs[0]:
-        weather_map.render(filters)
-    with tabs[1]:
-        clinical_context.render(filters)
-    with tabs[2]:
-        stewardship.render(filters)
-    with tabs[3]:
-        today_vs_trace.render(filters)
-    with tabs[4]:
         about_architecture.render(filters)
-    with tabs[5]:
-        admin.render(filters)
+    with tabs[1]:
+        today_vs_trace.render(filters)
+    with tabs[2]:
+        weather_map.render(filters)
+    with tabs[3]:
+        stewardship.render(filters)
+    with tabs[4]:
+        clinical_context.render(filters)
+
+    _demo_footer_banner()
 
 
 if __name__ == "__main__":

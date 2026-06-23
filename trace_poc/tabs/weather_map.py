@@ -355,7 +355,7 @@ def _map_view(df_recent: pd.DataFrame, organism: str, drug: str,
                 "Map view",
                 options=list(ZOOM_PRESETS.keys()),
                 index=list(ZOOM_PRESETS.keys()).index(
-                    st.session_state.get("wm_zoom", "Statewide")
+                    st.session_state.get("wm_zoom", "Wasatch Front")
                 ),
                 horizontal=True,
                 label_visibility="collapsed",

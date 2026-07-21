@@ -13,8 +13,13 @@ Layout:
 """
 from __future__ import annotations
 
+import math
+from typing import Optional
+
 import streamlit as st
 
+from .. import data_loader as dl
+from .. import metrics as m
 from .. import components as ui
 from .. import theme as t
 
@@ -55,6 +60,94 @@ _COUNTY_ZIP = {
     "Utah":       ("84601", "Provo"),
     "Washington": ("84770", "St. George area"),
 }
+
+# Map the scenario organism to the drug actually present in the dataset that
+# we compute local susceptibility against. Each pair is clinically the same
+# agent shown in the scenario label, so the headline number always matches the
+# pathogen × drug displayed above it — no more E. coli numbers under a MRSA
+# label.
+_DATASET_DRUG = {
+    "Escherichia coli":         "Ciprofloxacin",
+    "Staphylococcus aureus":    "Clindamycin",
+    "MRSA":                     "Vancomycin",
+    "Streptococcus pneumoniae": "Azithromycin",
+    "Klebsiella pneumoniae":    "Ceftriaxone",
+    "Pseudomonas aeruginosa":   "Piperacillin-Tazobactam",
+    "Enterococcus species":     "Vancomycin",
+    "Group A Strep":            "Penicillin",
+    "C. difficile":             "Vancomycin",
+    "Haemophilus influenzae":   "Ceftriaxone",
+}
+
+
+def _local_susceptibility(scenario: dict) -> Optional[dict]:
+    """Compute real local susceptibility for the scenario's organism × drug
+    from the synthetic dataset, with a county → statewide fallback.
+
+    Returns None when the pair has no S/R isolates at all (e.g., organisms the
+    dataset does not carry a susceptibility panel for) — the caller then renders
+    an honest small-cell-suppression card rather than inventing a number.
+    """
+    organism = scenario["organism"]
+    drug = _DATASET_DRUG.get(organism)
+    county = scenario["county"]
+    if not drug:
+        return None
+
+    df_all = dl.load_test_results()
+    if df_all.empty:
+        return None
+    base = df_all[
+        (df_all["organism"] == organism)
+        & (df_all["drug"] == drug)
+        & df_all["susceptibility"].isin(["S", "R"])
+    ]
+    if base.empty:
+        return None
+
+    county_sub = base[base["county"] == county]
+    sub = county_sub
+    scope_label = f"{county} County"
+    county_scope = True
+    if county_sub["test_id"].nunique() < 30:
+        sub = base
+        scope_label = "Utah (pooled — sparse local data)"
+        county_scope = False
+
+    n = len(sub)
+    if n < 1:
+        return None
+    n_s = int((sub["susceptibility"] == "S").sum())
+    pct = 100.0 * n_s / n
+    ci_lo, ci_hi = m.wilson_ci(n_s / n, n)
+    baseline = 100.0 * (base["susceptibility"] == "S").mean()
+
+    # Odds ratio of resistance, county vs rest of state (only when we have a
+    # true county-level slice to contrast).
+    or_text = None
+    if county_scope:
+        a = int((county_sub["susceptibility"] == "R").sum())
+        b = int((county_sub["susceptibility"] == "S").sum())
+        rest = base[base["county"] != county]
+        c = int((rest["susceptibility"] == "R").sum())
+        d = int((rest["susceptibility"] == "S").sum())
+        if min(a, b, c, d) > 0:
+            odds = (a / b) / (c / d)
+            se = math.sqrt(1 / a + 1 / b + 1 / c + 1 / d)
+            lo = math.exp(math.log(odds) - 1.96 * se)
+            hi = math.exp(math.log(odds) + 1.96 * se)
+            or_text = f"OR {odds:.2f} [{lo:.2f}–{hi:.2f}] resistance vs rest of state"
+
+    return {
+        "drug": drug,
+        "pct": pct,
+        "ci_lo": ci_lo,
+        "ci_hi": ci_hi,
+        "n": n,
+        "scope_label": scope_label,
+        "baseline": baseline,
+        "or_text": or_text,
+    }
 
 _SCENARIO_LABEL = {
     "UTI / Outpatient":  "Uncomplicated UTI",
@@ -293,12 +386,17 @@ def _trace_panel(scenario: dict) -> None:
         unsafe_allow_html=True,
     )
 
-    st.markdown(
-        f'<div style="background: white; border: 1px solid {t.COOL_GRAY}; '
-        f'border-radius: 8px; overflow: hidden; '
-        f'box-shadow: 0 1px 4px rgba(7,26,61,0.06);">'
+    stats = _local_susceptibility(scenario)
 
-        # Header strip
+    facilities = dl.load_facilities()
+    n_hosp = (
+        int((facilities["facility_type"] == "hospital").sum())
+        if not facilities.empty else 0
+    )
+
+    # Header strip — SIMULATED indicator (teal), not a green "LIVE" light, so it
+    # doesn't fight the DEMO DATA banner.
+    header = (
         f'<div style="background: {t.PRIMARY_NAVY}; color: white; '
         f'padding: 12px 18px; display: flex; justify-content: space-between; '
         f'align-items: center; font-family: {t.FONT_UI};">'
@@ -306,21 +404,89 @@ def _trace_panel(scenario: dict) -> None:
         f'<span style="color: {t.TRACE_TEAL}; margin: 0 8px;">·</span>'
         f'<span style="color: #B7C4CE; font-size: 0.85em;">'
         f'Resistance intelligence at point of decision</span></div>'
-        f'<div style="font-size: 0.78em; color: {t.SOFT_GREEN};">'
+        f'<div style="font-size: 0.72em; color: {t.TRACE_TEAL}; '
+        f'letter-spacing: 0.06em; font-weight: 600;">'
         f'<span style="display:inline-block; width: 8px; height: 8px; '
-        f'background: {t.SOFT_GREEN}; border-radius: 50%; '
+        f'background: {t.TRACE_TEAL}; border-radius: 50%; '
         f'margin-right: 6px;"></span>'
-        f'LIVE · streaming from 31 facilities</div></div>'
+        f'SIMULATED · {n_hosp} contributing facilities</div></div>'
+    )
+
+    footer = (
+        f'<div style="background: {t.PRIMARY_NAVY}11; '
+        f'padding: 10px 18px; font-family: {t.FONT_UI}; '
+        f'font-size: 0.82em; color: {t.SLATE_BLUE};">'
+        f'<span style="background: {t.TRACE_TEAL}; color: white; '
+        f'padding: 2px 8px; border-radius: 3px; font-family: monospace; '
+        f'font-size: 0.82em;">⟨/⟩ CDS Hooks · order-select</span>'
+        f'&nbsp;&nbsp;Local susceptibility context surfaced '
+        f'<strong style="color: {t.PRIMARY_NAVY};">at the point of care</strong> '
+        f'— population-level data for clinical context'
+        f'</div>'
+    )
+
+    # Honest small-cell suppression card when the pair has no local data —
+    # this actively demonstrates Principle 3 rather than inventing a number.
+    if stats is None:
+        st.markdown(
+            f'<div style="background: white; border: 1px solid {t.COOL_GRAY}; '
+            f'border-radius: 8px; overflow: hidden; '
+            f'box-shadow: 0 1px 4px rgba(7,26,61,0.06);">'
+            f'{header}'
+            f'<div style="background: {t.MIST_WHITE}; padding: 8px 18px; '
+            f'border-bottom: 1px solid {t.COOL_GRAY}55; '
+            f'font-family: {t.FONT_UI}; font-size: 0.82em; color: {t.SLATE_BLUE};">'
+            f'<strong style="color: {t.PRIMARY_NAVY};">{scenario["pair"]}</strong>'
+            f'&nbsp;&nbsp;|&nbsp;&nbsp;{scenario["county"]} County'
+            f'&nbsp;&nbsp;|&nbsp;&nbsp;trailing 24 mo'
+            f'</div>'
+            f'<div style="padding: 22px 18px;">'
+            f'<div style="font-family: {t.FONT_UI}; font-size: 0.78em; '
+            f'color: {t.SLATE_BLUE}; letter-spacing: 0.06em; '
+            f'font-weight: 600;">LOCAL SUSCEPTIBILITY</div>'
+            f'<div style="font-family: {t.FONT_HEADING}; font-size: 2.4em; '
+            f'font-weight: 700; color: {t.SLATE_BLUE}; line-height: 1.1; '
+            f'margin: 6px 0;">Suppressed</div>'
+            f'<div style="font-size: 0.85em; color: {t.INK}; line-height: 1.5;">'
+            f'Local isolate volume for this pathogen–drug pair is below the '
+            f'reporting threshold. TRACE suppresses rather than borrowing a '
+            f'state average — an empty cell is an honest signal.</div>'
+            f'</div>'
+            f'{footer}'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+        return
+
+    pct = stats["pct"]
+    delta = pct - stats["baseline"]
+    delta_tone = "watch" if delta <= -3 else ("stable" if delta >= 3 else "neutral")
+
+    chips = ""
+    if stats["or_text"]:
+        or_tone = "watch" if delta <= -3 else "neutral"
+        chips += ui.evidence_chip(stats["or_text"], tone=or_tone)
+    chips += ui.evidence_chip(
+        f"{delta:+.0f} pts vs statewide {stats['baseline']:.0f}%", tone=delta_tone
+    )
+    chips += ui.evidence_chip(
+        f"n = {stats['n']:,} · trailing 24 mo", tone="neutral"
+    )
+
+    st.markdown(
+        f'<div style="background: white; border: 1px solid {t.COOL_GRAY}; '
+        f'border-radius: 8px; overflow: hidden; '
+        f'box-shadow: 0 1px 4px rgba(7,26,61,0.06);">'
+        f'{header}'
 
         # Meta row
         f'<div style="background: {t.MIST_WHITE}; padding: 8px 18px; '
         f'border-bottom: 1px solid {t.COOL_GRAY}55; '
         f'font-family: {t.FONT_UI}; font-size: 0.82em; color: {t.SLATE_BLUE};">'
         f'<strong style="color: {t.PRIMARY_NAVY};">{scenario["pair"]}</strong>'
-        f'&nbsp;&nbsp;|&nbsp;&nbsp;ZIP <strong>{scenario["zip"]}</strong> · '
-        f'{scenario["zip_label"]}'
+        f'&nbsp;&nbsp;|&nbsp;&nbsp;{stats["scope_label"]}'
         f'&nbsp;&nbsp;|&nbsp;&nbsp;Updated <strong>April 2026</strong>'
-        f'&nbsp;&nbsp;|&nbsp;&nbsp;n=<strong>41</strong> trailing 12 mo'
+        f'&nbsp;&nbsp;|&nbsp;&nbsp;n=<strong>{stats["n"]:,}</strong> trailing 24 mo'
         f'</div>'
 
         # Big stat
@@ -330,17 +496,14 @@ def _trace_panel(scenario: dict) -> None:
         f'font-weight: 600;">LOCAL SUSCEPTIBILITY</div>'
         f'<div style="font-family: {t.FONT_HEADING}; font-size: 3.6em; '
         f'font-weight: 700; color: {t.PRIMARY_NAVY}; line-height: 1; '
-        f'margin: 4px 0;">66<span style="font-size: 0.4em; '
+        f'margin: 4px 0;">{pct:.0f}<span style="font-size: 0.4em; '
         f'color: {t.SLATE_BLUE};">%</span></div>'
         f'<div style="font-size: 0.85em; color: {t.INK};">'
-        f'95% Wilson CI <strong>58–73%</strong> '
-        f'<span style="color: {t.SLATE_BLUE};">· vs regional baseline 73%</span>'
+        f'95% Wilson CI <strong>{stats["ci_lo"]:.0f}–{stats["ci_hi"]:.0f}%</strong> '
+        f'<span style="color: {t.SLATE_BLUE};">· vs statewide baseline '
+        f'{stats["baseline"]:.0f}%</span>'
         f'</div>'
-        f'<div style="margin-top: 10px;">'
-        f'{ui.evidence_chip("OR 1.41 [1.05–1.91] vs regional", tone="watch")}'
-        f'{ui.evidence_chip("YoY +9% relative risk", tone="watch")}'
-        f'{ui.evidence_chip("Cochran-Armitage p = 0.018", tone="neutral")}'
-        f'</div>'
+        f'<div style="margin-top: 10px;">{chips}</div>'
         f'</div>'
 
         # Comparison strip
@@ -367,23 +530,12 @@ def _trace_panel(scenario: dict) -> None:
         f'letter-spacing: 0.05em; font-weight: 600; '
         f'text-transform: uppercase;">Statistical depth</div>'
         f'<div style="font-weight: 600; color: {t.PRIMARY_NAVY}; '
-        f'font-size: 0.95em;">CI · OR · trend</div>'
+        f'font-size: 0.95em;">Wilson CI · OR</div>'
         f'<div style="font-size: 0.75em; color: {t.SLATE_BLUE};">'
-        f'Wilson, OR, CA, YoY RR</div></div>'
+        f'vs 1 point estimate</div></div>'
         f'</div>'
 
-        # Footer
-        f'<div style="background: {t.PRIMARY_NAVY}11; '
-        f'padding: 10px 18px; font-family: {t.FONT_UI}; '
-        f'font-size: 0.82em; color: {t.SLATE_BLUE};">'
-        f'<span style="background: {t.TRACE_TEAL}; color: white; '
-        f'padding: 2px 8px; border-radius: 3px; font-family: monospace; '
-        f'font-size: 0.82em;">⟨/⟩ CDS Hooks · order-select</span>'
-        f'&nbsp;&nbsp;Local susceptibility context surfaced '
-        f'<strong style="color: {t.PRIMARY_NAVY};">at the point of care</strong> '
-        f'— population-level data for clinical context'
-        f'</div>'
-
+        f'{footer}'
         f'</div>',
         unsafe_allow_html=True,
     )
@@ -399,7 +551,7 @@ def _contrast_strip(scenario: dict) -> None:
     )
     cells = [
         ("Granularity", "1 unit (state)", "29 ZIP units",
-         "≥3,400× finer geographic resolution."),
+         "29 reporting units vs a single statewide value."),
         ("Recency", "12–18 mo lag", "Monthly update cycle",
          "More recent than annual state antibiograms."),
         ("Statistical depth", "Single point estimate", "CI · OR · trend",
@@ -457,14 +609,15 @@ def _closing_cta() -> None:
         f'</div>'
         f'<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">'
         f'<div><div style="font-family: {t.FONT_HEADING}; font-size: 2em; '
-        f'font-weight: 700; color: {t.TRACE_TEAL};">~36M</div>'
+        f'font-weight: 700; color: {t.TRACE_TEAL};">~236M</div>'
         f'<div style="color: #B7C4CE; font-size: 0.8em;">'
-        f'U.S. outpatient antibiotic Rx / yr potentially affected</div></div>'
+        f'U.S. outpatient antibiotic prescriptions per year '
+        f'(CDC, 2022)</div></div>'
         f'<div><div style="font-family: {t.FONT_HEADING}; font-size: 2em; '
         f'font-weight: 700; color: {t.TRACE_TEAL};">≥28%</div>'
         f'<div style="color: #B7C4CE; font-size: 0.8em;">'
-        f'CDC-estimated outpatient antibiotic prescriptions unnecessary '
-        f'(2016 MMWR estimate)</div></div>'
+        f'of outpatient antibiotic prescriptions estimated unnecessary '
+        f'(CDC, MMWR 2016)</div></div>'
         f'</div>'
         f'</div>',
         unsafe_allow_html=True,

@@ -97,7 +97,12 @@ PRINCIPLES = [
             "resistance context per current FDA guidance. It surfaces "
             "population-level context. It does not select, rank, or "
             "recommend therapies for individual patients. Every view "
-            "reinforces this boundary in both language and framing."
+            "reinforces this boundary in both language and framing. "
+            "<em>&ldquo;CDS Hooks&rdquo; refers to the HL7 interoperability "
+            "standard for surfacing information inside an EHR — distinct from "
+            "&ldquo;clinical decision support&rdquo; as a regulatory device "
+            "category. TRACE uses the former to display context; it is not "
+            "the latter.</em>"
         ),
         "tags": None,
     },
@@ -237,10 +242,10 @@ def _footer_note() -> None:
         f'urinary isolates per CDC AR&amp;PW reporting bands) with stochastic '
         f'per-ZIP variation. The map, trend chart, hospital benchmarks, and '
         f'hotspot signals are for visual demonstration of the TRACE value '
-        f'proposition only. The underlying production system uses the '
-        f'CSV / parquet aggregation pipeline prototyped in '
-        f'<code>trace_cds_poc/</code> and the governance modules prototyped '
-        f'in <code>ui_poc/</code>.'
+        f'proposition only. The underlying production system uses a '
+        f'CSV / parquet aggregation pipeline and a separate governance layer '
+        f'(data-quality gates, participation rules, small-cell suppression) '
+        f'that runs before any analytics are surfaced.'
         f'</div>',
         unsafe_allow_html=True,
     )

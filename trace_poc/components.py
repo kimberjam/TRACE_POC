@@ -305,12 +305,15 @@ def hero_stat_card(
 
     live_html = ""
     if live:
+        # Demo build: a neutral teal "SIMULATED" marker rather than a green
+        # "LIVE" light, so it doesn't contradict the DEMO DATA banner.
         live_html = (
-            f'<div style="font-size: 0.75em; color: {t.SOFT_GREEN}; '
+            f'<div style="font-size: 0.72em; color: {t.TRACE_TEAL}; '
+            f'letter-spacing: 0.06em; font-weight: 600; '
             f'display: flex; align-items: center; gap: 6px;">'
             f'<span style="width: 7px; height: 7px; background: '
-            f'{t.SOFT_GREEN}; border-radius: 50%; display: inline-block;">'
-            f'</span>LIVE</div>'
+            f'{t.TRACE_TEAL}; border-radius: 50%; display: inline-block;">'
+            f'</span>SIMULATED</div>'
         )
 
     comparison_html = ""

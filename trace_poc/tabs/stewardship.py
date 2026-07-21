@@ -190,18 +190,20 @@ def render(filters: dict) -> None:
                 )
 
         ui.section_header("Stewardship signals")
+        st.caption("Illustrative examples of the signals TRACE surfaces once "
+                   "connected to a facility feed.")
         ui.branded_alert(
             "Fluoroquinolone resistance trending up",
-            "Local E. coli ciprofloxacin susceptibility has declined this "
-            "quarter. Fluoroquinolone resistance rates are higher than "
-            "the prior 90-day window for this area.",
+            "Example signal — local E. coli ciprofloxacin susceptibility "
+            "declining versus the prior window would flag here for "
+            "stewardship review.",
             tone="info",
             icon="ℹ",
         )
         ui.branded_alert(
-            "Broad-spectrum use elevated in ICU",
-            "ICU broad-spectrum antibiotic use exceeds peer ICUs by "
-            "approximately 18% based on available prescribing data.",
+            "Broad-spectrum use elevated vs peers",
+            "Example signal — a facility running broad-spectrum use above its "
+            "peer group would surface here with the contributing agents.",
             tone="info",
             icon="ℹ",
         )

@@ -72,8 +72,8 @@ _EMPIRIC_OPTIONS = {
     "Bloodstream": {
         "Inpatient": [
             ("Vancomycin (empiric MRSA)", ["Vancomycin"]),
-            ("Cefazolin (if MSSA confirmed)", ["Oxacillin"]),
-            ("Daptomycin (vanc alternative)", ["Linezolid"]),
+            ("Oxacillin — MSSA marker", ["Oxacillin"]),
+            ("Linezolid (MRSA alternative)", ["Linezolid"]),
         ],
         "ICU": [
             ("Vancomycin + pip-tazo",
@@ -95,7 +95,6 @@ _EMPIRIC_OPTIONS = {
     "GI": {
         "Inpatient": [
             ("Vancomycin PO", ["Vancomycin"]),
-            ("Fidaxomicin (preferred)", ["Linezolid"]),
         ],
     },
 }
@@ -186,7 +185,7 @@ def render(filters: dict) -> None:
             chips.append((f"N = {cov.n_isolates:,} isolates", "neutral"))
 
             ui.hero_stat_card(
-                brand_title=f"TRACE · Point of Care intelligence",
+                brand_title="TRACE · Clinical Context",
                 meta_text=(
                     f"<strong style='color:{t.PRIMARY_NAVY};'>"
                     f"{organism} × {top_label}</strong>"

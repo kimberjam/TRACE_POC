@@ -77,6 +77,21 @@ def _is_stable(n: int, ci_lo, ci_hi, min_isolates: int, max_ci_halfwidth: Option
     return True
 
 
+def is_stable(
+    n: int,
+    ci_lo: Optional[float] = None,
+    ci_hi: Optional[float] = None,
+    min_isolates: int = DEFAULT_MIN_ISOLATES,
+    max_ci_halfwidth: Optional[float] = DEFAULT_MAX_CI_HALFWIDTH,
+) -> bool:
+    """Same isolate-count + CI-width stability bar `resolve_geography` uses,
+    exposed for tabs that already know their geographic scope (e.g. a
+    Stewardship or Clinical Context view scoped by sidebar county filters,
+    not a single ZIP) and just need to know whether a number computed over
+    `n` isolates is reliable enough to show without qualification."""
+    return _is_stable(n, ci_lo, ci_hi, min_isolates, max_ci_halfwidth)
+
+
 def _resolve(
     df: pd.DataFrame,
     zip_code: str,

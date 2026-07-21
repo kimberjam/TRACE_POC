@@ -13,6 +13,7 @@ import pandas as pd
 import streamlit as st
 
 from .. import data_loader as dl
+from .. import geography as geo
 from .. import metrics as m
 from .. import components as ui
 from .. import theme as t
@@ -73,43 +74,53 @@ def render(filters: dict) -> None:
         "moderate burden" if rbi < 30 else "elevated burden"
     )
 
-    ui.hero_stat_card(
-        brand_title="TRACE · Stewardship intelligence",
-        meta_text=(
-            f"<strong style='color:{t.PRIMARY_NAVY};'>"
-            f"{anchor_fac_name}</strong>"
-            f"&nbsp;&nbsp;|&nbsp;&nbsp;{', '.join(filters['counties'])}"
-            f"&nbsp;&nbsp;|&nbsp;&nbsp;trailing 24 months"
-            f"&nbsp;&nbsp;|&nbsp;&nbsp;NHSN AUR-aligned"
-        ),
-        stat_label="RESISTANCE BURDEN INDEX",
-        stat_value=f"{rbi:.1f}",
-        stat_unit="/100",
-        sub_text=(
-            f"Composite weighted across ESBL, CRE, MRSA, VRE, and "
-            f"Pseudomonas–Pip-Tazo pairs — currently in the "
-            f"<strong>{rbi_tone_text}</strong> band."
-        ),
-        chips=chips,
-        comparison_cells=[
-            (
-                "Anchor SAAR",
-                f"{anchor_saar:.2f}" if anchor_saar is not None else "—",
-                "1.00 = at peer level",
+    # A composite index built on too few isolates is noise, not signal — same
+    # n>=30 stability bar geography.py applies to a ZIP-level number applies
+    # here to the county selection the sidebar has already narrowed to.
+    if not geo.is_stable(n_total_iso):
+        ui.empty_state(
+            f"Selected scope has too few isolates for a reliable Resistance "
+            f"Burden Index (n={n_total_iso:,}, need ≥{geo.DEFAULT_MIN_ISOLATES}).",
+            "Add more counties in the sidebar to widen the scope.",
+        )
+    else:
+        ui.hero_stat_card(
+            brand_title="TRACE · Stewardship intelligence",
+            meta_text=(
+                f"<strong style='color:{t.PRIMARY_NAVY};'>"
+                f"{anchor_fac_name}</strong>"
+                f"&nbsp;&nbsp;|&nbsp;&nbsp;{', '.join(filters['counties'])}"
+                f"&nbsp;&nbsp;|&nbsp;&nbsp;trailing 24 months"
+                f"&nbsp;&nbsp;|&nbsp;&nbsp;NHSN AUR-aligned"
             ),
-            (
-                "Broad-spectrum rate",
-                f"{broad_rate:.0f}",
-                "per 1,000 isolates",
+            stat_label="RESISTANCE BURDEN INDEX",
+            stat_value=f"{rbi:.1f}",
+            stat_unit="/100",
+            sub_text=(
+                f"Composite weighted across ESBL, CRE, MRSA, VRE, and "
+                f"Pseudomonas–Pip-Tazo pairs — currently in the "
+                f"<strong>{rbi_tone_text}</strong> band."
             ),
-            (
-                "Resistance burden",
-                f"{rbi:.1f}",
-                "composite, 0–100",
-            ),
-        ],
-        live=True,
-    )
+            chips=chips,
+            comparison_cells=[
+                (
+                    "Anchor SAAR",
+                    f"{anchor_saar:.2f}" if anchor_saar is not None else "—",
+                    "1.00 = at peer level",
+                ),
+                (
+                    "Broad-spectrum rate",
+                    f"{broad_rate:.0f}",
+                    "per 1,000 isolates",
+                ),
+                (
+                    "Resistance burden",
+                    f"{rbi:.1f}",
+                    "composite, 0–100",
+                ),
+            ],
+            live=True,
+        )
 
     st.markdown("")
 
@@ -239,15 +250,23 @@ def render(filters: dict) -> None:
                   reverse=True)
 
         # Build custom HTML table
-        def _saar_chip(v):
+        # A facility's own SAAR/RBI on too few isolates isn't a reliable
+        # signal, even though the number itself computes fine — flag it as
+        # low-volume rather than coloring it concern/watch/stable, which
+        # would imply a confidence the sample doesn't support.
+        def _saar_chip(v, n):
             if v is None:
                 return f'<span style="color:{t.SLATE_BLUE};">—</span>'
+            if not geo.is_stable(n):
+                return ui.evidence_chip(f"{v:.2f} (n<{geo.DEFAULT_MIN_ISOLATES})", tone="neutral")
             tone = "concern" if v >= 1.3 else ("watch" if v >= 1.1 else "stable")
             return ui.evidence_chip(f"{v:.2f}", tone=tone)
 
-        def _rbi_chip(v):
+        def _rbi_chip(v, n):
             if v is None:
                 return f'<span style="color:{t.SLATE_BLUE};">—</span>'
+            if not geo.is_stable(n):
+                return ui.evidence_chip(f"{v:.1f} (n<{geo.DEFAULT_MIN_ISOLATES})", tone="neutral")
             tone = "concern" if v >= 30 else ("watch" if v >= 15 else "stable")
             return ui.evidence_chip(f"{v:.1f}", tone=tone)
 
@@ -289,9 +308,9 @@ def render(filters: dict) -> None:
                 f'font-size:0.85em; color:{t.SLATE_BLUE}; '
                 f'text-transform:capitalize;">{r["type"]}</td>'
                 f'<td style="padding:10px 14px; text-align:center;">'
-                f'{_saar_chip(r["saar"])}</td>'
+                f'{_saar_chip(r["saar"], r["n"])}</td>'
                 f'<td style="padding:10px 14px; text-align:center;">'
-                f'{_rbi_chip(r["rbi"])}</td>'
+                f'{_rbi_chip(r["rbi"], r["n"])}</td>'
                 f'<td style="padding:10px 14px; text-align:right; '
                 f'font-family:monospace; font-size:0.88em; '
                 f'color:{t.INK};">{r["n"]:,}</td>'
@@ -315,7 +334,11 @@ def render(filters: dict) -> None:
             f'font-weight:600;">watch</span>; '
             f'&lt; 1.10 as <span style="color:{t.SOFT_GREEN}; '
             f'font-weight:600;">stable</span>. '
-            f'Same thresholds applied at 30 / 15 for the Resistance Burden Index.'
+            f'Same thresholds applied at 30 / 15 for the Resistance Burden Index. '
+            f'Facilities below {geo.DEFAULT_MIN_ISOLATES} isolates show '
+            f'"(n&lt;{geo.DEFAULT_MIN_ISOLATES})" instead of a concern/watch/stable '
+            f'tone — the number isn\'t wrong, but a color-coded judgment on that '
+            f'few isolates would overstate confidence.'
             f'</div>',
             unsafe_allow_html=True,
         )

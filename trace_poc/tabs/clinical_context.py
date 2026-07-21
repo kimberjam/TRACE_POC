@@ -17,6 +17,7 @@ import pandas as pd
 import streamlit as st
 
 from .. import data_loader as dl
+from .. import geography as geo
 from .. import metrics as m
 from .. import guideline_content as gc
 from .. import components as ui
@@ -171,7 +172,15 @@ def render(filters: dict) -> None:
     if options_for_setting:
         top_label, top_drugs = options_for_setting[0]
         cov = m.empiric_coverage(df, organism, top_drugs)
-        if cov.pct_covered is not None and cov.n_isolates > 0:
+        has_isolates = cov.pct_covered is not None and cov.n_isolates > 0
+        if has_isolates and not geo.is_stable(cov.n_isolates):
+            ui.empty_state(
+                f"Local isolate volume is below the reporting threshold "
+                f"(n={cov.n_isolates}, need ≥{geo.DEFAULT_MIN_ISOLATES}).",
+                "TRACE suppresses rather than showing a percentage built on "
+                "too few isolates — try widening the county selection.",
+            )
+        elif has_isolates:
             ci_lo, ci_hi = m.wilson_ci(cov.pct_covered / 100.0, cov.n_isolates)
             chips = []
             if sus_table is not None and not sus_table.empty:
@@ -272,22 +281,35 @@ def render(filters: dict) -> None:
                 reverse=True,
             )
 
-            # Render as a sorted horizontal bar chart
+            # Render as a sorted horizontal bar chart. Regimens below the
+            # isolate-count threshold are shown in a muted tone rather than
+            # hidden — same "flag it, don't hide it" rule geography.py
+            # applies to ZIP-level suppression.
             chart_df = pd.DataFrame([
                 {
                     "Regimen": r.regimen_label,
                     "Coverage (%)": r.pct_covered if r.pct_covered is not None else 0,
                     "N isolates": r.n_isolates,
+                    "Reliability": "Stable" if geo.is_stable(r.n_isolates) else "Low volume",
                 }
                 for r in results
             ])
+            n_low_volume = int((chart_df["Reliability"] == "Low volume").sum())
             chart = (
                 alt.Chart(chart_df)
-                .mark_bar(color=t.TRACE_TEAL)
+                .mark_bar()
                 .encode(
                     x=alt.X("Coverage (%):Q", scale=alt.Scale(domain=[0, 100])),
                     y=alt.Y("Regimen:N", sort="-x", title=None),
-                    tooltip=["Regimen", "Coverage (%)", "N isolates"],
+                    color=alt.Color(
+                        "Reliability:N",
+                        scale=alt.Scale(
+                            domain=["Stable", "Low volume"],
+                            range=[t.TRACE_TEAL, t.COOL_GRAY],
+                        ),
+                        legend=alt.Legend(title=None, orient="bottom"),
+                    ),
+                    tooltip=["Regimen", "Coverage (%)", "N isolates", "Reliability"],
                 )
                 .properties(height=max(120, 36 * len(chart_df)))
             )
@@ -295,6 +317,11 @@ def render(filters: dict) -> None:
                 align="left", baseline="middle", dx=4, color=t.INK,
             ).encode(text=alt.Text("Coverage (%):Q", format=".0f"))
             st.altair_chart(chart + text, use_container_width=True)
+            if n_low_volume:
+                st.caption(
+                    f"{n_low_volume} regimen(s) shown in gray have fewer than "
+                    f"{geo.DEFAULT_MIN_ISOLATES} isolates — coverage may not be reliable."
+                )
 
             ui.evidence_strip(
                 county=", ".join(filters["counties"]),
@@ -309,7 +336,11 @@ def render(filters: dict) -> None:
             if sus_table.empty:
                 ui.empty_state()
             else:
-                display = sus_table.rename(columns={
+                display = sus_table.copy()
+                display["Stable"] = display["n_isolates"].apply(
+                    lambda n: "✓" if geo.is_stable(n) else f"n<{geo.DEFAULT_MIN_ISOLATES}"
+                )
+                display = display.rename(columns={
                     "drug": "Antibiotic",
                     "pct_susceptible": "% Susceptible",
                     "n_isolates": "N isolates",

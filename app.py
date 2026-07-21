@@ -4,8 +4,8 @@ Antibiotic stewardship and antimicrobial resistance dashboard.
 Aligned with the CDC NHSN AUR module data structure.
 
 Two top-level modes:
-  - Investor Demo: 6-tab dashboard (Resistance Weather Map / Point of Care /
-    Stewardship View / Today vs TRACE / About & Architecture / Admin)
+  - Investor Demo: 6-tab dashboard (About & Architecture / Today vs TRACE /
+    Resistance Weather Map / Stewardship View / Clinical Context View / Admin)
   - EHR Sandbox: simulated EHR with TRACE Antibiogram side panel
 
 Run:  streamlit run app.py
@@ -27,6 +27,7 @@ from trace_poc.tabs import (
     about_architecture,
     admin,
     ehr_sandbox,
+    data_engine,
 )
 
 
@@ -701,6 +702,8 @@ def main() -> None:
         "Resistance Weather Map",
         "Stewardship View",
         "Clinical Context View",
+        "Data Engine",
+        "Admin",
     ])
     with tabs[0]:
         about_architecture.render(filters)
@@ -712,6 +715,10 @@ def main() -> None:
         stewardship.render(filters)
     with tabs[4]:
         clinical_context.render(filters)
+    with tabs[5]:
+        data_engine.render(filters)
+    with tabs[6]:
+        admin.render(filters)
 
     _demo_footer_banner()
 

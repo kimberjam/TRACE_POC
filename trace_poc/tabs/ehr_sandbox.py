@@ -21,6 +21,7 @@ import pandas as pd
 import streamlit as st
 
 from .. import data_loader as dl
+from .. import geography as geo
 from .. import metrics as m
 from .. import theme as t
 
@@ -62,7 +63,7 @@ PATIENTS = [
         "scenario": {
             "organism": "Streptococcus pneumoniae",
             "specimen": "Respiratory",
-            "encounter": "Inpatient",
+            "encounter": "Outpatient",
             "infection": "Community-acquired pneumonia",
         },
     },
@@ -324,7 +325,7 @@ def _ehr_subheader() -> None:
         f'letter-spacing: 0.08em; display: inline-block;">'
         f'SANDBOX · SIMULATED EHR</div>'
         f'<div style="font-size: 0.8em; margin-top: 4px; opacity: 0.85;">'
-        f'Internal Medicine · Red Rock Regional · 22:45</div>'
+        f'Internal Medicine · Midvalley Clinic · 10:24</div>'
         f'</div>'
         f'</div>',
         unsafe_allow_html=True,
@@ -559,38 +560,16 @@ def _trace_panel(patient: dict, df: pd.DataFrame) -> None:
     zip_code = patient["zip"]
 
     # Pull the actual susceptibility profile for this organism × this ZIP.
-    # Fallback chain: ZIP → county → statewide, tracking which level is used.
-    data_scope_label = f"ZIP {zip_code}"
-    sub = df[
-        (df["organism"] == organism)
-        & (df["patient_zip"] == zip_code)
-        & df["susceptibility"].isin(["S", "R"])
-    ]
-
-    if sub.empty or sub["test_id"].nunique() < 5:
-        # Fallback 1: county level
-        zip_map = dl.load_zip_county_map()
-        c = zip_map[zip_map["zip"] == zip_code]
-        if not c.empty:
-            cname = c["county"].iloc[0]
-            sub_county = df[
-                (df["organism"] == organism)
-                & (df["county"] == cname)
-                & df["susceptibility"].isin(["S", "R"])
-            ]
-            if not sub_county.empty and sub_county["test_id"].nunique() >= 5:
-                sub = sub_county
-                data_scope_label = f"{cname} County"
-            else:
-                # Fallback 2: statewide
-                sub_state = df[
-                    (df["organism"] == organism)
-                    & df["susceptibility"].isin(["S", "R"])
-                ]
-                sub = sub_state
-                data_scope_label = "statewide (sparse local data)"
-
-    n = sub["test_id"].nunique() if not sub.empty else 0
+    # geography.py owns the ZIP -> county -> region -> statewide fallback
+    # chain (n>=30 + Wilson-CI stability, same standard the Weather Map
+    # uses) -- this used to be a separate, looser (n>=5, no region tier)
+    # copy of the same logic living only in this file.
+    resolution = geo.resolve_organism_scope(df, zip_code, organism)
+    data_scope_label = resolution.resolved_label
+    if resolution.resolved_level == geo.LEVEL_INSUFFICIENT:
+        data_scope_label = "statewide (sparse local data)"
+    sub = resolution.matched_rows if resolution.matched_rows is not None else df.iloc[0:0]
+    n = resolution.n_isolates
 
     # Panel header
     st.markdown(
@@ -607,12 +586,21 @@ def _trace_panel(patient: dict, df: pd.DataFrame) -> None:
         unsafe_allow_html=True,
     )
 
-    # Alert card (only fires for cases where coverage is concerning)
-    alert_text = ""
-    if organism == "Streptococcus pneumoniae":
-        alert_text = (
-            f"Local S. pneumoniae susceptibility — {data_scope_label}"
+    # Alert card. Warm colors are reserved for genuine clinical concern; a
+    # neutral "here is local context" note uses the informational (blue) tone.
+    if organism == "Staphylococcus aureus":
+        # Documented prior MRSA + elevated local MRSA share — a real concern.
+        tone_color, tone_bg, icon = t.MUTED_AMBER, "#FFFBED", "⚠"
+        alert_text = "Elevated local MRSA prevalence in recent isolates"
+        body = (
+            f"MRSA accounts for an elevated share of S. aureus isolates "
+            f"in ZIP <strong>{zip_code}</strong> over the last 12 months "
+            f"(n={n} isolates). This patient has a documented prior MRSA isolate. "
+            f"Local susceptibility context is shown below."
         )
+    elif organism == "Streptococcus pneumoniae":
+        tone_color, tone_bg, icon = t.SOFT_BLUE, "#F4F8FC", "ℹ"
+        alert_text = f"Local S. pneumoniae susceptibility — {data_scope_label}"
         body = (
             f"Local susceptibility for S. pneumoniae across "
             f"<strong>{n} isolates</strong> — scope: "
@@ -621,16 +609,9 @@ def _trace_panel(patient: dict, df: pd.DataFrame) -> None:
             f"the nearest available geographic level. Values shown with "
             f"Wilson-score 95% CIs."
         )
-    elif organism == "Staphylococcus aureus":
-        alert_text = "Elevated local MRSA prevalence in recent isolates"
-        body = (
-            f"MRSA accounts for an elevated share of S. aureus isolates "
-            f"in ZIP <strong>{zip_code}</strong> over the last 90 days "
-            f"(n={n} isolates). This patient has a documented prior MRSA isolate. "
-            f"Local susceptibility context is shown below."
-        )
     else:
-        alert_text = "Local susceptibility available"
+        tone_color, tone_bg, icon = t.SOFT_BLUE, "#F4F8FC", "ℹ"
+        alert_text = "Local susceptibility context available"
         body = (
             f"Local susceptibility for {organism} in ZIP "
             f"<strong>{zip_code}</strong> across {n} isolates over the "
@@ -638,11 +619,11 @@ def _trace_panel(patient: dict, df: pd.DataFrame) -> None:
         )
 
     st.markdown(
-        f'<div style="background: #FFFBED; '
-        f'border-left: 4px solid {t.MUTED_AMBER}; '
+        f'<div style="background: {tone_bg}; '
+        f'border-left: 4px solid {tone_color}; '
         f'padding: 14px; margin-top: 10px; font-family: {t.FONT_UI};">'
         f'<div style="display: flex; gap: 10px; align-items: flex-start;">'
-        f'<div style="color: {t.MUTED_AMBER}; font-size: 1.2em;">⚠</div>'
+        f'<div style="color: {tone_color}; font-size: 1.2em;">{icon}</div>'
         f'<div style="flex: 1;">'
         f'<div style="font-weight: 600; color: {t.PRIMARY_NAVY}; '
         f'font-size: 0.95em;">{alert_text}</div>'
@@ -695,8 +676,7 @@ def _trace_panel(patient: dict, df: pd.DataFrame) -> None:
         f'color: {t.SLATE_BLUE};">'
         f'<strong style="color: {t.PRIMARY_NAVY};">TRACE</strong> · '
         f'{data_scope_label} · updated Apr 2026<br/>'
-        f'Full local antibiogram · Method: Wilson-score CI, n≥30 threshold · '
-        f'<a href="#" style="color: {t.SLATE_BLUE};">Dismiss</a>'
+        f'Full local antibiogram · Method: Wilson-score CI, n≥30 threshold'
         f'</div>',
         unsafe_allow_html=True,
     )

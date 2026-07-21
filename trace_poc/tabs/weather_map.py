@@ -21,6 +21,7 @@ import streamlit as st
 
 from .. import data_loader as dl
 from .. import components as ui
+from .. import geography as geo
 from .. import theme as t
 
 
@@ -388,17 +389,22 @@ def _map_view(df_recent: pd.DataFrame, organism: str, drug: str,
             )
             .reset_index()
         )
-        agg = agg[agg["n_iso"] >= 30]  # small-cell suppression
+        all_zips = set(agg["patient_zip"])
+        agg = agg[agg["n_iso"] >= geo.DEFAULT_MIN_ISOLATES]  # small-cell suppression
         agg["pct_s"] = (100 * agg["n_s"] / agg["n_iso"]).round(1)
+        suppressed_zips = sorted(all_zips - set(agg["patient_zip"]))
 
         if agg.empty:
-            ui.empty_state("All ZIPs suppressed (n<30).")
+            ui.empty_state(f"All ZIPs suppressed (n<{geo.DEFAULT_MIN_ISOLATES}).")
             return
 
         # Render inline SVG of Utah with county lines + ZIP bubbles overlaid.
         svg = _render_utah_svg(agg, zoom=zoom, organism=organism)
         st.markdown(svg, unsafe_allow_html=True)
         _render_legend()
+
+        if suppressed_zips:
+            _render_suppressed_note(df_recent, suppressed_zips, organism, drug)
 
 
 # Zoom presets — change the SVG viewBox to focus on a region.
@@ -566,34 +572,78 @@ def _render_legend() -> None:
     )
 
 
-def _time_window_slider() -> int:
-    """Renders the time window slider — returns trailing days."""
+def _render_suppressed_note(
+    df_recent: pd.DataFrame, suppressed_zips: list[str], organism: str, drug: str
+) -> None:
+    """ZIPs dropped from the map for this pairing aren't just silently
+    gone — show what the adaptive-geography engine found when it zoomed
+    out for them, the same way the EHR Sandbox's antibiogram panel does.
+    Capped at 3 examples so this stays a caption, not a second map.
+    """
+    examples = []
+    for zip_code in suppressed_zips[:3]:
+        res = geo.resolve_geography(df_recent, zip_code, organism, drug)
+        if res.stable:
+            examples.append(f"ZIP {zip_code} → {res.resolved_label} (n={res.n_isolates}, {res.pct_susceptible}% susceptible)")
+        else:
+            examples.append(f"ZIP {zip_code} → not stable at any resolution yet (n={res.n_isolates} statewide)")
+
+    more = f", +{len(suppressed_zips) - 3} more" if len(suppressed_zips) > 3 else ""
+    st.caption(
+        f"{len(suppressed_zips)} ZIP(s) suppressed for this pairing (n<{geo.DEFAULT_MIN_ISOLATES}) "
+        f"— not shown on the map, but here's what the adaptive-geography engine found when it "
+        f"zoomed out: {'; '.join(examples)}{more}."
+    )
+
+
+# Window-end labels → the month-end date the trailing window closes on.
+_WINDOW_END_DATES = {
+    "May '25": pd.Timestamp("2025-05-31"),
+    "Jul":     pd.Timestamp("2025-07-31"),
+    "Sep":     pd.Timestamp("2025-09-30"),
+    "Nov":     pd.Timestamp("2025-11-30"),
+    "Jan '26": pd.Timestamp("2026-01-31"),
+    "Mar '26": pd.Timestamp("2026-03-31"),
+}
+
+
+def _time_window_slider() -> pd.Timestamp:
+    """Render the time-window slider and return the selected window-end date.
+
+    The map, KPIs, and hotspots all recompute against this end date, so the
+    control is live rather than decorative.
+    """
+    current = st.session_state.get("wm_time_window", "Mar '26")
+    end_date = _WINDOW_END_DATES.get(current, _WINDOW_END_DATES["Mar '26"])
     with st.container(border=True):
         slider_cols = st.columns([3, 1])
         with slider_cols[0]:
             st.markdown(
                 f'<div style="font-family: {t.FONT_HEADING}; '
                 f'font-weight: 600; color: {t.PRIMARY_NAVY}; '
-                f'font-size: 0.95em;">Time window</div>',
+                f'font-size: 0.95em;">Time window '
+                f'<span style="font-weight: 400; color: {t.SLATE_BLUE}; '
+                f'font-size: 0.9em;">· trailing 90 days ending</span></div>',
                 unsafe_allow_html=True,
             )
         with slider_cols[1]:
             st.markdown(
                 f'<div style="font-family: {t.FONT_HEADING}; '
                 f'font-weight: 600; color: {t.CLINICAL_CORAL}; '
-                f'text-align: right; font-size: 0.95em;">Apr 2026</div>',
+                f'text-align: right; font-size: 0.95em;">'
+                f'{end_date.strftime("%b %Y")}</div>',
                 unsafe_allow_html=True,
             )
 
-        windows = ["May '25", "Jul", "Sep", "Nov", "Jan '26", "Mar '26"]
-        days = st.select_slider(
+        windows = list(_WINDOW_END_DATES.keys())
+        selected = st.select_slider(
             "Window end",
             options=windows,
-            value="Mar '26",
+            value=current,
             label_visibility="collapsed",
             key="wm_time_window",
         )
-    return 90
+    return _WINDOW_END_DATES.get(selected, _WINDOW_END_DATES["Mar '26"])
 
 
 def _hotspots_panel(hotspots: list[dict]) -> None:
@@ -670,12 +720,19 @@ def render(filters: dict) -> None:
         st.session_state["wm_zoom"] = "Wasatch Front"
         st.session_state["_wm_zoom_default_v2"] = True
 
-    # Pull last 180 days for the trend / hotspot calculations
     df = dl.load_test_results()
     if df.empty:
         ui.empty_state("No dataset available.")
         return
-    cutoff = df["collection_date"].max() - timedelta(days=180)
+
+    # Resolve the selected window-end from the slider's persisted state so the
+    # map (rendered above the slider) reflects the current selection. Data is
+    # truncated at the window end, then the trailing 180 days feed the trend /
+    # hotspot calculations.
+    end_label = st.session_state.get("wm_time_window", "Mar '26")
+    end_date = _WINDOW_END_DATES.get(end_label, _WINDOW_END_DATES["Mar '26"])
+    df = df[df["collection_date"] <= end_date]
+    cutoff = end_date - timedelta(days=180)
     df_recent = df[df["collection_date"] >= cutoff]
 
     # Single-column layout: chip row → KPIs → map → timeline → hotspots

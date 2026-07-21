@@ -34,7 +34,7 @@ def render(filters: dict) -> None:
     st.caption(
         "This tab shows the pipeline itself, not clinical output. Everything below reflects "
         "code that runs today — none of it is a mockup — but it has not yet been run against "
-        "MAKO's or MicroCulture's own data. See “What we still need from a lab partner” below."
+        "a real lab partner's own data. See “What we still need from a lab partner” below."
     )
 
     _pipeline_summary()
@@ -122,7 +122,7 @@ def _live_geography_resolver() -> None:
 def _lab_gaps() -> None:
     ui.section_header(
         "What we still need from a lab partner",
-        "Found by running the pipeline against a real (non-MAKO) de-identified microbiology export.",
+        "Found by running the pipeline against a real, publicly available de-identified microbiology export.",
     )
     ui.branded_alert(
         "Two fields block first-isolate dedup and geography today",
@@ -132,7 +132,7 @@ def _lab_gaps() -> None:
             "specimen collection date</strong>, and <strong>no ordering-location geography field</strong>. "
             "Everything downstream — duplicate-patient filtering and adaptive geography — depends on "
             "at least one of these being present. This is now the lead discovery question for the "
-            "MAKO / MicroCulture conversation."
+            "first lab partner conversation."
         ),
         tone="watch", icon="⚠",
     )

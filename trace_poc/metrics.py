@@ -315,7 +315,7 @@ def isolate_count(df: pd.DataFrame, organism: Optional[str] = None) -> int:
 
 # ----- Hospital / stewardship tab metrics -----
 
-def saar_proxy(df: pd.DataFrame, facility_id: str) -> Optional[float]:
+def saar_proxy(df: pd.DataFrame, facility_id: Optional[str] = None) -> Optional[float]:
     """Standardized Antimicrobial Administration Ratio proxy (demo only).
 
     Uses old schema (facility_id, drug columns). Phase 2 will replace this

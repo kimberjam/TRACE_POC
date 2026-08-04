@@ -9,6 +9,8 @@ Layout (per draw.io mockup in Dashboard/Code/TRACE_Clinician.txt):
   - Bottom: Recent Similar Cases & Outcomes (aggregated, de-identified)
 
 Information-only. Not a prescribing tool.
+Phase 1: uses load_phase1_first_isolates() when data is available, with
+schema-agnostic fallback to the old test-results loader.
 """
 from __future__ import annotations
 
@@ -125,15 +127,30 @@ def render(filters: dict) -> None:
         "always combine with clinical judgment and patient-specific factors.",
     )
 
-    # Load test-level data, scoped to current filters
-    df = dl.load_test_results(
-        counties=filters["counties"],
-        encounter_settings=[filters["encounter_setting"]],
-        specimen_types=[filters["specimen_type"]],
-    )
+    # ── Load data ─────────────────────────────────────────────────────────────
+    # Prefer Phase 1 first-isolate data; fall back to old loader if unavailable.
+    using_phase1 = dl.PHASE1_DATA_AVAILABLE
+    if using_phase1:
+        df = dl.load_phase1_first_isolates(
+            care_settings=[filters["encounter_setting"]],
+            specimen_categories=[filters["specimen_type"]],
+        )
+    else:
+        df = dl.load_test_results(
+            counties=filters["counties"],
+            encounter_settings=[filters["encounter_setting"]],
+            specimen_types=[filters["specimen_type"]],
+        )
 
-    organism = filters["organism"]
-    care_setting = filters["encounter_setting"]
+    # Resolve column names once, for direct DataFrame access in this file
+    org_col  = m._col(df, "organism_normalized",          "organism")
+    drug_col = m._col(df, "antibiotic_normalized",        "drug")
+    id_col   = m._col(df, "isolate_id",                   "test_id")
+    set_col  = m._col(df, "care_setting",                 "encounter_setting")
+    spec_col = m._col(df, "specimen_category_normalized", "specimen_type")
+
+    organism       = filters["organism"]
+    care_setting   = filters["encounter_setting"]
     infection_site = _infection_site(filters["specimen_type"])
 
     # Active scenario summary banner + View in EHR CTA
@@ -159,9 +176,12 @@ def render(filters: dict) -> None:
             st.session_state["mode"] = "ehr_sandbox"
             st.rerun()
 
+    if using_phase1:
+        st.caption("⚡ Showing Phase 1 canonical data — first-isolate dedup applied, Wilson 95% CI available.")
+
     st.markdown("")
 
-    # ----- KPI ROW -----
+    # ── KPI ROW ───────────────────────────────────────────────────────────────
     kpi_cols = st.columns(3)
 
     # Card 1: Empiric coverage of the FIRST listed option
@@ -187,16 +207,24 @@ def render(filters: dict) -> None:
 
     # Card 2: Local susceptibility snapshot
     with kpi_cols[1]:
-        sus_table = m.susceptibility_table(df, organism)
+        if using_phase1:
+            sus_table = m.susceptibility_table_p1(df, organism)
+            drug_display_col = "antibiotic_normalized"
+        else:
+            sus_table = m.susceptibility_table(df, organism)
+            drug_display_col = "drug"
+
         if not sus_table.empty:
             top = sus_table.iloc[0]
+            n_val = int(top.get("n_tested", top.get("n_isolates", 0)))
+            rel_label = top.get("reliability_label", "")
+            sublabel = f"{top['pct_susceptible']:.0f}% susceptible (N = {n_val})"
+            if rel_label:
+                sublabel += f" · {rel_label}"
             ui.kpi_card(
                 "Local Susceptibility Snapshot",
-                f"{top['drug']}",
-                sublabel=(
-                    f"{top['pct_susceptible']:.0f}% susceptible "
-                    f"(N = {int(top['n_isolates'])})"
-                ),
+                f"{top[drug_display_col]}",
+                sublabel=sublabel,
                 help_text="Best-tested antibiotic for this organism in the "
                           "current filter scope.",
             )
@@ -223,7 +251,7 @@ def render(filters: dict) -> None:
 
     st.markdown("")
 
-    # ----- MIDDLE ROW -----
+    # ── MIDDLE ROW ────────────────────────────────────────────────────────────
     mid_left, mid_right = st.columns([2, 1])
 
     with mid_left:
@@ -289,16 +317,51 @@ def render(filters: dict) -> None:
 
         # Susceptibility table (collapsed below the chart)
         with st.expander("Full local susceptibility table", expanded=False):
-            sus_table = m.susceptibility_table(df, organism)
-            if sus_table.empty:
-                ui.empty_state()
+            if using_phase1:
+                sus_tbl = m.susceptibility_table_p1(df, organism)
+                if sus_tbl.empty:
+                    ui.empty_state()
+                else:
+                    # Build display: show reliability label + CI if available
+                    display_cols = {
+                        "antibiotic_normalized": "Antibiotic",
+                        "pct_susceptible": "% Susceptible",
+                        "n_tested": "N tested",
+                    }
+                    if "ci_lower_pct" in sus_tbl.columns:
+                        display_cols["ci_lower_pct"] = "CI low"
+                        display_cols["ci_upper_pct"] = "CI high"
+                    if "reliability_label" in sus_tbl.columns:
+                        display_cols["reliability_label"] = "Reliability"
+                    if "display_group" in sus_tbl.columns:
+                        display_cols["display_group"] = "Group"
+                    display = sus_tbl[[c for c in display_cols if c in sus_tbl.columns]].rename(
+                        columns=display_cols
+                    )
+                    st.dataframe(display, use_container_width=True, hide_index=True)
+
+                    # Show stewardship notes inline if present
+                    notes_cols = [c for c in
+                                  ["stewardship_note", "intrinsic_resistance_note",
+                                   "cefazolin_surrogate_note"]
+                                  if c in sus_tbl.columns]
+                    if notes_cols:
+                        for _, row in sus_tbl.iterrows():
+                            for nc in notes_cols:
+                                note = row.get(nc)
+                                if note and str(note).strip() and str(note) != "nan":
+                                    st.caption(f"ℹ️ {row['antibiotic_normalized']}: {note}")
             else:
-                display = sus_table.rename(columns={
-                    "drug": "Antibiotic",
-                    "pct_susceptible": "% Susceptible",
-                    "n_isolates": "N isolates",
-                })
-                st.dataframe(display, use_container_width=True, hide_index=True)
+                sus_tbl = m.susceptibility_table(df, organism)
+                if sus_tbl.empty:
+                    ui.empty_state()
+                else:
+                    display = sus_tbl.rename(columns={
+                        "drug": "Antibiotic",
+                        "pct_susceptible": "% Susceptible",
+                        "n_isolates": "N isolates",
+                    })
+                    st.dataframe(display, use_container_width=True, hide_index=True)
 
     with mid_right:
         ui.section_header("Guideline-aligned context")
@@ -316,7 +379,7 @@ def render(filters: dict) -> None:
 
         ui.section_header("Clinical risk & alerts")
         # Build alerts dynamically from the data
-        alerts = _build_alerts(df, organism, care_setting)
+        alerts = _build_alerts(df, organism, care_setting, org_col, drug_col)
         if alerts:
             for level, text in alerts:
                 if level == "warn":
@@ -328,34 +391,37 @@ def render(filters: dict) -> None:
 
     st.markdown("---")
 
-    # ----- BOTTOM: RECENT SIMILAR CASES -----
+    # ── BOTTOM: RECENT SIMILAR CASES ──────────────────────────────────────────
     ui.section_header(
         "Recent similar cases (aggregated, de-identified)",
         "Last 60 days of isolates matching the current filter scope.",
     )
     recent = df[df["collection_date"] >= df["collection_date"].max()
                 - pd.Timedelta(days=60)]
-    recent = recent[recent["organism"] == organism].copy()
+    recent = recent[recent[org_col] == organism].copy()
     if recent.empty:
         ui.empty_state(
             "No recent isolates in scope.",
             "Try widening the date range or selecting another organism.",
         )
     else:
+        # Build groupby keys using whichever column names are present
+        geo_col  = m._col(recent, "displayed_geography_value", "county")
+        age_col  = "patient_age_band"  # same in both schemas
+
+        grp_cols = [c for c in [geo_col, set_col, age_col] if c in recent.columns]
         summary = (
-            recent.groupby(
-                ["county", "encounter_setting", "patient_age_band"]
-            )
+            recent.groupby(grp_cols)
             .agg(
-                n_isolates=("test_id", "nunique"),
-                drugs_tested=("drug", "nunique"),
+                n_isolates=(id_col, "nunique"),
+                drugs_tested=(drug_col, "nunique"),
             )
             .reset_index()
             .rename(columns={
-                "county": "County",
-                "encounter_setting": "Setting",
-                "patient_age_band": "Age band",
-                "n_isolates": "N isolates",
+                geo_col:   "Geography",
+                set_col:   "Setting",
+                age_col:   "Age band",
+                "n_isolates":   "N isolates",
                 "drugs_tested": "Drugs tested",
             })
             .sort_values("N isolates", ascending=False)
@@ -372,21 +438,29 @@ def render(filters: dict) -> None:
     ui.about_this_data_panel()
 
 
-# ----- Helpers -----
+# ── Helpers ────────────────────────────────────────────────────────────────────
 
-def _build_alerts(df, organism: str, care_setting: str) -> list[tuple[str, str]]:
+def _build_alerts(
+    df,
+    organism: str,
+    care_setting: str,
+    org_col: str,
+    drug_col: str,
+) -> list[tuple[str, str]]:
     """Generate context-aware alerts based on local data patterns."""
     alerts: list[tuple[str, str]] = []
     if df.empty:
         return alerts
 
+    sir_col = m._col(df, "sir_normalized", "susceptibility")
+
     # Fluoroquinolone resistance alert for E. coli
     if organism == "Escherichia coli":
-        cip = df[(df["organism"] == organism)
-                 & (df["drug"] == "Ciprofloxacin")
-                 & df["susceptibility"].isin(["S", "R"])]
+        cip = df[(df[org_col] == organism)
+                 & (df[drug_col] == "Ciprofloxacin")
+                 & df[sir_col].isin(["S", "R"])]
         if not cip.empty:
-            pct_r = 100.0 * (cip["susceptibility"] == "R").mean()
+            pct_r = 100.0 * (cip[sir_col] == "R").mean()
             if pct_r >= 20:
                 alerts.append((
                     "warn",
@@ -397,12 +471,13 @@ def _build_alerts(df, organism: str, care_setting: str) -> list[tuple[str, str]]
 
     # MRSA prevalence alert
     if organism in ("Staphylococcus aureus", "MRSA"):
-        mrsa = df[df["organism"] == "MRSA"]
-        sa = df[df["organism"] == "Staphylococcus aureus"]
-        n_mrsa = mrsa["test_id"].nunique()
-        n_sa = sa["test_id"].nunique() + n_mrsa
-        if n_sa:
-            pct_mrsa = 100.0 * n_mrsa / n_sa
+        mrsa = df[df[org_col] == "MRSA"]
+        sa   = df[df[org_col] == "Staphylococcus aureus"]
+        n_mrsa = mrsa[m._col(mrsa, "isolate_id", "test_id")].nunique() if not mrsa.empty else 0
+        n_sa   = sa[m._col(sa, "isolate_id", "test_id")].nunique() if not sa.empty else 0
+        n_total = n_sa + n_mrsa
+        if n_total:
+            pct_mrsa = 100.0 * n_mrsa / n_total
             if pct_mrsa >= 30:
                 alerts.append((
                     "warn",

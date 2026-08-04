@@ -166,19 +166,19 @@ def render(filters: dict) -> None:
             )
             if selected_drugs:
                 trend_plot = trend_org[trend_org["drug"].isin(selected_drugs)].copy()
-                trend_plot["month"] = pd.to_datetime(trend_plot["month"])
+                # year_month is already datetime (parsed in data_loader)
                 chart = (
                     alt.Chart(trend_plot)
                     .mark_line(point=True)
                     .encode(
-                        x=alt.X("month:T", title="Month"),
+                        x=alt.X("year_month:T", title="Month"),
                         y=alt.Y(
                             "pct_susceptible:Q",
                             scale=alt.Scale(domain=[0, 100]),
                             title="% Susceptible",
                         ),
                         color=alt.Color("drug:N", title="Antibiotic"),
-                        tooltip=["month:T", "drug:N", "pct_susceptible:Q", "n_isolates:Q"],
+                        tooltip=["year_month:T", "drug:N", "pct_susceptible:Q", "n_isolates:Q"],
                     )
                     .properties(height=280)
                 )
